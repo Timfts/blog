@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import DefaultLayout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
-<Layout title="Welcome to Astro.">
+<DefaultLayout title="Welcome to Astro.">
 	<main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
@@ -16,7 +16,7 @@ import Card from '../components/Card.astro';
 			<Card href="https://astro.build/chat/" title="Chat" body="Come say hi to our amazing Discord community. ❤️" />
 		</ul>
 	</main>
-</Layout>
+</DefaultLayout>
 
 <style>
 	:root {

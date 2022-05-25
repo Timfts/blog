@@ -3006,6 +3006,11 @@ serialize-javascript@^6.0.0:
   dependencies:
     randombytes "^2.1.0"
 
+shader-doodle@^1.0.0-alpha.20:
+  version "1.0.0-alpha.20"
+  resolved "https://registry.yarnpkg.com/shader-doodle/-/shader-doodle-1.0.0-alpha.20.tgz#29327886c5f58f1c2c66d91029a8cffff370c066"
+  integrity sha512-2fCpwWZo+3INb/pWR0pVr7fV5J/qR7sugRYyRwH6r97SjFwsGZSklMO37qnnkav9oL2OAo2KgttO66UiApn5yA==
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
