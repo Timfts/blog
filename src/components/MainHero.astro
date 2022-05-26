@@ -7,7 +7,7 @@
 
 <canvas id="canvas"></canvas>
 <shader-doodle shadertoy>
-  <sd-texture src="#canvas" name="u_texture0"></sd-texture>
+  <sd-texture src="sharpBatman.png" name="u_texture0"></sd-texture>
   <script type="x-shader/x-fragment">
 
         #ifdef GL_FRAGMENT_PRECISION_HIGH
@@ -160,5 +160,9 @@
   shader-doodle {
     width: 500px;
     height: 500px;
+  }
+
+  #canvas {
+    display: none;
   }
 </style>
