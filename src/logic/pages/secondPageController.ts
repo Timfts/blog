@@ -1,6 +1,5 @@
-import createController from "@logic/core/createController";
+import pageController from "@logic/core/pageController";
 
-
-createController("second-page", () => {
+pageController("second-page", () => {
     console.log("second-page started")
 })

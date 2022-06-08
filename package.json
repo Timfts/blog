@@ -6,21 +6,28 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "jest"
   },
   "devDependencies": {
-    "@astrojs/lit": "^0.1.5",
-    "@webcomponents/template-shadowroot": "^0.1.0",
-    "astro": "^1.0.0-beta.42",
-    "lit": "^2.2.5"
+    "@astrojs/lit": "0.1.5",
+    "@types/jest": "28.1.1",
+    "@webcomponents/template-shadowroot": "0.1.0",
+    "astro": "1.0.0-beta.42",
+    "jest": "28.1.1",
+    "lit": "2.2.5",
+    "ts-jest": "28.0.4"
   },
   "dependencies": {
-    "@github/catalyst": "^1.4.2",
-    "@swup/a11y-plugin": "^2.0.0",
-    "@swup/head-plugin": "^1.2.0",
-    "@swup/js-plugin": "^1.0.4",
-    "@swup/preload-plugin": "^1.0.3",
-    "shader-doodle": "^1.0.0-alpha.20",
-    "swup": "^2.0.14"
+    "@github/catalyst": "1.4.2",
+    "@swup/a11y-plugin": "2.0.0",
+    "@swup/head-plugin": "1.2.0",
+    "@swup/js-plugin": "1.0.4",
+    "@swup/preload-plugin": "1.0.3",
+    "shader-doodle": "1.0.0-alpha.20",
+    "swup": "2.0.14"
+  },
+  "jest": {
+    "preset": "ts-jest"
   }
 }

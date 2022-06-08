@@ -3,12 +3,15 @@ import SwupHeadPlugin from "@swup/head-plugin";
 import SwupJsPlugin from "@swup/js-plugin";
 import SwupA11yPlugin from "@swup/a11y-plugin";
 import SwupPreloadPlugin from "@swup/preload-plugin";
-import createController from "./core/createController";
+import pageController from "./core/pageController";
 
-createController("app-shell", () => {
-  setupRouteChange();
+pageController("app-shell", ({query}) => {
+  const visitedPages: string[] = [];
 
-  function setupRouteChange() {
+  runCurrentPageController();
+  setupRouteChanges();
+
+  function setupRouteChanges() {
     new Swup({
       plugins: [
         new SwupHeadPlugin(),
@@ -26,8 +29,16 @@ createController("app-shell", () => {
     });
 
     document.addEventListener("swup:pageView", (ev) => {
-        import("./pages/secondPageController")
-    })
+      import("./pages/SecondPageController");
+    });
+  }
 
+  function runCurrentPageController() {
+    const currentPathName = window.location.pathname
+    console.log(window.location.pathname)
+    // detect current route
+    // check if already loaded controller
+    // get controller by map
+    // import
   }
 });
