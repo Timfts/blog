@@ -6,17 +6,15 @@
 </head>
 
 <body>
-    <app-shell>
-        <div class="shell-container">
-            <slot />
-        </div>
-    </app-shell>
+    <div class="shell-container" data-fragment="app-shell" id="swup">
+        <slot />
+    </div>
 </body>
 
 </html>
 
 <script>
-    import "./controller.ts"
+    import "../../logic/app.ts"
 </script>
 
 <style>
