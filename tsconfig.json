@@ -9,13 +9,16 @@
     "resolveJsonModule": true,
     // Enable stricter transpilation for better output.
     "isolatedModules": false,
+    "experimentalDecorators": true,
     // Add type definitions for our Vite runtime.
     "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
-      "@templates/*": ["src/templates/*"]
+      "@templates/*": ["src/templates/*"],
+      "@logic/*":["src/logic/*"],
+      "@layouts/*":["src/layouts/*"]
     }
   }
 }

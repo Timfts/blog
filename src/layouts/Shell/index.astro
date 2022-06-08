@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my app</title>
+</head>
+
+<body>
+    <app-shell>
+        <div class="shell-container">
+            <slot />
+        </div>
+    </app-shell>
+</body>
+
+</html>
+
+<script>
+    import "./controller.ts"
+</script>
+
+<style>
+    :global(*, *::after, *::before) {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+</style>
