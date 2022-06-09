@@ -8,11 +8,30 @@ import {
 export function getOnFunction(rootElement: HTMLElement) {
   return (eventName: string, handler: GenericFunction) => {
     const globalEventDirective = "global:";
+    const documentEventDirective = "document:";
+    const swupEventDirective = "swup:";
+
     const isGlobalEvent = eventName.startsWith(globalEventDirective);
-    const eventRoot = isGlobalEvent ? window : rootElement;
-    const formattedEventName = isGlobalEvent
-      ? eventName.replace(globalEventDirective, "")
-      : eventName;
+    const isDocumentEvent = eventName.startsWith(documentEventDirective);
+    const isSwupEventDirective = eventName.startsWith(swupEventDirective);
+
+    const eventRoot = (() => {
+      if (isGlobalEvent) {
+        return window;
+      } else if (isDocumentEvent || isSwupEventDirective) {
+        return document;
+      }
+      return rootElement;
+    })();
+
+    const formattedEventName = (() => {
+      if (isGlobalEvent) {
+        return eventName.replace(globalEventDirective, "");
+      } else if (isDocumentEvent) {
+        return eventName.replace(globalEventDirective, "");
+      }
+      return eventName;
+    })();
 
     eventRoot.addEventListener(formattedEventName, handler);
   };

@@ -3,7 +3,7 @@ import pageController from "./core/pageController";
 import runControllerByPath from "./helpers/runControllerByPath";
 import pageControllers from "./route-controllers";
 
-pageController("app-shell", ({ query, on }) => {
+pageController("app-shell", ({ on }) => {
   //onStart
   fixFullHeight();
   runCurrentPageController();
@@ -11,13 +11,11 @@ pageController("app-shell", ({ query, on }) => {
 
   //events
   on("global:resize", fixFullHeight);
+  on("swup:pageView", runCurrentPageController);
 
   // methods
   function setupRouteChanges() {
     setupSwup();
-    document.addEventListener("swup:pageView", (ev) => {
-      runCurrentPageController();
-    });
   }
 
   function runCurrentPageController() {
