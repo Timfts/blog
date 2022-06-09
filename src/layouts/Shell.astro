@@ -27,7 +27,7 @@ const { title = "Tim Fontes", lang = "en" } = Astro.props as Props
     import "../logic/app.ts"
 </script>
 
-<style is:global>
+<style is:global lang="scss">
     /* latin-ext */
     @font-face {
         font-family: 'VT323';
@@ -89,8 +89,17 @@ const { title = "Tim Fontes", lang = "en" } = Astro.props as Props
         letter-spacing: normal;
     }
 </style>
-<style>
+<style lang="scss">
+    @import "../scss/mixins";
+
     .shell-container {
-        background-color: aquamarine;
+        background-image: conic-gradient(#DDDBC2 0 10.5%, #ECECD5 11% 11.5%, #CECDAF 12% 38%, #C8C4A7 39% 61.5%, #C7C3A6 62% 88%, #DFDAC4 88.5% 89%, #DDDBC2 89.25%);
+        box-shadow: 0 60px 20px -20px rgb(142 137 97 / 50%);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+
+
     }
 </style>
