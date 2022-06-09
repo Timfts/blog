@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    {[1,2,3,4, 5].map(_ => (
+    {[1,2,3,4, 5, 6].map(_ => (
     <div class="text-container">
         <p>HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu
             conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou usando
@@ -71,6 +71,7 @@
         max-width: 500px;
         font-family: 'Pixel Operator Mono', sans-serif;
         font-size: 20px;
+        font-weight: bold;
         line-height: 1.1;
     }
 
@@ -78,5 +79,12 @@
         max-width: 500px;
         font-family: 'VT323', monospace;
         font-size: 22px;
+    }
+
+    .text-container:nth-child(6) {
+        max-width: 500px;
+        font-family: 'Pixel Operator', sans-serif;
+        font-size: 20px;
+        line-height: 1.1;
     }
 </style>
