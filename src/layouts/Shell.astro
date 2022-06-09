@@ -1,0 +1,36 @@
+---
+export interface Props {
+    title?: string;
+    lang?: "pt-br" | "en"
+}
+
+const { title = "Tim Fontes", lang = "en" } = Astro.props as Props
+
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+
+<head>
+    <title>{title}</title>
+</head>
+
+<body>
+    <main class="shell-container" data-fragment="app-shell" id="swup">
+        <slot />
+    </main>
+</body>
+
+</html>
+
+<script>
+    import "../logic/app.ts"
+</script>
+
+<style>
+    :global(*, *::after, *::before) {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+</style>
