@@ -11,7 +11,13 @@ const { title = "Tim Fontes" } = Astro.props as Props
 
 <Document title={title}>
     <main class="shell-container" data-fragment="app-shell" id="swup">
-        <slot />
+        <div class="second-color-level">
+            <div class="third-color-level">
+                <div class="screen-level">
+                    <slot />
+                </div>
+            </div>
+        </div>
     </main>
 </Document>
 
@@ -20,13 +26,45 @@ const { title = "Tim Fontes" } = Astro.props as Props
 </script>
 <style lang="scss">
     @import "../scss/mixins";
+    :root {
+        --app-height: 100vh;
+    }
 
     .shell-container {
-        background-image: conic-gradient(#DDDBC2 0 10.5%, #ECECD5 11% 11.5%, #CECDAF 12% 38%, #C8C4A7 39% 61.5%, #C7C3A6 62% 88%, #DFDAC4 88.5% 89%, #DDDBC2 89.25%);
+        background-image: conic-gradient(#dddbc2 0 6.5%, #ececd5 8% 6.5%, #cecdaf 9% 38%, #c8c4a7 39% 61.5%, #c7c3a6 62% 92%, #dfdac4 91.5% 89%, #dddbc2 89.25%);
         box-shadow: 0 60px 20px -20px rgb(142 137 97 / 50%);
         height: 100vh;
+        height: var(--app-height);
         width: 100vw;
         position: relative;
         overflow: hidden;
+        padding: 20px 20px 0 20px;
+        border-radius: 5px;
+    }
+
+    .second-color-level {
+        background-image: linear-gradient(#CAC6A9, #CFCEB0);
+        height: 100%;
+        padding: 25px 25px 0 25px;
+        border-radius: 5px;
+    }
+
+    .third-color-level {
+        background-image: conic-gradient(#938f6a 6.5%, #b5b293 8.5% 43%, #e0dfc3 29% 57.5%, #c2c1a2 58.5% 91.5%, #938f6a 93.5%);
+        height: 100%;
+        border-radius: 5px;
+        padding: 25px 25px 0 25px;
+
+    }
+
+    .screen-level {
+        color: white;
+        border-radius: 20px 20px 0px 0px;
+        background-image: radial-gradient(#525B5A, #50585A);
+        height: 100%;
+        box-shadow: 0 0 20px 10px #2b3030 inset;
+        padding: 25px;
+        filter: blur(0.05em) hue-rotate(0);
+        overflow-y: scroll;
     }
 </style>
