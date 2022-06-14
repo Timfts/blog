@@ -27,7 +27,7 @@ const { title = "Tim Fontes" } = Astro.props as Props
                     <div class="frame-level-screen" id="swup">
                         <slot />
                     </div>
-                    <!-- <MainNav /> -->
+                    <MainNav />
                 </div>
             </div>
         </div>
@@ -49,7 +49,8 @@ const { title = "Tim Fontes" } = Astro.props as Props
     }
 
     .frame-level-one {
-        background-image: conic-gradient(#dddbc2 0 6.5%, #ececd5 8% 6.5%, #cecdaf 9% 38%, #c8c4a7 39% 61.5%, #c7c3a6 62% 92%, #dfdac4 91.5% 89%, #dddbc2 89.25%);
+        // todo - fallback to conic gradient
+        background-image: conic-gradient(#dddbc2 0 6.5%, #ececd5 8% 6.5%, #cecdaf 9% 43%, #c8c4a7 44% 50.5%, #c7c3a6 62% 92%, #dfdac4 91.5% 89%, #dddbc2 89.25%);
         box-shadow: 0 60px 20px -20px rgb(142 137 97 / 50%);
         min-height: 100vh;
         min-height: var(--app-height);
@@ -69,18 +70,16 @@ const { title = "Tim Fontes" } = Astro.props as Props
         border-radius: 5px;
         display: flex;
         flex-direction: column;
-        display:none;
     }
 
     .frame-level-three {
-        background-image: conic-gradient(#938f6a 6.5%, #b5b293 8.5% 43%, #e0dfc3 29% 57.5%, #c2c1a2 58.5% 91.5%, #938f6a 93.5%);
+        background-image: conic-gradient(#938f6a 5.5%, #b5b293 8.5% 45%, #E0DFC3 47% 51.5%, #c2c1a2 53.5% 91.5%, #938F6B 93.5%);
         height: 100%;
         border-radius: 5px;
         padding: 25px 25px 0 25px;
         flex: 1;
         display: flex;
         flex-direction: column;
-        display:none;
     }
 
     .frame-level-screen {
@@ -92,7 +91,6 @@ const { title = "Tim Fontes" } = Astro.props as Props
         padding: 25px;
         filter: blur(0.05em) hue-rotate(0);
         flex: 1;
-        display:none;
     }
 
     .fixed-top-frame {
@@ -101,7 +99,6 @@ const { title = "Tim Fontes" } = Astro.props as Props
         left: 0;
         z-index: 10;
         overflow: hidden;
-        max-height: 70px;
-        display:none;
+        max-height: 85px;
     }
 </style>
