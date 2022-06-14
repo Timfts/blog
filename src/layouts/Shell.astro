@@ -1,5 +1,6 @@
 ---
 import Document from "./Document.astro";
+import MainNav from "@components/MainNav.astro"
 export interface Props {
     title?: string;
     lang?: "pt-br" | "en"
@@ -10,11 +11,23 @@ const { title = "Tim Fontes" } = Astro.props as Props
 ---
 
 <Document title={title}>
-    <main class="shell-container" data-fragment="app-shell" id="swup">
-        <div class="second-color-level">
-            <div class="third-color-level">
-                <div class="screen-level">
-                    <slot />
+    <main class="shell-container" data-fragment="app-shell">
+        <div class="fixed-top-frame">
+            <div class="frame-level-one">
+                <div class="frame-level-two">
+                    <div class="frame-level-three">
+                        <div class="frame-level-screen" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-level-one">
+            <div class="frame-level-two">
+                <div class="frame-level-three">
+                    <div class="frame-level-screen" id="swup">
+                        <slot />
+                    </div>
+                    <!-- <MainNav /> -->
                 </div>
             </div>
         </div>
@@ -26,38 +39,51 @@ const { title = "Tim Fontes" } = Astro.props as Props
 </script>
 <style lang="scss">
     @import "../scss/mixins";
+
     :root {
         --app-height: 100vh;
     }
 
     .shell-container {
+        position: relative;
+    }
+
+    .frame-level-one {
         background-image: conic-gradient(#dddbc2 0 6.5%, #ececd5 8% 6.5%, #cecdaf 9% 38%, #c8c4a7 39% 61.5%, #c7c3a6 62% 92%, #dfdac4 91.5% 89%, #dddbc2 89.25%);
         box-shadow: 0 60px 20px -20px rgb(142 137 97 / 50%);
-        height: 100vh;
-        height: var(--app-height);
+        min-height: 100vh;
+        min-height: var(--app-height);
         width: 100vw;
         position: relative;
         overflow: hidden;
         padding: 20px 20px 0 20px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
     }
 
-    .second-color-level {
+    .frame-level-two {
         background-image: linear-gradient(#CAC6A9, #CFCEB0);
-        height: 100%;
+        flex: 1;
         padding: 25px 25px 0 25px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        display:none;
     }
 
-    .third-color-level {
+    .frame-level-three {
         background-image: conic-gradient(#938f6a 6.5%, #b5b293 8.5% 43%, #e0dfc3 29% 57.5%, #c2c1a2 58.5% 91.5%, #938f6a 93.5%);
         height: 100%;
         border-radius: 5px;
         padding: 25px 25px 0 25px;
-
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        display:none;
     }
 
-    .screen-level {
+    .frame-level-screen {
         color: white;
         border-radius: 20px 20px 0px 0px;
         background-image: radial-gradient(#525B5A, #50585A);
@@ -65,6 +91,17 @@ const { title = "Tim Fontes" } = Astro.props as Props
         box-shadow: 0 0 20px 10px #2b3030 inset;
         padding: 25px;
         filter: blur(0.05em) hue-rotate(0);
-        overflow-y: scroll;
+        flex: 1;
+        display:none;
+    }
+
+    .fixed-top-frame {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        overflow: hidden;
+        max-height: 70px;
+        display:none;
     }
 </style>

@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
-    "start:net": "astro dev --host",
+    "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "test": "jest"
