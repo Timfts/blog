@@ -11,8 +11,19 @@ const { title = "Tim Fontes" } = Astro.props as Props
 ---
 
 <Document title={title}>
-    <main class="shell-container" data-fragment="app-shell" id="swup">
-        <slot />
+    <main class="shell-container" data-fragment="app-shell">
+        <div class="device-frame-group">
+            <div class="device-frame device-frame--top">
+                <div class="device-frame__top-screen"></div>
+            </div>
+            {["left", "right"].map(side => (
+            <div class={`device-frame device-frame--${side}`} />
+            ))}
+        </div>
+        <div class="screen-layer" id="swup">
+            <slot />
+        </div>
+        <MainNav />
     </main>
 </Document>
 
@@ -24,5 +35,50 @@ const { title = "Tim Fontes" } = Astro.props as Props
 
     :root {
         --app-height: 100vh;
+    }
+
+    .shell-container {
+        background-color: aquamarine;
+        --mobile-side-frame-size: 55px;
+        padding: var(--mobile-side-frame-size);
+    }
+
+    .screen-layer {
+        background-color: rgb(83, 83, 83);
+        padding: 20px;
+    }
+
+    .device-frame {
+        background-color: red;
+        position: fixed;
+        top: 0;
+
+        &--top {
+            width: calc(100vw - (2* var(--mobile-side-frame-size)));
+            padding-top: 55px;
+        }
+
+        &--left,
+        &--right {
+            height: 100vh;
+            width: 20px;
+            width: var(--mobile-side-frame-size);
+        }
+
+        &--left {
+            left: 0;
+        }
+
+        &--right {
+            right: 0;
+        }
+
+        &__top-screen {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(83, 83, 83);
+            border-radius: 20px 20px 0 0;
+
+        }
     }
 </style>
