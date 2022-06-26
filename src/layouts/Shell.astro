@@ -11,26 +11,8 @@ const { title = "Tim Fontes" } = Astro.props as Props
 ---
 
 <Document title={title}>
-    <main class="shell-container" data-fragment="app-shell">
-        <div class="fixed-top-frame">
-            <div class="frame-level-one">
-                <div class="frame-level-two">
-                    <div class="frame-level-three">
-                        <div class="frame-level-screen" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="frame-level-one">
-            <div class="frame-level-two">
-                <div class="frame-level-three">
-                    <div class="frame-level-screen" id="swup">
-                        <slot />
-                    </div>
-                    <MainNav />
-                </div>
-            </div>
-        </div>
+    <main class="shell-container" data-fragment="app-shell" id="swup">
+        <slot />
     </main>
 </Document>
 
@@ -42,63 +24,5 @@ const { title = "Tim Fontes" } = Astro.props as Props
 
     :root {
         --app-height: 100vh;
-    }
-
-    .shell-container {
-        position: relative;
-    }
-
-    .frame-level-one {
-        // todo - fallback to conic gradient
-        background-image: conic-gradient(#dddbc2 0 6.5%, #ececd5 8% 6.5%, #cecdaf 9% 43%, #c8c4a7 44% 50.5%, #c7c3a6 62% 92%, #dfdac4 91.5% 89%, #dddbc2 89.25%);
-        box-shadow: 0 60px 20px -20px rgb(142 137 97 / 50%);
-        min-height: 100vh;
-        min-height: var(--app-height);
-        width: 100vw;
-        position: relative;
-        overflow: hidden;
-        padding: 20px 20px 0 20px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .frame-level-two {
-        background-image: linear-gradient(#CAC6A9, #CFCEB0);
-        flex: 1;
-        padding: 25px 25px 0 25px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .frame-level-three {
-        background-image: conic-gradient(#938f6a 5.5%, #b5b293 8.5% 45%, #E0DFC3 47% 51.5%, #c2c1a2 53.5% 91.5%, #938F6B 93.5%);
-        height: 100%;
-        border-radius: 5px;
-        padding: 25px 25px 0 25px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .frame-level-screen {
-        color: white;
-        border-radius: 20px 20px 0px 0px;
-        background-image: radial-gradient(#525B5A, #50585A);
-        height: 100%;
-        box-shadow: 0 0 20px 10px #2b3030 inset;
-        padding: 25px;
-        filter: blur(0.05em) hue-rotate(0);
-        flex: 1;
-    }
-
-    .fixed-top-frame {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        overflow: hidden;
-        max-height: 85px;
     }
 </style>
