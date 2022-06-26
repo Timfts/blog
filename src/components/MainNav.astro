@@ -3,14 +3,21 @@
 </nav>
 
 <style lang="scss">
+    @import "../scss/mixins";
+
     .main-nav {
         background-color: red;
         height: 200px;
-        width: calc(100vw - (2* var(--mobile-side-frame-size)));
+        width: calc(100vw - 114px);
         position: fixed;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+
+        @include above(l) {
+            height: 70px;
+            width: calc(100% - 114px);
+        }
 
     }
 </style>
