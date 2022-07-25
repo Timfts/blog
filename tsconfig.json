@@ -19,7 +19,6 @@
       "@components/*": ["src/components/*"],
       "@templates/*": ["src/templates/*"],
       "@logic/*": ["src/logic/*"],
-      "@layouts/*": ["src/layouts/*"],
       "@scss/*": ["src/scss/*"]
     }
   }

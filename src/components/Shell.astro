@@ -1,0 +1,22 @@
+---
+import Document from "./Document.astro";
+export interface Props {
+    title?: string;
+    lang?: "pt-br" | "en"
+}
+
+const { title = "Tim Fontes" } = Astro.props as Props
+
+---
+
+<Document title={title}>
+    <main class="shell-container" data-fragment="app-shell">
+        <div class="device-frame-group">
+            <slot />
+        </div>
+    </main>
+</Document>
+
+<script>
+    import "../logic/app.ts"
+</script>
