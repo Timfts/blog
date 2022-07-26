@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main # NOTE this relates to your GitHub branch
 publish_mode: editorial_workflow
+i18n:
+  structure: multiple_folders
+  locales: [en, pt-BR]
+  default_locale: en
 local_backend: true # allows for you to locally mess with your CMS
 media_folder: "public/images/uploads" # Media files will be stored in the repo under public/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
@@ -43,7 +47,6 @@ collections:
                 widget: "image"
                 allow_multiple: false
                 choose_url: false
-
       - name: "learnings"
         label: "Learnings"
         format: "json"
@@ -85,6 +88,40 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
+  
+  - name: "posts"
+    label: "Posts"
+    i18n: true
+    create: true
+    folder: "src/pages/posts"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        i18n: true
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        i18n: duplicate
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        i18n: duplicate
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        i18n: true
+      - label: "Categories"
+        name: "categories"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "post-categories"
+        multiple: true
+        i18n: duplicate
+        search_fields: ["categories-list.*.label"]
+        display_fields: ["categories-list.*.label"]
+        value_field: "categories-list.*.slug"
 
   - name: "categories"
     label: "Post Category"
