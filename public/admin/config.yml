@@ -8,13 +8,106 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 editor:
   preview: false # we're going to hide the preview editor
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "src/pages/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "segmentation-data"
+    label: "Segmentation Data"
+    files:
+      - name: "post-categories"
+        label: "Post Categories"
+        format: "json"
+        extension: "json"
+        file: "src/data/post-categories.json"
+        fields:
+          - name: "categories-list"
+            label: "List"
+            widget: "list"
+            collapsed: true
+            label_singular: "category"
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                pattern:
+                  [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "A url can have no spaces or special characters",
+                  ]
+              - label: "Label"
+                name: "label"
+                widget: "string"
+              - label: "Color"
+                name: "color"
+                widget: "color"
+                allowInput: true
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                allow_multiple: false
+                choose_url: false
+
+      - name: "learnings"
+        label: "Learnings"
+        format: "json"
+        file: "src/data/learnings.json"
+        fields:
+          - name: "learnings-list"
+            label: "Learnings list"
+            widget: "list"
+            fields:
+              - label: "slug"
+                name: "Slug"
+                pattern:
+                  [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "A url can have no spaces or special characters",
+                  ]
+              - label: "Label"
+                name: "label"
+                widget: "string"
+              - label: "Color"
+                name: "color"
+                widget: "color"
+      - name: "snippets-types"
+        label: "Snippets types"
+        format: "json"
+        file: "src/data/snippets-types.json"
+        fields:
+          - name: "snippets-types-list"
+            label: "Snippets types list"
+            widget: "list"
+            fields:
+              - label: "slug"
+                name: "Slug"
+                pattern:
+                  [
+                    "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+                    "A url can have no spaces or special characters",
+                  ]
+              - label: "Label"
+                name: "label"
+                widget: "string"
+
+  - name: "categories"
+    label: "Post Category"
+    folder: "src/data/categories"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: label
+    format: json
+    fields:
+      - { label: "Label", name: "label", widget: "string" }
+      - { label: "Color", name: "color", widget: "color", allowInput: true }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          allow_multiple: false,
+          choose_url: false,
+        }
+      - label: "City"
+        name: "city"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "post-categories"
+        search_fields: ["categories-list.*.label"]
+        display_fields: ["categories-list.*.label"]
+        value_field: "categories-list.*.label"

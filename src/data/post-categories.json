@@ -1,0 +1,16 @@
+{
+  "categories-list": [
+    {
+      "slug": "teste",
+      "label": "teste",
+      "color": "#7f2929",
+      "image": "/images/uploads/folder-files-and-folders-svgrepo-com.svg"
+    },
+    {
+      "slug": "sdf",
+      "label": "sdfd",
+      "color": "#863636",
+      "image": "/images/uploads/folder-files-and-folders-svgrepo-com.svg"
+    }
+  ]
+}

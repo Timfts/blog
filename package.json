@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "local:cms": "netlify-cms-proxy-server",
-    "start": "astro dev --host",
-    "start:with-cms": "concurrently \"yarn local:cms\" \"yarn start\"",
+    "start": "concurrently \"yarn local:cms\" \"astro dev --host\"",
     "build": "astro build",
     "preview": "astro preview",
     "test": "jest"
