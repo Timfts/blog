@@ -1,4 +1,4 @@
-* post layout
+
 * topics page
 * summary post
 * descobrir como listar todos os posts de uma categoria

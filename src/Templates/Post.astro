@@ -4,8 +4,8 @@ interface IPostData {
     created_date: string;
     updated_date: string;
     thumbnail: string;
-    body: string;
     topics: string[];
+    lang: "pt" | "en"
 }
 
 const content: IPostData = Astro.props.content

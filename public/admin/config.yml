@@ -90,12 +90,16 @@ collections:
     label_singular: "Post (en)"
     create: true
     preview_path: "pages/{{slug}}"
-    folder: "src/pages/posts"
+    folder: "src/pages/post"
     fields:
       - label: "layout"
         name: "layout"
         widget: "hidden"
         default: "@templates/Post.astro"
+      - label: "lang"
+        name: "lang"
+        widget: "hidden"
+        default: "en"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -127,8 +131,12 @@ collections:
     label: "Posts (pt)"
     label_singular: "Post (en)"
     create: true
-    folder: "src/pages/pt/posts"
+    folder: "src/pages/pt/post"
     fields:
+      - label: "lang"
+        name: "lang"
+        widget: "hidden"
+        default: "pt"
       - label: "layout"
         name: "layout"
         widget: "hidden"
