@@ -2,15 +2,11 @@ backend:
   name: git-gateway
   branch: main # NOTE this relates to your GitHub branch
 publish_mode: editorial_workflow
-i18n:
-  structure: multiple_folders
-  locales: [en, pt-BR]
-  default_locale: en
 local_backend: true # allows for you to locally mess with your CMS
 media_folder: "public/images/uploads" # Media files will be stored in the repo under public/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 editor:
-  preview: false # we're going to hide the preview editor
+  preview: false
 collections:
   - name: "segmentation-data"
     label: "Segmentation Data"
@@ -19,9 +15,9 @@ collections:
         label: "Post Topics"
         format: "json"
         extension: "json"
-        file: "src/data/post-categories.json"
+        file: "src/data/post-topics.json"
         fields:
-          - name: "categories-list"
+          - name: "topics-list"
             label: "List"
             widget: "list"
             collapsed: true
@@ -89,65 +85,77 @@ collections:
                 name: "label"
                 widget: "string"
 
-  - name: "posts"
-    label: "Posts"
-    i18n: true
+  - name: "en-posts"
+    label: "Posts (en)"
+    label_singular: "Post (en)"
     create: true
+    preview_path: "pages/{{slug}}"
     folder: "src/pages/posts"
     fields:
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
       - label: "Title"
         name: "title"
         widget: "string"
-        i18n: true
       - label: "Publish Date"
-        name: "date"
+        name: "created_date"
         widget: "datetime"
-        i18n: duplicate
+      - label: "Updated Date"
+        name: "updated_date"
+        default: ""
+        widget: "datetime"        
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
-        i18n: duplicate
         required: false
       - label: "Body"
         name: "body"
         widget: "markdown"
-        i18n: true
-      - label: "Categories"
-        name: "categories"
+      - label: "Topics"
+        name: "topics"
         widget: "relation"
         collection: "segmentation-data"
-        file: "post-categories"
+        file: "post-topics"
         multiple: true
-        i18n: duplicate
-        search_fields: ["categories-list.*.label"]
-        display_fields: ["categories-list.*.label"]
-        value_field: "categories-list.*.slug"
+        search_fields: ["topics-list.*.label"]
+        display_fields: ["topics-list.*.label"]
+        value_field: "topics-list.*.slug"
 
-  - name: "categories"
-    label: "Post Category"
-    folder: "src/data/categories"
+  - name: "pt-posts"
+    label: "Posts (pt)"
+    label_singular: "Post (en)"
     create: true
-    slug: "{{slug}}"
-    identifier_field: label
-    format: json
+    folder: "src/pages/pt/posts"
     fields:
-      - label: "Label"
-        name: "label"
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
+      - label: "Title"
+        name: "title"
         widget: "string"
-      - label: "Color"
-        name: "color"
-        widget: "color"
-        allowInput: true
-      - label: "Image"
-        name: "image"
+      - label: "Publish Date"
+        name: "created_date"
+        widget: "datetime"
+      - label: "Updated Date"
+        name: "updated_date"
+        default: ""
+        widget: "datetime"
+      - label: "Featured Image"
+        name: "thumbnail"
         widget: "image"
-        allow_multiple: false
-        choose_url: false        
-      - label: "City"
-        name: "city"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+      - label: "Topics"
+        name: "topics"
         widget: "relation"
         collection: "segmentation-data"
-        file: "post-categories"
-        search_fields: ["categories-list.*.label"]
-        display_fields: ["categories-list.*.label"]
-        value_field: "categories-list.*.label"
+        file: "post-topics"
+        multiple: true
+        search_fields: ["topics-list.*.label"]
+        display_fields: ["topics-list.*.label"]
+        value_field: "topics-list.*.slug"
