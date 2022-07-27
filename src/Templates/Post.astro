@@ -1,1 +1,17 @@
-<p>post layout</p>
+---
+interface IPostData {
+    title: string;
+    created_date: string;
+    updated_date: string;
+    thumbnail: string;
+    body: string;
+    topics: string[];
+}
+
+const content: IPostData = Astro.props.content
+const hehe = JSON.stringify(content)
+---
+
+<p>{hehe}</p>
+<slot />
+<p>batata</p>
