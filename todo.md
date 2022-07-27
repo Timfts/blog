@@ -1,9 +1,7 @@
-### shell
-* adaptar para desktop
-* transição do shell para tela
-* navbar hide
-* testar cores
-* parafusos
-* botões
+* definir path das publicações
+* descobrir como listar todos os posts de uma categoria
+* mais de uma categoria por post?
 
-### tela
+## estrutura das urls
+
+

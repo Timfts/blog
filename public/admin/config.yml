@@ -15,8 +15,8 @@ collections:
   - name: "segmentation-data"
     label: "Segmentation Data"
     files:
-      - name: "post-categories"
-        label: "Post Categories"
+      - name: "post-topics"
+        label: "Post Topics"
         format: "json"
         extension: "json"
         file: "src/data/post-categories.json"
@@ -88,7 +88,7 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
-  
+
   - name: "posts"
     label: "Posts"
     i18n: true
@@ -131,15 +131,18 @@ collections:
     identifier_field: label
     format: json
     fields:
-      - { label: "Label", name: "label", widget: "string" }
-      - { label: "Color", name: "color", widget: "color", allowInput: true }
-      - {
-          label: "Image",
-          name: "image",
-          widget: "image",
-          allow_multiple: false,
-          choose_url: false,
-        }
+      - label: "Label"
+        name: "label"
+        widget: "string"
+      - label: "Color"
+        name: "color"
+        widget: "color"
+        allowInput: true
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        allow_multiple: false
+        choose_url: false        
       - label: "City"
         name: "city"
         widget: "relation"
