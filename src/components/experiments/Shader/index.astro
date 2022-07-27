@@ -1,0 +1,27 @@
+---
+import fs from "node:fs/promises"
+
+const shaderDataFile = await fs.readFile("src/components/experiments/Shader/tv-shader.glsl", "utf-8")
+const shaderData = shaderDataFile.toString()
+---
+
+<canvas id="canvas"></canvas>
+<shader-doodle shadertoy>
+    <sd-texture src="#canvas" name="u_texture0"></sd-texture>
+    <script is:inline set:html={shaderData} type="x-shader/x-fragment"></script>
+</shader-doodle>
+
+<script>
+    import "./script.ts"
+</script>
+
+<style>
+    shader-doodle {
+        width: 500px;
+        height: 500px;
+    }
+
+    #canvas {
+        display: none;
+    }
+</style>
