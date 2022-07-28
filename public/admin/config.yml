@@ -52,8 +52,8 @@ collections:
             label: "Learnings list"
             widget: "list"
             fields:
-              - label: "slug"
-                name: "Slug"
+              - label: "Slug"
+                name: "slug"
                 pattern:
                   [
                     "^[a-z0-9]+(?:-[a-z0-9]+)*$",
@@ -84,7 +84,6 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
-
   - name: "en-posts"
     label: "Posts (en)"
     label_singular: "Post (en)"
@@ -114,6 +113,7 @@ collections:
         name: "updated_date"
         default: ""
         widget: "datetime"
+        required: false
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
@@ -135,10 +135,9 @@ collections:
         search_fields: ["topics-list.*.label"]
         display_fields: ["topics-list.*.label"]
         value_field: "topics-list.*.slug"
-
   - name: "pt-posts"
     label: "Posts (pt)"
-    label_singular: "Post (en)"
+    label_singular: "Post (pt)"
     create: true
     folder: "src/pages/pt/post"
     fields:
@@ -164,6 +163,7 @@ collections:
         name: "updated_date"
         default: ""
         widget: "datetime"
+        required: false
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
@@ -185,3 +185,103 @@ collections:
         search_fields: ["topics-list.*.label"]
         display_fields: ["topics-list.*.label"]
         value_field: "topics-list.*.slug"
+  - name: "pt-projects"
+    label: "Projects (pt)"
+    label_singular: "Project (pt)"
+    create: true
+    folder: "src/pages/pt/project"
+    fields:
+      - label: "lang"
+        name: "lang"
+        widget: "hidden"
+        default: "pt"
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "External link"
+        name: "external-link"
+        required: false
+        widget: "string"
+      - label: "Publish Date"
+        name: "created_date"
+        widget: "datetime"
+      - label: "Updated Date"
+        name: "updated_date"
+        default: ""
+        required: false
+        widget: "datetime"
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+      - label: "Learnings"
+        name: "learnings"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "learnings"
+        multiple: true
+        search_fields: ["learnings-list.*.label"]
+        display_fields: ["learnings-list.*.label"]
+        value_field: "learnings-list.*.slug"
+  - name: "en-projects"
+    label: "Projects (en)"
+    label_singular: "Project (en)"
+    create: true
+    folder: "src/pages/project"
+    fields:
+      - label: "lang"
+        name: "lang"
+        widget: "hidden"
+        default: "pt"
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "External link"
+        name: "external-link"
+        required: false
+        widget: "string"
+      - label: "Publish Date"
+        name: "created_date"
+        widget: "datetime"
+      - label: "Updated Date"
+        name: "updated_date"
+        required: false
+        default: ""
+        widget: "datetime"
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+      - label: "Learnings"
+        name: "learnings"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "learnings"
+        multiple: true
+        search_fields: ["learnings-list.*.label"]
+        display_fields: ["learnings-list.*.label"]
+        value_field: "learnings-list.*.slug"
