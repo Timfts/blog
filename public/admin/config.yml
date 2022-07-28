@@ -103,6 +103,10 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "External link"
+        name: "external-link"
+        required: false
+        widget: "string"
       - label: "Publish Date"
         name: "created_date"
         widget: "datetime"
@@ -148,6 +152,10 @@ collections:
         default: "@templates/Post.astro"
       - label: "Title"
         name: "title"
+        widget: "string"
+      - label: "External link"
+        name: "external-link"
+        required: false
         widget: "string"
       - label: "Publish Date"
         name: "created_date"
