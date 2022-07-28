@@ -18,7 +18,7 @@
       "@assets/*": ["src/assets/*"],
       "@data/*": ["src/data/*"],
       "@components/*": ["src/components/*"],
-      "@templates/*": ["src/templates/*"],
+      "@templates/*": ["src/components/templates/*"],
       "@logic/*": ["src/logic/*"],
       "@scss/*": ["src/scss/*"]
     }
