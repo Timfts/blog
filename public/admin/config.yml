@@ -109,14 +109,19 @@ collections:
       - label: "Updated Date"
         name: "updated_date"
         default: ""
-        widget: "datetime"        
+        widget: "datetime"
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
         required: false
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
       - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false
       - label: "Topics"
         name: "topics"
         widget: "relation"
@@ -155,9 +160,14 @@ collections:
         name: "thumbnail"
         widget: "image"
         required: false
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
       - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false
       - label: "Topics"
         name: "topics"
         widget: "relation"
