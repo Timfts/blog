@@ -89,7 +89,7 @@ collections:
         format: "json"
         extension: "json"
         file: "src/data/main-post-topics.json"
-        fields: 
+        fields:
           - name: "main-post-topics-list"
             label: "Main post topics list"
             widget: "relation"
@@ -261,7 +261,7 @@ collections:
       - label: "lang"
         name: "lang"
         widget: "hidden"
-        default: "pt"
+        default: "en"
       - label: "layout"
         name: "layout"
         widget: "hidden"
@@ -302,3 +302,87 @@ collections:
         search_fields: ["learnings-list.*.label"]
         display_fields: ["learnings-list.*.label"]
         value_field: "learnings-list.*.slug"
+  - name: "en-snippets"
+    label: "Snippets (en)"
+    create: true
+    label_singular: "Snippet (en)"
+    folder: "src/pages/snippets"
+    fields:
+      - label: "lang"
+        name: "lang"
+        widget: "hidden"
+        default: "en"
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "created_date"
+        widget: "datetime"
+      - label: "Updated Date"
+        name: "updated_date"
+        required: false
+        default: ""
+        widget: "datetime"
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+      - label: "Snippet type"
+        name: "snippet-type"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "snippets-types"
+        multiple: false
+        search_fields: ["snippets-types-list.*.label"]
+        display_fields: ["snippets-types-list.*.label"]
+        value_field: "snippets-types-list.*.slug"
+  - name: "pt-snippets"
+    label: "Snippets (pt)"
+    create: true
+    label_singular: "Snippet (en)"
+    folder: "src/pages/pt/snippets"
+    fields:
+      - label: "lang"
+        name: "lang"
+        widget: "hidden"
+        default: "pt"
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "created_date"
+        widget: "datetime"
+      - label: "Updated Date"
+        name: "updated_date"
+        required: false
+        default: ""
+        widget: "datetime"
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+      - label: "Snippet type"
+        name: "snippet-type"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "snippets-types"
+        multiple: false
+        search_fields: ["snippets-types-list.*.label"]
+        display_fields: ["snippets-types-list.*.label"]
+        value_field: "snippets-types-list.*.slug"
