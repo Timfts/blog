@@ -1,0 +1,12 @@
+---
+import Publication from "./Publication.astro"
+
+const content = Astro.props.content as ISnippet
+const { title, lang, created_date, updated_date } = content
+const type = content["snippet-type"]
+---
+
+<Publication title={title} lang={lang} markers={type} createdDate={created_date}
+    updatedDate={updated_date}>
+    <slot />
+</Publication>

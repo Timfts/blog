@@ -19,7 +19,7 @@ interface IPost extends IPublication {
 }
 
 interface ISnippet extends IPublication {
-  "snippet-type": string
+  "snippet-type": string[]
 }
 
 

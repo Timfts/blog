@@ -1,17 +1,10 @@
 ---
-interface IPostData {
-    title: string;
-    created_date: string;
-    updated_date: string;
-    thumbnail: string;
-    topics: string[];
-    lang: "pt" | "en"
-}
+import Publication from "./Publication.astro"
 
-const content: IPostData = Astro.props.content
-const hehe = JSON.stringify(content)
+const { title, thumbnail, lang, topics, created_date, updated_date } = Astro.props.content as IPost
 ---
 
-<p>{hehe}</p>
-<slot />
-<p>batata</p>
+<Publication title={title} thumbnail={thumbnail} lang={lang} markers={topics} createdDate={created_date}
+    updatedDate={updated_date}>
+    <slot />
+</Publication>

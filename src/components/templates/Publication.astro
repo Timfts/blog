@@ -1,0 +1,17 @@
+---
+export interface Props {
+    title: string
+    createdDate: string
+    updatedDate?: string
+    thumbnail?: string
+    markers: string[]
+    lang: Lang
+}
+
+const { } = Astro.props as Props
+
+---
+
+<p>publication top</p>
+<slot />
+<p>publication bottom</p>

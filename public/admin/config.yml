@@ -215,7 +215,7 @@ collections:
       - label: "layout"
         name: "layout"
         widget: "hidden"
-        default: "@templates/Post.astro"
+        default: "@templates/Project.astro"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -261,7 +261,7 @@ collections:
       - label: "layout"
         name: "layout"
         widget: "hidden"
-        default: "@templates/Post.astro"
+        default: "@templates/Project.astro"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -298,7 +298,7 @@ collections:
     label: "Snippets (en)"
     create: true
     label_singular: "Snippet (en)"
-    folder: "src/pages/snippets"
+    folder: "src/pages/snippet"
     fields:
       - label: "lang"
         name: "lang"
@@ -307,7 +307,7 @@ collections:
       - label: "layout"
         name: "layout"
         widget: "hidden"
-        default: "@templates/Post.astro"
+        default: "@templates/Snippet.astro"
       - label: "Title"
         name: "title"
         widget: "string"
@@ -340,7 +340,7 @@ collections:
     label: "Snippets (pt)"
     create: true
     label_singular: "Snippet (en)"
-    folder: "src/pages/pt/snippets"
+    folder: "src/pages/pt/snippet"
     fields:
       - label: "lang"
         name: "lang"
@@ -349,7 +349,7 @@ collections:
       - label: "layout"
         name: "layout"
         widget: "hidden"
-        default: "@templates/Post.astro"
+        default: "@templates/Snippet.astro"
       - label: "Title"
         name: "title"
         widget: "string"

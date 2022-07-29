@@ -1,9 +1,7 @@
 
-* topics page
-* summary post
-* descobrir como listar todos os posts de uma categoria
-* definir collection das paginas
-* external link post
+* compartilhar o template de post para os tres tipos de publicações
+* criar todas as paginas de topicos + posts page
+
 
 ## estrutura das urls
 
