@@ -84,6 +84,23 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
+      - name: "main-post-topics"
+        label: "Main post topics"
+        format: "json"
+        extension: "json"
+        file: "src/data/main-post-topics.json"
+        fields: 
+          - name: "main-post-topics-list"
+            label: "Main post topics list"
+            widget: "relation"
+            collection: "segmentation-data"
+            file: "post-topics"
+            multiple: true
+            min: 0
+            max: 5
+            search_fields: ["topics-list.*.label"]
+            display_fields: ["topics-list.*.label"]
+            value_field: "topics-list.*.slug"
   - name: "en-posts"
     label: "Posts (en)"
     label_singular: "Post (en)"
