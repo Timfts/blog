@@ -1,8 +1,12 @@
 {
   "snippets-types-list": [
     {
-      "Slug": "asdsf",
+      "slug": "asdsf",
       "label": "asdsf"
+    },
+    {
+      "slug": "adsssf",
+      "label": "asdsf f"
     }
   ]
 }
