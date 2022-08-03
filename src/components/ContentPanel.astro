@@ -1,0 +1,33 @@
+---
+export interface Props {
+    main?: boolean;
+    background?: "dark" | "light"
+    columns?: number
+    title?: string
+}
+
+const { columns = 6, main = false, background = "dark" } = Astro.props as Props
+const componentClass = `content-panel ${background} ${main ? "main" : ""}`
+
+---
+
+<div class={componentClass} style={`grid-column: span ${columns};`}>
+    <div class="content">
+        <slot />
+    </div>
+</div>
+
+<style lang="scss">
+    .content-panel {
+        background-color: #BDBDBD;
+        padding: 10px;
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .dark .content {
+        background-color: #000039;
+    }
+</style>
