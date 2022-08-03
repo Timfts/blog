@@ -8,7 +8,6 @@ export interface Props {
 }
 
 const { title = "Tim Fontes" } = Astro.props as Props
-
 ---
 
 <Document title={title}>
@@ -40,13 +39,14 @@ const { title = "Tim Fontes" } = Astro.props as Props
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 10px;
+
     }
 
     .shell-container {
         background-color: #010149;
         width: 100vw;
         height: 100vh;
-
+        /* filter: blur(0.05em) hue-rotate(0); */
     }
 
     .app-container {
