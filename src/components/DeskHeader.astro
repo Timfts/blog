@@ -1,12 +1,11 @@
+---
+import IntegrityGraph from "./IntegrityGraph.astro";
+
+---
+
 <header>
-    <div class="char">
-        <div class="char-head">
-            <div class="char-name">
-                <p>Tim f.</p>
-            </div>
-            <div class="char-image"></div>
-        </div>
-        <div class="char-life">life</div>
+    <div class="integrity-slot">
+        <IntegrityGraph />
     </div>
     <div class="equip"></div>
     <div class="actions-block">
@@ -29,29 +28,12 @@
         grid-template-columns: repeat(12, 1fr);
         grid-auto-flow: row;
         z-index: 1;
+        height: 150px;
     }
 
-    .char {
+    .integrity-slot {
         grid-column: span 4;
         display: flex;
-    }
-
-    .char-head {
-        background-color: #BDBDBD;
-        height: 150px;
-        width: 141px;
-        padding: 7px;
-    }
-
-    .char-image {
-        background-color: red;
-        width: 100%;
-    }
-
-    .char-life {
-        margin-bottom: $bottom-margin;
-        flex: 1;
-        background-color: #BDBDBD;
     }
 
     .equip {
