@@ -9,7 +9,7 @@
         <div class="char-life">life</div>
     </div>
     <div class="equip"></div>
-    <div class="right-block">
+    <div class="actions-block">
         <nav class="main-menu"></nav>
         <div class="bottom-options">
             <div class="search"></div>
@@ -21,6 +21,8 @@
 
 
 <style lang="scss">
+    $bottom-margin: 33px;
+
     header {
         display: grid;
         grid-gap: 10px;
@@ -30,16 +32,13 @@
     }
 
     .char {
-        background-color: #828282;
         grid-column: span 4;
         display: flex;
-        overflow: visible;
-
     }
 
     .char-head {
         background-color: #BDBDBD;
-        height: 119px;
+        height: 150px;
         width: 141px;
         padding: 7px;
     }
@@ -47,21 +46,28 @@
     .char-image {
         background-color: red;
         width: 100%;
-        height: 150px;
+    }
+
+    .char-life {
+        margin-bottom: $bottom-margin;
+        flex: 1;
+        background-color: #BDBDBD;
     }
 
     .equip {
         grid-column: span 2;
         background-color: #BDBDBD;
+        margin-bottom: $bottom-margin;
     }
 
-    .right-block {
+    .actions-block {
         grid-column: span 6;
+        margin-bottom: $bottom-margin;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 10px;
         grid-auto-flow: column;
-        grid-template-rows: 37px auto;
+        grid-template-rows: 40px auto;
     }
 
     .main-menu {

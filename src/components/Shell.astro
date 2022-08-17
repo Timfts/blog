@@ -14,14 +14,14 @@ const { title = "Tim Fontes" } = Astro.props as Props
     <main class="shell-container" data-fragment="app-shell">
         <div class="app-container">
             <DeskHeader />
-            <div class="body">
+           <!--  <div class="body">
                 <ContentPanel columns={7}>
                     <p>something</p>
                 </ContentPanel>
                 <ContentPanel columns={5}>
                     <p>else</p>
                 </ContentPanel>
-            </div>
+            </div> -->
             <!-- <slot /> -->
         </div>
     </main>
@@ -46,7 +46,7 @@ const { title = "Tim Fontes" } = Astro.props as Props
         background-color: #010149;
         width: 100vw;
         height: 100vh;
-        filter: blur(0.05em) hue-rotate(0);
+        /* filter: blur(0.05em) hue-rotate(0); */
     }
 
     .app-container {
