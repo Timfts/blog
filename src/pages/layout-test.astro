@@ -1,0 +1,98 @@
+---
+import Document from "@components/Document.astro";
+
+/**
+ * Objectives
+ * at default page should use 100vh
+ * but can be extended if necessary
+ */
+---
+
+<Document>
+  <div class="container">
+    <div class="content">
+      <header class="header">
+        <div class="oversized-picture">over</div>
+      </header>
+      <article class="body">
+        <div class="first-panel">
+            <div class="panel-mock">mock</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</Document>
+
+<style lang="scss">
+  // seta um width maximo, tem o tamanho minimo de 100vh
+  .container {
+    background-color: blue;
+    width: 100%;
+    /* min-height: 100vh; */
+    height:100vh;
+    overflow: auto;// essa regra pode ser feita no body, invés de aqui no container
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  // preenche todo o container verticalmente
+  .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: bisque;
+    height: 100%;
+  }
+
+  // header tem tamanho fixo
+  .header {
+    background-color: orangered;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+
+  // imagem passa por cima do body
+  .oversized-picture {
+    background-color: red;
+    width: 100px;
+    height: 150px;
+  }
+
+  .body {
+    background-color: aqua;
+    flex: 1;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    grid-auto-rows: 1fr;
+  }
+
+  .first-panel {
+    background-color: yellow;
+    grid-column: span 6;
+    overflow: hidden;
+  }
+
+  // to deceive if page is gonna scroll or not, only depends on the size of the panel
+  .panel-mock {
+    background-color:gray;
+    height:200vh;
+    /* height:100%; */
+  }
+
+  // o body deve preencher o resto de espaço vazio do content,
+  //porém, dependendo do conteúdo, deve fazer o documento scrollar
+</style>
+
+<style lang="scss" is:global>
+  body {
+    background-color: blueviolet;
+  }
+</style>
