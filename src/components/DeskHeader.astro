@@ -3,71 +3,68 @@ import IntegrityGraph from "./IntegrityGraph.astro";
 ---
 
 <header>
-    <div class="integrity-slot">
-        <IntegrityGraph />
+  <div class="integrity-slot">
+    <!-- <IntegrityGraph /> -->
+  </div>
+  <div class="equip"></div>
+  <div class="actions-block">
+    <nav class="main-menu"></nav>
+    <div class="bottom-options">
+      <div class="search"></div>
+      <div class="actions"></div>
     </div>
-    <div class="equip"></div>
-    <div class="actions-block">
-        <nav class="main-menu"></nav>
-        <div class="bottom-options">
-            <div class="search"></div>
-            <div class="actions"></div>
-        </div>
-    </div>
+  </div>
 </header>
 
 <style lang="scss">
-    $bottom-margin: 33px;
+  header {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: row;
+    z-index: 1;
+    height: 100%;
+  }
 
-    header {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(12, 1fr);
-        grid-auto-flow: row;
-        z-index: 1;
-        height: 100%;
-    }
+  .integrity-slot {
+    grid-column: span 4;
+    display: flex;
+    background-color: red;
+  }
 
-    .integrity-slot {
-        grid-column: span 4;
-        display: flex;
-    }
+  .equip {
+    grid-column: span 2;
+    background-color: #bdbdbd;
+  }
 
-    .equip {
-        grid-column: span 2;
-        background-color: #bdbdbd;
-        margin-bottom: $bottom-margin;
-    }
+  .actions-block {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-rows: 40px auto;
+  }
 
-    .actions-block {
-        grid-column: span 6;
-        margin-bottom: $bottom-margin;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-gap: 10px;
-        grid-auto-flow: column;
-        grid-template-rows: 40px auto;
-    }
+  .main-menu {
+    grid-column: span 6;
+    background-color: #bdbdbd;
+  }
 
-    .main-menu {
-        grid-column: span 6;
-        background-color: #bdbdbd;
-    }
+  .bottom-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-column: span 6;
+  }
 
-    .bottom-options {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        grid-column: span 6;
-    }
+  .search {
+    grid-column: span 1;
+    background-color: #bdbdbd;
+  }
 
-    .search {
-        grid-column: span 1;
-        background-color: #bdbdbd;
-    }
-
-    .actions {
-        grid-column: span 1;
-        background: #bdbdbd;
-    }
+  .actions {
+    grid-column: span 1;
+    background: #bdbdbd;
+  }
 </style>

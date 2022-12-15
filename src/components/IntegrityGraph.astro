@@ -1,90 +1,86 @@
 <div class="integrity-graph">
-    <div class="char global-metal-background">
-        <div class="char-title">
-            <h1>Tim F.</h1>
-        </div>
-        <div class="char-image"></div>
+  <div class="char global-metal-background">
+    <div class="char-title">
+      <h1>Tim F.</h1>
     </div>
-    <div class="meter global-metal-background">
-        <div class="blank"></div>
-        <div class="meter-title global-metal-background">
-            <h3>Curiosity</h3>
-        </div>
+    <div class="char-image"></div>
+  </div>
+  <div class="meter global-metal-background">
+    <div class="blank"></div>
+    <div class="meter-title global-metal-background">
+      <h3>Curiosity</h3>
     </div>
+  </div>
 </div>
 
-
 <style lang="scss">
-    .integrity-graph {
-        display: flex;
-        width: 100%;
-        height: 100%;
+  .integrity-graph {
+    display: flex;
+  }
+
+  .char {
+    background-color: #3f4242;
+    height: 120px;
+    padding: 10px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .char-title {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+    h1 {
+      font-family: "Pixel Operator Mono";
+      font-size: 28px;
+      font-weight: 700;
+      color: #b2b895;
+      line-height: 1;
+      padding: 0;
     }
+  }
 
-    .char {
-        background-color: #3F4242;
-        flex: 0 0 120px;
-        padding: 10px;
-        margin-right: 30px;
-        display: flex;
-        flex-direction: column;
+  .char-image {
+    flex: 1;
+    background-color: #000829;
+  }
+
+  .meter {
+    flex: 1;
+    background-color: #bdbdbd;
+    margin-bottom: 33px;
+    background-size: 200% auto;
+    padding: 10px 15px 7px 15px;
+    position: relative;
+  }
+
+  .meter-title {
+    background-size: 200% auto;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 33px;
+    width: 60%;
+    padding-left: 17px;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-family: "PS2P";
+      font-size: 14px;
+      color: #44444b;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px #017b01, 2px 2px 1px #acd5ac;
     }
+  }
 
-    .char-title {
-        background-color: black;
-        text-align: center;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-
-        h1 {
-            font-family: "Pixel Operator Mono";
-            font-size: 28px;
-            font-weight: 700;
-            color: #b2b895;
-            line-height: 1;
-            padding: 0;
-        }
-    }
-
-    .char-image {
-        flex: 1;
-        background-color: #000829;
-    }
-
-    .meter {
-        flex: 1;
-        background-color: #BDBDBD;
-        margin-bottom: 33px;
-        background-size: 200% auto;
-        padding: 10px 15px 7px 15px;
-        position: relative;
-    }
-
-    .meter-title {
-        background-size: 200% auto;
-        position: absolute;
-        left: 0;
-        top: 100%;
-        height: 33px;
-        width: 60%;
-        padding-left: 17px;
-        display: flex;
-        align-items: center;
-
-
-        h3 {
-            font-family: "PS2P";
-            font-size: 14px;
-            color: #44444b;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 1px #017B01, 2px 2px 1px #acd5ac;
-        }
-    }
-
-    .blank {
-        width: 100%;
-        height: 100%;
-        background-color: #090000;
-        border: 3px solid #017B01;
-    }
+  .blank {
+    width: 100%;
+    height: 100%;
+    background-color: #090000;
+    border: 3px solid #017b01;
+  }
 </style>
