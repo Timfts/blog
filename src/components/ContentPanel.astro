@@ -29,10 +29,22 @@ const dynamicStyle = `grid-column: span ${columns};`;
     background-size: 100% auto;
     padding: 10px;
     overflow: hidden;
+    position: relative;
   }
 
   .content-panel.main {
     padding-top: 40px;
+
+    &:after {
+      content: "";
+      background-color: #010149;
+      width: 48%;
+      height: 30px;
+      display: block;
+      top: 0;
+      left: 0;
+      position:absolute;
+    }
   }
 
   .content {
