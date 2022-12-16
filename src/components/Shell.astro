@@ -17,10 +17,10 @@ const { title = "Tim Fontes" } = Astro.props as Props;
         <DeskHeader />
       </div>
       <div class="body-slot">
-        <ContentPanel columns={8}>
+        <ContentPanel main columns={7}>
           <div id="hehe">batata</div>
         </ContentPanel>
-        <ContentPanel columns={4} />
+        <ContentPanel columns={5} />
       </div>
       <!-- <slot /> -->
     </div>
@@ -58,7 +58,7 @@ const { title = "Tim Fontes" } = Astro.props as Props;
     flex-shrink: 0;
     flex-grow: 0;
     z-index: 2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
   }
   .body-slot {

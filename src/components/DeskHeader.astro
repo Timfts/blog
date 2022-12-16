@@ -4,7 +4,9 @@ import IntegrityGraph from "./IntegrityGraph.astro";
 
 <header>
   <div class="integrity-slot">
-    <!-- <IntegrityGraph /> -->
+    <div class="integrity-overflow">
+      <IntegrityGraph />
+    </div>
   </div>
   <div class="equip"></div>
   <div class="actions-block">
@@ -30,6 +32,15 @@ import IntegrityGraph from "./IntegrityGraph.astro";
     grid-column: span 4;
     display: flex;
     background-color: red;
+    position:relative;
+  }
+
+  .integrity-overflow {
+    height: 135px;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
   }
 
   .equip {
