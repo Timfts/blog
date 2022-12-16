@@ -1,36 +1,61 @@
 ---
+import classNames from "classnames";
 export interface Props {
-    main?: boolean;
-    background?: "dark" | "light";
-    columns?: number;
-    title?: string;
+  main?: boolean;
+  background?: "dark" | "light";
+  columns?: number;
+  title?: string;
 }
 
 const { columns = 6, main = false, background = "dark" } = Astro.props as Props;
-const componentClass = `content-panel ${background} ${main ? "main" : ""} global-metal-background`;
+
+const componentClass = classNames("content-panel", {
+  main: !!main,
+  "global-metal-background": true,
+  [background]: !!background,
+});
+
+const dynamicStyle = `grid-column: span ${columns};`;
 ---
 
-<div class={componentClass} style={`grid-column: span ${columns};`}>
-    <div class="content">
-        <slot />
-    </div>
+<div class={componentClass} style={dynamicStyle}>
+  <div class="content">
+    <slot />
+  </div>
 </div>
 
 <style lang="scss">
-    .content-panel {
-        background-size: 100% auto;
-        padding: 10px;
-        overflow: hidden;
-    }
+  .content-panel {
+    background-size: 100% auto;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+  }
 
-    .content {
-        overflow: scroll;
-        height: 100%;
-        padding: 10px;
-        font-size:20px;
-    }
+  .content-panel.main {
+    padding-top: 40px;
 
-    .dark .content {
-        background-color: #000039;
+    &:after {
+      content: "";
+      background-color: #010149;
+      width: 47%;
+      height: 30px;
+      display: block;
+      top: 0;
+      left: 0;
+      position:absolute;
+      clip-path: polygon(0 1%, 100% 0%, 86% 100%, 0% 100%);
     }
+  }
+
+  .content {
+    overflow: scroll;
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .dark .content {
+    background-color: #000039;
+  }
 </style>

@@ -3,193 +3,71 @@ import Document from "./Document.astro";
 import DeskHeader from "./DeskHeader.astro";
 import ContentPanel from "./ContentPanel.astro";
 export interface Props {
-    title?: string;
-    lang?: "pt-BR" | "en";
+  title?: string;
+  lang?: "pt-BR" | "en";
 }
 
 const { title = "Tim Fontes" } = Astro.props as Props;
 ---
 
 <Document title={title}>
-    <main class="shell-container" data-fragment="app-shell">
-        <div class="app-container">
-            <div class="header-slot">
-                <DeskHeader />
-            </div>
-            <div class="body-slot">
-                <ContentPanel columns={8}>
-                    <div class="batata">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse suscipit sapien at ipsum cursus
-                            sollicitudin. Mauris accumsan congue odio, eu
-                            pulvinar lacus porta eu. Morbi scelerisque massa
-                            elit, eget bibendum turpis mattis vel. Etiam vel
-                            urna porttitor, sodales lectus quis, congue est.
-                            Fusce posuere tincidunt nibh, eu tristique ex
-                            malesuada in. Sed odio erat, cursus et tincidunt
-                            vitae, porta tincidunt felis. Nulla auctor sapien
-                            sed mi laoreet, ac finibus mauris viverra. Ut nec
-                            metus et felis vestibulum porttitor. Sed sit amet
-                            placerat ipsum. Morbi ut leo vel mauris finibus
-                            aliquam. Quisque laoreet urna vel ultricies
-                            accumsan. Nam molestie suscipit fermentum. Praesent
-                            ullamcorper vel risus ut lacinia. Fusce volutpat est
-                            sed nisi viverra tempor. Mauris vitae felis sed
-                            lectus placerat vehicula at eget metus. Cras elit
-                            tortor, imperdiet vel dolor ut, pretium pharetra
-                            diam. Nunc malesuada mi ut lobortis ornare. Aenean
-                            efficitur eu magna nec porttitor. Proin sed ante
-                            venenatis, luctus nisl ac, posuere metus.
-                            Suspendisse vestibulum et purus non facilisis. Donec
-                            justo felis, vulputate ac tempor eu, lobortis et
-                            purus. Suspendisse semper nulla ligula, sit amet
-                            porttitor velit rhoncus ac. Mauris sollicitudin,
-                            velit vel molestie rhoncus, justo dolor suscipit
-                            turpis, a ultrices ipsum purus vel sem. Aliquam erat
-                            volutpat. Sed sed arcu varius, iaculis augue
-                            pretium, ultrices mi. Duis elementum elementum
-                            efficitur. Maecenas congue, dolor eget viverra
-                            fermentum, velit diam tempus leo, nec egestas augue
-                            orci sed ipsum. Praesent eleifend elit eu ex
-                            eleifend accumsan. Pellentesque sapien nisi,
-                            vestibulum eu urna eu, lobortis tempus orci. Donec
-                            leo enim, placerat ac malesuada at, porta vel
-                            lectus. Suspendisse porttitor, metus sit amet
-                            accumsan dignissim, lorem mi consequat velit, ut
-                            semper leo eros faucibus eros. Sed congue elementum
-                            accumsan. Orci varius natoque penatibus et magnis
-                            dis parturient montes, nascetur ridiculus mus. Donec
-                            pharetra mi eros, sed efficitur quam laoreet sit
-                            amet. Aenean dolor sem, vestibulum nec massa ut,
-                            pulvinar sagittis urna. Vestibulum rhoncus sagittis
-                            commodo. Praesent eu felis magna. Vivamus eleifend
-                            urna sit amet felis euismod, vel feugiat velit
-                            tincidunt. Suspendisse facilisis scelerisque
-                            feugiat. Suspendisse id elementum massa. Nullam
-                            facilisis sed arcu nec pulvinar. Vestibulum aliquam
-                            dapibus magna. Sed in urna vehicula, dapibus felis
-                            id, malesuada quam. Duis sed turpis accumsan, auctor
-                            odio sed, convallis dolor. Integer risus eros,
-                            malesuada pulvinar velit eu, ultricies consequat
-                            lectus. Etiam sit amet dapibus augue. Ut sit amet
-                            ornare nulla, sit amet porta tellus. Duis vitae
-                            purus sit amet nulla viverra ultricies. Quisque
-                            placerat pulvinar leo eu facilisis. Aliquam suscipit
-                            mauris nec nulla tempus auctor. Cras aliquet leo nec
-                            molestie suscipit. Aliquam tincidunt odio quis diam
-                            tincidunt volutpat. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse suscipit sapien at ipsum cursus
-                            sollicitudin. Mauris accumsan congue odio, eu
-                            pulvinar lacus porta eu. Morbi scelerisque massa
-                            elit, eget bibendum turpis mattis vel. Etiam vel
-                            urna porttitor, sodales lectus quis, congue est.
-                            Fusce posuere tincidunt nibh, eu tristique ex
-                            malesuada in. Sed odio erat, cursus et tincidunt
-                            vitae, porta tincidunt felis. Nulla auctor sapien
-                            sed mi laoreet, ac finibus mauris viverra. Ut nec
-                            metus et felis vestibulum porttitor. Sed sit amet
-                            placerat ipsum. Morbi ut leo vel mauris finibus
-                            aliquam. Quisque laoreet urna vel ultricies
-                            accumsan. Nam molestie suscipit fermentum. Praesent
-                            ullamcorper vel risus ut lacinia. Fusce volutpat est
-                            sed nisi viverra tempor. Mauris vitae felis sed
-                            lectus placerat vehicula at eget metus. Cras elit
-                            tortor, imperdiet vel dolor ut, pretium pharetra
-                            diam. Nunc malesuada mi ut lobortis ornare. Aenean
-                            efficitur eu magna nec porttitor. Proin sed ante
-                            venenatis, luctus nisl ac, posuere metus.
-                            Suspendisse vestibulum et purus non facilisis. Donec
-                            justo felis, vulputate ac tempor eu, lobortis et
-                            purus. Suspendisse semper nulla ligula, sit amet
-                            porttitor velit rhoncus ac. Mauris sollicitudin,
-                            velit vel molestie rhoncus, justo dolor suscipit
-                            turpis, a ultrices ipsum purus vel sem. Aliquam erat
-                            volutpat. Sed sed arcu varius, iaculis augue
-                            pretium, ultrices mi. Duis elementum elementum
-                            efficitur. Maecenas congue, dolor eget viverra
-                            fermentum, velit diam tempus leo, nec egestas augue
-                            orci sed ipsum. Praesent eleifend elit eu ex
-                            eleifend accumsan. Pellentesque sapien nisi,
-                            vestibulum eu urna eu, lobortis tempus orci. Donec
-                            leo enim, placerat ac malesuada at, porta vel
-                            lectus. Suspendisse porttitor, metus sit amet
-                            accumsan dignissim, lorem mi consequat velit, ut
-                            semper leo eros faucibus eros. Sed congue elementum
-                            accumsan. Orci varius natoque penatibus et magnis
-                            dis parturient montes, nascetur ridiculus mus. Donec
-                            pharetra mi eros, sed efficitur quam laoreet sit
-                            amet. Aenean dolor sem, vestibulum nec massa ut,
-                            pulvinar sagittis urna. Vestibulum rhoncus sagittis
-                            commodo. Praesent eu felis magna. Vivamus eleifend
-                            urna sit amet felis euismod, vel feugiat velit
-                            tincidunt. Suspendisse facilisis scelerisque
-                            feugiat. Suspendisse id elementum massa. Nullam
-                            facilisis sed arcu nec pulvinar. Vestibulum aliquam
-                            dapibus magna. Sed in urna vehicula, dapibus felis
-                            id, malesuada quam. Duis sed turpis accumsan, auctor
-                            odio sed, convallis dolor. Integer risus eros,
-                            malesuada pulvinar velit eu, ultricies consequat
-                            lectus. Etiam sit amet dapibus augue. Ut sit amet
-                            ornare nulla, sit amet porta tellus. Duis vitae
-                            purus sit amet nulla viverra ultricies. Quisque
-                            placerat pulvinar leo eu facilisis. Aliquam suscipit
-                            mauris nec nulla tempus auctor. Cras aliquet leo nec
-                            molestie suscipit. Aliquam tincidunt odio quis diam
-                            tincidunt volutpat. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.
-                        </p>
-                    </div>
-                </ContentPanel>
-                <ContentPanel columns={4}>
-                    <p>else</p>
-                </ContentPanel>
-            </div>
-            <!-- <slot /> -->
-        </div>
-    </main>
+  <main class="shell-container" data-fragment="app-shell">
+    <div class="app-container">
+      <div class="header-slot">
+        <DeskHeader />
+      </div>
+      <div class="body-slot">
+        <ContentPanel main columns={7}>
+          <div id="hehe">batata</div>
+        </ContentPanel>
+        <ContentPanel columns={5} />
+      </div>
+      <!-- <slot /> -->
+    </div>
+  </main>
 </Document>
 
 <script>
-    import "../logic/app.ts";
+  import "../logic/app.ts";
 </script>
 <style lang="scss">
-    .header-slot {
-        height: 150px;
-        flex-shrink: 0;
-        flex-grow: 0;
-    }
-    .body-slot {
-        width: 100%;
-        margin-top: 10px;
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 10px;
-        overflow: hidden;
-        grid-auto-rows: 1fr;
-    }
+  .shell-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
 
-    .shell-container {
-        background-color: #010149;
-        width: 100vw;
-        height: 100vh;
-        filter: blur(0.05em) hue-rotate(0);
-    }
+  .app-container {
+    color: white;
+    max-width: 1292px;
+    flex: 1;
+    width: 100%;
+    z-index: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .app-container {
-        color: white;
-        max-width: 1292px;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        margin: 0 auto;
-        padding: 5vh 0;
-        display: flex;
-        flex-direction: column;
-    }
+  .header-slot {
+    height: 100px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    z-index: 2;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .body-slot {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    overflow: hidden;
+    grid-auto-rows: 1fr;
+    z-index: 1;
+  }
 </style>
