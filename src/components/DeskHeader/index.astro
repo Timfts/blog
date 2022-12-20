@@ -1,5 +1,6 @@
 ---
 import IntegrityGraph from "./IntegrityGraph.astro";
+import MainMenu from "./MainMenu.astro";
 ---
 
 <header>
@@ -10,7 +11,9 @@ import IntegrityGraph from "./IntegrityGraph.astro";
   </div>
   <div class="equip"></div>
   <div class="actions-block">
-    <div class="main-menu"></div>
+    <div class="main-menu-slot">
+      <MainMenu />
+    </div>
     <div class="bottom-options">
       <div class="search"></div>
       <div class="actions"></div>
@@ -69,7 +72,7 @@ import IntegrityGraph from "./IntegrityGraph.astro";
     }
   }
 
-  .main-menu {
+  .main-menu-slot {
     grid-column: span 6;
     background-color: #bdbdbd;
   }
