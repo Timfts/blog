@@ -10,7 +10,7 @@ import IntegrityGraph from "./IntegrityGraph.astro";
   </div>
   <div class="equip"></div>
   <div class="actions-block">
-    <nav class="main-menu"></nav>
+    <div class="main-menu"></div>
     <div class="bottom-options">
       <div class="search"></div>
       <div class="actions"></div>
@@ -19,6 +19,7 @@ import IntegrityGraph from "./IntegrityGraph.astro";
 </header>
 
 <style lang="scss">
+  @import "../../scss/mixins";
   header {
     display: grid;
     grid-gap: 10px;
@@ -31,20 +32,28 @@ import IntegrityGraph from "./IntegrityGraph.astro";
   .integrity-slot {
     grid-column: span 4;
     display: flex;
-    position:relative;
+    position: relative;
+
+    @include below(m) {
+      grid-column: span 5;
+    }
   }
 
   .integrity-overflow {
     height: 133px;
     width: 100%;
-    position:absolute;
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .equip {
     grid-column: span 2;
     background-color: #bdbdbd;
+
+    @include below(m) {
+      display: none;
+    }
   }
 
   .actions-block {
@@ -54,6 +63,10 @@ import IntegrityGraph from "./IntegrityGraph.astro";
     grid-gap: 10px;
     grid-auto-flow: column;
     grid-template-rows: 40px auto;
+
+    @include below(m) {
+      grid-column: span 7;
+    }
   }
 
   .main-menu {

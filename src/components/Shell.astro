@@ -1,6 +1,6 @@
 ---
 import Document from "./Document.astro";
-import DeskHeader from "./DeskHeader.astro";
+import DeskHeader from "./DeskHeader/index.astro";
 import ContentPanel from "./ContentPanel.astro";
 export interface Props {
   title?: string;
@@ -34,7 +34,7 @@ const { title = "Tim Fontes" } = Astro.props as Props;
   .shell-container {
     width: 100%;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1312px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -43,7 +43,6 @@ const { title = "Tim Fontes" } = Astro.props as Props;
 
   .app-container {
     color: white;
-    max-width: 1312px;
     flex: 1;
     width: 100%;
     z-index: 0;
