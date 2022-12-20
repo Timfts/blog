@@ -14,6 +14,8 @@
 </div>
 
 <style lang="scss">
+  @import "../scss/mixins";
+
   .integrity-graph {
     display: flex;
     width: 100%;
@@ -28,6 +30,11 @@
     margin-right: 30px;
     display: flex;
     flex-direction: column;
+    min-width: 85px;
+
+    @include below(l) {
+      margin-right: 20px;
+    }
   }
 
   .char-title {
@@ -43,6 +50,14 @@
       color: #b2b895;
       line-height: 1;
       padding: 0;
+
+      @include below(l) {
+        font-size: 20px;
+      }
+
+      @include below(m) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -58,6 +73,10 @@
     background-size: 200% auto;
     padding: 10px 15px 7px 15px;
     position: relative;
+
+    @include below(l) {
+      padding: 7px;
+    }
   }
 
   .meter-title {
@@ -72,12 +91,22 @@
     align-items: center;
     clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
 
+    @include below(l) {
+      padding-left: 10px;
+      padding-top: 8px;
+      align-items: flex-start;
+    }
+
     h3 {
       font-family: "PS2P";
       font-size: 14px;
       color: #44444b;
       text-transform: uppercase;
       text-shadow: 1px 1px 1px #017b01, 2px 2px 1px #acd5ac;
+
+      @include below(l) {
+        font-size: 10px;
+      }
     }
   }
 
