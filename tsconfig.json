@@ -10,6 +10,7 @@
     // Enable stricter transpilation for better output.
     "isolatedModules": false,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
     "outDir": "dist",
     // Add type definitions for our Vite runtime.
     "types": ["vite/client", "jest"],
