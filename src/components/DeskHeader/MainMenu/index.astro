@@ -1,0 +1,38 @@
+---
+const links = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "Snippets",
+    path: "/",
+  },
+  {
+    label: "Projects",
+    path: "/",
+  },
+  {
+    label: "Posts",
+    path: "/",
+  },
+];
+---
+
+<nav class="desk-main-menu global-metal-background">
+  <ul class="desk-main-menu__list">
+    {
+      links.map(({ label, path }) => (
+        <li class="desk-main-menu__list-item">
+          <a class="desk-main-menu__list-link" href={path}>
+            {label.toUpperCase()}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>

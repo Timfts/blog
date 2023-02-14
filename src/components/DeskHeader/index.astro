@@ -1,6 +1,6 @@
 ---
-import IntegrityGraph from "./IntegrityGraph.astro";
-import MainMenu from "./MainMenu.astro";
+import IntegrityGraph from "./IntegrityGraph/index.astro";
+import MainMenu from "./MainMenu/index.astro";
 ---
 
 <header>
@@ -22,75 +22,5 @@ import MainMenu from "./MainMenu.astro";
 </header>
 
 <style lang="scss">
-  @import "../../scss/mixins";
-  header {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-flow: row;
-    z-index: 1;
-    height: 100%;
-  }
-
-  .integrity-slot {
-    grid-column: span 4;
-    display: flex;
-    position: relative;
-
-    @include below(m) {
-      grid-column: span 5;
-    }
-  }
-
-  .integrity-overflow {
-    height: 149px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .equip {
-    grid-column: span 2;
-    background-color: #bdbdbd;
-
-    @include below(m) {
-      display: none;
-    }
-  }
-
-  .actions-block {
-    grid-column: span 6;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    grid-auto-flow: column;
-    grid-template-rows: 40px auto;
-
-    @include below(m) {
-      grid-column: span 7;
-    }
-  }
-
-  .main-menu-slot {
-    grid-column: span 6;
-    background-color: #bdbdbd;
-  }
-
-  .bottom-options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-column: span 6;
-  }
-
-  .search {
-    grid-column: span 1;
-    background-color: #bdbdbd;
-  }
-
-  .actions {
-    grid-column: span 1;
-    background: #bdbdbd;
-  }
+  @import "./styles.scss";
 </style>

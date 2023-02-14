@@ -5,4 +5,14 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   /* integrations: [lit()] */
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "src/scss/mixins";'
+        }
+      }
+    }
+  }
 });
