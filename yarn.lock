@@ -2181,20 +2181,20 @@
   dependencies:
     "@swup/plugin" "^1.0.1"
 
-"@swup/js-plugin@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@swup/js-plugin/-/js-plugin-1.0.5.tgz#58afb4a9695da6971b3f36b4ceb1d0e36ffba549"
-  integrity sha512-leVTmihPMCxa4LlAszSIB+a9V5WVO4dUhhYJlYWvjiOKcpbh/VR+ZLerIkWwtRBhQO+onKKcPvgPdCni18jUXg==
+"@swup/js-plugin@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@swup/js-plugin/-/js-plugin-2.0.0.tgz#ad8386030b009fe6a6b08a5107950577a1eac67c"
+  integrity sha512-ACT0idUPaalwX0jWD32BXHIRZOMHAkz2SNaO2eWabBHr/m0LWFq/9uXVW65B5V8Gs4c2YpIfTfjF+IWni1egSA==
   dependencies:
-    "@swup/plugin" "^1.0.0"
+    "@swup/plugin" "^2.0.0"
     path-to-regexp "^3.0.0"
 
-"@swup/plugin@^1.0.0", "@swup/plugin@^1.0.1":
+"@swup/plugin@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@swup/plugin/-/plugin-1.0.1.tgz"
   integrity sha512-QrTGn1DLx+50CNsk6oGzUFnyNyLkDK6iLb032qKImmAXS+0Dd1cwa8cSGvJ+I27J4qR8y6oJNurgHIEc6ZCTrg==
 
-"@swup/plugin@^2.0.1":
+"@swup/plugin@^2.0.0", "@swup/plugin@^2.0.1":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@swup/plugin/-/plugin-2.0.2.tgz#1f8f66524cbb6af32566d00764a27285608c0b54"
   integrity sha512-pde/zKIgXpbI+qy8rhuy8De8KniZRuwAoxuOoGTvhErolrW2khlYKtVXgPACRmmPJvGI5ZTfBzBN5txKfIGefQ==
@@ -2208,10 +2208,10 @@
     shelljs-live "^0.0.5"
     swup "^3.0.0"
 
-"@swup/preload-plugin@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@swup/preload-plugin/-/preload-plugin-2.0.2.tgz#067ea41613f1b36fd3fd23ccdfadae69ce5ea78f"
-  integrity sha512-WoaslJPfztOjuUqtlI/jkrNNYVG+gemFuEYb6bz5PJmV0PR4wnp043Zp/8mikteFWPirH0tqKhpbVRouV98WTA==
+"@swup/preload-plugin@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@swup/preload-plugin/-/preload-plugin-2.1.0.tgz#574d1a8ce0f2cdcd9e758239721ee9abe1327bdc"
+  integrity sha512-iO1ymbQi22P31UxdxZJ1w0i+MJclT2cNhOu7OkzRY9SuRYnr3cPv0+8i0F/7mu9lmIjZqMsQ75a62k57nnYR5A==
   dependencies:
     "@swup/plugin" "^2.0.1"
 
@@ -9978,7 +9978,15 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-swup@3.0.4, swup@^3.0.0:
+swup@3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/swup/-/swup-3.0.6.tgz#12689d3c25f2d051699848e97f85f8286019318a"
+  integrity sha512-QgYueLK2ayuRZXGz58+xENFIwpXgflePU6SPiP4kcRWLv5s3ldbMKmmlTFto8lnJFu4aG44ZpxIDruli7se15w==
+  dependencies:
+    delegate-it "^3.0.1"
+    opencollective-postinstall "^2.0.2"
+
+swup@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/swup/-/swup-3.0.4.tgz#f967cc5c3174c27912ec615e954048efbbc5904e"
   integrity sha512-Qd87XR2k8gQVF8r1742dF+Isfb99xdyuhR+ntFylqRYNuDEM4je0c5FewG44l8JLDisp/s1AyNeelMsW95hUeQ==
