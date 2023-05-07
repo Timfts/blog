@@ -11,10 +11,6 @@ header {
     grid-column: span 4;
     display: flex;
     position: relative;
-
-    @include below(m) {
-      grid-column: span 5;
-    }
   }
 
   .integrity-overflow {
@@ -28,10 +24,6 @@ header {
   .equip {
     grid-column: span 2;
     background-color: #bdbdbd;
-
-    @include below(m) {
-      display: none;
-    }
   }
 
   .actions-block {
@@ -41,10 +33,6 @@ header {
     grid-gap: 10px;
     grid-auto-flow: column;
     grid-template-rows: 40px auto;
-
-    @include below(m) {
-      grid-column: span 7;
-    }
   }
 
   .main-menu-slot {

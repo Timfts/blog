@@ -26,6 +26,10 @@
   z-index: 2;
   margin-bottom: 15px;
   width: 100%;
+
+  @include belowTurningPoint {
+    display: none;
+  }
 }
 .body-slot {
   width: 100%;
@@ -54,8 +58,8 @@
     position: absolute;
     clip-path: polygon(0 1%, 100% 0%, 86% 100%, 0% 100%);
 
-    @include below(m) {
-      width: 35%;
+    @include belowTurningPoint() {
+      display: none;
     }
   }
 }

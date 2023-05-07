@@ -4,6 +4,8 @@ $m: 900px;
 $l: 1200px;
 $xl: 1800px;
 
+$turningPoint: 1000px;
+
 @mixin aboveUnit($unit) {
   @media (min-width: $unit) {
     @content;
@@ -12,6 +14,18 @@ $xl: 1800px;
 
 @mixin belowUnit($unit) {
   @media (max-width: $unit) {
+    @content;
+  }
+}
+
+@mixin aboveTurningPoint() {
+  @include aboveUnit($turningPoint) {
+    @content;
+  }
+}
+
+@mixin belowTurningPoint() {
+  @include belowUnit($turningPoint) {
     @content;
   }
 }
