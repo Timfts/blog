@@ -4,33 +4,45 @@ $m: 900px;
 $l: 1200px;
 $xl: 1800px;
 
+@mixin aboveUnit($unit) {
+  @media (min-width: $unit) {
+    @content;
+  }
+}
+
+@mixin belowUnit($unit) {
+  @media (max-width: $unit) {
+    @content;
+  }
+}
+
 @mixin above($breakpoint) {
   @if $breakpoint == xs {
-    @media (min-width: $xs) {
+    @include aboveUnit($xs) {
       @content;
     }
   }
 
   @if $breakpoint == sm {
-    @media (min-width: $sm) {
+    @include aboveUnit($sm) {
       @content;
     }
   }
 
   @if $breakpoint == m {
-    @media (min-width: $m) {
+    @include aboveUnit($m) {
       @content;
     }
   }
 
   @if $breakpoint == l {
-    @media (min-width: $l) {
+    @include aboveUnit($l) {
       @content;
     }
   }
 
   @if $breakpoint == xl {
-    @media (min-width: $xl) {
+    @include aboveUnit($xl) {
       @content;
     }
   }
@@ -38,31 +50,31 @@ $xl: 1800px;
 
 @mixin below($breakpoint) {
   @if $breakpoint == sm {
-    @media (max-width: $sm) {
+    @include belowUnit($sm) {
       @content;
     }
   }
 
   @if $breakpoint == m {
-    @media (max-width: $m) {
+    @include belowUnit($m) {
       @content;
     }
   }
 
   @if $breakpoint == l {
-    @media (max-width: $l) {
+    @include belowUnit($l) {
       @content;
     }
   }
 
   @if $breakpoint == xl {
-    @media (max-width: $xl) {
+    @include belowUnit($xl) {
       @content;
     }
   }
 
   @if $breakpoint == hd {
-    @media (max-width: 1920px) {
+    @include belowUnit(1200px) {
       @content;
     }
   }

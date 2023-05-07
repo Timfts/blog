@@ -19,10 +19,13 @@ const { title = "Tim Fontes" } = Astro.props as Props;
       </div>
       <div class="body-slot" id="swup">
         <div class="body-content">
+          <!-- all pages will have this body content -->
           <ContentPanel main columns={7}>
             <div id="hehe">batata</div>
           </ContentPanel>
-          <ContentPanel columns={5} />
+          <ContentPanel columns={5}>
+            <p>lulu</p>
+          </ContentPanel>
         </div>
       </div>
       <!-- <slot /> -->

@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // import lit from "@astrojs/lit";
 
@@ -10,9 +10,12 @@ export default defineConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "src/scss/mixins";'
-        }
-      }
-    }
-  }
+          additionalData: `
+            @import "src/scss/colors";
+            @import "src/scss/mixins";
+          `,
+        },
+      },
+    },
+  },
 });
