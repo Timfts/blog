@@ -1,5 +1,4 @@
 ---
-import classNames from "classnames";
 export interface Props {
   main?: boolean;
   background?: "dark" | "light";
@@ -9,16 +8,17 @@ export interface Props {
 
 const { columns = 6, main = false, background = "dark" } = Astro.props as Props;
 
-const componentClass = classNames("content-panel", {
-  main: !!main,
-  "global-metal-background": true,
-  [background]: !!background,
-});
-
 const dynamicStyle = `grid-column: span ${columns};`;
 ---
 
-<div class={componentClass} style={dynamicStyle}>
+<div
+  class:list={[
+    "content-panel",
+    "global-metal-background",
+    { [background]: !!background, main: !!main },
+  ]}
+  style={dynamicStyle}
+>
   <div class="content">
     <slot />
   </div>
@@ -35,7 +35,7 @@ const dynamicStyle = `grid-column: span ${columns};`;
   .content-panel.main {
     padding-top: 43px;
 
-/*     &:after {
+    /*     &:after {
       content: "";
       background-color: #010149;
       width: 42%;
