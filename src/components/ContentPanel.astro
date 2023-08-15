@@ -39,17 +39,10 @@ const dynamicStyle = `grid-column: span ${columns};`;
   .content-panel.main {
     padding-top: 43px;
 
-    /*     &:after {
-      content: "";
-      background-color: #010149;
-      width: 42%;
-      height: 32px;
-      display: block;
-      top: 0;
-      left: 0;
-      position:absolute;
-      clip-path: polygon(0 1%, 100% 0%, 86% 100%, 0% 100%);
-    } */
+    @include belowTurningPoint {
+      padding-top: 0;
+      margin-top: 50px;
+    }
   }
 
   .content {

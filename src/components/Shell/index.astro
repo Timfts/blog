@@ -1,6 +1,8 @@
 ---
 import Document from "../Document.astro";
 import DeskHeader from "../DeskHeader/index.astro";
+import MobileHeader from "../MobileHeader/index.astro";
+import MobileNav from "../MobileNav/index.astro";
 import ContentPanel from "../ContentPanel.astro";
 
 export interface Props {
@@ -14,6 +16,9 @@ const { title = "Tim Fontes" } = Astro.props as Props;
 <Document title={title}>
   <main class="shell-container" data-fragment="app-shell">
     <div class="mobile-frame mobile-frame--left global-metal-background"></div>
+    <div class="mobile-header-slot">
+      <MobileHeader />
+    </div>
     <div class="header-slot">
       <DeskHeader />
     </div>
@@ -27,6 +32,9 @@ const { title = "Tim Fontes" } = Astro.props as Props;
           <p>lulu</p>
         </ContentPanel>
       </div>
+    </div>
+    <div class="mobile-nav-slot">
+      <MobileNav />
     </div>
     <div class="mobile-frame mobile-frame--right global-metal-background"></div>
     <!-- <slot /> -->

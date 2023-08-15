@@ -1,3 +1,6 @@
+$mobile-frame-z-index: 10;
+$mobile-header-z-index: 8;
+
 .shell-container {
   width: 100%;
   height: 100%;
@@ -15,28 +18,6 @@
   }
 }
 
-.mobile-frame {
-  width: 20px;
-  height: 100vh;
-  height: 100dvh; //adapt to viewport on script
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  display: none;
-
-  @include belowTurningPoint {
-    display: block;
-  }
-
-  &--left {
-    left: 0;
-  }
-
-  &--right {
-    right: 0;
-  }
-}
-
 .header-slot {
   height: 115px;
   flex-shrink: 0;
@@ -49,6 +30,48 @@
     display: none;
   }
 }
+
+.mobile-header-slot {
+  display: none;
+  width: 100%;
+  top: 0;
+  z-index: $mobile-header-z-index;
+}
+
+.mobile-frame {
+  width: 20px;
+  height: 100vh;
+  height: 100dvh; //adapt to viewport on script
+  top: 0;
+  z-index: $mobile-frame-z-index;
+  display: none;
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+}
+
+.mobile-nav-slot {
+  width: 100%;
+  z-index: $mobile-header-z-index;
+  bottom: 0;
+}
+
+.mobile-header-slot,
+.mobile-frame,
+.mobile-nav-slot {
+  position: fixed;
+  display: none;
+
+  @include belowTurningPoint {
+    display: block;
+  }
+}
+
 .body-slot {
   width: 100%;
   flex: 1;

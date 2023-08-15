@@ -108,7 +108,6 @@ const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
 
     <style lang="scss" is:global>
       .global-metal-background {
-        //snippet found on https://codepen.io/Quinius/pen/YVWaaa
         background-image: linear-gradient(
             90deg,
             rgba(62, 68, 74, 0.5),
@@ -135,6 +134,36 @@ const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
             rgba(91, 95, 98, 0.5),
             rgba(55, 170, 233, 0.26) 4.5px
           );
+
+        @include belowTurningPoint {
+          //snippet found on https://codepen.io/Quinius/pen/YVWaaa
+          background-image: linear-gradient(
+              90deg,
+              rgba(62, 68, 74, 1),
+              rgba(192, 192, 192, 1),
+              rgba(91, 96, 105, 1)
+            ),
+            repeating-linear-gradient(
+              0deg,
+              rgba(1, 5, 8, 1),
+              rgba(189, 189, 189, 1) 2.5px
+            ),
+            repeating-linear-gradient(
+              0deg,
+              rgba(2, 23, 38, 1),
+              rgba(192, 192, 192, 1) 2.7px
+            ),
+            repeating-linear-gradient(
+              0deg,
+              rgba(58, 65, 71, 1),
+              rgba(224, 226, 227, 1) 3px
+            ),
+            repeating-linear-gradient(
+              0deg,
+              rgba(91, 95, 98, 1),
+              rgba(55, 170, 233, 1) 4.5px
+            );
+        }
       }
     </style>
   </body>
