@@ -30,6 +30,10 @@ const dynamicStyle = `grid-column: span ${columns};`;
     padding: 10px;
     overflow: hidden;
     position: relative;
+
+    @include belowTurningPoint {
+      padding: 10px 20px;
+    }
   }
 
   .content-panel.main {
@@ -53,6 +57,10 @@ const dynamicStyle = `grid-column: span ${columns};`;
     height: 100%;
     padding: 10px;
     font-size: 20px;
+
+    @include belowTurningPoint {
+      min-height: 100vh;
+    }
   }
 
   .dark .content {

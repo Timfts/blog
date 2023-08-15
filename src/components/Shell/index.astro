@@ -13,6 +13,7 @@ const { title = "Tim Fontes" } = Astro.props as Props;
 
 <Document title={title}>
   <main class="shell-container" data-fragment="app-shell">
+    <div class="mobile-frame mobile-frame--left global-metal-background"></div>
     <div class="header-slot">
       <DeskHeader />
     </div>
@@ -27,6 +28,7 @@ const { title = "Tim Fontes" } = Astro.props as Props;
         </ContentPanel>
       </div>
     </div>
+    <div class="mobile-frame mobile-frame--right global-metal-background"></div>
     <!-- <slot /> -->
   </main>
 </Document>

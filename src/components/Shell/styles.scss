@@ -8,9 +8,32 @@
   padding: 30px 10px;
   color: white;
   z-index: 0;
+  position: relative;
 
   @include belowTurningPoint {
     padding: 0;
+  }
+}
+
+.mobile-frame {
+  width: 20px;
+  height: 100vh;
+  height: 100dvh; //adapt to viewport on script
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: none;
+
+  @include belowTurningPoint {
+    display: block;
+  }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
   }
 }
 
