@@ -40,8 +40,7 @@ $mobile-header-z-index: 8;
 
 .mobile-frame {
   width: 20px;
-  height: 100vh;
-  height: 100dvh; //adapt to viewport on script
+  bottom: 0;
   top: 0;
   z-index: $mobile-frame-z-index;
   display: none;

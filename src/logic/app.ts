@@ -3,7 +3,13 @@ import pageController from "./core/pageController";
 import runControllerByPath from "./helpers/runControllerByPath";
 import pageControllers from "./route-controllers";
 
-pageController("app-shell", ({ on }) => {
+pageController("app-shell", ({ on, query }) => {
+  const mobileHeader = query(".mobile-header");
+  const mobileNav = query(".mobile-nav");
+  const headerCollapseClass = "mobile-header--hidden";
+  const navCollapseClass = "mobile-nav--hidden";
+  let previousDistanceFromTop = 0;
+
   //onStart
   fixFullHeight();
   runCurrentPageController();
@@ -12,6 +18,7 @@ pageController("app-shell", ({ on }) => {
   //events
   on("global:resize", fixFullHeight);
   on("swup:pageView", runCurrentPageController);
+  on("global:scroll", handlePageScroll);
 
   // methods
   function setupRouteChanges() {
@@ -21,6 +28,43 @@ pageController("app-shell", ({ on }) => {
   function runCurrentPageController() {
     const currentPathName = window.location.pathname;
     runControllerByPath(currentPathName, pageControllers);
+  }
+
+  function handlePageScroll(e: Event) {
+    const isMobile = screen.width < 1000;
+    const distanceFromTop = window.scrollY;
+    handleHUDCollapse(isMobile, distanceFromTop);
+  }
+
+  function handleHUDCollapse(isMobile: boolean, distanceFromTop: number) {
+    const isHUDHidden = getIsHUDHidden();
+    const isGoingUp = distanceFromTop < previousDistanceFromTop;
+    const shouldHideHud =
+      !isHUDHidden && !isGoingUp && isMobile && distanceFromTop > 34;
+
+    const shouldShowHud = isHUDHidden && isGoingUp;
+
+    if (shouldHideHud) hideHUD();
+    if (shouldShowHud) showHUD();
+
+    previousDistanceFromTop = distanceFromTop;
+  }
+
+  function getIsHUDHidden(): boolean {
+    const isHeaderHidden = mobileHeader.classList.contains(headerCollapseClass);
+    const isNavHidden = mobileNav.classList.contains(navCollapseClass);
+
+    return isHeaderHidden && isNavHidden;
+  }
+
+  function hideHUD() {
+    mobileHeader.classList.add(headerCollapseClass);
+    mobileNav.classList.add(navCollapseClass);
+  }
+
+  function showHUD() {
+    mobileHeader.classList.remove(headerCollapseClass);
+    mobileNav.classList.remove(navCollapseClass);
   }
 
   function fixFullHeight() {
