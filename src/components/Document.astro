@@ -12,7 +12,7 @@ const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
   <head>
     <title>{title}</title>
     <meta name="theme-color" content="#FF0000" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -87,6 +87,11 @@ const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
         overflow: auto;
         background-color: #010149;
         filter: blur(0.05em) hue-rotate(0);
+
+        @include belowTurningPoint {
+          height: auto;
+          min-height: 100vh;
+        }
       }
 
       h1,

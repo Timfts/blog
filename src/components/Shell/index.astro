@@ -13,23 +13,21 @@ const { title = "Tim Fontes" } = Astro.props as Props;
 
 <Document title={title}>
   <main class="shell-container" data-fragment="app-shell">
-    <div class="app-container">
-      <div class="header-slot">
-        <DeskHeader />
-      </div>
-      <div class="body-slot" id="swup">
-        <div class="body-content">
-          <!-- all pages will have this body content -->
-          <ContentPanel main columns={7}>
-            <div id="hehe">batata</div>
-          </ContentPanel>
-          <ContentPanel columns={5}>
-            <p>lulu</p>
-          </ContentPanel>
-        </div>
-      </div>
-      <!-- <slot /> -->
+    <div class="header-slot">
+      <DeskHeader />
     </div>
+    <div class="body-slot" id="swup">
+      <div class="body-content">
+        <!-- all pages will have this body content -->
+        <ContentPanel main columns={7}>
+          <div id="hehe">batata</div>
+        </ContentPanel>
+        <ContentPanel columns={5}>
+          <p>lulu</p>
+        </ContentPanel>
+      </div>
+    </div>
+    <!-- <slot /> -->
   </main>
 </Document>
 
