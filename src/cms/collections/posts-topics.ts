@@ -1,9 +1,11 @@
+import { FILE_COLLECTIONS_PATH } from "../constants";
+
 const postTopics = {
   name: "post-topics",
   label: "Post Topics",
   format: "json",
   extension: "json",
-  file: "src/data/post-topics.json",
+  file: `${FILE_COLLECTIONS_PATH}/post-topics.json`,
   fields: [
     {
       name: "topics-list",

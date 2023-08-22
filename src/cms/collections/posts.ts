@@ -1,10 +1,11 @@
+import { PAGES_COLLECTIONS_PATH } from "../constants";
 const posts = {
   name: "posts",
   label: "Posts",
   label_singular: "Post",
   create: true,
   preview_path: "pages/{{slug}}",
-  folder: "src/pages/post",
+  folder: `${PAGES_COLLECTIONS_PATH}/posts`,
   i18n: true,
   fields: [
     {

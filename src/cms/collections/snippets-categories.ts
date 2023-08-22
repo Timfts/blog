@@ -1,8 +1,10 @@
+import { FILE_COLLECTIONS_PATH } from "../constants";
+
 const snippetsCategories = {
   name: "snippets-categories",
   label: "Snippets categories",
   format: "json",
-  file: "src/data/snippets-categories.json",
+  file: `${FILE_COLLECTIONS_PATH}/snippets-categories.json`,
   fields: [
     {
       name: "snippets-categories-list",

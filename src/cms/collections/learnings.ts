@@ -1,8 +1,10 @@
+import { FILE_COLLECTIONS_PATH } from "../constants";
+
 const learnings = {
   name: "learnings",
   label: "Learnings",
   format: "json",
-  file: "src/data/learnings.json",
+  file: `${FILE_COLLECTIONS_PATH}/learnings.json`,
   fields: [
     {
       name: "learnings-list",
