@@ -21,7 +21,8 @@
       "@components/*": ["src/components/*"],
       "@templates/*": ["src/components/templates/*"],
       "@logic/*": ["src/logic/*"],
-      "@scss/*": ["src/scss/*"]
+      "@scss/*": ["src/scss/*"],
+      "@cms/*": ["src/cms/*"]
     }
   }
 }

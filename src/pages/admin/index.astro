@@ -3,15 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" />
+    <!-- <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" /> -->
     <title>Content Manager</title>
 </head>
 
 <body>
     <script>
         import CMS from 'netlify-cms-app'
+        import netlifyCMSConfig from "@cms/index"
+
+        window.CMS_MANUAL_INIT = true
+
+        console.log(netlifyCMSConfig)
     
-        CMS.init()
+        CMS.init(netlifyCMSConfig)
     </script>
 </body>
 
