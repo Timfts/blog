@@ -5,6 +5,9 @@ publish_mode: editorial_workflow
 local_backend: true # allows for you to locally mess with your CMS
 media_folder: "public/images/uploads" # Media files will be stored in the repo under public/images/uploads
 public_folder: "/images/uploads" #
+i18n:
+  structure: multiple_folders
+  locales: [en, pt]
 collections:
   - name: "segmentation-data"
     label: "Segmentation Data"
@@ -82,3 +85,61 @@ collections:
               - label: "Label"
                 name: "label"
                 widget: "string"
+
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    create: true
+    preview_path: "pages/{{slug}}"
+    folder: "src/pages/post"
+    i18n: true
+    fields:
+      - label: "layout"
+        name: "layout"
+        widget: "hidden"
+        default: "@templates/Post.astro"
+        i18n: duplicate
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        i18n: true
+      - label: "External link"
+        name: "external-link"
+        required: false
+        widget: "string"
+        i18n: duplicate
+      - label: "Publish Date"
+        name: "created_date"
+        i18n: duplicate
+        widget: "datetime"
+      - label: "Updated Date"
+        name: "updated_date"
+        default: ""
+        widget: "datetime"
+        i18n: duplicate
+        required: false
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+        i18n: duplicate
+      - label: "excerpt"
+        name: "Excerpt"
+        widget: text
+        required: true
+        i18n: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        i18n: true
+      - label: "Topics"
+        name: "topics"
+        widget: "relation"
+        collection: "segmentation-data"
+        file: "post-topics"
+        multiple: true
+        i18n: duplicate
+        search_fields: ["topics-list.*.label"]
+        display_fields: ["topics-list.*.label"]
+        value_field: "topics-list.*.slug"
