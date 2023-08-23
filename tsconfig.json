@@ -20,9 +20,10 @@
       "@content/*": ["src/content/*"],
       "@components/*": ["src/components/*"],
       "@templates/*": ["src/components/templates/*"],
-      "@logic/*": ["src/logic/*"],
       "@scss/*": ["src/scss/*"],
-      "@cms/*": ["src/cms/*"]
+      "@cms/*": ["src/cms/*"],
+      "@lib/*": ["src/lib/*"],
+      "@helpers/*": ["src/helpers/*"]
     }
   }
 }

@@ -6,7 +6,7 @@ import {
   getEmitFunction,
 } from "./factories";
 
-export default function pageController(
+export default function elementController(
   fragmentName: string,
   builderFunction: BuilderFunction
 ) {

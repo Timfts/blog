@@ -1,9 +1,13 @@
-import setupSwup from "./config/setupSwup";
-import pageController from "./core/pageController";
-import runControllerByPath from "./helpers/runControllerByPath";
-import pageControllers from "./route-controllers";
+import elementController from "@lib/elementController";
+import Swup from "swup";
+import SwupHeadPlugin from "@swup/head-plugin";
+import SwupJsPlugin from "@swup/js-plugin";
+import SwupA11yPlugin from "@swup/a11y-plugin";
+import SwupPreloadPlugin from "@swup/preload-plugin";
+import runControllerByPath from "@helpers/runControllerByPath";
+import elementControllers from "./page-controllers";
 
-pageController("app-shell", ({ on, query }) => {
+elementController("app-shell", ({ on, query }) => {
   const mobileHeader = query(".mobile-header");
   const mobileNav = query(".mobile-nav");
   const headerCollapseClass = "mobile-header--hidden";
@@ -12,12 +16,12 @@ pageController("app-shell", ({ on, query }) => {
 
   //onStart
   fixFullHeight();
-  runCurrentPageController();
+  runCurrentelementController();
   setupRouteChanges();
 
   //events
   on("global:resize", fixFullHeight);
-  on("swup:pageView", runCurrentPageController);
+  on("swup:pageView", runCurrentelementController);
   on("global:scroll", handlePageScroll);
 
   // methods
@@ -25,9 +29,9 @@ pageController("app-shell", ({ on, query }) => {
     setupSwup();
   }
 
-  function runCurrentPageController() {
+  function runCurrentelementController() {
     const currentPathName = window.location.pathname;
-    runControllerByPath(currentPathName, pageControllers);
+    runControllerByPath(currentPathName, elementControllers);
   }
 
   function handlePageScroll(e: Event) {
@@ -71,5 +75,23 @@ pageController("app-shell", ({ on, query }) => {
     const docRef = document.documentElement;
     const windowHeight = window.innerHeight;
     docRef.style.setProperty("--app-height", `${windowHeight}px`);
+  }
+
+  function setupSwup() {
+    new Swup({
+      plugins: [
+        new SwupHeadPlugin(),
+        new SwupA11yPlugin(),
+        new SwupPreloadPlugin(),
+        new SwupJsPlugin([
+          {
+            from: "(.*)",
+            to: "(.*)",
+            out: (next) => next(),
+            in: (next) => next(),
+          },
+        ]),
+      ],
+    });
   }
 });
