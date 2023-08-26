@@ -1,19 +1,17 @@
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        import CMS from 'netlify-cms-app'
-        import netlifyCMSConfig from "@cms/index"
+      import CMS from "decap-cms-app";
+      import decapCMSConfig from "@cms/index";
 
-        window.CMS_MANUAL_INIT = true    
-        CMS.init(netlifyCMSConfig)
+      window.CMS_MANUAL_INIT = true;
+      CMS.init(decapCMSConfig);
     </script>
-</body>
-
+  </body>
 </html>

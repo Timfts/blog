@@ -3,7 +3,7 @@ import learnings from "./collections/learnings";
 import snippetsCategories from "./collections/snippets-categories";
 import posts from "./collections/posts";
 
-const netlifyCMSConfig = {
+const decapCMSConfig = {
   config: {
     backend: {
       name: "git-gateway",
@@ -28,4 +28,4 @@ const netlifyCMSConfig = {
   },
 };
 
-export default netlifyCMSConfig;
+export default decapCMSConfig;
