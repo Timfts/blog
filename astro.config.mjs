@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   /* integrations: [lit()] */
-
+  site: "https://timfontes.com",
   vite: {
     css: {
       preprocessorOptions: {
