@@ -4,7 +4,7 @@ const snippetsCategories = {
   name: "snippets-categories",
   label: "Snippets categories",
   format: "json",
-  file: `${FILE_COLLECTIONS_PATH}/snippets-categories.json`,
+  file: `${FILE_COLLECTIONS_PATH}/_snippets-categories.json`,
   fields: [
     {
       name: "snippets-categories-list",

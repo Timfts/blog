@@ -4,7 +4,7 @@ const learnings = {
   name: "learnings",
   label: "Learnings",
   format: "json",
-  file: `${FILE_COLLECTIONS_PATH}/learnings.json`,
+  file: `${FILE_COLLECTIONS_PATH}/_learnings.json`,
   fields: [
     {
       name: "learnings-list",

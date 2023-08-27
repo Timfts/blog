@@ -5,7 +5,7 @@ const postTopics = {
   label: "Post Topics",
   format: "json",
   extension: "json",
-  file: `${FILE_COLLECTIONS_PATH}/post-topics.json`,
+  file: `${FILE_COLLECTIONS_PATH}/_post-topics.json`,
   fields: [
     {
       name: "topics-list",
