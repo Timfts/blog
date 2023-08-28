@@ -13,6 +13,21 @@ const posts = {
       name: "title",
       widget: "string",
       i18n: true,
+      required: true,
+    },
+    {
+      label: "enabled",
+      name: "Enabled",
+      widget: "boolean",
+      default: true,
+      i18n: true,
+    },
+    {
+      label: "Page URL",
+      name: "page-url",
+      widget: "string",
+      i18n: true,
+      required: true,
     },
     {
       label: "External link",

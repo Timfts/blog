@@ -25,7 +25,7 @@ const decapCMSConfig = {
     public_folder: "/images/uploads",
     i18n: {
       structure: "multiple_folders",
-      locales: ["en", "pt"],
+      locales: ["en", "pt-br"],
     },
     collections: [
       {
