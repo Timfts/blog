@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@types/jest": "29.5.1",
-    "astro": "2.3.4",
+    "astro": "2.10.14",
     "autoprefixer": "10.4.14",
     "concurrently": "8.0.1",
     "cssnano": "6.0.1",

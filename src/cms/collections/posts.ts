@@ -25,14 +25,14 @@ const posts = {
     },
     {
       label: "Page URL",
-      name: "page-url",
+      name: "page_url",
       widget: "string",
       i18n: true,
       required: true,
     },
     {
       label: "External link",
-      name: "external-link",
+      name: "external_link",
       required: false,
       widget: "string",
       i18n: "duplicate",

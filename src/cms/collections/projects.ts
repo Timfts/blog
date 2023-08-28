@@ -18,7 +18,7 @@ const projects = {
     },
     {
       label: "Project link",
-      name: "project-link",
+      name: "project_link",
       required: false,
       widget: "string",
       i18n: "duplicate",
@@ -44,8 +44,8 @@ const projects = {
       i18n: "duplicate",
     },
     {
-      label: "excerpt",
-      name: "Excerpt",
+      label: "Excerpt",
+      name: "excerpt",
       widget: "text",
       required: true,
       i18n: true,
