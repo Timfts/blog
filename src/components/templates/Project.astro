@@ -1,10 +1,6 @@
 ---
-import Publication from "./Publication.astro"
-
-const { title, thumbnail, lang, learnings, created_date, updated_date } = Astro.props.content as IProject
+const { title, thumbnail, lang, learnings, created_date, updated_date } = Astro
+  .props.content as IProject;
 ---
 
-<Publication title={title} thumbnail={thumbnail} lang={lang} markers={learnings} createdDate={created_date}
-    updatedDate={updated_date}>
-    <slot />
-</Publication>
+<p>project</p>
