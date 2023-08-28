@@ -1,5 +1,6 @@
 import postTopics from "./collections/posts-topics";
 import learnings from "./collections/learnings";
+import projects from "./collections/projects";
 import snippetsCategories from "./collections/snippets-categories";
 import posts from "./collections/posts";
 import { SITE_URL } from "../constants";
@@ -34,6 +35,7 @@ const decapCMSConfig = {
         files: [postTopics, learnings, snippetsCategories],
       },
       posts,
+      projects,
     ],
   },
 };
