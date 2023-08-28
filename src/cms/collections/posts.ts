@@ -17,8 +17,8 @@ const posts = {
       required: true,
     },
     {
-      label: "enabled",
-      name: "Enabled",
+      label: "Enabled",
+      name: "enabled",
       widget: "boolean",
       default: true,
       i18n: true,
