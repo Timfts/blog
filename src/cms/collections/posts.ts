@@ -1,4 +1,5 @@
 import { FILE_COLLECTIONS_PATH } from "../constants";
+
 const posts = {
   name: "posts",
   label: "Posts",
