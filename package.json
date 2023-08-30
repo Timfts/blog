@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.4",
-    "astro": "2.10.14",
+    "astro": "^3.0.3",
     "autoprefixer": "^10.4.15",
     "concurrently": "8.0.1",
     "cssnano": "6.0.1",
@@ -26,7 +26,7 @@
     "@swup/preload-plugin": "2.1.0",
     "decap-cms-app": "^3.0.5",
     "http-server": "14.1.1",
-    "shader-doodle": "1.0.0-alpha.20",
+    "shader-doodle": "^0.0.5",
     "swup": "3.0.6"
   },
   "jest": {
