@@ -9,16 +9,14 @@ export function getOnFunction(rootElement: HTMLElement) {
   return (eventName: string, handler: GenericFunction) => {
     const globalEventDirective = "global:";
     const documentEventDirective = "document:";
-    const swupEventDirective = "swup:";
 
     const isGlobalEvent = eventName.startsWith(globalEventDirective);
     const isDocumentEvent = eventName.startsWith(documentEventDirective);
-    const isSwupEventDirective = eventName.startsWith(swupEventDirective);
 
     const eventRoot = (() => {
       if (isGlobalEvent) {
         return window;
-      } else if (isDocumentEvent || isSwupEventDirective) {
+      } else if (isDocumentEvent) {
         return document;
       }
       return rootElement;

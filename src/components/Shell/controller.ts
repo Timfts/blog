@@ -1,11 +1,4 @@
 import elementController from "@lib/elementController";
-import Swup from "swup";
-import SwupHeadPlugin from "@swup/head-plugin";
-import SwupJsPlugin from "@swup/js-plugin";
-import SwupA11yPlugin from "@swup/a11y-plugin";
-import SwupPreloadPlugin from "@swup/preload-plugin";
-import runControllerByPath from "@helpers/runControllerByPath";
-import elementControllers from "./page-controllers";
 
 elementController("app-shell", ({ on, query }) => {
   const mobileHeader = query(".mobile-header");
@@ -16,23 +9,10 @@ elementController("app-shell", ({ on, query }) => {
 
   //onStart
   fixFullHeight();
-  runCurrentelementController();
-  /* setupRouteChanges(); */
 
   //events
   on("global:resize", fixFullHeight);
-  /* on("swup:pageView", runCurrentelementController); */
   on("global:scroll", handlePageScroll);
-
-  // methods
-  /* function setupRouteChanges() {
-    setupSwup();
-  } */
-
-  function runCurrentelementController() {
-    const currentPathName = window.location.pathname;
-    runControllerByPath(currentPathName, elementControllers);
-  }
 
   function handlePageScroll(e: Event) {
     const isMobile = screen.width < 1000;
@@ -75,23 +55,5 @@ elementController("app-shell", ({ on, query }) => {
     const docRef = document.documentElement;
     const windowHeight = window.innerHeight;
     docRef.style.setProperty("--app-height", `${windowHeight}px`);
-  }
-
-  function setupSwup() {
-    new Swup({
-      plugins: [
-        new SwupHeadPlugin(),
-        new SwupA11yPlugin(),
-        new SwupPreloadPlugin(),
-        new SwupJsPlugin([
-          {
-            from: "(.*)",
-            to: "(.*)",
-            out: (next) => next(),
-            in: (next) => next(),
-          },
-        ]),
-      ],
-    });
   }
 });
