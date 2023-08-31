@@ -17,17 +17,17 @@ elementController("app-shell", ({ on, query }) => {
   //onStart
   fixFullHeight();
   runCurrentelementController();
-  setupRouteChanges();
+  /* setupRouteChanges(); */
 
   //events
   on("global:resize", fixFullHeight);
-  on("swup:pageView", runCurrentelementController);
+  /* on("swup:pageView", runCurrentelementController); */
   on("global:scroll", handlePageScroll);
 
   // methods
-  function setupRouteChanges() {
+  /* function setupRouteChanges() {
     setupSwup();
-  }
+  } */
 
   function runCurrentelementController() {
     const currentPathName = window.location.pathname;

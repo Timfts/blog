@@ -3,7 +3,6 @@ import Document from "../Document.astro";
 import DeskHeader from "../DeskHeader/index.astro";
 import MobileHeader from "../MobileHeader/index.astro";
 import MobileNav from "../MobileNav/index.astro";
-import ContentPanel from "../ContentPanel.astro";
 
 export interface Props {
   title?: string;
@@ -22,22 +21,13 @@ const { title = "Tim Fontes" } = Astro.props as Props;
     <div class="header-slot">
       <DeskHeader />
     </div>
-    <div class="body-slot" id="swup">
-      <div class="body-content">
-        <!-- all pages will have this body content -->
-        <ContentPanel main columns={7}>
-          <div id="hehe">batata</div>
-        </ContentPanel>
-        <ContentPanel columns={5}>
-          <p>lulu</p>
-        </ContentPanel>
-      </div>
+    <div class="body-slot">
+      <slot />
     </div>
     <div class="mobile-nav-slot">
       <MobileNav />
     </div>
     <div class="mobile-frame mobile-frame--right global-metal-background"></div>
-    <!-- <slot /> -->
   </main>
 </Document>
 

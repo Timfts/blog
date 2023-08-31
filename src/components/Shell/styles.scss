@@ -78,32 +78,3 @@ $mobile-header-z-index: 8;
   z-index: 1;
   position: relative;
 }
-
-.body-content {
-  width: 100%;
-  height: 100%;
-  grid-auto-rows: 1fr;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 10px;
-
-  &:after {
-    content: "";
-    background-color: #010149;
-    width: 27.5%;
-    height: 32px;
-    display: block;
-    top: 0;
-    left: 0;
-    position: absolute;
-    clip-path: polygon(0 1%, 100% 0%, 86% 100%, 0% 100%);
-
-    @include belowTurningPoint() {
-      display: none;
-    }
-  }
-
-  @include belowTurningPoint {
-    display: block;
-  }
-}

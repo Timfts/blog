@@ -1,0 +1,42 @@
+---
+export interface Props {
+  dataElement: string;
+}
+
+const { dataElement } = Astro.props;
+---
+
+<div class="page-panel-grid" data-fragment={dataElement}>
+  <slot />
+</div>
+
+<style lang="scss">
+  .page-panel-grid {
+    width: 100%;
+    height: 100%;
+    grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+    &:after {
+      content: "";
+      background-color: #010149;
+      width: 27.5%;
+      height: 32px;
+      display: block;
+      top: 0;
+      left: 0;
+      position: absolute;
+      clip-path: polygon(0 1%, 100% 0%, 86% 100%, 0% 100%);
+
+      @include belowTurningPoint() {
+        display: none;
+      }
+    }
+
+    @include belowTurningPoint {
+      display: block;
+    }
+  }
+</style>

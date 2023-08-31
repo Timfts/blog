@@ -1,0 +1,20 @@
+---
+import Shell from "@components/Shell/index.astro";
+import ContentPanel from "@components/ContentPanel.astro";
+import PageGrid from "@components/PageGrid.astro";
+---
+
+<Shell>
+  <PageGrid dataElement="home-page">
+    <ContentPanel main columns={7}>
+      <div id="hehe">batata</div>
+    </ContentPanel>
+    <ContentPanel columns={5}>
+      <p>lulu</p>
+    </ContentPanel>
+  </PageGrid>
+</Shell>
+
+<script>
+  import "./controller";
+</script>
