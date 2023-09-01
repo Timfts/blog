@@ -1,39 +1,52 @@
 ---
-import Document from "../Document.astro";
 import DeskHeader from "../DeskHeader/index.astro";
 import MobileHeader from "../MobileHeader/index.astro";
 import MobileNav from "../MobileNav/index.astro";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title?: string;
   lang?: "pt-BR" | "en";
 }
 
-const { title = "Tim Fontes" } = Astro.props as Props;
+const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
 ---
 
-<Document title={title}>
-  <main class="shell-container" data-fragment="app-shell">
-    <div class="mobile-frame mobile-frame--left global-metal-background"></div>
-    <div class="mobile-header-slot">
-      <MobileHeader />
-    </div>
-    <div class="header-slot">
-      <DeskHeader />
-    </div>
-    <div class="body-slot">
-      <slot />
-    </div>
-    <div class="mobile-nav-slot">
-      <MobileNav />
-    </div>
-    <div class="mobile-frame mobile-frame--right global-metal-background"></div>
-  </main>
-</Document>
-
-<script>
-  import "./controller.ts";
-</script>
-<style lang="scss">
-  @import "./styles.scss";
-</style>
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <title>{title}</title>
+    <meta name="theme-color" content="#7D7F82" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <ViewTransitions />
+  </head>
+  <body>
+    <main class="shell-container" data-fragment="app-shell">
+      <div class="mobile-frame mobile-frame--left global-metal-background">
+      </div>
+      <div class="mobile-header-slot">
+        <MobileHeader />
+      </div>
+      <div class="header-slot">
+        <DeskHeader />
+      </div>
+      <div class="body-slot">
+        <slot />
+      </div>
+      <div class="mobile-nav-slot">
+        <MobileNav />
+      </div>
+      <div class="mobile-frame mobile-frame--right global-metal-background">
+      </div>
+    </main>
+    <script>
+      import "./controller.ts";
+    </script>
+    <style lang="scss" is:global>
+      @import "./styles-global.scss";
+    </style>
+    <style lang="scss">
+      @import "./styles.scss";
+    </style>
+  </body>
+</html>
