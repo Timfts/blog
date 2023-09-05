@@ -1,7 +1,8 @@
 ---
 import IntegrityGraph from "./IntegrityGraph/index.astro";
 import MainMenu from "./MainMenu/index.astro";
-import Social from "./Social/index.astro"
+import Social from "./Social/index.astro";
+import SearchPrompt from "./SearchPrompt/index.astro";
 ---
 
 <header>
@@ -18,7 +19,9 @@ import Social from "./Social/index.astro"
       <MainMenu />
     </div>
     <div class="bottom-options">
-      <div class="search"></div>
+      <div class="search-slot">
+        <SearchPrompt />
+      </div>
       <div class="actions"></div>
     </div>
   </div>

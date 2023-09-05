@@ -65,7 +65,7 @@ body {
   height: 100vh;
   overflow: auto;
   background-color: #010149;
-  /* filter: blur(0.05em) hue-rotate(0); */
+  filter: blur(0.05em) hue-rotate(0);
 
   @include belowTurningPoint {
     height: auto;
