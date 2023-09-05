@@ -7,6 +7,7 @@
     "start": "concurrently \"npm run local:cms\" \"astro dev --host\"",
     "build": "astro build",
     "preview": "astro preview",
+    "preview:basic": "http-server dist",
     "test": "jest"
   },
   "devDependencies": {
@@ -21,7 +22,7 @@
   },
   "dependencies": {
     "decap-cms-app": "^3.0.5",
-    "http-server": "14.1.1",
+    "http-server": "^14.1.1",
     "shader-doodle": "^0.0.5"
   },
   "jest": {
