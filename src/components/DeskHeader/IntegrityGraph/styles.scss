@@ -12,7 +12,8 @@
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-    min-width: 85px;
+    min-width: 110px;
+    flex-shrink: 0;
   
     @include below(l) {
       margin-right: 20px;
