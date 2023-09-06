@@ -14,6 +14,7 @@ elementController("app-shell", ({ on, query }) => {
   on("global:resize", fixFullHeight);
   on("global:scroll", handlePageScroll);
 
+
   function handlePageScroll(e: Event) {
     const isMobile = screen.width < 1000;
     const distanceFromTop = window.scrollY;
