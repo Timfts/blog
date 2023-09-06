@@ -14,7 +14,7 @@ type ControllerEventHandler = (
 export type Queryfunction = (queryStrirng: string) => HTMLElement | null;
 export type QueryAllFunction = (
   queryStrirng: string
-) => NodeListOf<HTMLElement>;
+) => HTMLElement[];
 export type EmitFunction = (eventName: string, payload?: Object) => void;
 
 export interface IBuilderFunctionArgs {

@@ -26,7 +26,7 @@ export function getOnFunction(rootElement: HTMLElement) {
       if (isGlobalEvent) {
         return eventName.replace(globalEventDirective, "");
       } else if (isDocumentEvent) {
-        return eventName.replace(globalEventDirective, "");
+        return eventName.replace(documentEventDirective, "");
       }
       return eventName;
     })();
@@ -42,7 +42,7 @@ export function getQueryFunction(rootElement: HTMLElement): Queryfunction {
 export function getQueryAllFunction(
   rootElement: HTMLElement
 ): QueryAllFunction {
-  return (query: string) => rootElement.querySelectorAll(query);
+  return (query: string) =>  Array.from(rootElement.querySelectorAll(query));
 }
 
 export function getEmitFunction(rootElement: HTMLElement): EmitFunction {

@@ -6,7 +6,7 @@ const links = [
   },
   {
     label: "Snippets",
-    path: "/",
+    path: "/snippets",
   },
   {
     label: "Projects",
@@ -14,12 +14,12 @@ const links = [
   },
   {
     label: "Posts",
-    path: "/",
+    path: "/posts",
   },
 ];
 ---
 
-<nav class="desk-main-menu global-metal-background">
+<nav class="desk-main-menu global-metal-background" data-fragment="desk-menu">
   <ul class="desk-main-menu__list">
     {
       links.map(({ label, path }) => (
@@ -32,6 +32,10 @@ const links = [
     }
   </ul>
 </nav>
+
+<script>
+  import "./controller";
+</script>
 
 <style lang="scss">
   @import "./styles.scss";
