@@ -1,20 +1,19 @@
 ---
+import { getLang } from "@helpers/i18n";
 import DeskHeader from "../DeskHeader/index.astro";
 import MobileHeader from "../MobileHeader/index.astro";
 import MobileNav from "../MobileNav/index.astro";
 import { ViewTransitions } from "astro:transitions";
+import i18n from "./i18n";
 
 export interface Props {
   title?: string;
-  lang?: Lang;
 }
 
-const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
+const { title = "Tim Fontes" } = Astro.props as Props;
+const lang = getLang(Astro.url);
+const { htmlLang } = i18n[lang];
 const forceViewTransitionsPolyfill = true;
-const htmlLang = {
-  en: "en",
-  "pt-br": "pt-BR",
-}[lang];
 ---
 
 <!doctype html>

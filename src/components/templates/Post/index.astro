@@ -2,15 +2,9 @@
 import Shell from "@components/Shell/index.astro";
 import PageGrid from "@components/PageGrid/index.astro";
 import ContentPanel from "@components/ContentPanel.astro";
-
-interface Props {
-  lang?: Lang;
-}
-
-const { lang = "en" } = Astro.props;
 ---
 
-<Shell lang={lang}>
+<Shell>
   <PageGrid dataElement="post-page">
     <ContentPanel columns={8} main>
       <slot />

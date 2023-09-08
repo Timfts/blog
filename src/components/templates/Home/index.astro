@@ -3,12 +3,9 @@ import Shell from "@components/Shell/index.astro";
 import ContentPanel from "@components/ContentPanel.astro";
 import PageGrid from "@components/PageGrid/index.astro";
 import i18n from "./i18n";
+import { getLang } from "@helpers/i18n";
 
-interface Props {
-  lang?: Lang;
-}
-
-const { lang = "en" } = Astro.props;
+const lang = getLang(Astro.url);
 const { title } = i18n[lang];
 ---
 

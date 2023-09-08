@@ -1,22 +1,8 @@
 ---
-const links = [
-  {
-    label: "Home",
-    path: "/",
-  },
-  {
-    label: "Snippets",
-    path: "/snippets",
-  },
-  {
-    label: "Projects",
-    path: "/projects",
-  },
-  {
-    label: "Posts",
-    path: "/posts",
-  },
-];
+import { getLang } from "@helpers/i18n";
+import i18n from "./i18n";
+const lang = getLang(Astro.url);
+const { links } = i18n[lang];
 ---
 
 <nav class="desk-main-menu global-metal-background" data-fragment="desk-menu">
