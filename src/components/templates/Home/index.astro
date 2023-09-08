@@ -2,12 +2,20 @@
 import Shell from "@components/Shell/index.astro";
 import ContentPanel from "@components/ContentPanel.astro";
 import PageGrid from "@components/PageGrid/index.astro";
+import i18n from "./i18n";
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = "en" } = Astro.props;
+const { title } = i18n[lang];
 ---
 
 <Shell>
   <PageGrid dataElement="home-page">
     <ContentPanel main columns={7}>
-      <div id="hehe">batata</div>
+      <div id="hehe">{title}</div>
       <button id="mybtn">teste</button>
     </ContentPanel>
     <ContentPanel columns={5}>

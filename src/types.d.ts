@@ -2,7 +2,7 @@ interface IControllersList {
   [key: string]: () => void;
 }
 
-type Lang = "pt" | "en"
+type Lang = "pt-br" | "en"
 
 interface IPublication {
   title: string;
