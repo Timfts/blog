@@ -2,21 +2,20 @@
 import Shell from "@components/Shell/index.astro";
 import PageGrid from "@components/PageGrid/index.astro";
 import ContentPanel from "@components/ContentPanel.astro";
+import i18n from "./i18n";
 
-interface Props {
+export interface Props {
   lang?: Lang;
 }
 
 const { lang = "en" } = Astro.props;
+const { disclaimer } = i18n[lang];
 ---
 
 <Shell lang={lang}>
-  <PageGrid dataElement="post-page">
-    <ContentPanel columns={8} main>
-      <slot />
-    </ContentPanel>
-    <ContentPanel columns={4}>
-      <p>extra</p>
+  <PageGrid dataElement="not-found-page">
+    <ContentPanel columns={12} main>
+      {disclaimer}
     </ContentPanel>
   </PageGrid>
 </Shell>

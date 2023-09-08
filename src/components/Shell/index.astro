@@ -6,15 +6,19 @@ import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title?: string;
-  lang?: "pt-BR" | "en";
+  lang?: Lang;
 }
 
 const { title = "Tim Fontes", lang = "en" } = Astro.props as Props;
 const forceViewTransitionsPolyfill = true;
+const htmlLang = {
+  en: "en",
+  "pt-br": "pt-BR",
+}[lang];
 ---
 
 <!doctype html>
-<html lang={lang} transition:animate="none">
+<html lang={htmlLang} transition:animate="none">
   <head>
     <title>{title}</title>
     <meta name="theme-color" content="#7D7F82" />
