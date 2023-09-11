@@ -2,19 +2,25 @@
 import transition from "./transition";
 export interface Props {
   dataElement: string;
+  expansible?: boolean;
 }
 
-const { dataElement } = Astro.props;
+const { dataElement, expansible = false } = Astro.props;
+
+const topBottomPadding = 60;
+const headerHeight = 130;
+const defaultHeight = `calc(100vh - ${topBottomPadding + headerHeight}px)`;
 ---
 
 <div
   class="page-panel-grid"
+  class:list={{ "page-panel-grid--expansible": expansible }}
   data-fragment={dataElement}
   transition:animate={transition}
 >
   <slot />
 </div>
 
-<style lang="scss">
+<style lang="scss" define:vars={{ defaultHeight }}>
   @import "./styles.scss";
 </style>
