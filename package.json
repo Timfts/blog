@@ -21,7 +21,7 @@
     "ts-jest": "29.1.2"
   },
   "dependencies": {
-    "decap-cms-app": "^3.0.12",
+    "decap-cms-app": "3.1.10",
     "http-server": "^14.1.1",
     "shader-doodle": "^0.0.5"
   },
