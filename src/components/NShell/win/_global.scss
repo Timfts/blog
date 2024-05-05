@@ -1,0 +1,131 @@
+/*-------------------------------------------*\
+    Global
+\*-------------------------------------------*/
+
+body {
+  font-family: Arial;
+  font-size: 12px;
+  color: #222222;
+}
+.surface {
+  background: var(--surface);
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+u {
+  text-decoration: none;
+  border-bottom: 0.5px solid #222222;
+}
+
+a {
+  color: var(--link-blue);
+  &:focus {
+    outline: 1px dotted var(--link-blue);
+  }
+}
+
+code {
+  font-family: monospace;
+  * {
+    font-family: monospace;
+  }
+}
+pre {
+  display: block;
+  padding: 12px 8px;
+  background-color: black;
+  color: #c0c0c0;
+  font-family: "Perfect DOS VGA 437 Win";
+  font-size: 1rem;
+  margin: 0;
+  * {
+    font-family: "Perfect DOS VGA 437 Win";
+  }
+}
+summary {
+  &:focus {
+    outline: 1px dotted #000000;
+  }
+}
+::-webkit-scrollbar {
+  width: 17px;
+  &:horizontal {
+    height: 17px;
+  }
+}
+::-webkit-scrollbar-corner {
+  background: var(--button-face);
+}
+::-webkit-scrollbar {
+  width: 17px;
+  &:horizontal {
+    height: 17px;
+  }
+}
+::-webkit-scrollbar-corner {
+  background: var(--button-face);
+}
+::-webkit-scrollbar-track {
+  background-image: url("/images/xp/scrollbar-background.svg");
+
+  &:vertical {
+    background-image: url("/images/xp/scroll-background.svg");
+  }
+  &:horizontal {
+    background-image: url("/images/xp/scroll-background-horizontal.svg");
+  }
+}
+::-webkit-scrollbar-thumb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #c8d6fb;
+  background-size: 7px;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
+  &:vertical {
+    background-image: url("/images/xp/scroll-thumb.svg");
+  }
+  &:horizontal {
+    background-size: 8px;
+    background-image: url("/images/xp/scroll-thumb-horizontal.svg");
+  }
+}
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: block;
+}
+::-webkit-scrollbar-button {
+  &:vertical {
+    &:start {
+      height: 17px;
+      background-image: url("/images/xp/scroll-arrow-up.svg");
+    }
+    &:end {
+      height: 17px;
+      background-image: url("/images/xp/scroll-arrow-down.svg");
+    }
+  }
+  &:horizontal {
+    &:start {
+      width: 17px;
+      background-image: url("/images/xp/scroll-arrow-left.svg");
+    }
+    &:end {
+      width: 17px;
+      background-image: url("/images/xp/scroll-arrow-right.svg");
+    }
+  }
+}
