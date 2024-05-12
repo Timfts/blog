@@ -1,0 +1,42 @@
+---
+export interface Props extends astroHTML.JSX.HtmlHTMLAttributes {
+  stacked?: boolean;
+  as?: string
+}
+
+const {as: Element = "div", stacked, ...props } = Astro.props;
+---
+
+<Element class={stacked ? "field-row-stacked" : "field-row"} {...props}>
+  <slot />
+</Element>
+
+<style lang="scss">
+  .field-row {
+    display: flex;
+    align-items: center;
+    > * {
+      + {
+        * {
+          margin-left: var(--grouped-element-spacing);
+        }
+      }
+    }
+
+    &:not(:first-of-type) {
+      margin-top: var(--grouped-element-spacing);
+    }
+  }
+
+  .field-row-stacked {
+    display: flex;
+    flex-direction: column;
+    * {
+      + {
+        * {
+          margin-top: var(--grouped-element-spacing);
+        }
+      }
+    }
+  }
+</style>

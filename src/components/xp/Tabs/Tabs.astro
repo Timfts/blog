@@ -1,0 +1,111 @@
+---
+import Button from "../Button.astro";
+
+interface TabBtn {
+  label: string;
+  id: string;
+}
+
+export interface Props {
+  tablist: TabBtn[];
+}
+
+const { tablist } = Astro.props;
+const firstItem = tablist[0]?.id;
+---
+
+<div data-fragment="tab" data-first-item={firstItem}>
+  <menu class="menu" role="tablist">
+    {
+      tablist.map(({ label, id }) => (
+        <Button
+          class="tab-btn"
+          aria-controls={id}
+          aria-selected={id === firstItem}
+        >
+          {label}
+        </Button>
+      ))
+    }
+  </menu>
+  <slot />
+</div>
+
+<script>
+  import "./controller";
+</script>
+
+<style lang="scss">
+  .menu[role="tablist"] {
+    position: relative;
+    margin: 0 0 -2px 0;
+    text-indent: 0;
+    list-style-type: none;
+    display: flex;
+    padding-left: 3px;
+    .tab-btn {
+      z-index: 1;
+      display: block;
+      color: #222;
+      text-decoration: none;
+      min-width: unset;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(250, 250, 249, 1) 26%,
+        rgba(240, 240, 234, 1) 95%,
+        rgba(236, 235, 229, 1) 100%
+      );
+      margin-left: -1px;
+      margin-right: 2px;
+      border-radius: 0;
+      border-color: #91a7b4;
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      padding: 0 12px 3px;
+      &:hover {
+        box-shadow: unset;
+        border-top: 1px solid #e68b2c;
+        box-shadow: inset 0px 2px #ffc73c;
+      }
+      &[aria-selected="true"] {
+        padding-bottom: 2px;
+        margin-top: -2px;
+        background-color: var(--surface);
+        position: relative;
+        z-index: 8;
+        margin-left: -3px;
+        margin-bottom: 1px;
+        background: #fcfcfe;
+        border-color: #919b9c;
+        margin-right: -1px;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid #e68b2c;
+        box-shadow: inset 0px 2px #ffc73c;
+        &:first-of-type {
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 100%;
+            left: -1px;
+            height: 2px;
+            width: 0;
+            border-left: var(--tab-border);
+          }
+        }
+      }
+      &:focus {
+        outline: 1px dotted #222;
+        outline-offset: -4px;
+      }
+    }
+    &.justified {
+      .tab-btn {
+        flex-grow: 1;
+        text-align: center;
+      }
+    }
+  }
+</style>
