@@ -115,13 +115,13 @@ summary {
   background: var(--button-face);
 }
 ::-webkit-scrollbar-track {
-  background-image: url("/images/xp/scrollbar-background.svg");
+  background-image: var("--scrollbar-background");
 
   &:vertical {
-    background-image: url("/images/xp/scroll-background.svg");
+    background-image: var(--scroll-background);
   }
   &:horizontal {
-    background-image: url("/images/xp/scroll-background-horizontal.svg");
+    background-image: var(--scroll-background-horizontal);
   }
 }
 ::-webkit-scrollbar-thumb {
@@ -133,11 +133,11 @@ summary {
   border-radius: 2px;
   box-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
   &:vertical {
-    background-image: url("/images/xp/scroll-thumb.svg");
+    background-image: var(--scroll-thumb);
   }
   &:horizontal {
     background-size: 8px;
-    background-image: url("/images/xp/scroll-thumb-horizontal.svg");
+    background-image: var(--scroll-thumb-horizontal);
   }
 }
 ::-webkit-scrollbar-button:horizontal:start:decrement,
@@ -150,21 +150,21 @@ summary {
   &:vertical {
     &:start {
       height: 17px;
-      background-image: url("/images/xp/scroll-arrow-up.svg");
+      background-image: var(--scroll-arrow-up);
     }
     &:end {
       height: 17px;
-      background-image: url("/images/xp/scroll-arrow-down.svg");
+      background-image: var(--scroll-arrow-down);
     }
   }
   &:horizontal {
     &:start {
       width: 17px;
-      background-image: url("/images/xp/scroll-arrow-left.svg");
+      background-image: var(--scroll-arrow-left);
     }
     &:end {
       width: 17px;
-      background-image: url("/images/xp/scroll-arrow-right.svg");
+      background-image: var(--scroll-arrow-right);
     }
   }
 }

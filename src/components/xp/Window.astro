@@ -45,7 +45,7 @@ const {
     --title-bar-bg: black;
   }
   .window {
-    font-size: 11px;
+    font-size: 12px;
     background: var(--surface);
     box-shadow:
       inset -1px -1px #00138c,
@@ -120,49 +120,49 @@ const {
       }
     }
     :global(button)[aria-label="Minimize"] {
-      background-image: url("/images/xp/minimize.svg");
+      background-image: var(--minimize);
       &:hover {
-        background-image: url("/images/xp/minimize-hover.svg");
+        background-image: var(--minimize-hover);
       }
       &:not(:disabled):active {
-        background-image: url("/images/xp/minimize-active.svg");
+        background-image: var(--minimize-active);
       }
     }
     :global(button)[aria-label="Maximize"] {
-      background-image: url("/images/xp/maximize.svg");
+      background-image: var(--maximize);
       &:hover {
-        background-image: url("/images/xp/maximize-hover.svg");
+        background-image: var(--maximize-hover);
       }
       &:not(:disabled):active {
-        background-image: url("/images/xp/maximize-active.svg");
+        background-image: var(--maximize-active);
       }
     }
     :global(button)[aria-label="Restore"] {
-      background-image: url("/images/xp/restore.svg");
+      background-image: var(--restore);
       &:hover {
-        background-image: url("/images/xp/restore-hover.svg");
+        background-image: var(--restore-hover);
       }
       &:not(:disabled):active {
-        background-image: url("/images/xp/restore-active.svg");
+        background-image: var(--restore-active);
       }
     }
     :global(button)[aria-label="Help"] {
-      background-image: url("/images/xp/help.svg");
+      background-image: var(--help);
       &:hover {
-        background-image: url("/images/xp/help-hover.svg");
+        background-image: var(--help-hover);
       }
       &:not(:disabled):active {
-        background-image: url("/images/xp/help-active.svg");
+        background-image: var(--help-active);
       }
     }
 
     :global(button)[aria-label="Close"] {
-      background-image: url("/images/xp/close.svg");
+      background-image: var(--close);
       &:hover {
-        background-image: url("/images/xp/close-hover.svg");
+        background-image: var(--close-hover);
       }
       &:not(:disabled):active {
-        background-image: url("/images/xp/close-active.svg");
+        background-image: var(--close-active);
       }
     }
   }

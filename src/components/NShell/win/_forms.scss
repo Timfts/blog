@@ -56,7 +56,7 @@ select {
   background-repeat: no-repeat;
   border-radius: 0;
   border: 1px solid #7f9db9;
-  background-image: url("/images/xp/dropdown.svg");
+  background-image: var(--dropdown);
   background-size: 15px;
 
   &:focus {
@@ -70,10 +70,10 @@ select {
     }
   }
   &:hover {
-    background-image: url("/images/xp/dropdown-hover.svg");
+    background-image: var(--dropdown-hover);
   }
   &:active {
-    background-image: url("/images/xp/dropdown-active.svg");
+    background-image: var(--dropdown-active);
   }
 }
 option {
@@ -157,7 +157,7 @@ input[type="radio"] {
           top: var(--radio-dot-top);
           left: var(--radio-dot-left);
           position: absolute;
-          background: url("/images/xp/radio-dot.svg");
+          background: var(--radio-dot);
         }
       }
     }
@@ -200,7 +200,7 @@ input[type="checkbox"] {
   }
   &:checked + label {
     &:after {
-      background: url("/images/xp/checkmark.svg");
+      background: var(--checkmark);
       left: -19px;
     }
   }
@@ -236,7 +236,7 @@ input[type="checkbox"] {
           width: var(--checkmark-width);
           height: var(--checkmark-width);
           position: absolute;
-          background: url("/images/xp/checkmark.svg");
+          background: var(--checkmark);
           top: 1px;
         }
       }
@@ -256,7 +256,7 @@ input[type="radio"][disabled] {
     + {
       label {
         &::after {
-          background: url("/images/xp/radio-dot-disabled.svg");
+          background: var(--radio-dot-disabled);
         }
       }
     }
@@ -275,7 +275,7 @@ input[type="checkbox"][disabled] {
     + {
       label {
         &::after {
-          background: url("/images/xp/checkmark-disabled.svg");
+          background: var(--checkmark-disabled);
         }
       }
     }
@@ -316,7 +316,7 @@ input[type="range"] {
     -webkit-appearance: none;
     height: 21px;
     width: 11px;
-    background: url("/images/xp/indicator-horizontal.svg");
+    background: var(--indicator-horizontal);
     transform: translateY(-8px);
   }
   &::-moz-range-thumb {
@@ -324,7 +324,7 @@ input[type="range"] {
     width: 11px;
     border: 0;
     border-radius: 0;
-    background: url("/images/xp/indicator-horizontal.svg");
+    background: var(--indicator-horizontal);
     transform: translateY(2px);
   }
   &::-webkit-slider-runnable-track {
@@ -352,11 +352,11 @@ input[type="range"] {
 }
 input[type="range"].has-box-indicator {
   &::-webkit-slider-thumb {
-    background: url("/images/xp/indicator-rectangle-horizontal.svg");
+    background: var(--indicator-rectangle-horizontal);
     transform: translateY(-10px);
   }
   &::-moz-range-thumb {
-    background: url("/images/xp/indicator-rectangle-horizontal.svg");
+    background: var(--indicator-rectangle-horizontal);
     transform: translateY(0px);
   }
 }

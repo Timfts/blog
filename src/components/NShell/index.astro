@@ -1,4 +1,5 @@
 ---
+import MainMenu from "@components/MainMenu/index.astro";
 import { getLang } from "@helpers/i18n";
 import i18n from "./i18n";
 
@@ -20,7 +21,14 @@ const forceViewTransitionsPolyfill = true;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <slot />
+    <div class="shell">
+      <div class="shell-menu">
+        <MainMenu />
+      </div>
+      <div class="shell-content">
+        <slot />
+      </div>
+    </div>
   </body>
 
   <style lang="scss" is:global>

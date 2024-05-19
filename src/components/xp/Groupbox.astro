@@ -13,7 +13,7 @@ const { legend } = Astro.props;
 
 <style lang="scss">
   fieldset {
-    border-image: svg-load("./icon/groupbox-border.svg") 2;
+    border-image: var(--groupbox-border) 2;
     padding: calc(2 * var(--border-width) + var(--element-spacing));
     padding-block-start: var(--element-spacing);
     margin: 0;
