@@ -35,7 +35,7 @@
 
 body {
   font-family: Arial;
-  font-size: 12px;
+  font-size: var(--body-font, 12px);
   color: #222222;
 }
 .surface {

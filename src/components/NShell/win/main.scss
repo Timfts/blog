@@ -5,14 +5,22 @@
 @import "_treeview.scss";
 
 .shell {
-  width:200vw;
-  /* background-color: red; */
+  background-color: var(--surface);
+  min-height: 100vh;
+  position: relative;
+
+  @include aboveTurningPoint() {
+    display: flex;
+  }
 
   &-menu {
-
+    @include aboveTurningPoint() {
+      width: 290px;
+      position: relative;
+    }
   }
 
   &-content {
-
+    flex: 1;
   }
 }
