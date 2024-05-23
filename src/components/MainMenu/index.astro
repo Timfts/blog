@@ -1,83 +1,75 @@
+---
+import { Picture } from "astro:assets";
+import home from "./icons/home.png"
+import folder from "./icons/folder.png";
+import notes from "./icons/notes.png"
+import projects from "./icons/projects.png"
+import config from "./icons/config.png"
+import contact from "./icons/contact.png"
+
+const menuItems = [
+  {
+    label: "Home",
+    icon: home
+  },
+  {
+    label: "Projects",
+    icon: folder
+  },
+  {
+    label: "Posts",
+    icon: notes
+  },
+  {
+    label: "Work",
+    icon: projects
+  },
+  {
+    label: "Contact",
+    icon: contact
+  },
+  {
+    label: "Config",
+    icon: config
+  },
+];
+---
+
 <div class="main-menu">
   <header class="header">
-    <p>Name</p>
+    <div class="avatar">
+      <img
+        class="avatar-image"
+        src="https://avatars.githubusercontent.com/u/17283501?v=4"
+        width="260"
+        height="260"
+      />
+    </div>
+    <h1 class="name">Tim Fontes</h1>
   </header>
   <div class="menu">
-    <div class="menu-content">
-      <p>menu</p>
-    </div>
+    <menu class="menu-content">
+      {
+        menuItems.map((item) => (
+          <li class="menu-content-item">
+            <a class="menu-content-link" href="/">
+              <Picture
+                class="menu-content-icon"
+                width={24}
+                height={24}
+                formats={["webp"]}
+                src={item.icon}
+                alt="asdsf"
+              />
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </menu>
   </div>
 </div>
 
 <style lang="scss">
-  .main-menu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 10;
-
-    @include aboveTurningPoint() {
-      padding: 8px;
-      position: fixed;
-      width: 290px;
-      border-radius: 0px 5px 0px 0px;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .header {
-    height: 75px;
-    background: var(--window-top);
-    position: relative;
-    padding: 10px;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-top: 1px solid #0831d9;
-    border-left: 1px solid #0831d9;
-    border-right: 1px solid #001ea0;
-    text-shadow: 1px 1px #0f1089;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 0;
-    font-family: "Trebuchet MS";
-
-    @include aboveTurningPoint() {
-      border-radius: 7px 7px 0px 0px;
-    }
-  }
-
-  .menu {
-    padding-top: 75px;
-    height: 100vh;
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-
-    @include aboveTurningPoint() {
-      position: relative;
-      padding-top: 0;
-    }
-  }
-
-  .menu-content {
-    position: relative;
-    background-color: white;
-    height: 100%;
-    border: 1px solid #7f9db9;
-    &:before {
-      content: "";
-      position: absolute;
-      top: -8px;
-      left: 10%;
-      width: 80%;
-      height: 5px;
-      border-radius: 50%;
-      box-shadow: 0px 4px 5px #e88f0b;
-      z-index: 10;
-    }
-  }
+  @import "./styles.scss";
 </style>

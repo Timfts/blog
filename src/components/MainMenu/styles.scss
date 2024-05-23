@@ -1,0 +1,123 @@
+$header-size: 90px;
+.main-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+
+  @include aboveTurningPoint() {
+    padding: 8px;
+    position: fixed;
+    width: 290px;
+    border-radius: 0px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header {
+  height: $header-size;
+  background: var(--window-top);
+  position: relative;
+  padding: 10px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+
+  @include aboveTurningPoint() {
+    border-radius: 7px 7px 0px 0px;
+  }
+}
+
+.avatar {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 4px;
+  margin-right: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.name {
+  text-shadow: 1px 1px #0f1089;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Trebuchet MS";
+  font-size: 16px;
+}
+
+.avatar-image {
+  height: 100%;
+  width: auto;
+}
+
+.menu {
+  padding-top: $header-size;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  @include aboveTurningPoint() {
+    position: relative;
+    padding-top: 0;
+  }
+}
+
+.menu-content {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  border: 1px solid #7f9db9;
+  list-style: none;
+  padding-top: 5px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 5px #e88f0b;
+    z-index: 10;
+  }
+}
+
+.menu-content-item {
+}
+
+.menu-content-link {
+  font-family: var(--sans-serif);
+  color: black;
+  text-decoration: none;
+  padding: 12px 10px;
+  display: block;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: underline;
+    background-color: #2267cb;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: 1px dotted #00f;
+  }
+}
+
+.menu-content-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 12px;
+}
