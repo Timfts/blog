@@ -1,36 +1,57 @@
 ---
-import { Picture } from "astro:assets";
-import home from "./icons/home.png"
+import { Image, Picture } from "astro:assets";
+import FieldRow from "@components/xp/FieldRow.astro";
+import home from "./icons/home.png";
 import folder from "./icons/folder.png";
-import notes from "./icons/notes.png"
-import projects from "./icons/projects.png"
-import config from "./icons/config.png"
-import contact from "./icons/contact.png"
+import notes from "./icons/notes.png";
+import projects from "./icons/projects.png";
+import config from "./icons/config.png";
+import contact from "./icons/contact.png";
+import go from "./icons/go.png";
 
 const menuItems = [
   {
     label: "Home",
-    icon: home
+    icon: home,
   },
   {
     label: "Projects",
-    icon: folder
+    icon: folder,
   },
   {
     label: "Posts",
-    icon: notes
+    icon: notes,
   },
   {
     label: "Work",
-    icon: projects
+    icon: projects,
   },
   {
     label: "Contact",
-    icon: contact
+    icon: contact,
   },
+  /* {
+    label: "Social",
+    icon: social,
+  }, */
   {
     label: "Config",
-    icon: config
+    icon: config,
+  },
+];
+
+const social = [
+  {
+    label: "Github",
+  },
+  {
+    label: "Linkedin",
+  },
+  {
+    label: "Instagram",
+  },
+  {
+    label: "Discord",
   },
 ];
 ---
@@ -47,8 +68,8 @@ const menuItems = [
     </div>
     <h1 class="name">Tim Fontes</h1>
   </header>
-  <div class="menu">
-    <menu class="menu-content">
+  <div class="menu-body">
+    <menu class="menu-list">
       {
         menuItems.map((item) => (
           <li class="menu-content-item">
@@ -67,6 +88,24 @@ const menuItems = [
         ))
       }
     </menu>
+
+    <div class="search-block">
+      <label for="text21">Search</label>
+      <input id="text21" type="text" />
+      <Image alt="" quality={100} width="25" height="25" src={go} />
+    </div>
+
+    <ul class="social-holder">
+      {
+        social.map((item) => (
+          <li>
+            <a class="social-link" href="/">
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 </div>
 
