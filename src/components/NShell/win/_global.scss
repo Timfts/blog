@@ -118,9 +118,11 @@ summary {
   background-image: var("--scrollbar-background");
 
   &:vertical {
+    image-rendering: pixelated;
     background-image: var(--scroll-background);
   }
   &:horizontal {
+    image-rendering: pixelated;
     background-image: var(--scroll-background-horizontal);
   }
 }
@@ -133,10 +135,12 @@ summary {
   border-radius: 2px;
   box-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
   &:vertical {
+    image-rendering: pixelated;
     background-image: var(--scroll-thumb);
   }
   &:horizontal {
     background-size: 8px;
+    image-rendering: pixelated;
     background-image: var(--scroll-thumb-horizontal);
   }
 }
@@ -149,20 +153,24 @@ summary {
 ::-webkit-scrollbar-button {
   &:vertical {
     &:start {
+      image-rendering: pixelated;
       height: 17px;
       background-image: var(--scroll-arrow-up);
     }
     &:end {
+      image-rendering: pixelated;
       height: 17px;
       background-image: var(--scroll-arrow-down);
     }
   }
   &:horizontal {
     &:start {
+      image-rendering: pixelated;
       width: 17px;
       background-image: var(--scroll-arrow-left);
     }
     &:end {
+      image-rendering: pixelated;
       width: 17px;
       background-image: var(--scroll-arrow-right);
     }

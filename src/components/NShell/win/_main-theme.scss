@@ -1,42 +1,42 @@
 // uncomment as needed
 :root {
-  /* --minimize: url("images/xp/minimize.svg");
-  --minimize-hover: url("images/xp/minimize-hover.svg");
-  --minimize-active: url("images/xp/minimize-active.svg");
-  --maximize: url("images/xp/maximize.svg");
-  --maximize-hover: url("images/xp/maximize-hover.svg");
-  --maximize-active: url("images/xp/maximize-active.svg");
-  --restore: url("images/xp/restore.svg");
-  --restore-hover: url("images/xp/restore-hover.svg");
-  --restore-active: url("images/xp/restore-active.svg");
-  --help: url("images/xp/help.svg");
-  --help-hover: url("images/xp/help-hover.svg");
-  --help-active: url("images/xp/help-active.svg"); */
-  --close: url("images/xp/close.svg");
-  --close-hover: url("images/xp/close-hover.svg");
-  --close-active: url("images/xp/close-active.svg");
-  --dropdown: url("images/xp/dropdown.svg");
-  --dropdown-hover: url("images/xp/dropdown-hover.svg");
-  --dropdown-active: url("images/xp/dropdown-active.svg");
-  --radio-dot: url("images/xp/radio-dot.svg");
-  --radio-dot-disabled: url("images/xp/radio-dot-disabled.svg");
-  --checkmark: url("images/xp/checkmark.svg");
-  --checkmark: url("images/xp/checkmark-disabled.svg");
-  --indicator-horizontal: url("images/xp/indicator-horizontal.svg");
+  /* --minimize: url("images/icons/minimize.png");
+  --minimize-hover: url("images/icons/minimize-hover.png");
+  --minimize-active: url("images/icons/minimize-active.png");
+  --maximize: url("images/icons/maximize.png");
+  --maximize-hover: url("images/icons/maximize-hover.png");
+  --maximize-active: url("images/icons/maximize-active.png");
+  --restore: url("images/icons/restore.png");
+  --restore-hover: url("images/icons/restore-hover.png");
+  --restore-active: url("images/icons/restore-active.png");
+  --help: url("images/icons/help.png");
+  --help-hover: url("images/icons/help-hover.png");
+  --help-active: url("images/icons/help-active.png"); */
+  --close: url("images/icons/close.png");
+  --close-hover: url("images/icons/close-hover.png");
+  --close-active: url("images/icons/close-active.png");
+  --dropdown: url("images/icons/dropdown.png");
+  --dropdown-hover: url("images/icons/dropdown-hover.png");
+  --dropdown-active: url("images/icons/dropdown-active.png");
+  --radio-dot: url("images/icons/radio-dot.png");
+  --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
+  --checkmark: url("images/icons/checkmark.png");
+  --checkmark-disabled: url("images/icons/checkmark-disabled.png");
+  --indicator-horizontal: url("images/icons/indicator-horizontal.png");
   --indicator-rectangle-horizontal: url(
-    "images/xp/indicator-rectangle-horizontal.svg"
+    "images/icons/indicator-rectangle-horizontal.png"
   );
   // TODO - load directly in html
-  /* --scrollbar-background: url("images/xp/scrollbar-background.svg"); */
-  --scroll-background: url("images/xp/scroll-background.svg");
+  /* --scrollbar-background: url("images/icons/scrollbar-background.png"); */
+  --scroll-background: url("images/icons/scroll-background.png");
   --scroll-background-horizontal: url(
-    "images/xp/scroll-background-horizontal.svg"
+    "images/icons/scroll-background-horizontal.png"
   );
-  --scroll-thumb: url("images/xp/scroll-thumb.svg");
-  --scroll-thumb-horizontal: url("images/xp/scroll-thumb-horizontal.svg");
-  --scroll-arrow-up: url("images/xp/scroll-arrow-up.svg");
-  --scroll-arrow-down: url("images/xp/scroll-arrow-down.svg");
-  --scroll-arrow-left: url("images/xp/scroll-arrow-left.svg");
-  --scroll-arrow-right: url("images/xp/scroll-arrow-right.svg");
-  /* --groupbox-border: url("images/xp/groupbox-border.svg"); */
+  --scroll-thumb: url("images/icons/scroll-thumb.png");
+  --scroll-thumb-horizontal: url("images/icons/scroll-thumb-horizontal.png");
+  --scroll-arrow-up: url("images/icons/scroll-arrow-up.png");
+  --scroll-arrow-down: url("images/icons/scroll-arrow-down.png");
+  --scroll-arrow-left: url("images/icons/scroll-arrow-left.png");
+  --scroll-arrow-right: url("images/icons/scroll-arrow-right.png");
+  /* --groupbox-border: url("images/icons/groupbox-border.png"); */
 }
