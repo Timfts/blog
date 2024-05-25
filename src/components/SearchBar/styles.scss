@@ -1,0 +1,32 @@
+.search-bar {
+  width: 100%;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.label {
+  display: block;
+}
+
+.field {
+  flex: 1;
+}
+
+.submit {
+  outline: none;
+  background: none;
+  height: 24px;
+  width: 24px;
+  border: none;
+  background-image: var(--go);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}

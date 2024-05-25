@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import FieldRow from "@components/FieldRow.astro";
+import SearchBar from "@components/SearchBar/index.astro";
 import home from "./icons/home.png";
 import folder from "./icons/folder.png";
 import notes from "./icons/notes.png";
@@ -90,9 +90,8 @@ const social = [
     </menu>
 
     <div class="search-block">
-      <label for="text21">Search</label>
-      <input id="text21" type="text" />
-      <Image alt="" quality={100} width="25" height="25" src={go} />
+      <div class="search-block-divider"></div>
+      <SearchBar />
     </div>
 
     <ul class="social-holder">

@@ -1,3 +1,5 @@
+// TODO - prepare for i18n
+
 export default function goTo(path: string) {
   const ghostAnchor = findExistingGhostAnchor(path) || createGhostAnchor(path);
   ghostAnchor.click();
