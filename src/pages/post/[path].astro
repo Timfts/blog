@@ -1,6 +1,5 @@
 ---
 import { getCollection, getEntryBySlug } from "astro:content";
-import Post from "@components/templates/Post/index.astro";
 
 export async function getStaticPaths() {
   const blogPosts = await getCollection("posts", ({ id }) => {
@@ -16,8 +15,3 @@ const { slug } = Astro.props;
 const entry = await getEntryBySlug("posts", slug);
 const { Content } = await entry.render();
 ---
-
-<Post>
-  {entry.data.title}
-  <Content />
-</Post>

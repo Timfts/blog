@@ -1,0 +1,62 @@
+---
+import { getLang } from "@helpers/i18n";
+import DeskHeader from "../DeskHeader/index.astro";
+import MobileHeader from "../MobileHeader/index.astro";
+import MobileNav from "../MobileNav/index.astro";
+import { ViewTransitions } from "astro:transitions";
+import i18n from "./i18n";
+
+export interface Props {
+  title?: string;
+}
+
+const { title = "Tim Fontes" } = Astro.props as Props;
+const lang = getLang(Astro.url);
+const { htmlLang } = i18n[lang];
+const forceViewTransitionsPolyfill = true;
+---
+
+<!doctype html>
+<html lang={htmlLang} transition:animate="none">
+  <head>
+    <title>{title}</title>
+    <meta name="theme-color" content="#7D7F82" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {
+      forceViewTransitionsPolyfill ? (
+        <script is:inline>document.startViewTransition = false;</script>
+      ) : null
+    }
+
+    <ViewTransitions />
+  </head>
+  <body>
+    <main class="shell-container" data-fragment="app-shell">
+      <div class="mobile-frame mobile-frame--left global-metal-background">
+      </div>
+      <div class="mobile-header-slot">
+        <MobileHeader />
+      </div>
+      <div class="header-slot">
+        <DeskHeader />
+      </div>
+      <div class="body-slot">
+        <slot />
+      </div>
+      <div class="mobile-nav-slot">
+        <MobileNav />
+      </div>
+      <div class="mobile-frame mobile-frame--right global-metal-background">
+      </div>
+    </main>
+    <script>
+      import "./controller";
+    </script>
+    <style lang="scss" is:global>
+      @import "./styles-global.scss";
+    </style>
+    <style lang="scss">
+      @import "./styles.scss";
+    </style>
+  </body>
+</html>

@@ -1,7 +1,4 @@
 ---
-import Shell from "@components/Shell/index.astro";
-import PageGrid from "@components/PageGrid/index.astro";
-import ContentPanel from "@components/ContentPanel.astro";
 import i18n from "./i18n";
 import { getLang } from "@helpers/i18n";
 
@@ -9,10 +6,6 @@ const lang = getLang(Astro.url);
 const { disclaimer } = i18n[lang];
 ---
 
-<Shell>
-  <PageGrid dataElement="not-found-page">
-    <ContentPanel columns={12} main>
-      {disclaimer}
-    </ContentPanel>
-  </PageGrid>
-</Shell>
+<p>
+  {disclaimer}
+</p>
