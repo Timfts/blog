@@ -1,42 +1,42 @@
 // uncomment as needed
 :root {
-  /* --minimize: svg-load("images/xp/minimize.svg");
-  --minimize-hover: svg-load("images/xp/minimize-hover.svg");
-  --minimize-active: svg-load("images/xp/minimize-active.svg");
-  --maximize: svg-load("images/xp/maximize.svg");
-  --maximize-hover: svg-load("images/xp/maximize-hover.svg");
-  --maximize-active: svg-load("images/xp/maximize-active.svg");
-  --restore: svg-load("images/xp/restore.svg");
-  --restore-hover: svg-load("images/xp/restore-hover.svg");
-  --restore-active: svg-load("images/xp/restore-active.svg");
-  --help: svg-load("images/xp/help.svg");
-  --help-hover: svg-load("images/xp/help-hover.svg");
-  --help-active: svg-load("images/xp/help-active.svg"); */
-  --close: svg-load("images/xp/close.svg");
-  --close-hover: svg-load("images/xp/close-hover.svg");
-  --close-active: svg-load("images/xp/close-active.svg");
-  --dropdown: svg-load("images/xp/dropdown.svg");
-  --dropdown-hover: svg-load("images/xp/dropdown-hover.svg");
-  --dropdown-active: svg-load("images/xp/dropdown-active.svg");
-  --radio-dot: svg-load("images/xp/radio-dot.svg");
-  --radio-dot-disabled: svg-load("images/xp/radio-dot-disabled.svg");
-  --checkmark: svg-load("images/xp/checkmark.svg");
-  --checkmark: svg-load("images/xp/checkmark-disabled.svg");
-  --indicator-horizontal: svg-load("images/xp/indicator-horizontal.svg");
-  --indicator-rectangle-horizontal: svg-load(
+  /* --minimize: url("images/xp/minimize.svg");
+  --minimize-hover: url("images/xp/minimize-hover.svg");
+  --minimize-active: url("images/xp/minimize-active.svg");
+  --maximize: url("images/xp/maximize.svg");
+  --maximize-hover: url("images/xp/maximize-hover.svg");
+  --maximize-active: url("images/xp/maximize-active.svg");
+  --restore: url("images/xp/restore.svg");
+  --restore-hover: url("images/xp/restore-hover.svg");
+  --restore-active: url("images/xp/restore-active.svg");
+  --help: url("images/xp/help.svg");
+  --help-hover: url("images/xp/help-hover.svg");
+  --help-active: url("images/xp/help-active.svg"); */
+  --close: url("images/xp/close.svg");
+  --close-hover: url("images/xp/close-hover.svg");
+  --close-active: url("images/xp/close-active.svg");
+  --dropdown: url("images/xp/dropdown.svg");
+  --dropdown-hover: url("images/xp/dropdown-hover.svg");
+  --dropdown-active: url("images/xp/dropdown-active.svg");
+  --radio-dot: url("images/xp/radio-dot.svg");
+  --radio-dot-disabled: url("images/xp/radio-dot-disabled.svg");
+  --checkmark: url("images/xp/checkmark.svg");
+  --checkmark: url("images/xp/checkmark-disabled.svg");
+  --indicator-horizontal: url("images/xp/indicator-horizontal.svg");
+  --indicator-rectangle-horizontal: url(
     "images/xp/indicator-rectangle-horizontal.svg"
   );
   // TODO - load directly in html
-  /* --scrollbar-background: svg-load("images/xp/scrollbar-background.svg"); */
-  --scroll-background: svg-load("images/xp/scroll-background.svg");
-  --scroll-background-horizontal: svg-load(
+  /* --scrollbar-background: url("images/xp/scrollbar-background.svg"); */
+  --scroll-background: url("images/xp/scroll-background.svg");
+  --scroll-background-horizontal: url(
     "images/xp/scroll-background-horizontal.svg"
   );
-  --scroll-thumb: svg-load("images/xp/scroll-thumb.svg");
-  --scroll-thumb-horizontal: svg-load("images/xp/scroll-thumb-horizontal.svg");
-  --scroll-arrow-up: svg-load("images/xp/scroll-arrow-up.svg");
-  --scroll-arrow-down: svg-load("images/xp/scroll-arrow-down.svg");
-  --scroll-arrow-left: svg-load("images/xp/scroll-arrow-left.svg");
-  --scroll-arrow-right: svg-load("images/xp/scroll-arrow-right.svg");
-  /* --groupbox-border: svg-load("images/xp/groupbox-border.svg"); */
+  --scroll-thumb: url("images/xp/scroll-thumb.svg");
+  --scroll-thumb-horizontal: url("images/xp/scroll-thumb-horizontal.svg");
+  --scroll-arrow-up: url("images/xp/scroll-arrow-up.svg");
+  --scroll-arrow-down: url("images/xp/scroll-arrow-down.svg");
+  --scroll-arrow-left: url("images/xp/scroll-arrow-left.svg");
+  --scroll-arrow-right: url("images/xp/scroll-arrow-right.svg");
+  /* --groupbox-border: url("images/xp/groupbox-border.svg"); */
 }
