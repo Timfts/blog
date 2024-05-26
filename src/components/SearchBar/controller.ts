@@ -6,11 +6,7 @@ elementController("search-bar", ({ query, emit }) => {
   const searchForm = query(".search-form");
   const searchField = query("#search-field") as HTMLInputElement;
 
-  onStart();
-
-  function onStart() {
-    searchForm.addEventListener("submit", handleSearch);
-  }
+  searchForm.addEventListener("submit", handleSearch);
 
   function handleSearch(ev: SubmitEvent) {
     ev.preventDefault();
