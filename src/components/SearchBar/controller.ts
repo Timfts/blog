@@ -1,7 +1,8 @@
 import goTo from "@helpers/goTo";
 import elementController from "@lib/elementController";
+import { events } from "src/constants";
 
-elementController("search-bar", ({ query }) => {
+elementController("search-bar", ({ query, emit }) => {
   const searchForm = query(".search-form");
   const searchField = query("#search-field") as HTMLInputElement;
 
@@ -16,8 +17,8 @@ elementController("search-bar", ({ query }) => {
     const fieldValue = searchField.value;
 
     if (!fieldValue) {
-      alert("No value provided"); // TODO - add alert modal
-      return 
+      emit(events.OPEN_ALERT, { message: "No value provided to search field" });
+      return;
     }
 
     goTo(`/posts?search=${fieldValue}`);

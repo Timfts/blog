@@ -7,30 +7,10 @@ import {
 
 export function getOnFunction(rootElement: HTMLElement) {
   return (eventName: string, handler: GenericFunction) => {
-    const globalEventDirective = "global:";
-    const documentEventDirective = "document:";
-
-    const isGlobalEvent = eventName.startsWith(globalEventDirective);
-    const isDocumentEvent = eventName.startsWith(documentEventDirective);
-
-    const eventRoot = (() => {
-      if (isGlobalEvent) {
-        return window;
-      } else if (isDocumentEvent) {
-        return document;
-      }
-      return rootElement;
-    })();
-
-    const formattedEventName = (() => {
-      if (isGlobalEvent) {
-        return eventName.replace(globalEventDirective, "");
-      } else if (isDocumentEvent) {
-        return eventName.replace(documentEventDirective, "");
-      }
-      return eventName;
-    })();
-
+    const { eventRoot, formattedEventName } = getEventBase(
+      eventName,
+      rootElement
+    );
     eventRoot.addEventListener(formattedEventName, handler);
   };
 }
@@ -42,15 +22,49 @@ export function getQueryFunction(rootElement: HTMLElement): Queryfunction {
 export function getQueryAllFunction(
   rootElement: HTMLElement
 ): QueryAllFunction {
-  return (query: string) =>  Array.from(rootElement.querySelectorAll(query));
+  return (query: string) => Array.from(rootElement.querySelectorAll(query));
 }
 
 export function getEmitFunction(rootElement: HTMLElement): EmitFunction {
   return (eventName, payload) => {
-    const event = new CustomEvent(eventName, {
+    const { eventRoot, formattedEventName } = getEventBase(
+      eventName,
+      rootElement
+    );
+
+    const event = new CustomEvent(formattedEventName, {
       bubbles: true,
       detail: { ...payload },
     });
-    rootElement.dispatchEvent(event);
+    eventRoot.dispatchEvent(event);
+  };
+}
+
+function getEventBase(
+  eventName: string,
+  rootElement: HTMLElement
+): {
+  formattedEventName: string;
+  eventRoot: HTMLElement | Document | (Window & typeof globalThis);
+} {
+  const globalEventDirective = "global:";
+  const documentEventDirective = "document:";
+  const isGlobalEvent = eventName.startsWith(globalEventDirective);
+  const isDocumentEvent = eventName.startsWith(documentEventDirective);
+  if (isGlobalEvent) {
+    return {
+      formattedEventName: eventName.replace(globalEventDirective, ""),
+      eventRoot: window,
+    };
+  } else if (isDocumentEvent) {
+    return {
+      formattedEventName: eventName.replace(documentEventDirective, ""),
+      eventRoot: document,
+    };
+  }
+
+  return {
+    formattedEventName: eventName,
+    eventRoot: rootElement,
   };
 }

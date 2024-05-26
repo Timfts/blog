@@ -1,0 +1,25 @@
+---
+import Window from "@components/Window.astro";
+---
+
+<div class="alert" data-fragment="main-alert">
+  <Window id="error-modal" title="Error" actions={["Close"]}>
+    <p class="alert-message"></p>
+  </Window>
+</div>
+
+<style lang="scss">
+  .alert {
+    display: none;
+    width: 90vw;
+    position: fixed;
+    z-index: 10000;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
+
+<script>
+  import "./controller";
+</script>
