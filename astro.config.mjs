@@ -6,6 +6,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   /* integrations: [lit()] */
   site: "https://timfontes.com",
+  scopedStyleStrategy: "class",
   vite: {
     css: {
       preprocessorOptions: {

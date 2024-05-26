@@ -1,4 +1,5 @@
 ---
+import "./base/main.scss"
 import MainMenu from "@components/MainMenu/index.astro";
 import Alert from "@components/Alert/index.astro";
 import { getLang } from "@helpers/i18n";
@@ -33,8 +34,4 @@ const forceViewTransitionsPolyfill = true;
     </div>
     <Alert />
   </body>
-
-  <style lang="scss" is:global>
-    @import "./base/main.scss";
-  </style>
 </html>
