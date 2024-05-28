@@ -56,17 +56,22 @@ const social = [
 ];
 ---
 
-<div class="main-menu">
+<div class="main-menu" data-fragment="main-menu">
   <header class="header">
-    <div class="avatar">
-      <img
-        class="avatar-image"
-        src="https://avatars.githubusercontent.com/u/17283501?v=4"
-        width="260"
-        height="260"
-      />
+    <div class="header-left">
+      <div class="avatar">
+        <img
+          class="avatar-image"
+          src="https://avatars.githubusercontent.com/u/17283501?v=4"
+          width="260"
+          height="260"
+        />
+      </div>
+      <h1 class="name">Tim Fontes</h1>
     </div>
-    <h1 class="name">Tim Fontes</h1>
+    <div class="header-right">
+      <button class="menu-button"></button>
+    </div>
   </header>
   <div class="menu-body">
     <menu class="menu-list">
@@ -94,19 +99,25 @@ const social = [
       <SearchBar />
     </div>
 
-    <ul class="social-holder">
-      {
-        social.map((item) => (
-          <li>
-            <a class="social-link" href="/">
-              {item.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    <div class="social-holder">
+      <ul class="social-list">
+        {
+          social.map((item) => (
+            <li class="social-li">
+              <a class="social-link" href="/">
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </div>
+
+<script>
+  import "./controller";
+</script>
 
 <style lang="scss">
   @import "./styles.scss";

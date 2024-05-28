@@ -21,16 +21,56 @@ $header-size: 90px;
   background: var(--window-top);
   position: relative;
   padding: 10px 14px;
-  z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  z-index: 2;
   border-top: 1px solid #0831d9;
   border-left: 1px solid #0831d9;
   border-right: 1px solid #001ea0;
 
   @include aboveTurningPoint() {
     border-radius: 7px 7px 0px 0px;
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  flex-shrink: 0;
+  @include aboveTurningPoint {
+    display: none;
+  }
+}
+
+.menu-button {
+  padding: 0;
+  display: block;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+  background-size: cover;
+  box-shadow: none;
+  background-color: #0050ee;
+  transition: background 100ms;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: none !important;
+  }
+  background-image: var(--menu);
+
+  &:hover {
+    background-image: var(--close);
   }
 }
 
@@ -124,19 +164,46 @@ $header-size: 90px;
 
 .social-holder {
   padding: 14px;
-  line-height: 2;
-  font-size: 12px;
-  text-align: center;
-  list-style: none;
   background: #d3e5fa;
-  -webkit-font-smoothing: auto;
-  font-family: var(--sans-serif);
+  flex: 1;
+
+  @include aboveTurningPoint {
+    flex: unset;
+  }
+}
+.social-list {
   display: flex;
-  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  align-items: flex-start;
+  gap: 30px;
+
+  @include aboveTurningPoint {
+    flex: unset;
+    flex-wrap: unset;
+    padding-top: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: unset;
+  }
+}
+
+.social-li {
+  flex: 0 0 calc(50% - 15px);
+  text-align: center;
+  height: auto;
+  @include aboveTurningPoint {
+    flex: unset;
+  }
 }
 
 .social-link {
   color: black;
+  line-height: 2;
+  font-size: 12px;
+  -webkit-font-smoothing: auto;
+  font-family: var(--sans-serif);
 }
 
 .search-block {
@@ -144,15 +211,24 @@ $header-size: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   margin-top: 10px;
   position: relative;
   justify-content: space-between;
+  padding-bottom: 50px;
+
+  @include aboveTurningPoint {
+    flex: 1;
+    padding-bottom: 14px;
+  }
 }
 
 .search-block-divider {
   width: 100%;
   height: 1px;
   background-color: rgb(217, 217, 217);
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+
+  @include aboveTurningPoint {
+    margin-bottom: 60px;
+  }
 }
