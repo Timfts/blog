@@ -1,5 +1,6 @@
 ---
 import { Picture } from "astro:assets";
+import socialLinks from "@content/_social-links.json";
 import SearchBar from "@components/SearchBar/index.astro";
 import home from "./icons/home.png";
 import folder from "./icons/folder.png";
@@ -36,21 +37,6 @@ const menuItems = [
   {
     label: "Config",
     icon: config,
-  },
-];
-
-const social = [
-  {
-    label: "Github",
-  },
-  {
-    label: "Linkedin",
-  },
-  {
-    label: "Instagram",
-  },
-  {
-    label: "Discord",
   },
 ];
 ---
@@ -101,10 +87,10 @@ const social = [
     <div class="social-holder">
       <ul class="social-list">
         {
-          social.map((item) => (
+          socialLinks["social-links-list"].map(({ label, link }) => (
             <li class="social-li">
-              <a class="social-link" href="/">
-                {item.label}
+              <a class="social-link" href={link} target="_blank">
+                {label}
               </a>
             </li>
           ))

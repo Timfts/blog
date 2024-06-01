@@ -1,0 +1,20 @@
+{
+  "social-links-list": [
+    {
+      "label": "Github",
+      "link": "https://github.com/Timfts"
+    },
+    {
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/timfts/"
+    },
+    {
+      "label": "Instagram",
+      "link": "https://www.instagram.com/timfts"
+    },
+    {
+      "label": "Discord",
+      "link": "https://discord.gg/EsthyJk49a"
+    }
+  ]
+}
