@@ -3,24 +3,3 @@
 @import "_global.scss";
 @import "_forms.scss";
 @import "_treeview.scss";
-
-.shell {
-  background-color: var(--surface);
-  min-height: 100vh;
-  position: relative;
-
-  @include aboveTurningPoint() {
-    display: flex;
-  }
-
-  &-menu {
-    @include aboveTurningPoint() {
-      width: 290px;
-      position: relative;
-    }
-  }
-
-  &-content {
-    flex: 1;
-  }
-}

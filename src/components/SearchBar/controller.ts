@@ -3,7 +3,7 @@ import elementController from "@lib/elementController";
 import { events } from "src/constants";
 
 elementController("search-bar", ({ query, emit }) => {
-  const searchForm = query(".search-form");
+  const searchForm = query(".search-form") as HTMLFormElement;
   const searchField = query("#search-field") as HTMLInputElement;
 
   searchForm.addEventListener("submit", handleSearch);

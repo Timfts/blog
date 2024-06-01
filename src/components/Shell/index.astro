@@ -1,5 +1,5 @@
 ---
-import "./base/main.scss"
+import "./base/main.scss";
 import MainMenu from "@components/MainMenu/index.astro";
 import Alert from "@components/Alert/index.astro";
 import { getLang } from "@helpers/i18n";
@@ -24,14 +24,22 @@ const forceViewTransitionsPolyfill = true;
   </head>
   <body>
     <div class="shell">
-      <div class="shell-menu">
-        <MainMenu />
-      </div>
+      <div class="shell-container">
+        <div class="shell-menu">
+          <MainMenu />
+        </div>
 
-      <div class="shell-content">
-        <slot />
+        <div class="shell-content">
+          <div class="shell-page">
+            <slot />
+          </div>
+        </div>
       </div>
     </div>
     <Alert />
   </body>
 </html>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>

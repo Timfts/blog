@@ -1,0 +1,42 @@
+.shell {
+  background-color: var(--surface);
+  min-height: 100vh;
+  position: relative;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-container {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    flex: 1;
+
+    @include aboveTurningPoint() {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &-menu {
+    @include aboveTurningPoint() {
+      width: 290px;
+      position: relative;
+    }
+  }
+
+  &-content {
+    flex: 1;
+  }
+
+  &-page {
+    margin: 100px 10px 10px 10px;
+    background-color: white;
+    padding: 20px;
+
+    @include aboveTurningPoint() {
+      margin: 10px 0 10px 0;
+    }
+  }
+}
