@@ -1,0 +1,62 @@
+---
+import { Image, LocalImageProps, RemoteImageProps } from "astro:assets";
+type Props = LocalImageProps | RemoteImageProps;
+
+const { class: className, alt, ...imgProps } = Astro.props;
+const loadingPlaceholder =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8ElEQVR4nJ3RMXKDMBCF4V+ZFO5p3LpMz0HSSL2bcAc3NipghiPkCNDZR6ANo84+grkB5aZxFAjSgLPVSqP3zUpSAEVRCCsqSRKyLFPjvdefZr9/XwTO5xattTRN4xEPbLdvK2ZoqesaY4xHXtaMPi5jDABaa5lMAFCW5SJwuVxo25aqqpgBAIdDgnx9otKPILDZQJqmfh28QiwcqtkEIvFw39/Y7aZ7kUdU5Or3u5UKn4oCuYLjOCxxJAgcRcgfvchDPIWF2Rv0/Q2A7H71/T27Ri7wB7DWYq2NHl4EhmF4KjwBuq57OuwB5xzOuX8B3yFPRwu48ON3AAAAAElFTkSuQmCC";
+---
+
+<div class:list={["image-holder", className]}>
+  <div class="loading">
+    <img
+      class="img-placeholder"
+      src={loadingPlaceholder}
+      width="16"
+      height="16"
+    />
+    <p>{alt}</p>
+  </div>
+  <Image class="inner-image" alt={alt} {...imgProps} />
+</div>
+
+<style lang="scss">
+  .image-holder {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      display: block;
+      z-index: 1;
+      border: 2px solid #d3d3d3;
+    }
+  }
+
+  .loading {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .img-placeholder {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .inner-image {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    height: unset;
+  }
+</style>

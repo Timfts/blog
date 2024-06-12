@@ -2,12 +2,25 @@
 import Shell from "@components/Shell/index.astro";
 import DemoModal from "@components/DemoModal.astro";
 import Progress from "@components/Progress.astro";
+import Image from "@components/Image/index.astro";
 ---
 
 <Shell>
   <div class="container">
     <div style="height:200vh" class="main-page">
-      <p>potato</p>
+      <Image
+        src="https://tm.ibxk.com.br/2021/11/18/18150819447415.jpg"
+        class="image"
+        alt="potato red"
+        inferSize
+      />
     </div>
   </div>
 </Shell>
+
+<style lang="scss">
+  .image {
+    width: 100%;
+    height:auto;
+  }
+</style>
