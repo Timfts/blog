@@ -13,6 +13,8 @@ const { title = "Tim Fontes" } = Astro.props as Props;
 const lang = getLang(Astro.url);
 const { htmlLang } = i18n[lang];
 const forceViewTransitionsPolyfill = true;
+
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -32,6 +34,9 @@ const forceViewTransitionsPolyfill = true;
         <div class="shell-content">
           <div class="shell-page">
             <slot />
+            <div class="shell-footer">
+              &copy; Tim Fontes {currentYear}
+            </div>
           </div>
         </div>
       </div>
