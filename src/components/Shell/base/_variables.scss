@@ -3,11 +3,17 @@
 \*-------------------------------------------*/
 
 :root {
+  --header-size: 90px;
   --sans-serif: "Pixelated MS Sans Serif", Arial;
   /* font-size */
-  --body-font: 14px;
+  --body-font: 16px;
+  --title-1: 32px;
+  --title-2: 24px;
+  --title-3: 20px;
+  --title-4: 18px;
 
-
+  --menu-items: 14px;
+  --main-name: 18px;
 
   /* Color */
   --surface: #ece9d8;
@@ -21,7 +27,7 @@
 
   /* Spacing */
   --element-spacing: 8px;
-  
+
   --grouped-element-spacing: 6px;
   --radio-width: 15px;
   --checkbox-width: 15px;
