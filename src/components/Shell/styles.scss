@@ -37,7 +37,8 @@
 
     @include aboveTurningPoint() {
       margin: 20px 0;
-      padding: 40px;
+      padding: 50px;
+      padding-bottom: 30px;
     }
   }
 }
