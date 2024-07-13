@@ -1,0 +1,42 @@
+---
+import Shell from "@components/Shell/index.astro";
+import DemoModal from "@components/DemoModal.astro";
+import Progress from "@components/Progress.astro";
+import Image from "@components/Image/index.astro";
+
+import introImg from "../../../../public/images/intro-4.webp";
+---
+
+<Shell>
+  <div class="container">
+    <div class="main-page">
+      <h1 style="margin-bottom:20px;">Hi, i'm Tim!</h1>
+      <div style="display:flex; gap:20px;">
+        <div>
+          <p>
+            I am a programmer and musician, passionate about mixing technology
+            and art. <br /> Currently working as a <del>mad scientist</del> software
+            engineer focused on solution architecture, exploring areas such as design
+            systems, cloud, performance, and more.
+          </p>
+          <p>
+            The idea of this blog is to be my little slice of the web where I
+            plan to share my crazy ideas, experiments, and projects, trying to
+            combine creativity and technique.
+          </p>
+          <p>Welcome!!!</p>
+        </div>
+        <div style="width:300px; flex-shrink:0;">
+          <Image src={introImg} class="image" alt="potato red" />
+        </div>
+      </div>
+    </div>
+  </div>
+</Shell>
+
+<style lang="scss">
+  .image {
+    width: 100%;
+    height: auto;
+  }
+</style>

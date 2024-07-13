@@ -2,12 +2,12 @@
 import { Image, LocalImageProps, RemoteImageProps } from "astro:assets";
 type Props = LocalImageProps | RemoteImageProps;
 
-const { class: className, alt, ...imgProps } = Astro.props;
+const { class: className, alt, style, ...imgProps } = Astro.props;
 const loadingPlaceholder =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8ElEQVR4nJ3RMXKDMBCF4V+ZFO5p3LpMz0HSSL2bcAc3NipghiPkCNDZR6ANo84+grkB5aZxFAjSgLPVSqP3zUpSAEVRCCsqSRKyLFPjvdefZr9/XwTO5xattTRN4xEPbLdvK2ZoqesaY4xHXtaMPi5jDABaa5lMAFCW5SJwuVxo25aqqpgBAIdDgnx9otKPILDZQJqmfh28QiwcqtkEIvFw39/Y7aZ7kUdU5Or3u5UKn4oCuYLjOCxxJAgcRcgfvchDPIWF2Rv0/Q2A7H71/T27Ri7wB7DWYq2NHl4EhmF4KjwBuq57OuwB5xzOuX8B3yFPRwu48ON3AAAAAElFTkSuQmCC";
 ---
 
-<div class:list={["image-holder", className]}>
+<div class:list={["image-holder", className]} style={style}>
   <div class="loading">
     <img
       class="img-placeholder"
