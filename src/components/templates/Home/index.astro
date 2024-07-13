@@ -1,42 +1,60 @@
 ---
 import Shell from "@components/Shell/index.astro";
-import DemoModal from "@components/DemoModal.astro";
-import Progress from "@components/Progress.astro";
 import Image from "@components/Image/index.astro";
+import ImageLoader from "@components/Image/ImageLoader.astro";
 
-import introImg from "../../../../public/images/intro-2.webp";
+import introImg from "./assets/intro-mobile.webp";
+import introVideo from "./assets/intro-desk.mp4";
 ---
 
 <Shell>
-  <div class="container">
-    <div class="main-page">
-      <h1 style="margin-bottom:20px;">Hi, i'm Tim!</h1>
-      <div style="display:flex; gap:20px;">
+  <div class="main-page" data-fragment="main-page">
+    <section class="presentation">
+      <h1 class="main-title">Hi There!</h1>
+      <div class="presentation-panels">
         <div>
           <p>
-            I am a programmer and musician, passionate about mixing technology
-            and art. <br /> Currently working as a <del>mad scientist</del> software
-            engineer focused on solution architecture, exploring areas such as design
-            systems, cloud, performance, and more.
+            I am a programmer and musician, passionate about combining
+            technology and art. <br /> Currently working as a <del
+              >mad scientist</del
+            > software engineer, focused on solution architecture and exploring areas
+            such as design systems, cloud computing, web performance optimizations
+            and more.
           </p>
           <p>
-            The idea of this blog is to be my little slice of the web where I
-            plan to share my crazy ideas, experiments, and projects, trying to
-            combine creativity and technique.
+            The idea behind this blog is to be my little slice of the web where
+            I plan to document my crazy ideas, experiments and projects.
+            Bringing a touch of creativity to the technique.
           </p>
           <p>Welcome!!!</p>
         </div>
-        <div style="width:300px; flex-shrink:0;">
-          <Image src={introImg} class="image" alt="potato red" />
+        <div class="main-image-holder">
+          <template id="main-image-mobile">
+            <Image
+              src={introImg}
+              class="image"
+              alt="Image of a man with a shaking computer monitor"
+            />
+          </template>
+          <template id="main-video-desktop">
+            <ImageLoader
+              alt="GIF of a party being digitilized to a virtual world"
+            >
+              <video class="image" autoplay loop muted playsinline>
+                <source src={introVideo} type="video/mp4" />
+              </video>
+            </ImageLoader>
+          </template>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </Shell>
 
+<script>
+  import "./controller";
+</script>
+
 <style lang="scss">
-  .image {
-    width: 100%;
-    height: auto;
-  }
+  @import "./styles.scss";
 </style>

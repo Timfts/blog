@@ -1,3 +1,4 @@
+import { isMobile } from "@helpers/device";
 import elementController from "@lib/elementController";
 
 elementController("app-shell", ({ on, query }) => {
@@ -14,18 +15,16 @@ elementController("app-shell", ({ on, query }) => {
   on("global:resize", fixFullHeight);
   on("global:scroll", handlePageScroll);
 
-
   function handlePageScroll(e: Event) {
-    const isMobile = screen.width < 1000;
     const distanceFromTop = window.scrollY;
-    handleHUDCollapse(isMobile, distanceFromTop);
+    handleHUDCollapse(distanceFromTop);
   }
 
-  function handleHUDCollapse(isMobile: boolean, distanceFromTop: number) {
+  function handleHUDCollapse(distanceFromTop: number) {
     const isHUDHidden = getIsHUDHidden();
     const isGoingUp = distanceFromTop < previousDistanceFromTop;
     const shouldHideHud =
-      !isHUDHidden && !isGoingUp && isMobile && distanceFromTop > 34;
+      !isHUDHidden && !isGoingUp && isMobile() && distanceFromTop > 34;
 
     const shouldShowHud = isHUDHidden && isGoingUp;
 

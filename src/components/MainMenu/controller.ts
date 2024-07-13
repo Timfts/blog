@@ -1,3 +1,4 @@
+import { isMobile } from "@helpers/device";
 import elementController from "@lib/elementController";
 
 elementController("main-menu", ({ root, query, on }) => {
@@ -31,14 +32,13 @@ elementController("main-menu", ({ root, query, on }) => {
   }
 
   function handleHeaderHide() {
-    const isMobile = screen.width < 1000;
     const distanceFromTop = window.scrollY;
     const isHeaderHidden = header.classList.contains(headerHideClass);
     const isGoingUp = distanceFromTop < previousDistanceFromTop;
     const shouldHideHeader =
       !isHeaderHidden &&
       !isGoingUp &&
-      isMobile &&
+      isMobile() &&
       distanceFromTop > 34 &&
       !getIsMenuOpen();
     const shouldShowHeader = isHeaderHidden && isGoingUp;

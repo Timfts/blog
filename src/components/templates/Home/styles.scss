@@ -1,0 +1,31 @@
+.presentation {
+}
+
+.main-title {
+  margin-bottom: 20px;
+}
+
+.presentation-panels {
+  p {
+    margin-bottom: var(--paragraph-bottom); // TODO - improve
+  }
+
+  @include aboveTurningPoint() {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.main-image-holder {
+  width: 100%;
+
+  @include aboveTurningPoint() {
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
