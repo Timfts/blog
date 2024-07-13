@@ -11,14 +11,10 @@ elementController("main-menu", ({ root, query, on }) => {
   setupEvents();
 
   function setupEvents() {
-    if (getIsMobile()) {
+    if (isMobile()) {
       on("global:scroll", handleHeaderHide);
       menuBtn.addEventListener("click", handleMenuClick);
     }
-  }
-
-  function getIsMobile() {
-    return screen.width < 1000;
   }
 
   function getIsMenuOpen() {
