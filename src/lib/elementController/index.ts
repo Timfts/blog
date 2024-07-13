@@ -35,7 +35,7 @@ export default function elementController(
 
   if (rerun === "changeroute" || rerun === "sameroute") {
     const createdRoute = location.pathname;
-    document.addEventListener("astro:page-load", (ev) => {
+    document.addEventListener("astro:page-load", (ev) => { // TODO - use only one listener
       const newRoute = location.pathname;
       const enteredOriginalRoute = newRoute === createdRoute;
       const mustRerunController =
