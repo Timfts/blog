@@ -3,9 +3,8 @@ import Shell from "@components/legacy/Shell/index.astro";
 import ContentPanel from "@components/legacy/ContentPanel.astro";
 import PageGrid from "@components/legacy/PageGrid/index.astro";
 import i18n from "./i18n";
-import { getLang } from "@helpers/i18n";
 
-const lang = getLang(Astro.url);
+const lang = Astro.currentLocale;
 const { title } = i18n[lang];
 ---
 

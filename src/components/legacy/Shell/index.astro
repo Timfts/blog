@@ -1,5 +1,4 @@
 ---
-import { getLang } from "@helpers/i18n";
 import DeskHeader from "../DeskHeader/index.astro";
 import MobileHeader from "../MobileHeader/index.astro";
 import MobileNav from "../MobileNav/index.astro";
@@ -11,7 +10,7 @@ export interface Props {
 }
 
 const { title = "Tim Fontes" } = Astro.props as Props;
-const lang = getLang(Astro.url);
+const lang = Astro.currentLocale;
 const { htmlLang } = i18n[lang];
 const forceViewTransitionsPolyfill = true;
 ---

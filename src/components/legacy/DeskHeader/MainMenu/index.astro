@@ -1,7 +1,6 @@
 ---
-import { getLang } from "@helpers/i18n";
 import i18n from "./i18n";
-const lang = getLang(Astro.url);
+const lang = Astro.currentLocale;
 const { links } = i18n[lang];
 ---
 

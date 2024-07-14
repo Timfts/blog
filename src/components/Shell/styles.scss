@@ -32,13 +32,20 @@
   &-page {
     margin: 100px 10px 10px 10px;
     background-color: white;
-    padding: 20px;
+    padding: 40px 20px;
+    position: relative;
 
     @include aboveTurningPoint() {
       margin: 20px 0;
       padding: 50px;
       padding-bottom: 30px;
     }
+  }
+
+  &-i18n-holder {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
   &-footer {

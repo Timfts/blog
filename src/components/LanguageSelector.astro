@@ -1,0 +1,29 @@
+---
+import { LANGS } from "src/constants";
+
+const langs = [LANGS.EN, LANGS.PTBR];
+
+const labels = {
+  en: "English",
+  "pt-br": "Português",
+};
+const currentLocale = Astro.currentLocale;
+const inputId = "language-selector";
+const inputLabel = {
+  en: "Lang",
+  "pt-br": "Idioma",
+}[currentLocale];
+---
+
+<div class="language-selector">
+  <label for={inputId}>{inputLabel}:</label>
+  <select id={inputId}>
+    {
+      langs.map((lang) => (
+        <option value={lang} selected={lang === currentLocale}>
+          {labels[lang]}
+        </option>
+      ))
+    }
+  </select>
+</div>
