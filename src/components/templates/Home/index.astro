@@ -1,11 +1,9 @@
 ---
 import Shell from "@components/Shell/index.astro";
 import Image from "@components/Image/index.astro";
-import ImageLoader from "@components/Image/ImageLoader.astro";
 import range from "@helpers/range";
 
 import introImg from "./assets/intro-mobile.webp";
-import introVideo from "./assets/intro-desk.mp4";
 ---
 
 <Shell>
@@ -30,27 +28,16 @@ import introVideo from "./assets/intro-desk.mp4";
           <p>Welcome!!!</p>
         </div>
         <div class="main-image-holder">
-          <template id="main-image-mobile">
-            <Image
-              src={introImg}
-              class="main-image"
-              alt="Image of a man with a shaking computer monitor"
-            />
-          </template>
-          <template id="main-video-desktop">
-            <ImageLoader
-              alt="GIF of a party being digitilized to a virtual world"
-            >
-              <video class="main-image" autoplay loop muted playsinline>
-                <source src={introVideo} type="video/mp4" />
-              </video>
-            </ImageLoader>
-          </template>
+          <Image
+            src={introImg}
+            class="main-image"
+            alt="Image of a man with a shaking computer monitor"
+          />
         </div>
       </div>
     </section>
     <section class="latest-posts">
-      <h3 class="section-title">Latest posts</h2>
+      <h3 class="section-title">Latest posts</h3>
       <ul class="posts-list">
         {
           range(5).map((i) => (
@@ -75,10 +62,6 @@ import introVideo from "./assets/intro-desk.mp4";
     </section>
   </div>
 </Shell>
-
-<script>
-  import "./controller";
-</script>
 
 <style lang="scss">
   @import "./styles.scss";
