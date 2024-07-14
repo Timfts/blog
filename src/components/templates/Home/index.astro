@@ -2,6 +2,7 @@
 import Shell from "@components/Shell/index.astro";
 import Image from "@components/Image/index.astro";
 import ImageLoader from "@components/Image/ImageLoader.astro";
+import range from "@helpers/range";
 
 import introImg from "./assets/intro-mobile.webp";
 import introVideo from "./assets/intro-desk.mp4";
@@ -10,7 +11,7 @@ import introVideo from "./assets/intro-desk.mp4";
 <Shell>
   <div class="main-page" data-fragment="main-page">
     <section class="presentation">
-      <h1 class="main-title">Hi There!</h1>
+      <h1 class="section-title">Hi There!</h1>
       <div class="presentation-panels">
         <div>
           <p>
@@ -18,13 +19,13 @@ import introVideo from "./assets/intro-desk.mp4";
             technology and art. <br /> Currently working as a <del
               >mad scientist</del
             > software engineer, focused on solution architecture and exploring areas
-            such as design systems, cloud computing, web performance optimizations
+            such as design systems, web performance optimizations, cloud computing
             and more.
           </p>
           <p>
             The idea behind this blog is to be my little slice of the web where
-            I plan to document my crazy ideas, experiments and projects.
-            Bringing a touch of creativity to the technique.
+            I plan to document my crazy ideas, experiments and projects,
+            bringing a touch of creativity to the technique.
           </p>
           <p>Welcome!!!</p>
         </div>
@@ -32,7 +33,7 @@ import introVideo from "./assets/intro-desk.mp4";
           <template id="main-image-mobile">
             <Image
               src={introImg}
-              class="image"
+              class="main-image"
               alt="Image of a man with a shaking computer monitor"
             />
           </template>
@@ -40,13 +41,37 @@ import introVideo from "./assets/intro-desk.mp4";
             <ImageLoader
               alt="GIF of a party being digitilized to a virtual world"
             >
-              <video class="image" autoplay loop muted playsinline>
+              <video class="main-image" autoplay loop muted playsinline>
                 <source src={introVideo} type="video/mp4" />
               </video>
             </ImageLoader>
           </template>
         </div>
       </div>
+    </section>
+    <section class="latest-posts">
+      <h2 class="section-title">Latest posts</h2>
+      <ul class="posts-list">
+        {
+          range(5).map((i) => (
+            <li class="latest-post">
+              <a href="#" class="latest-post-link">
+                Releasing a new game
+              </a>
+              <p class="latest-post-excerpt">
+                orem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus eu dolor aliquam, convallis risus quis, hendrerit
+                metus. Quisque neque augue, posuere eu sapien vitae, volutpat
+                posuere felis.{" "}
+              </p>
+              <a href="#" class="latest-post-path">
+                http://potato.com.br/my-post
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a href="#" class="more-posts-link">...More</a>
     </section>
   </div>
 </Shell>

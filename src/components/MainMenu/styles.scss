@@ -238,7 +238,7 @@
 .search-block-divider {
   width: 100%;
   height: 1px;
-  background-color: rgb(217, 217, 217);
+  background-color: var(--border-color);
   margin-bottom: 40px;
 
   @include aboveTurningPoint {
