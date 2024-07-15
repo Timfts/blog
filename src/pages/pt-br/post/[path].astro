@@ -3,7 +3,7 @@ import Shell from "@components/Shell/index.astro";
 import { getI18NPostMap, getPostsPathsByLanguage } from "@content/helpers";
 
 export async function getStaticPaths() {
-  const postPathsByLang = await getPostsPathsByLanguage("en");
+  const postPathsByLang = await getPostsPathsByLanguage("pt-br");
   return postPathsByLang;
 }
 
