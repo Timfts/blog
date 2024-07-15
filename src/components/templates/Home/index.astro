@@ -5,40 +5,30 @@ import range from "@helpers/range";
 
 import introImg from "./assets/intro-mobile.webp";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
+import i18n from "./i18n";
+
+const pageData = i18n[Astro.currentLocale as Lang];
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("home")}>
   <div class="main-page" data-fragment="main-page">
     <section class="presentation">
-      <h1 class="section-title">Hi There!</h1>
+      <h1 class="section-title">{pageData.mainTitle}</h1>
       <div class="presentation-panels">
         <div>
-          <p>
-            I am a programmer and musician, passionate about combining
-            technology and art. <br /> Currently working as a <del
-              >mad scientist</del
-            > software engineer, focused on solution architecture and exploring subjects
-            such as design systems, web performance optimization, cloud computing
-            and more.
-          </p>
-          <p>
-            The idea behind this blog is to be my little slice of the web where
-            I plan to document my crazy ideas, experiments, studies and
-            projects, bringing a touch of creativity to the technique.
-          </p>
-          <p>Welcome!!!</p>
+          {
+            pageData.introParagraphs.map((paragraph) => (
+              <p set:html={paragraph} />
+            ))
+          }
         </div>
         <div class="main-image-holder">
-          <Image
-            src={introImg}
-            class="main-image"
-            alt="Image of a man with a shaking computer monitor"
-          />
+          <Image src={introImg} class="main-image" alt={pageData.mainImgAlt} />
         </div>
       </div>
     </section>
     <section class="latest-posts">
-      <h3 class="section-title">Latest posts</h3>
+      <h3 class="section-title">{pageData.latestPostsTitle}</h3>
       <ul class="posts-list">
         {
           range(5).map((i) => (
@@ -59,7 +49,7 @@ import { getPageI18NPathMap } from "@helpers/server/i18n";
           ))
         }
       </ul>
-      <a href="#" class="more-posts-link">...More</a>
+      <a href="#" class="more-posts-link">...{pageData.morePosts}</a>
     </section>
   </div>
 </Shell>

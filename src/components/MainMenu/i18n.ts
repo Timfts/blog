@@ -1,24 +1,75 @@
 import pagePaths from "src/constants/pagePaths";
 
+const enPaths = pagePaths.en;
+const ptPaths = pagePaths["pt-br"];
+
 const i18n = {
   en: {
     menuItems: {
-      home: { label: "Home", path: pagePaths.en.home },
-      projects: { label: "Projects", path: pagePaths.en.projects },
-      posts: { label: "Posts", path: pagePaths.en.posts },
-      work: { label: "Work", path: pagePaths.en.work },
-      contact: { label: "Contact", path: pagePaths.en.contact },
-      config: { label: "Config", path: "" },
+      home: {
+        label: "Home",
+        path: enPaths.home,
+        iconAlt: "Icon of a house",
+      },
+      projects: {
+        label: "Projects",
+        path: enPaths.projects,
+        iconAlt: "Icon of folder with a document",
+      },
+      posts: {
+        label: "Posts",
+        path: enPaths.posts,
+        iconAlt: "Icon of a notepad",
+      },
+      work: {
+        label: "Work",
+        path: enPaths.work,
+        iconAlt: "Icon of a work briefcase",
+      },
+      contact: {
+        label: "Contact",
+        path: enPaths.contact,
+        iconAlt: "Icon of a letter envelope",
+      },
+      config: {
+        label: "Config",
+        path: "#",
+        iconAlt: "Icon of a gear",
+      },
     },
   },
   "pt-br": {
     menuItems: {
-      home: { label: "Home", path: pagePaths["pt-br"].home },
-      projects: { label: "Projetos", path: pagePaths["pt-br"].projects },
-      posts: { label: "Posts", path: pagePaths["pt-br"].posts },
-      work: { label: "Trabalho", path: pagePaths["pt-br"].work },
-      contact: { label: "Contato", path: pagePaths["pt-br"].contact },
-      config: { label: "Configurações", path: "" },
+      home: {
+        label: "Home",
+        path: ptPaths.home,
+        iconAlt: "Icone de uma casa",
+      },
+      projects: {
+        label: "Projetos",
+        path: ptPaths.projects,
+        iconAlt: "Icone de uma pasta com um documento",
+      },
+      posts: {
+        label: "Posts",
+        path: ptPaths.posts,
+        iconAlt: "Icone de um bloco de notas",
+      },
+      work: {
+        label: "Trabalho",
+        path: ptPaths.work,
+        iconAlt: "Icone de uma maleta de trabalho",
+      },
+      contact: {
+        label: "Contato",
+        path: ptPaths.contact,
+        iconAlt: "Icone de um envelope de carta",
+      },
+      config: {
+        label: "Configurações",
+        path: "",
+        iconAlt: "Icone de uma engrenagem",
+      },
     },
   },
 };

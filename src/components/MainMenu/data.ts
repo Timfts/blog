@@ -12,33 +12,27 @@ export function getMenuItems(currentLang: Lang) {
 
   return [
     {
-      label: home.label,
-      path: home.path,
+      ...home,
       icon: homeImg,
     },
     {
-      label: projects.label,
-      path: projects.path,
+      ...projects,
       icon: folderImg,
     },
     {
-      label: posts.label,
-      path: posts.path,
+      ...posts,
       icon: notesImg,
     },
     {
-      label: work.label,
-      path: work.path,
+      ...work,
       icon: projectsImg,
     },
     {
-      label: contact.label,
-      path: contact.path,
+      ...contact,
       icon: contactImg,
     },
     {
-      label: config.label,
-      path: "#",
+      ...config,
       icon: configImg,
     },
   ];

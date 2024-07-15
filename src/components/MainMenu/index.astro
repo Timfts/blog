@@ -27,18 +27,18 @@ const menuItems = getMenuItems(Astro.currentLocale as any);
   <div class="menu-body">
     <menu class="menu-list">
       {
-        menuItems.map((item) => (
+        menuItems.map(({ label, icon, path, iconAlt }) => (
           <li class="menu-content-item">
-            <a class="menu-content-link" href="/">
+            <a class="menu-content-link" href={path}>
               <Picture
                 class="menu-content-icon"
                 width={24}
                 height={24}
                 formats={["webp"]}
-                src={item.icon}
-                alt="asdsf"
+                src={icon}
+                alt={iconAlt}
               />
-              {item.label}
+              {label}
             </a>
           </li>
         ))
