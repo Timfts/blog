@@ -26,10 +26,7 @@ export function getPostsMap(allPosts: CollectionEntry<"posts">[]) {
   return allPostsMap;
 }
 
-export function getI18NPostMap(
-  currentLang: string,
-  postVersions: PostVersionMap
-): I18NMap {
+export function getI18NPostPaths(postVersions: PostVersionMap): I18NPagePaths {
   const postLangs = Object.keys(postVersions);
   let pathsMap: Record<string, string> = {};
 
@@ -39,10 +36,7 @@ export function getI18NPostMap(
     pathsMap[lang] = `${rootPath}/post/${versionUrl}`;
   });
 
-  return {
-    currentLang,
-    paths: pathsMap,
-  };
+  return pathsMap;
 }
 
 export async function getPostsPathsByLanguage(lang: Lang) {

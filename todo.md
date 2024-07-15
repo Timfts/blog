@@ -1,3 +1,1 @@
-* deploy to github pages
-* add custom domain
-* integrate decapcms
+* sempre passar mapa de i18n

@@ -1,6 +1,6 @@
 ---
 import Shell from "@components/Shell/index.astro";
-import { getI18NPostMap, getPostsPathsByLanguage } from "@content/helpers";
+import { getI18NPostPaths, getPostsPathsByLanguage } from "@content/helpers";
 
 export async function getStaticPaths() {
   const postPathsByLang = await getPostsPathsByLanguage("en");
@@ -10,11 +10,11 @@ export async function getStaticPaths() {
 const { entries } = Astro.props;
 const currentLang = Astro.currentLocale;
 const entry = entries[currentLang];
-const i18NMap = getI18NPostMap(currentLang, entries);
+const i18NMap = getI18NPostPaths(entries);
 
 const { Content } = await entry.render();
 ---
 
-<Shell customI18NMap={i18NMap}>
+<Shell i18nPagePaths={i18NMap}>
   <p>{entry.data.title}</p>
 </Shell>

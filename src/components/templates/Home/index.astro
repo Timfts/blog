@@ -4,9 +4,10 @@ import Image from "@components/Image/index.astro";
 import range from "@helpers/range";
 
 import introImg from "./assets/intro-mobile.webp";
+import { getPageI18NPathMap } from "@helpers/server/i18n";
 ---
 
-<Shell>
+<Shell i18nPagePaths={getPageI18NPathMap("home")}>
   <div class="main-page" data-fragment="main-page">
     <section class="presentation">
       <h1 class="section-title">Hi There!</h1>

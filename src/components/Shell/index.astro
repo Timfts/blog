@@ -7,21 +7,17 @@ import i18n from "./i18n";
 
 export interface Props {
   title?: string;
-  customI18NMap?: I18NMap;
+  i18nPagePaths: I18NPagePaths;
 }
 
-const { title = "Tim Fontes", customI18NMap } = Astro.props as Props;
+const { title = "Tim Fontes", i18nPagePaths } = Astro.props as Props;
 const { htmlLang } = i18n[Astro.currentLocale];
 
 const forceViewTransitionsPolyfill = true;
 const currentYear = new Date().getFullYear();
-const currentPagePath = Astro.url.pathname.replace("/pt-br", "");
-const I18NMap: I18NMap = customI18NMap || {
+const I18NMap: I18NMap = {
   currentLang: Astro.currentLocale,
-  paths: {
-    en: currentPagePath || "/",
-    "pt-br": `/pt-br${currentPagePath}`,
-  },
+  paths: i18nPagePaths,
 };
 
 const stringfiedI18NMap = JSON.stringify(I18NMap);

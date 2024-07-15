@@ -22,11 +22,12 @@ interface ISnippet extends IPublication {
   "snippet-type": string[];
 }
 
+interface I18NPagePaths {
+  [lang: string]: string;
+}
 interface I18NMap {
   currentLang: string;
-  paths: {
-    [lang: string]: string;
-  };
+  paths: I18NPagePaths;
 }
 
 interface IProject extends IPublication {
