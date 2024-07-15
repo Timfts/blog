@@ -4,6 +4,7 @@ const pagePaths = {
     contact: "/contact",
     work: "/work",
     projects: "/projects",
+    posts: "/posts",
     notFound: "/404",
   },
 
@@ -11,6 +12,7 @@ const pagePaths = {
     home: "/pt-br",
     contact: "/pt-br/contato",
     work: "/pt-br/trabalho",
+    posts: "/pt-br/posts",
     projects: "/pt-br/projetos",
     notFound: "/pt-br/404",
   },

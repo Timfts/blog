@@ -2,43 +2,9 @@
 import { Picture } from "astro:assets";
 import socialLinks from "@content/_social-links.json";
 import SearchBar from "@components/SearchBar/index.astro";
-import home from "./icons/home.png";
-import folder from "./icons/folder.png";
-import notes from "./icons/notes.png";
-import projects from "./icons/projects.png";
-import config from "./icons/config.png";
-import contact from "./icons/contact.png";
+import { getMenuItems } from "./data";
 
-const menuItems = [
-  {
-    label: "Home",
-    icon: home,
-  },
-  {
-    label: "Projects",
-    icon: folder,
-  },
-  {
-    label: "Posts",
-    icon: notes,
-  },
-  {
-    label: "Work",
-    icon: projects,
-  },
-  {
-    label: "Contact",
-    icon: contact,
-  },
-  /* {
-    label: "Social",
-    icon: social,
-  }, */
-  {
-    label: "Config",
-    icon: config,
-  },
-];
+const menuItems = getMenuItems(Astro.currentLocale as any);
 ---
 
 <div class="main-menu" data-fragment="main-menu">

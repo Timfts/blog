@@ -1,6 +1,17 @@
+---
+import i18n from "./i18n";
+
+const placeholder = i18n[Astro.currentLocale].placeholder;
+---
+
 <div class="search-bar" data-fragment="search-bar">
   <form class="search-form" autocomplete="off">
-    <input id="search-field" class="field" type="text" placeholder="Search" />
+    <input
+      id="search-field"
+      class="field"
+      type="text"
+      placeholder={placeholder}
+    />
     <button class="submit" type="submit"></button>
   </form>
 </div>
