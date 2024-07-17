@@ -1,0 +1,18 @@
+---
+import postTopics from "@content/_post-topics.json";
+
+export function getStaticPaths() {
+  const topicsList = postTopics["topics-list"];
+  return topicsList.map((topic) => ({ params: { topic: topic.slug } }));
+}
+
+const { topic } = Astro.params;
+const posts = (await Astro.glob("/src/content/posts/en/*.md")) || [];
+const filteredPosts = posts.filter((post) => {
+  const topics = post?.frontmatter?.topics || [];
+  return topics.includes(topic);
+});
+---
+
+<p>topic</p>
+<p>{filteredPosts.map((post) => <p>{post.frontmatter?.title}</p>)}</p>

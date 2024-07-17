@@ -1,9 +1,12 @@
 ---
+import Shell from "@components/Shell/index.astro";
+import { getPageI18NPathMap } from "@helpers/server/i18n";
+import i18n from "./i18n";
 
+const lang = Astro.currentLocale as Lang;
+const data = i18n[lang];
 ---
 
-<p>projects</p>
-
-<script>
-  import "./controller";
-</script>
+<Shell i18nPagePaths={getPageI18NPathMap("projects")}>
+  <p>{data.title}</p>
+</Shell>

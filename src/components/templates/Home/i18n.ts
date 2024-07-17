@@ -31,7 +31,7 @@ const i18n = {
         minhas ideias malucas, experimentos, estudos e projetos, 
         trazendo um toque de criatividade para a técnica`,
 
-      "Seja bem-vindo(a)",
+      "Seja bem-vindo(a)!!!",
     ],
     latestPostsTitle: "Últimas publicações",
     morePosts: "mais",

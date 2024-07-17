@@ -2,9 +2,9 @@
 import Shell from "@components/Shell/index.astro";
 import Image from "@components/Image/index.astro";
 import range from "@helpers/range";
+import { getPageI18NPathMap } from "@helpers/server/i18n";
 
 import introImg from "./assets/intro-mobile.webp";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
 import i18n from "./i18n";
 
 const pageData = i18n[Astro.currentLocale as Lang];

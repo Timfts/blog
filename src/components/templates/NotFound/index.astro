@@ -1,10 +1,12 @@
 ---
+import Shell from "@components/Shell/index.astro";
 import i18n from "./i18n";
+import { getPageI18NPathMap } from "@helpers/server/i18n";
 
-const lang = Astro.currentLocale;
+const lang = Astro.currentLocale as Lang;
 const { disclaimer } = i18n[lang];
 ---
 
-<p>
+<Shell i18nPagePaths={getPageI18NPathMap("notFound")}>
   {disclaimer}
-</p>
+</Shell>

@@ -1,5 +1,5 @@
 ---
-import Shell from "@components/Shell/index.astro";
+import PostTemplate from "@templates/Post/index.astro";
 import { getI18NPostPaths, getPostsPathsByLanguage } from "@content/helpers";
 
 export async function getStaticPaths() {
@@ -15,6 +15,4 @@ const i18NMap = getI18NPostPaths(entries);
 const { Content } = await entry.render();
 ---
 
-<Shell i18nPagePaths={i18NMap}>
-  <p>{entry.data.title}</p>
-</Shell>
+<PostTemplate i18nPagePaths={i18NMap} entry={entry} />
