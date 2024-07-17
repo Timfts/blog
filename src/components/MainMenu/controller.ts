@@ -3,6 +3,7 @@ import elementController from "@lib/elementController";
 
 elementController("main-menu", ({ root, query, on }) => {
   const header = query(".header") as HTMLHeadElement;
+  const menuList = query(".menu-list") as HTMLMenuElement;
   const menuBtn = query(".menu-button") as HTMLButtonElement;
   const menuOpenClass = "menu-open";
   const headerHideClass = "header-hide";
@@ -15,6 +16,8 @@ elementController("main-menu", ({ root, query, on }) => {
       on("global:scroll", handleHeaderHide);
       menuBtn.addEventListener("click", handleMenuClick);
     }
+
+    menuList.addEventListener("click", handleMenuItemClick);
   }
 
   function getIsMenuOpen() {
@@ -23,7 +26,6 @@ elementController("main-menu", ({ root, query, on }) => {
 
   function handleMenuClick(ev: MouseEvent) {
     const isMenuOpen = getIsMenuOpen();
-
     isMenuOpen ? hideMobileMenu() : openMobileMenu();
   }
 
@@ -53,5 +55,15 @@ elementController("main-menu", ({ root, query, on }) => {
   function hideMobileMenu() {
     root.classList.remove(menuOpenClass);
     document.body.style.overflow = "";
+  }
+
+  function handleMenuItemClick(ev: MouseEvent) {
+    const target = ev.target as HTMLElement;
+    const menuItemClass = ".menu-content-item";
+    const clickedItem = target.closest(menuItemClass);
+    if (clickedItem.id === "configItem") {
+      ev.preventDefault();
+      alert("open configs");
+    }
   }
 });

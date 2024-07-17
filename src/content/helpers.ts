@@ -33,7 +33,7 @@ export function getI18NPostPaths(postVersions: PostVersionMap): I18NPagePaths {
   postLangs.forEach((lang) => {
     const rootPath = lang === "en" ? "" : `/${lang}`;
     const versionUrl = postVersions[lang]?.data?.page_url;
-    pathsMap[lang] = `${rootPath}/post/${versionUrl}`;
+    pathsMap[lang] = `${rootPath}/posts/${versionUrl}`;
   });
 
   return pathsMap;
@@ -51,7 +51,7 @@ export async function getPostsPathsByLanguage(lang: Lang) {
     const postEntries = allPostsMap[rawPostSlug];
 
     return {
-      params: { path: entry.data.page_url },
+      params: { slug: entry.data.page_url },
       props: { entries: postEntries },
     };
   });

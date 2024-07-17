@@ -27,8 +27,8 @@ const menuItems = getMenuItems(Astro.currentLocale as any);
   <div class="menu-body">
     <menu class="menu-list">
       {
-        menuItems.map(({ label, icon, path, iconAlt }) => (
-          <li class="menu-content-item">
+        menuItems.map(({ label, icon, path, iconAlt, id }) => (
+          <li class="menu-content-item" id={id}>
             <a class="menu-content-link" href={path}>
               <Picture
                 class="menu-content-icon"

@@ -6,7 +6,15 @@ import projectsImg from "./icons/projects.png";
 import configImg from "./icons/config.png";
 import contactImg from "./icons/contact.png";
 
-export function getMenuItems(currentLang: Lang) {
+type MenuItem = {
+  icon: ImageMetadata;
+  id?: string;
+  label: string;
+  path: string;
+  iconAlt: string;
+};
+
+export function getMenuItems(currentLang: Lang): MenuItem[] {
   const itensTxt = i18n[currentLang].menuItems;
   const { home, projects, posts, work, contact, config } = itensTxt;
 
@@ -34,6 +42,7 @@ export function getMenuItems(currentLang: Lang) {
     {
       ...config,
       icon: configImg,
+      id: "configItem",
     },
   ];
 }
