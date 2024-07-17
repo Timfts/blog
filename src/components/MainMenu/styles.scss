@@ -162,7 +162,8 @@
     color: #fff;
   }
 
-  &:focus {
+  &:focus,
+  &--active {
     outline: 1px dotted #00f;
   }
 }

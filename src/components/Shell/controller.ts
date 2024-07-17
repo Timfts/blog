@@ -26,4 +26,4 @@ elementController("shell", ({ root }) => {
     localStorage.setItem(langLocalStorageKey, lang);
     redirectToLocalizedPage(lang);
   }
-});
+}, {rerun: "changeroute"});

@@ -5,9 +5,10 @@ import SearchBar from "@components/SearchBar/index.astro";
 import { getMenuItems } from "./data";
 
 const menuItems = getMenuItems(Astro.currentLocale as any);
+const currentPage = Astro.url.pathname;
 ---
 
-<div class="main-menu" data-fragment="main-menu">
+<div class="main-menu" data-fragment="main-menu" transition:persist>
   <header class="header">
     <div class="header-left">
       <div class="avatar">
@@ -29,7 +30,15 @@ const menuItems = getMenuItems(Astro.currentLocale as any);
       {
         menuItems.map(({ label, icon, path, iconAlt, id }) => (
           <li class="menu-content-item" id={id}>
-            <a class="menu-content-link" href={path}>
+            <a
+              class:list={[
+                "menu-content-link",
+                {
+                  "menu-content-link--active": path === currentPage,
+                },
+              ]}
+              href={path}
+            >
               <Picture
                 class="menu-content-icon"
                 width={24}

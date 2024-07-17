@@ -12,6 +12,7 @@ elementController("main-menu", ({ root, query, on }) => {
   setupEvents();
 
   function setupEvents() {
+    on("document:astro:page-load", updateActiveMenuItem);
     if (isMobile()) {
       on("global:scroll", handleHeaderHide);
       menuBtn.addEventListener("click", handleMenuClick);
@@ -57,7 +58,22 @@ elementController("main-menu", ({ root, query, on }) => {
     document.body.style.overflow = "";
   }
 
+  function updateActiveMenuItem() {
+    const links = root.querySelectorAll(".menu-content-link");
+    const activeItemClass = "menu-content-link--active";
+    links.forEach((linkEl: HTMLAnchorElement) => {
+      const linkPath = linkEl.href;
+      const isCurrentPath = location.pathname === linkPath;
+      if (!isCurrentPath) {
+        linkEl.classList.remove(activeItemClass);
+      }
+    });
+  }
+
   function handleMenuItemClick(ev: MouseEvent) {
+    if (isMobile()) {
+      hideMobileMenu();
+    }
     const target = ev.target as HTMLElement;
     const menuItemClass = ".menu-content-item";
     const clickedItem = target.closest(menuItemClass);
