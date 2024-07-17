@@ -1,11 +1,7 @@
 import { CollectionEntry, getCollection } from "astro:content";
 
-type PostVersionMap = {
-  [slug: string]: CollectionEntry<"posts">;
-};
-
 type PostsMap = {
-  [slug: string]: PostVersionMap;
+  [slug: string]: Record<string, CollectionEntry<"posts">>;
 };
 
 /**
@@ -24,19 +20,6 @@ export function getPostsMap(allPosts: CollectionEntry<"posts">[]) {
   }, {});
 
   return allPostsMap;
-}
-
-export function getI18NPostPaths(postVersions: PostVersionMap): I18NPagePaths {
-  const postLangs = Object.keys(postVersions);
-  let pathsMap: Record<string, string> = {};
-
-  postLangs.forEach((lang) => {
-    const rootPath = lang === "en" ? "" : `/${lang}`;
-    const versionUrl = postVersions[lang]?.data?.page_url;
-    pathsMap[lang] = `${rootPath}/posts/${versionUrl}`;
-  });
-
-  return pathsMap;
 }
 
 export async function getPostsPathsByLanguage(lang: Lang) {

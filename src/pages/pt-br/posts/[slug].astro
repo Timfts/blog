@@ -1,6 +1,7 @@
 ---
 import PostTemplate from "@templates/Post/index.astro";
-import { getI18NPostPaths, getPostsPathsByLanguage } from "@content/helpers";
+import { getPostsPathsByLanguage } from "@content/helpers";
+import { getI18NPostPaths } from "@helpers/server/i18n";
 
 export async function getStaticPaths() {
   const postPathsByLang = await getPostsPathsByLanguage("pt-br");
