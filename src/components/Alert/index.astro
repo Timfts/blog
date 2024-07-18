@@ -2,7 +2,7 @@
 import Window from "@components/Window.astro";
 ---
 
-<div class="alert" data-fragment="main-alert">
+<div class="alert" data-fragment="main-alert" transition:persist>
   <Window id="error-modal" title="Error" actions={["Close"]}>
     <p class="alert-message"></p>
   </Window>
