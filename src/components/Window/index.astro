@@ -1,0 +1,53 @@
+---
+type Actions = "Minimize" | "Maximize" | "Help" | "Close";
+export interface Props {
+  actions?: Actions[];
+  class?: string;
+  style?: string;
+  title?: string;
+  statusBar?: string[];
+  id?: string;
+}
+
+const {
+  actions = ["Close"],
+  style = "",
+  class: className,
+  title = "New Window",
+  statusBar,
+  id,
+} = Astro.props;
+---
+
+<div
+  id={id}
+  class:list={["window", className]}
+  style={style}
+  data-fragment="window"
+>
+  <div class="title-bar">
+    <div class="title-bar-text">{title}</div>
+    <div class="title-bar-controls">
+      {actions.map((item) => <button aria-label={item} />)}
+    </div>
+  </div>
+  <div class="window-body">
+    <slot />
+  </div>
+  {
+    statusBar && (
+      <div class="status-bar">
+        {statusBar.map((item) => (
+          <p class="status-bar-field">{item}</p>
+        ))}
+      </div>
+    )
+  }
+</div>
+<script>
+  import "./controller";
+</script>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>

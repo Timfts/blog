@@ -1,7 +1,8 @@
 import { isMobile } from "@helpers/device";
 import elementController from "@lib/elementController";
+import { events } from "src/constants";
 
-elementController("main-menu", ({ root, query, on }) => {
+elementController("main-menu", ({ root, query, on, emit }) => {
   const header = query(".header") as HTMLHeadElement;
   const menuList = query(".menu-list") as HTMLMenuElement;
   const menuBtn = query(".menu-button") as HTMLButtonElement;
@@ -79,7 +80,8 @@ elementController("main-menu", ({ root, query, on }) => {
     const clickedItem = target.closest(menuItemClass);
     if (clickedItem.id === "configItem") {
       ev.preventDefault();
-      alert("open configs");
+      emit(events.OPEN_SETTINGS);
+      if (isMobile()) hideMobileMenu();
     }
   }
 });

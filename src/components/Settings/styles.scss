@@ -1,0 +1,28 @@
+.settings-window {
+  inset: 0;
+  position: fixed;
+  display: none;
+  z-index:1000;
+}
+
+.settings-container {
+  position: absolute;
+  width: 90vw;
+  top: 20vh;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  @include aboveTurningPoint() {
+    width: 450px;
+  }
+}
+
+.settings-backdrop {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.311);
+}

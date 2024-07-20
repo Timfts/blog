@@ -1,20 +1,21 @@
 ---
 export interface Props extends astroHTML.JSX.HtmlHTMLAttributes {
   stacked?: boolean;
-  as?: string
+  as?: string;
 }
 
-const {as: Element = "div", stacked, ...props } = Astro.props;
+const { as: Element = "div", stacked, ...props } = Astro.props;
 ---
 
-<Element class={stacked ? "field-row-stacked" : "field-row"} {...props}>
+<div class={stacked ? "field-row-stacked" : "field-row"} {...props}>
   <slot />
-</Element>
+</div>
 
 <style lang="scss">
   .field-row {
     display: flex;
     align-items: center;
+    margin-top: 6px;
     > * {
       + {
         * {

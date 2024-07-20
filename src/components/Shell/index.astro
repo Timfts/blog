@@ -3,6 +3,7 @@ import { ViewTransitions } from "astro:transitions";
 import "./base/main.scss";
 import MainMenu from "@components/MainMenu/index.astro";
 import Alert from "@components/Alert/index.astro";
+import Settings from "@components/Settings/index.astro";
 import LanguageSelector from "@components/LanguageSelector.astro";
 import i18n from "./i18n";
 
@@ -65,6 +66,7 @@ import { fade } from "astro:transitions";
       </div>
     </div>
     <Alert />
+    <Settings />
     <style lang="scss">
       @import "./styles.scss";
     </style>

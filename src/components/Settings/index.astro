@@ -1,0 +1,77 @@
+---
+import Window from "@components/Window/index.astro";
+import i18n from "./i18n";
+import Tabs from "@components/Tabs/Tabs.astro";
+import Tab from "@components/Tabs/Tab.astro";
+import Groupbox from "@components/Groupbox.astro";
+import FieldRow from "@components/FieldRow.astro";
+
+const currentLang = Astro.currentLocale as Lang;
+
+const { windowTitle, soonFeature } = i18n[currentLang];
+
+const themes = [
+  { label: "Default", id: "default" },
+  { label: "Dark", id: "dark", disabled: true },
+];
+
+const uiFilters = [
+  { label: "None", id: "none" },
+  { label: "Vintage monitor", id: "vintage-monitor" },
+  { label: "CRT TV", id: "crt-tv" },
+];
+---
+
+<div class="settings-window" data-fragment="settings-window" transition:persist>
+  <div class="settings-backdrop"></div>
+  <div class="settings-container">
+    <Window id="settings-window" title={windowTitle} statusBar={["salvo"]}>
+      <Tabs
+        tablist={[
+          { label: "UI", id: "ui" },
+          { label: "Misc", id: "misc" },
+        ]}
+      >
+        <Tab id="ui">
+          <Groupbox legend="Theme">
+            {
+              themes.map(({ id, label, disabled }) => (
+                <FieldRow>
+                  <input
+                    id={id}
+                    type="radio"
+                    value={id}
+                    name="theme"
+                    disabled={disabled}
+                  />
+                  <label for={id}>
+                    {label}
+                    {disabled && ` (${soonFeature})`}
+                  </label>
+                </FieldRow>
+              ))
+            }
+          </Groupbox>
+          <Groupbox legend="Screen Filter">
+            <select id="ui-filter">
+              {
+                uiFilters.map(({ label, id }) => (
+                  <option value={id}>{label}</option>
+                ))
+              }
+            </select>
+          </Groupbox>
+        </Tab>
+        <Tab id="misc">misc</Tab>
+      </Tabs>
+    </Window>
+  </div>
+</div>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>
+
+<script>
+  import "./controller";
+</script>

@@ -7,5 +7,6 @@ export const LANGS = {
 
 export const events = {
   OPEN_ALERT: "document:openAlert",
+  OPEN_SETTINGS: "document:settingsWindow",
   CLOSE_WINDOW: "closeWindow",
 };
