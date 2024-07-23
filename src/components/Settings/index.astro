@@ -5,10 +5,11 @@ import Tabs from "@components/Tabs/Tabs.astro";
 import Tab from "@components/Tabs/Tab.astro";
 import Groupbox from "@components/Groupbox.astro";
 import FieldRow from "@components/FieldRow.astro";
+import Button from "@components/Button.astro";
 
 const currentLang = Astro.currentLocale as Lang;
 
-const { windowTitle, soonFeature } = i18n[currentLang];
+const { windowTitle, soonFeature, cancelBtn } = i18n[currentLang];
 
 const themes = [
   { label: "Default", id: "default" },
@@ -26,44 +27,50 @@ const uiFilters = [
   <div class="settings-backdrop"></div>
   <div class="settings-container">
     <Window id="settings-window" title={windowTitle} statusBar={["salvo"]}>
-      <Tabs
-        tablist={[
-          { label: "UI", id: "ui" },
-          { label: "Misc", id: "misc" },
-        ]}
-      >
-        <Tab id="ui">
-          <Groupbox legend="Theme">
-            {
-              themes.map(({ id, label, disabled }) => (
-                <FieldRow>
-                  <input
-                    id={id}
-                    type="radio"
-                    value={id}
-                    name="theme"
-                    disabled={disabled}
-                  />
-                  <label for={id}>
-                    {label}
-                    {disabled && ` (${soonFeature})`}
-                  </label>
-                </FieldRow>
-              ))
-            }
-          </Groupbox>
-          <Groupbox legend="Screen Filter">
-            <select id="ui-filter">
+      <form id="settings-form">
+        <Tabs
+          tablist={[
+            { label: "UI", id: "ui" },
+            { label: "Misc", id: "misc" },
+          ]}
+        >
+          <Tab id="ui">
+            <Groupbox legend="Theme">
               {
-                uiFilters.map(({ label, id }) => (
-                  <option value={id}>{label}</option>
+                themes.map(({ id, label, disabled }) => (
+                  <FieldRow>
+                    <input
+                      id={id}
+                      type="radio"
+                      value={id}
+                      name="theme"
+                      disabled={disabled}
+                    />
+                    <label for={id}>
+                      {label}
+                      {disabled && ` (${soonFeature})`}
+                    </label>
+                  </FieldRow>
                 ))
               }
-            </select>
-          </Groupbox>
-        </Tab>
-        <Tab id="misc">misc</Tab>
-      </Tabs>
+            </Groupbox>
+            <Groupbox legend="Screen Filter">
+              <select name="ui-filter">
+                {
+                  uiFilters.map(({ label, id }) => (
+                    <option value={id}>{label}</option>
+                  ))
+                }
+              </select>
+            </Groupbox>
+          </Tab>
+          <Tab id="misc">misc</Tab>
+        </Tabs>
+        <div class="settings-actions">
+          <Button type="submit">Ok</Button>
+          <Button id="settings-cancel">{cancelBtn}</Button>
+        </div>
+      </form>
     </Window>
   </div>
 </div>

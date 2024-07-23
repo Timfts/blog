@@ -1,10 +1,10 @@
 ---
 export interface Props extends astroHTML.JSX.ButtonHTMLAttributes {}
 
-const props = Astro.props;
+const { type = "button", ...props } = Astro.props;
 ---
 
-<button {...props}><slot /></button>
+<button {...props} type={type}><slot /></button>
 <style lang="scss">
   button {
     min-width: 75px;
