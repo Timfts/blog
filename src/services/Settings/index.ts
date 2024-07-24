@@ -1,24 +1,52 @@
+import featuresExecutors from "./features";
 
-const preferencesKey = "USR_PREFS";
+type PreferencesState = {
+  theme?: string;
+  filter?: string;
+  "text-size"?: number;
+  pointer?: boolean;
+  lang?: Lang;
+};
 
+const Settings = () => {
+  const preferencesKey = "USR_PREFS";
 
-const SettingsService = {
+  function getCurrentPreferences() {
+    const currentStateStr = localStorage.getItem(preferencesKey) || "{}";
+    const currentPrefs: PreferencesState = JSON.parse(currentStateStr);
+    return currentPrefs;
+  }
 
-    loadSavedSettings(){
-        // load preferences from local storage
-        // execute the procedures
-    },
+  function saveNewPreferences(newPrefs: PreferencesState) {
+    localStorage.setItem(preferencesKey, JSON.stringify(newPrefs));
+  }
 
-    
+  async function loadSavedPrefs() {
+    const currentPrefs = getCurrentPreferences();
 
-    updatePref(){
-        // when a preference change
-            // execute the procedure
-            // save the change
-    },
+    for (const [key, value] of Object.entries(currentPrefs)) {
+      const executor = featuresExecutors[key];
+      await executor(value);
+    }
+  }
 
+  async function setPref(setting: string, value: any) {
+    console.log("setting pref");
+    const executor = featuresExecutors[setting];
+    if (!executor) return;
+    const currentPrefs = getCurrentPreferences();
+    const newState: PreferencesState = { ...currentPrefs, [setting]: value };
+    saveNewPreferences(newState);
+    await executor(value);
+  }
 
-}
+  return {
+    loadSavedPrefs,
+    setPref,
+    getCurrentPreferences,
+  };
+};
 
+const SettingsService = Settings();
 
-export default SettingsService
+export default SettingsService;

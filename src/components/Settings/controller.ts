@@ -4,6 +4,7 @@ import {
   removeSearchQuery,
 } from "@helpers/navigation";
 import elementController from "@lib/elementController";
+import SettingsService from "@services/Settings";
 import { events } from "src/constants";
 
 elementController("settings-window", ({ root, on, query }) => {
@@ -15,6 +16,7 @@ elementController("settings-window", ({ root, on, query }) => {
   function onStart() {
     setupEvents();
     if (hasSearchQuery(settingsQuery)) openSettings();
+    loadCurrentPreferences();
   }
 
   function setupEvents() {
@@ -45,12 +47,28 @@ elementController("settings-window", ({ root, on, query }) => {
     }
   }
 
+  function loadCurrentPreferences() {
+    const prefs = SettingsService.getCurrentPreferences();
+    const formElements = settingsForm.elements;
+
+    for (const [key, value] of Object.entries(prefs)) {
+      const field = formElements[key];
+      if (field.type === "radio") {
+        return;
+      }
+      if (field.type === "checkbox") {
+        return;
+      }
+      field.value = value;
+    }
+  }
+
   function handleOptionChange(ev: Event) {
     const field = (ev.target as any)?.name;
     if (!field) return;
     const formdata = new FormData(settingsForm);
     const value = formdata.get(field);
-    console.log(value);
+    SettingsService.setPref(field, value);
   }
 
   function handleFormSubmit(ev: SubmitEvent) {
