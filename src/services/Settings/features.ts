@@ -1,3 +1,5 @@
+import { getCurrentLocale, redirectToLocalizedPage } from "@helpers/i18n";
+
 const featuresExecutors = {
   theme: () => {
     console.log("changed theme");
@@ -15,8 +17,11 @@ const featuresExecutors = {
   pointer: () => {
     console.log("changed pointer");
   },
-  lang: () => {
-    console.log("changed lang");
+  lang: (lang: Lang) => {
+    const alreadyOnDefinedLang = lang === getCurrentLocale();
+    if (!lang || alreadyOnDefinedLang) return;
+
+    redirectToLocalizedPage(lang as Lang);
   },
 };
 

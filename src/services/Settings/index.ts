@@ -31,7 +31,6 @@ const Settings = () => {
   }
 
   async function setPref(setting: string, value: any) {
-    console.log("setting pref");
     const executor = featuresExecutors[setting];
     if (!executor) return;
     const currentPrefs = getCurrentPreferences();
