@@ -4,11 +4,22 @@ const featuresExecutors = {
   theme: () => {
     console.log("changed theme");
   },
-  filter: (option: string) => {
-    if (option === "vintage-monitor") {
-      document.body.style.filter = "blur(0.05em) hue-rotate(0)";
-    } else {
+  filter: async (option: string) => {
+    const clear = () => {
       document.body.style.filter = "none";
+      document.body.classList.remove("crt-tv");
+    };
+
+    clear();
+
+    switch (option) {
+      case "vintage-monitor":
+        document.body.style.filter = "blur(0.05em) hue-rotate(0)";
+        break;
+      case "crt-tv":
+        const plugin = await import("./plugins/crt-tv");
+        plugin.default();
+        break;
     }
   },
   "text-size": () => {
