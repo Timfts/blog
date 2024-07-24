@@ -38,7 +38,7 @@ elementController("settings-window", ({ root, on, query }) => {
   function checkClosableElements(ev: Event) {
     const element = ev.target as HTMLElement;
     const backdrop = ".settings-backdrop";
-    const cancelBtn = "#settings-cancel";
+    const cancelBtn = "#settings-ok";
 
     if (element.matches(backdrop) || element.matches(cancelBtn)) {
       closeSettings();

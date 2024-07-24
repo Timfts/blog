@@ -10,18 +10,40 @@ import LanguageSelector from "@components/LanguageSelector.astro";
 
 const currentLang = Astro.currentLocale as Lang;
 
-const { windowTitle, soonFeature, cancelBtn } = i18n[currentLang];
+const {
+  windowTitle,
+  defaultLabel,
+  themeOption,
+  screenFilterOption,
+  textSizeOption,
+  none,
+  textSizeMax,
+  textSizeMin,
+  customPointerLabel,
+  customPointerOption,
+} = i18n[currentLang];
+
+const fmtDefaultLabel = `(${defaultLabel})`;
 
 const themes = [
-  { label: "Default", id: "default" },
-  { label: "Dark", id: "dark", disabled: true },
+  { label: `Luna ${fmtDefaultLabel}`, id: "default" },
+  { label: "Silver Luna", id: "luna-silver", disabled: true },
+  { label: "Zune Style", id: "zune", disabled: true },
 ];
 
 const uiFilters = [
-  { label: "None", id: "none" },
+  { label: none, id: "none" },
   { label: "Vintage monitor", id: "vintage-monitor" },
   { label: "CRT TV", id: "crt-tv" },
 ];
+
+const fieldsNames = {
+  theme: "ui-theme",
+  filter: "ui-filter",
+  textSize: "text-size",
+  customPointer: "custom-pointer",
+  language: "language-selector",
+};
 ---
 
 <div class="settings-window" data-fragment="settings-window" transition:persist>
@@ -36,28 +58,26 @@ const uiFilters = [
           ]}
         >
           <Tab id="ui">
-            <Groupbox legend="Theme">
+            <Groupbox legend={themeOption}>
               {
                 themes.map(({ id, label, disabled }) => (
                   <FieldRow>
                     <input
+                      name={fieldsNames.theme}
                       id={id}
                       type="radio"
                       value={id}
-                      name="theme"
                       disabled={disabled}
+                      checked={id === "default"}
                     />
-                    <label for={id}>
-                      {label}
-                      {disabled && ` (${soonFeature})`}
-                    </label>
+                    <label for={id}>{label}</label>
                   </FieldRow>
                 ))
               }
             </Groupbox>
             <div class="settings-side-by-side">
-              <Groupbox legend="Screen Filter" class="settings-filter">
-                <select name="ui-filter" style="width:100%;">
+              <Groupbox legend={screenFilterOption} class="settings-filter">
+                <select name={fieldsNames.filter} style="width:100%;">
                   {
                     uiFilters.map(({ label, id }) => (
                       <option value={id}>{label}</option>
@@ -65,36 +85,42 @@ const uiFilters = [
                   }
                 </select>
               </Groupbox>
-              <Groupbox legend="Text size" class="settings-txt">
+              <Groupbox legend={textSizeOption} class="settings-txt">
                 <div class="text-range">
-                  <label for="text-size">Small</label>
+                  <label for="text-size">{textSizeMin}</label>
                   <input
-                    id="text-size"
+                    id={fieldsNames.textSize}
+                    name={fieldsNames.textSize}
                     type="range"
                     min="0"
                     max="100"
                     step="50"
                   />
-                  <label for="text-size">Big</label>
+                  <label for="text-size">{textSizeMax}</label>
                 </div>
               </Groupbox>
             </div>
           </Tab>
           <Tab id="misc">
-            <Groupbox legend="Custom pointer">
+            <Groupbox legend={customPointerOption}>
               <FieldRow>
-                <input checked type="checkbox" id="example2" />
-                <label for="example2">Use custom pointer</label>
+                <input
+                  type="checkbox"
+                  id={fieldsNames.customPointer}
+                  name={fieldsNames.customPointer}
+                />
+                <label for={fieldsNames.customPointer}>
+                  {customPointerLabel}
+                </label>
               </FieldRow>
             </Groupbox>
             <Groupbox legend="Language">
-              <LanguageSelector useLabel={false} />
+              <LanguageSelector useLabel={false} name={fieldsNames.language} />
             </Groupbox>
           </Tab>
         </Tabs>
         <div class="settings-actions">
-          <Button type="submit">Ok</Button>
-          <Button id="settings-cancel">{cancelBtn}</Button>
+          <Button id="settings-ok">Ok</Button>
         </div>
       </form>
     </Window>

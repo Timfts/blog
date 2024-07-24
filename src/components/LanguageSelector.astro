@@ -3,9 +3,10 @@ import { LANGS } from "src/constants";
 
 type Props = {
   useLabel?: boolean;
+  name?: string;
 };
 
-const { useLabel = true } = Astro.props;
+const { useLabel = true, name } = Astro.props;
 
 const langs = [LANGS.EN, LANGS.PTBR];
 
@@ -24,7 +25,7 @@ const inputLabel = {
 <div class="language-selector">
   {useLabel && <label for={inputId}>{inputLabel}:</label>}
 
-  <select id={inputId}>
+  <select id={inputId} name={name}>
     {
       langs.map((lang) => (
         <option value={lang} selected={lang === currentLocale}>

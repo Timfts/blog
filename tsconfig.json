@@ -23,7 +23,8 @@
       "@scss/*": ["src/scss/*"],
       "@cms/*": ["src/cms/*"],
       "@lib/*": ["src/lib/*"],
-      "@helpers/*": ["src/helpers/*"]
+      "@helpers/*": ["src/helpers/*"],
+      "@services/*": ["src/services/*"]
     }
   }
 }
