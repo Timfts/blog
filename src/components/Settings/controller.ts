@@ -1,10 +1,21 @@
+import {
+  addSearchQuery,
+  hasSearchQuery,
+  removeSearchQuery,
+} from "@helpers/navigation";
 import elementController from "@lib/elementController";
 import { events } from "src/constants";
 
 elementController("settings-window", ({ root, on, query }) => {
   const settingsForm = query("#settings-form") as HTMLFormElement;
+  const settingsQuery = "settings";
 
-  setupEvents();
+  onStart();
+
+  function onStart() {
+    setupEvents();
+    if (hasSearchQuery(settingsQuery)) openSettings();
+  }
 
   function setupEvents() {
     on(events.OPEN_SETTINGS, openSettings);
@@ -16,10 +27,12 @@ elementController("settings-window", ({ root, on, query }) => {
 
   function openSettings() {
     root.style.display = "block";
+    addSearchQuery(settingsQuery, "open");
   }
 
   function closeSettings() {
     root.style.display = "none";
+    removeSearchQuery(settingsQuery);
   }
 
   function checkClosableElements(ev: Event) {

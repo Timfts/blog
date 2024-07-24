@@ -14,5 +14,7 @@ export function getCurrentLocale() {
 export function redirectToLocalizedPage(lang: Lang) {
   const map = getI18NMap();
   const newPath = map.paths[lang];
-  location.href = newPath;
+  const currentUrl = new URL(window.location.href);
+  const newUrl = `${currentUrl.origin}${newPath}${currentUrl.search}`;
+  location.href = newUrl;
 }

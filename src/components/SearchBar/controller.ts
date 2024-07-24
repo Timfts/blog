@@ -1,6 +1,6 @@
-import goTo from "@helpers/goTo";
 import elementController from "@lib/elementController";
 import { events } from "src/constants";
+import { navigate } from 'astro:transitions/client';
 
 elementController("search-bar", ({ query, emit }) => {
   const searchForm = query(".search-form") as HTMLFormElement;
@@ -17,6 +17,6 @@ elementController("search-bar", ({ query, emit }) => {
       return;
     }
 
-    goTo(`/posts?search=${fieldValue}`);
+    navigate(`/posts?search=${fieldValue}`);
   }
 });

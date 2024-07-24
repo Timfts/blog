@@ -1,5 +1,5 @@
 import elementController from "@lib/elementController";
-import goTo from "@helpers/goTo";
+import { navigate } from 'astro:transitions/client';
 
 elementController(
   "home-page",
@@ -7,7 +7,7 @@ elementController(
     const btn = query("#mybtn");
 
     btn.addEventListener("click", () => {
-      goTo("/projects");
+      navigate("/projects");
     });
   },
   { rerun: "changeroute" }
