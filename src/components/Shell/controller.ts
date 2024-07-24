@@ -3,9 +3,12 @@ import SettingsService from "@services/Settings";
 
 elementController(
   "shell",
-  ({ root }) => {
+  ({ root, query }) => {
+    const shellContent = query(".shell-content");
+
+
     SettingsService.loadSavedPrefs();
-    root.addEventListener("change", handleLangChange);
+    shellContent.addEventListener("change", handleLangChange);
 
     function handleLangChange(e: Event) {
       const target = e.target as HTMLSelectElement;
