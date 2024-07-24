@@ -24,11 +24,30 @@
   z-index: 1;
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.311);
+  background-color: rgba(0, 0, 0, 0.475);
 }
 
 .settings-actions {
   display: flex;
   justify-content: flex-end;
   gap: 5px;
+}
+
+.settings-side-by-side {
+  display: flex;
+  gap: 20px;
+}
+
+.text-range {
+  display: flex;
+  gap: 5px;
+}
+
+.settings-filter,
+.settings-txt {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,12 +1,13 @@
 ---
 export interface Props {
   legend?: string;
+  class?: string;
 }
 
-const { legend } = Astro.props;
+const { legend, class: className } = Astro.props;
 ---
 
-<fieldset>
+<fieldset class={className}>
   {legend && <legend>{legend}</legend>}
   <slot />
 </fieldset>

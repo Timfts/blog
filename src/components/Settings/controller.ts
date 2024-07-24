@@ -1,7 +1,9 @@
 import elementController from "@lib/elementController";
 import { events } from "src/constants";
 
-elementController("settings-window", ({ root, on }) => {
+elementController("settings-window", ({ root, on, query }) => {
+  const settingsForm = query("#settings-form") as HTMLFormElement;
+
   setupEvents();
 
   function setupEvents() {
@@ -9,6 +11,7 @@ elementController("settings-window", ({ root, on }) => {
     on(events.CLOSE_WINDOW, closeSettings);
     on("click", checkClosableElements);
     on("submit", handleFormSubmit);
+    on("change", handleOptionChange);
   }
 
   function openSettings() {
@@ -29,9 +32,18 @@ elementController("settings-window", ({ root, on }) => {
     }
   }
 
+  function handleOptionChange(ev: Event) {
+    const field = (ev.target as any)?.name;
+    if (!field) return;
+    const formdata = new FormData(settingsForm);
+    const value = formdata.get(field);
+    console.log(value);
+  }
+
   function handleFormSubmit(ev: SubmitEvent) {
     ev.preventDefault();
-    const formData = new FormData(event.target as any);
+    const form = ev.target as HTMLFormElement;
+    const formData = new FormData(form);
     console.log(formData.get("ui-filter"));
   }
 });

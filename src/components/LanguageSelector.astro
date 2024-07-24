@@ -1,6 +1,12 @@
 ---
 import { LANGS } from "src/constants";
 
+type Props = {
+  useLabel?: boolean;
+};
+
+const { useLabel = true } = Astro.props;
+
 const langs = [LANGS.EN, LANGS.PTBR];
 
 const labels = {
@@ -16,7 +22,8 @@ const inputLabel = {
 ---
 
 <div class="language-selector">
-  <label for={inputId}>{inputLabel}:</label>
+  {useLabel && <label for={inputId}>{inputLabel}:</label>}
+
   <select id={inputId}>
     {
       langs.map((lang) => (

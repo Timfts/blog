@@ -38,7 +38,7 @@ const {
     statusBar && (
       <div class="status-bar">
         {statusBar.map((item) => (
-          <p class="status-bar-field">{item}</p>
+          <p class="status-bar-field" set:html={item}/>
         ))}
       </div>
     )

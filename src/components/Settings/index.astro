@@ -6,6 +6,7 @@ import Tab from "@components/Tabs/Tab.astro";
 import Groupbox from "@components/Groupbox.astro";
 import FieldRow from "@components/FieldRow.astro";
 import Button from "@components/Button.astro";
+import LanguageSelector from "@components/LanguageSelector.astro";
 
 const currentLang = Astro.currentLocale as Lang;
 
@@ -26,7 +27,7 @@ const uiFilters = [
 <div class="settings-window" data-fragment="settings-window" transition:persist>
   <div class="settings-backdrop"></div>
   <div class="settings-container">
-    <Window id="settings-window" title={windowTitle} statusBar={["salvo"]}>
+    <Window id="settings-window" title={windowTitle}>
       <form id="settings-form">
         <Tabs
           tablist={[
@@ -54,17 +55,42 @@ const uiFilters = [
                 ))
               }
             </Groupbox>
-            <Groupbox legend="Screen Filter">
-              <select name="ui-filter">
-                {
-                  uiFilters.map(({ label, id }) => (
-                    <option value={id}>{label}</option>
-                  ))
-                }
-              </select>
+            <div class="settings-side-by-side">
+              <Groupbox legend="Screen Filter" class="settings-filter">
+                <select name="ui-filter" style="width:100%;">
+                  {
+                    uiFilters.map(({ label, id }) => (
+                      <option value={id}>{label}</option>
+                    ))
+                  }
+                </select>
+              </Groupbox>
+              <Groupbox legend="Text size" class="settings-txt">
+                <div class="text-range">
+                  <label for="text-size">Small</label>
+                  <input
+                    id="text-size"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="50"
+                  />
+                  <label for="text-size">Big</label>
+                </div>
+              </Groupbox>
+            </div>
+          </Tab>
+          <Tab id="misc">
+            <Groupbox legend="Custom pointer">
+              <FieldRow>
+                <input checked type="checkbox" id="example2" />
+                <label for="example2">Use custom pointer</label>
+              </FieldRow>
+            </Groupbox>
+            <Groupbox legend="Language">
+              <LanguageSelector useLabel={false} />
             </Groupbox>
           </Tab>
-          <Tab id="misc">misc</Tab>
         </Tabs>
         <div class="settings-actions">
           <Button type="submit">Ok</Button>

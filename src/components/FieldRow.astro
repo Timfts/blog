@@ -16,12 +16,8 @@ const { as: Element = "div", stacked, ...props } = Astro.props;
     display: flex;
     align-items: center;
     margin-top: 6px;
-    > * {
-      + {
-        * {
-          margin-left: var(--grouped-element-spacing);
-        }
-      }
+    > * + * {
+      margin-left: var(--grouped-element-spacing);
     }
 
     &:not(:first-of-type) {
