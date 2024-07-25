@@ -23,7 +23,6 @@ elementController("settings-window", ({ root, on, query }) => {
     on(events.OPEN_SETTINGS, openSettings);
     on(events.CLOSE_WINDOW, closeSettings);
     on("click", checkClosableElements);
-    on("submit", handleFormSubmit);
     on("change", handleOptionChange);
   }
 
@@ -53,28 +52,22 @@ elementController("settings-window", ({ root, on, query }) => {
 
     for (const [key, value] of Object.entries(prefs)) {
       const field = formElements[key];
-      if (field.type === "radio") {
-        return;
-      }
+
       if (field.type === "checkbox") {
-        return;
+        field.checked = !!value;
       }
       field.value = value;
     }
   }
 
   function handleOptionChange(ev: Event) {
-    const field = (ev.target as any)?.name;
+    const fieldRoot = ev.target as any;
+    const field = fieldRoot?.name;
     if (!field) return;
     const formdata = new FormData(settingsForm);
-    const value = formdata.get(field);
-    SettingsService.setPref(field, value);
-  }
+    const value =
+      fieldRoot.type === "checkbox" ? fieldRoot.checked : formdata.get(field);
 
-  function handleFormSubmit(ev: SubmitEvent) {
-    ev.preventDefault();
-    const form = ev.target as HTMLFormElement;
-    const formData = new FormData(form);
-    console.log(formData.get("ui-filter"));
+    SettingsService.setPref(field, value);
   }
 });
