@@ -11,7 +11,6 @@ const featuresExecutors = {
     };
 
     clear();
-
     switch (option) {
       case "vintage-monitor":
         document.body.style.filter = "blur(0.05em) hue-rotate(0)";
@@ -22,8 +21,12 @@ const featuresExecutors = {
         break;
     }
   },
-  "text-size": () => {
-    console.log("changed textSize");
+  "text-size": (value) => {
+    const currentSize = Array.from(document.body.classList.values()).find(
+      (item) => item.startsWith("font-size")
+    );
+    const newSize = `font-size-${value}`;
+    document.body.classList.replace(currentSize, newSize);
   },
   pointer: () => {
     console.log("changed pointer");

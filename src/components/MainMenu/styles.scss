@@ -215,7 +215,7 @@
 .social-link {
   color: black;
   line-height: 2;
-  font-size: 12px;
+  font-size: var(--menu-items);
   -webkit-font-smoothing: auto;
   font-family: var(--sans-serif);
 }

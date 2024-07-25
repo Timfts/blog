@@ -1,20 +1,40 @@
-/*-------------------------------------------*\
-    Variables
-\*-------------------------------------------*/
+.font-size-0 {
+  --body-font: 12px;
+  --paragraph-bottom: 18px;
+  --title-1: 28px;
+  --title-2: 20px;
+  --title-3: 16px;
+  --title-4: 14px;
+  --menu-items: 12px;
+  --label: 11px;
+}
 
-:root {
-  --header-size: 90px;
-  --sans-serif: "Pixelated MS Sans Serif", Arial;
-  /* font-size */
+.font-size-50 {
   --body-font: 16px;
   --paragraph-bottom: 20px;
   --title-1: 32px;
   --title-2: 24px;
   --title-3: 20px;
   --title-4: 18px;
-
   --menu-items: 12.5px;
+  --label: 11px;
+}
+
+.font-size-100 {
+  --body-font: 18px;
+  --paragraph-bottom: 22px;
+  --title-1: 34px;
+  --title-2: 26px;
+  --title-3: 22px;
+  --title-4: 20px;
+  --menu-items: 14px;
+  --label: 13px;
+}
+
+:root {
   --main-name: 18px;
+  --header-size: 90px;
+  --sans-serif: "Pixelated MS Sans Serif", Arial;
 
   /* Color */
   --surface: #ece9d8;
