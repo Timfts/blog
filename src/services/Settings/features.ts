@@ -28,8 +28,13 @@ const featuresExecutors = {
     const newSize = `font-size-${value}`;
     document.body.classList.replace(currentSize, newSize);
   },
-  pointer: () => {
-    console.log("changed pointer");
+  pointer: async (value: boolean) => {
+    if (value) {
+      const plugin = await import("./plugins/custom-pointer");
+      plugin.default();
+    } else {
+      document.body.classList.remove("custom-pointer");
+    }
   },
   lang: (lang: Lang) => {
     const alreadyOnDefinedLang = lang === getCurrentLocale();

@@ -69,9 +69,14 @@ u {
 
 a {
   color: var(--link-blue);
+  cursor: var(--pointer-cursor);
   &:focus {
     outline: 1px dotted var(--link-blue);
   }
+}
+
+button {
+  cursor: var(--default-cursor);
 }
 
 code {

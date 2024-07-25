@@ -21,7 +21,7 @@
 }
 
 .settings-backdrop {
-  cursor: pointer;
+  cursor: var(--pointer-cursor);
   z-index: 1;
   position: absolute;
   inset: 0;

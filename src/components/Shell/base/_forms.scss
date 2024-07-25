@@ -34,6 +34,7 @@ input,
 textarea,
 option {
   -webkit-font-smoothing: antialiased;
+  cursor: var(--default-cursor);
 }
 
 select {
