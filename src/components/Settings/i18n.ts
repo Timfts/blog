@@ -9,8 +9,9 @@ export default {
     textSizeOption: "Text size",
     textSizeMin: "Small",
     textSizeMax: "Large",
-    customPointerOption: "Custom Pointer",
-    customPointerLabel: "Use custom pointer",
+    customPointerOption: "Custom Cursor",
+    customPointerLabel: "Use custom cursor",
+    language: "Language",
   },
   "pt-br": {
     none: "Nenhum",
@@ -22,7 +23,8 @@ export default {
     textSizeOption: "Tamanho do texto",
     textSizeMin: "Pequeno",
     textSizeMax: "Grande",
-    customPointerOption: "Ponteiro customizado",
-    customPointerLabel: "Usar ponteira customizada",
+    customPointerOption: "Cursor customizado",
+    customPointerLabel: "Usar cursor customizada",
+    language: "Idioma",
   },
 };

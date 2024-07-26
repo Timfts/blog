@@ -21,6 +21,7 @@ const {
   textSizeMin,
   customPointerLabel,
   customPointerOption,
+  language,
 } = i18n[currentLang];
 
 const fmtDefaultLabel = `(${defaultLabel})`;
@@ -115,7 +116,7 @@ const fieldsNames = {
                 </label>
               </FieldRow>
             </Groupbox>
-            <Groupbox legend="Language">
+            <Groupbox legend={language}>
               <LanguageSelector useLabel={false} name={fieldsNames.language} />
             </Groupbox>
           </Tab>
