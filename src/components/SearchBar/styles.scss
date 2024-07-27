@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 .label {
@@ -15,6 +15,12 @@
 
 .field {
   flex: 1;
+  font-size: var(--search-field-font);
+  height: 30px;
+
+  @include aboveTurningPoint() {
+    height: 25px;
+  }
 }
 
 .submit {
@@ -23,7 +29,7 @@
   height: 24px;
   width: 24px;
   border: none;
-  background-image: var(--go);
+  background-image: url("images/icons/search-tool.png");
   image-rendering: pixelated;
   background-repeat: no-repeat;
   background-position: center;

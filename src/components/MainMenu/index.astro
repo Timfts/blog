@@ -3,9 +3,12 @@ import { Picture } from "astro:assets";
 import socialLinks from "@content/_social-links.json";
 import SearchBar from "@components/SearchBar/index.astro";
 import { getMenuItems } from "./data";
+import i18n from "./i18n";
 
-const menuItems = getMenuItems(Astro.currentLocale as any);
+const currentLocale = Astro.currentLocale as Lang;
+const menuItems = getMenuItems(currentLocale);
 const currentPage = Astro.url.pathname;
+const { mainProfileAlt } = i18n[currentLocale];
 ---
 
 <div class="main-menu" data-fragment="main-menu" transition:persist>
@@ -14,9 +17,10 @@ const currentPage = Astro.url.pathname;
       <div class="avatar">
         <img
           class="avatar-image"
-          src="https://avatars.githubusercontent.com/u/17283501?v=4"
-          width="260"
-          height="260"
+          src="/images/profile-small.jpg"
+          width="44"
+          height="44"
+          alt={mainProfileAlt}
         />
       </div>
       <h1 class="name">Tim Fontes</h1>
@@ -54,23 +58,24 @@ const currentPage = Astro.url.pathname;
       }
     </menu>
 
-    <div class="search-block">
-      <div class="search-block-divider"></div>
-      <SearchBar />
-    </div>
+    <div>
+      <div class="search-block">
+        <SearchBar />
+      </div>
 
-    <div class="social-holder">
-      <ul class="social-list">
-        {
-          socialLinks["social-links-list"].map(({ label, link }) => (
-            <li class="social-li">
-              <a class="social-link" href={link} target="_blank">
-                {label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      <div class="social-holder">
+        <ul class="social-list">
+          {
+            socialLinks["social-links-list"].map(({ label, link }) => (
+              <li class="social-li">
+                <a class="social-link" href={link} target="_blank">
+                  {label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   </div>
 </div>
