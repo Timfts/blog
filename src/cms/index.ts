@@ -2,8 +2,6 @@ import { SITE_URL } from "../constants";
 import postTopics from "./collections/posts-topics";
 import learnings from "./collections/learnings";
 import projects from "./collections/projects";
-import snippetsCategories from "./collections/snippets-categories";
-import snippets from "./collections/snippets";
 import posts from "./collections/posts";
 import socialLinks from "./collections/social-links";
 
@@ -34,7 +32,7 @@ const decapCMSConfig = {
       {
         name: "segmentation-data",
         label: "Segmentation Data",
-        files: [postTopics, learnings, snippetsCategories],
+        files: [postTopics, learnings],
       },
       {
         name: "personal-info",
@@ -43,7 +41,6 @@ const decapCMSConfig = {
       },
       posts,
       projects,
-      snippets,
     ],
   },
 };
