@@ -23,7 +23,12 @@ const pageData = i18n[Astro.currentLocale as Lang];
           }
         </div>
         <div class="main-image-holder">
-          <Image src={introImg} class="main-image" alt={pageData.mainImgAlt} />
+          <Image
+            src={introImg}
+            class="main-image"
+            alt={pageData.mainImgAlt}
+            loading="eager"
+          />
         </div>
       </div>
     </section>
