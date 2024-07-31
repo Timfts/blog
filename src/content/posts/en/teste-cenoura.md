@@ -1,5 +1,11 @@
 ---
-Excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+title: Teste cenoura
+enabled: true
+page_url: batata-hehe
+created_date: 2023-08-28T01:54:28.792Z
+updated_date: ""
+thumbnail: /images/uploads/frame-2-2-.png
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
   scelerisque dui id pretium varius. Sed suscipit neque ut nisi interdum, eget
   rutrum eros convallis. Mauris finibus lectus id mi feugiat consequat. Cras nec
   tellus sollicitudin, maximus ex quis, rhoncus massa. Curabitur cursus purus
@@ -7,13 +13,6 @@ Excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
   Praesent finibus venenatis consequat. Lorem ipsum dolor sit amet, consectetur
   adipiscing elit. Pellentesque vulputate purus vel egestas pharetra. Quisque
   egestas et odio vitae rutrum. Fusce ac volutpat ante. Donec "
-excerpt: asdsfsg
-title: teste cenoura
-enabled: true
-page_url: batata-hehe
-created_date: 2023-08-28T01:54:28.792Z
-updated_date: ""
-thumbnail: /images/uploads/frame-2-2-.png
 topics:
   - asdsfa
 ---

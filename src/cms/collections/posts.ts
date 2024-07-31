@@ -59,8 +59,8 @@ const posts = {
       i18n: "duplicate",
     },
     {
-      label: "excerpt",
-      name: "Excerpt",
+      label: "Excerpt",
+      name: "excerpt",
       widget: "text",
       required: true,
       i18n: true,

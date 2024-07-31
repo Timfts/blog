@@ -1,11 +1,11 @@
 ---
-title: batata cenoura
+title: Batata cenoura
 enabled: true
 page_url: minha-primeira-batata
 created_date: 2023-08-28T03:43:08.893Z
 updated_date: ""
 thumbnail: /images/uploads/32bcae72-a2a1-4124-978d-18f251de8dfd.png
-Excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
   scelerisque dui id pretium varius. Sed suscipit neque ut nisi interdum, eget
   rutrum eros convallis. Mauris finibus lectus id mi feugiat consequat. Cras nec
   tellus sollicitudin, maximus ex quis, rhoncus massa. Curabitur cursus purus

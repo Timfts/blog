@@ -6,8 +6,28 @@ import { getPageI18NPathMap } from "@helpers/server/i18n";
 
 import introImg from "./assets/intro-mobile.webp";
 import i18n from "./i18n";
+import { getPostsByLang } from "@content/helpers";
+import pagePaths from "src/constants/pagePaths";
 
-const pageData = i18n[Astro.currentLocale as Lang];
+const currentLang = Astro.currentLocale as Lang;
+const pageData = i18n[currentLang];
+const usedPagePaths = pagePaths[currentLang];
+const { posts: postsPath, postTopics: postTopicsPath } = usedPagePaths;
+
+const allPosts = await getPostsByLang(currentLang);
+/* const latestPosts = allPosts.slice(0, 5); */
+const latestPosts = [...allPosts, ...allPosts];
+const formatExcerpt = (txt: string = "") => {
+  const maxSize = 200;
+  return `${txt.slice(0, maxSize)}${txt.length > maxSize ? "..." : ""}`;
+};
+
+const getPostPath = (postPath: string) => `${postsPath}/${postPath}`;
+
+const getPostPageURL = (postPath: string) =>
+  `https://${Astro.site.host}${postsPath}/${postPath}`;
+
+const getTopicPath = (topic: string) => `${postTopicsPath}/${topic}`;
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("home")}>
@@ -36,25 +56,28 @@ const pageData = i18n[Astro.currentLocale as Lang];
       <h3 class="section-title">{pageData.latestPostsTitle}</h3>
       <ul class="posts-list">
         {
-          range(5).map((i) => (
+          latestPosts.map(({ data }) => (
             <li class="latest-post">
-              <a href="#" class="latest-post-link">
-                Releasing a new game
+              <a href={getPostPath(data.page_url)} class="latest-post-link">
+                {data.title}
               </a>
-              <p class="latest-post-excerpt">
-                orem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus eu dolor aliquam, convallis risus quis, hendrerit
-                metus. Quisque neque augue, posuere eu sapien vitae, volutpat
-                posuere felis.{" "}
-              </p>
-              <a href="#" class="latest-post-path">
-                http://potato.com.br/my-post
+              <p class="latest-post-excerpt">{formatExcerpt(data.excerpt)}</p>
+              <div class="latest-post-categories">
+                <span class="latest-post-cat-title">topics:</span>
+                {(data.topics || []).map((topic) => (
+                  <a class="latest-post-cat-link" href={getTopicPath(topic)}>
+                    {topic}
+                  </a>
+                ))}
+              </div>
+              <a href={getPostPath(data.page_url)} class="latest-post-path">
+                {getPostPageURL(data.page_url)}
               </a>
             </li>
           ))
         }
       </ul>
-      <a href="#" class="more-posts-link">...{pageData.morePosts}</a>
+      <a href={postsPath} class="more-posts-link">...{pageData.morePosts}</a>
     </section>
   </div>
 </Shell>
