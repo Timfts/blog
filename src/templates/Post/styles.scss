@@ -1,0 +1,21 @@
+.post-container {
+  max-width: 700px;
+
+  :global(img) {
+    width: 100%;
+  }
+
+  :global(p) {
+    margin-bottom: 25px;
+    /* max-width: 650px; */
+    display: block;
+  }
+
+  :global(.astro-code) {
+    margin-bottom: 25px;
+  }
+}
+
+.post-title {
+  margin-bottom: 25px;
+}

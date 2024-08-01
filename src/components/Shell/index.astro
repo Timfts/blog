@@ -6,6 +6,7 @@ import Alert from "@components/Alert/index.astro";
 import Settings from "@components/Settings/index.astro";
 import LanguageSelector from "@components/LanguageSelector.astro";
 import i18n from "./i18n";
+import { fade } from "astro:transitions";
 
 export interface Props {
   title?: string;
@@ -15,7 +16,7 @@ export interface Props {
 const { title = "Tim Fontes", i18nPagePaths } = Astro.props as Props;
 const { htmlLang } = i18n[Astro.currentLocale];
 
-const forceViewTransitionsPolyfill = true;
+const forceViewTransitionsPolyfill = false;
 const currentYear = new Date().getFullYear();
 const I18NMap: I18NMap = {
   currentLang: Astro.currentLocale,
@@ -23,7 +24,6 @@ const I18NMap: I18NMap = {
 };
 
 const stringfiedI18NMap = JSON.stringify(I18NMap);
-import { fade } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -33,9 +33,14 @@ import { fade } from "astro:transitions";
     <title>{title}</title>
     <meta name="theme-color" content="#7D7F82" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {
+      forceViewTransitionsPolyfill ? (
+        <script is:inline>document.startViewTransition = false;</script>
+      ) : null
+    }
     <ViewTransitions />
   </head>
-  <body class="font-size-50">
+  <body class="font-size-100">
     <div class="shell" data-fragment="shell">
       <div class="shell-container">
         <div class="shell-menu">
