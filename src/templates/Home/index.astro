@@ -1,13 +1,12 @@
 ---
 import Shell from "@components/Shell/index.astro";
 import Image from "@components/Image/index.astro";
-import range from "@helpers/range";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
+import pagePaths from "@constants/pagePaths";
 
 import introImg from "./assets/intro-mobile.webp";
 import i18n from "./i18n";
 import { getPostsByLang } from "@content/helpers";
-import pagePaths from "src/constants/pagePaths";
 
 const currentLang = Astro.currentLocale as Lang;
 const pageData = i18n[currentLang];
