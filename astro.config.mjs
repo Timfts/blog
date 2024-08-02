@@ -13,6 +13,12 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
+  //one dark pro vitesse-black
+  markdown: {
+    shikiConfig: {
+      theme: "github-dark-default"
+    }
+  },
   scopedStyleStrategy: "class",
   vite: {
     css: {
