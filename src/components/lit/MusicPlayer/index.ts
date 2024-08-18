@@ -1,6 +1,15 @@
-import { LitElement, html, css } from "lit-element";
+import { getCurrentLocale } from "@helpers/i18n";
+import { LitElement, html, css } from "lit";
+import { property } from "lit/decorators.js";
 import * as THREE from "three";
+import i18n from "./i18n";
 export class MusicPlayer extends LitElement {
+  @property({ attribute: false })
+  currentLang = getCurrentLocale();
+
+  @property({ attribute: false })
+  data = i18n[this.currentLang];
+
   static get styles() {
     return css`
       div {
@@ -18,6 +27,6 @@ export class MusicPlayer extends LitElement {
   }
 
   render() {
-    return html`<div>Hello from MyElement!</div>`;
+    return html`<div>${this.data.hello}</div>`;
   }
 }
