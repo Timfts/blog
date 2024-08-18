@@ -86,7 +86,7 @@ elementController("main-menu", ({ root, query, on, emit }) => {
 
     if (clickedItem.id === "menu-item-music") {
       ev.preventDefault();
-      alert("lulu");
+      emit(events.OPEN_MEDIA_PLAYER);
     }
   }
 });
