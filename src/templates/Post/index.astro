@@ -3,6 +3,7 @@ import Shell from "@components/Shell/index.astro";
 import ImageLoader from "@components/Image/ImageLoader.astro";
 import i18n from "./i18n";
 import { CollectionEntry } from "astro:content";
+import pagePaths from "@constants/pagePaths";
 
 type Props = {
   i18nPagePaths: I18NPagePaths;
@@ -10,31 +11,67 @@ type Props = {
 };
 
 const lang = Astro.currentLocale as Lang;
-const data = i18n[lang];
+const { updatedLabel, topicsTitle } = i18n[lang];
+const { postTopics } = pagePaths[lang];
 
 const { i18nPagePaths, entry } = Astro.props;
-const { Content, ...asd } = await entry.render();
+const { Content } = await entry.render();
+const { thumbnail, title, created_date, updated_date, topics } = entry?.data;
+
+const locale = {
+  en: "en-US",
+  "pt-br": "pt-BR",
+}[lang];
+
+const fmtDate = (date: Date) =>
+  date.toLocaleDateString(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+const hasUpdate = !!updated_date && updated_date instanceof Date;
 ---
 
 <Shell i18nPagePaths={i18nPagePaths}>
   <div class="post">
-    <h1 class="post-title">{entry?.data?.title}</h1>
+    <h1 class="post-title">aslkdjs flkajsdkg skdjskjv xkjclaksj kj alskjdkshg</h1>
+    <div class="post-date">
+      <time datetime={created_date.toISOString()}>{fmtDate(created_date)}</time>
+      {
+        hasUpdate && (
+          <time datetime={updated_date.toISOString()}>
+            ({updatedLabel}: {fmtDate(updated_date)})
+          </time>
+        )
+      }
+    </div>
 
     {
-      entry.data?.thumbnail && (
+      thumbnail && (
         <div class="post-thumbnail">
-          <ImageLoader style={{ height: "100%" }} alt={data.title}>
+          <ImageLoader style={{ height: "100%" }} alt={title}>
             <img
-              src={entry.data?.thumbnail}
-              style={{ width: "100%" }}
-              alt={data.title}
+              src={thumbnail}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              alt={title}
             />
           </ImageLoader>
         </div>
       )
     }
-    <div class="post-content">
+    <main class="post-content">
       <Content />
+    </main>
+    <div class="post-topics">
+      <span class="post-topics-title">{topicsTitle}:</span>
+      {
+        (topics || []).map((topic) => (
+          <a class="post-topics-link" href={`${postTopics}/${topic}`}>
+            {topic}
+          </a>
+        ))
+      }
     </div>
   </div>
 </Shell>

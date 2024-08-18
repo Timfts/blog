@@ -3,7 +3,7 @@ title: Batata cenoura
 enabled: true
 page_url: minha-primeira-batata
 created_date: 2023-08-28T03:43:08.893Z
-updated_date: ""
+updated_date: 2024-08-18T16:35:00.000Z
 thumbnail: /images/uploads/32bcae72-a2a1-4124-978d-18f251de8dfd.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
   scelerisque dui id pretium varius. Sed suscipit neque ut nisi interdum, eget
@@ -13,6 +13,7 @@ excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
   Praesent finibus venenatis consequat. "
 topics:
   - asdsfa
+  - cebola
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque dui id pretium varius. Sed suscipit neque ut nisi interdum, eget rutrum eros convallis. Mauris finibus lectus id mi feugiat consequat. Cras nec tellus sollicitudin, maximus ex quis, rhoncus massa. Curabitur cursus purus eget neque cursus dapibus. Praesent nec mauris a risus imperdiet volutpat. Praesent finibus venenatis consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate purus vel egestas pharetra. Quisque egestas et odio vitae rutrum. Fusce ac volutpat ante. Donec a tempus elit. Cras et tempor libero. Ut posuere malesuada ipsum, quis maximus orci mattis in. Nunc eget bibendum felis, a aliquam lectus. Morbi id velit eget ex vulputate placerat.
 

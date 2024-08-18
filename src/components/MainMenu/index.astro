@@ -7,14 +7,18 @@ import i18n from "./i18n";
 
 const currentLocale = Astro.currentLocale as Lang;
 const currentPage = Astro.url.pathname;
-const { mainProfileAlt, menuItems: menuItemsMap } = i18n[currentLocale];
+const {
+  mainProfileAlt,
+  menuItems: menuItemsMap,
+  homePath,
+} = i18n[currentLocale];
 
 const menuItemsEntries = Object.entries(menuItemsMap);
 ---
 
 <div class="main-menu" data-fragment="main-menu" transition:persist>
   <header class="header">
-    <div class="header-left">
+    <a href={homePath} class="header-left">
       <div class="avatar">
         <img
           class="avatar-image"
@@ -25,7 +29,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
         />
       </div>
       <h1 class="name">Tim Fontes</h1>
-    </div>
+    </a>
     <div class="header-right">
       <button class="menu-button"></button>
     </div>

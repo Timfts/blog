@@ -1,6 +1,10 @@
 .post {
   max-width: 700px;
 
+  &-title {
+    margin:20px 0;
+  }
+
   &-thumbnail {
     height: 300px;
     object-fit: cover;
@@ -23,8 +27,9 @@
       margin-bottom: 25px;
     }
   }
-}
 
-.post-title {
-  margin-bottom: 25px;
+  &-date {
+    color: var(--gray-20);
+    margin: 10px 0 25px 0;
+  }
 }

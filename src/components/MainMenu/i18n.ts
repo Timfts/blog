@@ -6,6 +6,7 @@ const ptPaths = pagePaths["pt-br"];
 const i18n = {
   en: {
     mainProfileAlt: "Tim's Profile image",
+    homePath: enPaths.home,
     menuItems: {
       home: {
         label: "Home",
@@ -46,6 +47,7 @@ const i18n = {
   },
   "pt-br": {
     mainProfileAlt: "Imagem de perfil de Tim",
+    homePath: ptPaths.home,
     menuItems: {
       home: {
         label: "Home",
