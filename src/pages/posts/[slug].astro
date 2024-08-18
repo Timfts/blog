@@ -4,7 +4,7 @@ import { getPostsPathsByLanguage } from "@content/helpers";
 import { getI18NPostPaths } from "@helpers/server/i18n";
 
 export async function getStaticPaths() {
-  const postPathsByLang = await getPostsPathsByLanguage("en");
+  const postPathsByLang = await getPostsPathsByLanguage("en", false);
   return postPathsByLang;
 }
 

@@ -1,0 +1,61 @@
+---
+import { CollectionEntry } from "astro:content";
+import pagePaths from "@constants/pagePaths";
+import i18n from "./i18n";
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const { post } = Astro.props;
+
+const currentLang = Astro.currentLocale as Lang;
+const usedPagePaths = pagePaths[currentLang];
+const { posts: postsPath, postTopics: postTopicsPath } = usedPagePaths;
+const { page_url, title, excerpt, topics, external_link } = post.data;
+const { topicsTitle } = i18n[currentLang];
+
+const maxExcerptSize = 200;
+const fmtExcerpt = `${excerpt.slice(0, maxExcerptSize)}${excerpt.length > maxExcerptSize ? "..." : ""}`;
+const postPageUrl = external_link
+  ? external_link
+  : `https://${Astro.site.host}${postsPath}/${page_url}`;
+const postPath = external_link ? external_link : `${postsPath}/${page_url}`;
+const fmtTopics = (topics || []).map((topic) => ({
+  topic,
+  path: `${postTopicsPath}/${topic}`,
+}));
+---
+
+<li class="post-link">
+  <a
+    href={postPath}
+    class="post-link-link"
+    target={external_link && "__blank"}
+  >
+    {title}
+    {external_link && <span>&#x2197;</span>}
+  </a>
+  <p class="post-link-excerpt">{fmtExcerpt}</p>
+  <div class="post-link-categories">
+    <span class="post-link-cat-title">{topicsTitle}:</span>
+    {
+      fmtTopics.map(({ topic, path }) => (
+        <a class="post-link-cat-link" href={path}>
+          {topic}
+        </a>
+      ))
+    }
+  </div>
+  <a
+    href={postPath}
+    class="post-link-path"
+    target={external_link && "__blank"}
+  >
+    {postPageUrl}
+  </a>
+</li>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>

@@ -22,24 +22,30 @@ export function getPostsMap(allPosts: CollectionEntry<"posts">[]) {
   return allPostsMap;
 }
 
-async function getAllPosts() {
+async function getAllPosts(externalPosts = true) {
   const blogPosts = await getCollection(
     "posts",
     (post) => !!post?.data?.enabled
   );
+  if (!externalPosts) {
+    return blogPosts.filter((post) => !post.data.external_link);
+  }
   return blogPosts;
 }
 
-export async function getPostsByLang(lang: Lang) {
-  const blogPosts = await getAllPosts();
+export async function getPostsByLang(lang: Lang, externalPosts = true) {
+  const blogPosts = await getAllPosts(externalPosts);
   const langPosts = blogPosts.filter((post) => {
     return post.slug.startsWith(`${lang}/`);
   });
   return langPosts;
 }
 
-export async function getPostsPathsByLanguage(lang: Lang) {
-  const blogPosts = await getAllPosts();
+export async function getPostsPathsByLanguage(
+  lang: Lang,
+  externalPosts = true
+) {
+  const blogPosts = await getAllPosts(externalPosts);
   const allPostsMap = getPostsMap(blogPosts);
   const langPosts = blogPosts.filter((post) => {
     return post.slug.startsWith(`${lang}/`);

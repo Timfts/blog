@@ -44,36 +44,6 @@
   list-style: none;
 }
 
-.latest-post {
-  margin-bottom: 18px;
-  max-width: 650px;
-  &-link {
-    font-size: calc(var(--body-font) + 2px);
-    text-decoration: underline;
-  }
-
-  &-excerpt {
-    font-size: var(--body-text);
-    line-height: 1;
-  }
-
-  &-categories {
-    font-size: 14px;
-    display: flex;
-    gap: 7px;
-  }
-
-  &-cat-title,
-  &-cat-link {
-    color: rgb(137, 137, 137);
-  }
-
-  &-path {
-    font-size: 14px;
-    text-decoration: none;
-    color: green;
-  }
-}
 
 .more-posts-link {
   display: block;
