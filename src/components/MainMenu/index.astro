@@ -2,13 +2,14 @@
 import { Picture } from "astro:assets";
 import socialLinks from "@content/_social-links.json";
 import SearchBar from "@components/SearchBar/index.astro";
-import { getMenuItems } from "./data";
+import { icons } from "./data";
 import i18n from "./i18n";
 
 const currentLocale = Astro.currentLocale as Lang;
-const menuItems = getMenuItems(currentLocale);
 const currentPage = Astro.url.pathname;
-const { mainProfileAlt } = i18n[currentLocale];
+const { mainProfileAlt, menuItems: menuItemsMap } = i18n[currentLocale];
+
+const menuItemsEntries = Object.entries(menuItemsMap);
 ---
 
 <div class="main-menu" data-fragment="main-menu" transition:persist>
@@ -32,8 +33,8 @@ const { mainProfileAlt } = i18n[currentLocale];
   <div class="menu-body">
     <menu class="menu-list">
       {
-        menuItems.map(({ label, icon, path, iconAlt, id }) => (
-          <li class="menu-content-item" id={id}>
+        menuItemsEntries.map(([key, { label, path, iconAlt }]) => (
+          <li class="menu-content-item" id={`menu-item-${key}`}>
             <a
               class:list={[
                 "menu-content-link",
@@ -48,7 +49,7 @@ const { mainProfileAlt } = i18n[currentLocale];
                 width={24}
                 height={24}
                 formats={["webp"]}
-                src={icon}
+                src={icons[key]}
                 alt={iconAlt}
               />
               {label}

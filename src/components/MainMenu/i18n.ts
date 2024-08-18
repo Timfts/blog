@@ -32,6 +32,11 @@ const i18n = {
         path: enPaths.contact,
         iconAlt: "Icon of a letter envelope",
       },
+      music: {
+        label: "My Playlists",
+        path: "",
+        iconAlt: "Icon of CD with musical note",
+      },
       config: {
         label: "Config",
         path: "#",
@@ -66,6 +71,11 @@ const i18n = {
         label: "Contato",
         path: ptPaths.contact,
         iconAlt: "Icone de um envelope de carta",
+      },
+      music: {
+        label: "Minhas Playlists",
+        path: "",
+        iconAlt: "Icone de um CD com nota musical",
       },
       config: {
         label: "Configurações",

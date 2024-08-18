@@ -78,10 +78,15 @@ elementController("main-menu", ({ root, query, on, emit }) => {
     const target = ev.target as HTMLElement;
     const menuItemClass = ".menu-content-item";
     const clickedItem = target.closest(menuItemClass);
-    if (clickedItem.id === "configItem") {
+    if (clickedItem.id === "menu-item-config") {
       ev.preventDefault();
       emit(events.OPEN_SETTINGS);
       if (isMobile()) hideMobileMenu();
+    }
+
+    if (clickedItem.id === "menu-item-music") {
+      ev.preventDefault();
+      alert("lulu");
     }
   }
 });
