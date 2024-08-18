@@ -33,7 +33,7 @@ const i18n = {
         iconAlt: "Icon of a letter envelope",
       },
       music: {
-        label: "My Playlists",
+        label: "Playlists",
         path: "",
         iconAlt: "Icon of CD with musical note",
       },
@@ -73,7 +73,7 @@ const i18n = {
         iconAlt: "Icone de um envelope de carta",
       },
       music: {
-        label: "Minhas Playlists",
+        label: "Playlists",
         path: "",
         iconAlt: "Icone de um CD com nota musical",
       },

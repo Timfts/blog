@@ -3,6 +3,7 @@ import { LitElement, html, css } from "lit";
 import { property } from "lit/decorators.js";
 import * as THREE from "three";
 import i18n from "./i18n";
+import { events } from "@constants/index";
 export class MusicPlayer extends LitElement {
   @property({ attribute: false })
   currentLang = getCurrentLocale();
@@ -26,7 +27,15 @@ export class MusicPlayer extends LitElement {
     console.log(THREE);
   }
 
+  _handleClose() {
+    const closeEvent = new CustomEvent(events.CLOSE_MEDIA_PLAYER, {bubbles: true});
+    this.dispatchEvent(closeEvent);
+  }
+
   render() {
-    return html`<div>${this.data.hello}</div>`;
+    return html` <div>
+      ${this.data.hello}
+      <button @click="${this._handleClose}">close</button>
+    </div>`;
   }
 }

@@ -9,5 +9,6 @@ export const events = {
   OPEN_ALERT: "document:openAlert",
   OPEN_SETTINGS: "document:settingsWindow",
   OPEN_MEDIA_PLAYER: "openMediaPlayer",
+  CLOSE_MEDIA_PLAYER: "closeMediaPlayer",
   CLOSE_WINDOW: "closeWindow",
 };

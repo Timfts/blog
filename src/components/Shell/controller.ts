@@ -1,7 +1,6 @@
 import { events } from "@constants/index";
 import elementController from "@lib/elementController";
 import SettingsService from "@services/Settings";
-import { LitElement, html } from "lit-element";
 
 // create global state
 let alreadyLoadMusicPlayer = false;
@@ -10,6 +9,8 @@ let alreadyLoadedPrefs = false;
 elementController(
   "shell",
   ({ root, query, on }) => {
+    const playerSlot = query("#music-player-slot");
+
     setup();
 
     function setup() {
@@ -17,6 +18,7 @@ elementController(
         SettingsService.loadSavedPrefs();
       }
       on(events.OPEN_MEDIA_PLAYER, handleLoadMusicPlayer);
+      on(events.CLOSE_MEDIA_PLAYER, handleCloseMusicPlayer);
       on("change", handleLangChange);
     }
 
@@ -33,15 +35,19 @@ elementController(
 
     async function handleLoadMusicPlayer() {
       const elementTag = "music-player";
-      const playerSlot = query("#music-player-slot");
 
       if (!alreadyLoadMusicPlayer) {
         const { MusicPlayer } = await import("@components/lit/MusicPlayer");
         customElements.define(elementTag, MusicPlayer);
+        alreadyLoadMusicPlayer = true;
       }
 
       const instance = document.createElement(elementTag);
       playerSlot.appendChild(instance);
+    }
+
+    function handleCloseMusicPlayer() {
+      playerSlot.innerHTML = "";
     }
   },
   { rerun: "changeroute" }
