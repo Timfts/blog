@@ -1,18 +1,27 @@
-.post-container {
-  max-width: 700px;
+.post {
+  max-width: 600px;
 
-  :global(img) {
-    width: 100%;
+  &-thumbnail {
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 30px;
   }
 
-  :global(p) {
-    margin-bottom: 25px;
-    /* max-width: 650px; */
-    display: block;
-  }
+  &-content {
+    :global(img) {
+      width: 100%;
+    }
 
-  :global(.astro-code) {
-    margin-bottom: 25px;
+    :global(p) {
+      margin-bottom: 25px;
+      /* max-width: 650px; */
+      display: block;
+    }
+
+    :global(.astro-code) {
+      margin-bottom: 25px;
+    }
   }
 }
 

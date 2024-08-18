@@ -1,5 +1,6 @@
 ---
 import Shell from "@components/Shell/index.astro";
+import ImageLoader from "@components/Image/ImageLoader.astro";
 import i18n from "./i18n";
 import { CollectionEntry } from "astro:content";
 
@@ -16,9 +17,25 @@ const { Content, ...asd } = await entry.render();
 ---
 
 <Shell i18nPagePaths={i18nPagePaths}>
-  <div class="post-container">
-    <h1 class="post-title">{data.title}</h1>
-    <Content />
+  <div class="post">
+    <h1 class="post-title">{entry?.data?.title}</h1>
+
+    {
+      entry.data?.thumbnail && (
+        <div class="post-thumbnail">
+          <ImageLoader style={{ height: "100%" }} alt={data.title}>
+            <img
+              src={entry.data?.thumbnail}
+              style={{ width: "100%" }}
+              alt={data.title}
+            />
+          </ImageLoader>
+        </div>
+      )
+    }
+    <div class="post-content">
+      <Content />
+    </div>
   </div>
 </Shell>
 

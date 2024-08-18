@@ -105,6 +105,12 @@ summary {
     outline: 1px dotted #000000;
   }
 }
+
+::selection {
+  background-color: var(--dialog-blue); // TODO - thematize
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 17px;
   &:horizontal {
