@@ -1,7 +1,8 @@
 ---
 import Shell from "@components/Shell/index.astro";
 import Image from "@components/Image/index.astro";
-import SearchItem from "@components/SearchItem/index.astro";
+import PostsList from "@components/PostsList/index.astro";
+import PostListItem from "@components/PostsList/Item.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
 import pagePaths from "@constants/pagePaths";
 
@@ -43,9 +44,9 @@ const latestPosts = [...allPosts, ...allPosts];
     </section>
     <section class="latest-posts">
       <h3 class="section-title">{pageData.latestPostsTitle}</h3>
-      <ul class="posts-list">
-        {latestPosts.map((post) => <SearchItem post={post} />)}
-      </ul>
+      <PostsList>
+        {latestPosts.map((post) => <PostListItem post={post} />)}
+      </PostsList>
       <a href={postsPath} class="more-posts-link">...{pageData.morePosts}</a>
     </section>
   </div>

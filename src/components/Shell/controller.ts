@@ -23,7 +23,6 @@ elementController(
     }
 
     function handleLangChange(e: Event) {
-      console.log("changed", e);
       const target = e.target as HTMLSelectElement;
       const elementId = target.id;
       const isLangChange = elementId === "language-selector";

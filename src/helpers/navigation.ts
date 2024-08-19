@@ -18,9 +18,12 @@ export function removeSearchQuery(key: string) {
   });
 }
 
-export function hasSearchQuery(key: string, value?: string): boolean {
+export function getSearchQuery(key: string) {
   const params = new URLSearchParams(location.search);
-  const currentValue = params.get(key);
+  return params.get(key);
+}
 
+export function hasSearchQuery(key: string, value?: string): boolean {
+  const currentValue = getSearchQuery(key);
   return value ? currentValue === value : !!currentValue;
 }

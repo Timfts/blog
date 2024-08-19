@@ -5,9 +5,10 @@ import i18n from "./i18n";
 
 type Props = {
   post: CollectionEntry<"posts">;
+  searcheble?: boolean;
 };
 
-const { post } = Astro.props;
+const { post, searcheble } = Astro.props;
 
 const currentLang = Astro.currentLocale as Lang;
 const usedPagePaths = pagePaths[currentLang];
@@ -27,12 +28,13 @@ const fmtTopics = (topics || []).map((topic) => ({
 }));
 ---
 
-<li class="post-link">
-  <a
-    href={postPath}
-    class="post-link-link"
-    target={external_link && "__blank"}
-  >
+<li
+  class="post-link"
+  data-post-title={searcheble && title}
+  data-post-excerpt={searcheble && excerpt}
+  data-topics={searcheble && JSON.stringify(topics)}
+>
+  <a href={postPath} class="post-link-link" target={external_link && "__blank"}>
     {title}
     {external_link && <span>&#x2197;</span>}
   </a>
@@ -47,15 +49,40 @@ const fmtTopics = (topics || []).map((topic) => ({
       ))
     }
   </div>
-  <a
-    href={postPath}
-    class="post-link-path"
-    target={external_link && "__blank"}
-  >
+  <a href={postPath} class="post-link-path" target={external_link && "__blank"}>
     {postPageUrl}
   </a>
 </li>
 
 <style lang="scss">
-  @import "./styles.scss";
+  .post-link {
+    margin-bottom: 18px;
+    max-width: 650px;
+    &-link {
+      font-size: calc(var(--body-font) + 2px);
+      text-decoration: underline;
+    }
+
+    &-excerpt {
+      font-size: var(--body-text);
+      line-height: 1;
+    }
+
+    &-categories {
+      font-size: 14px;
+      display: flex;
+      gap: 7px;
+    }
+
+    &-cat-title,
+    &-cat-link {
+      color: rgb(137, 137, 137);
+    }
+
+    &-path {
+      font-size: 14px;
+      text-decoration: none;
+      color: green;
+    }
+  }
 </style>

@@ -1,0 +1,108 @@
+---
+import Image from "astro/components/Image.astro";
+import Button from "@components/Button.astro";
+import LocalImage from "@components/Image/index.astro";
+import postTopics from "@content/_post-topics.json";
+import searchImg from "./assets/posts.png";
+import notFoundImg from "./assets/not-found.webp";
+import i18n from "./i18n";
+
+type Props = {
+  showTopics?: boolean;
+};
+
+const lang = Astro.currentLocale as Lang;
+const { searchPlaceholder } = i18n[lang];
+
+const { showTopics = false } = Astro.props;
+---
+
+<div class="search" data-fragment="search-posts">
+  <div class="search-line">
+    <Image class="search-logo" width="130" alt="Posts" src={searchImg} />
+    <input class="search-input" type="text" />
+    <Button class="search-button">{searchPlaceholder}</Button>
+  </div>
+  {
+    showTopics && (
+      <form class="search-topics">
+        {postTopics["topics-list"].map(({ slug, label }) => (
+          <div>
+            <input
+              class="search-topic-inp"
+              type="checkbox"
+              id={slug}
+              name="topics"
+              value={slug}
+            />
+            <label for={slug}>{label}</label>
+          </div>
+        ))}
+      </form>
+    )
+  }
+
+  <slot />
+  <template id="not-found-template">
+    <LocalImage
+      class="not-found-img"
+      id="not-found-image"
+      src={notFoundImg}
+      alt="not found"
+    />
+  </template>
+</div>
+<script>
+  import "./controller";
+</script>
+<style lang="scss">
+  .search {
+    &-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-direction: column;
+
+      @include aboveTurningPoint() {
+        flex-direction: row;
+      }
+    }
+
+    &-logo {
+      @include aboveTurningPoint() {
+        margin-right: 20px;
+      }
+    }
+
+    &-input {
+      width: 100%;
+      max-width: 300px;
+      padding: 0 15px;
+      font-size: 14px;
+    }
+
+    &-topics {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    &-topic {
+      background-color: var(--gray-10);
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      cursor: pointer;
+
+      &-active {
+        background-color: var(--blue-10);
+        color: var(--white);
+      }
+    }
+  }
+
+  .not-found-img {
+    max-width: 300px;
+  }
+</style>
