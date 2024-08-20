@@ -4,16 +4,14 @@ import PostsList from "@components/PostsList/index.astro";
 import PostListItem from "@components/PostsList/Item.astro";
 import PostsSearch from "@components/PostsList/Search.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
-import i18n from "./i18n";
 import { getPostsByLang } from "@content/helpers";
 
 const lang = Astro.currentLocale as Lang;
-const data = i18n[lang];
 const allPosts = await getPostsByLang(lang);
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("posts")}>
-  <div class="posts" data-fragment="posts-page">
+  <div class="posts">
     <PostsSearch showTopics>
       <PostsList>
         {allPosts.map((post) => <PostListItem post={post} searcheble />)}
@@ -21,11 +19,3 @@ const allPosts = await getPostsByLang(lang);
     </PostsSearch>
   </div>
 </Shell>
-
-<script>
-  import "./controller";
-</script>
-
-<style lang="scss">
-  @import "./styles.scss";
-</style>

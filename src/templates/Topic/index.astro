@@ -1,0 +1,43 @@
+---
+import Shell from "@components/Shell/index.astro";
+import PostsList from "@components/PostsList/index.astro";
+import PostListItem from "@components/PostsList/Item.astro";
+import PostsSearch from "@components/PostsList/Search.astro";
+import { getPostsByLang } from "@content/helpers";
+import { getPageI18NPathMap } from "@helpers/server/i18n";
+
+type Props = {
+  topic: {
+    slug: string;
+    label: string;
+    color: string;
+    image: string;
+  };
+};
+
+const { topic } = Astro.props;
+
+const lang = Astro.currentLocale as Lang;
+const allPosts = await getPostsByLang(lang);
+const filteredPosts = allPosts.filter((post) => {
+  const postTopics = post?.data?.topics || [];
+  return postTopics.includes(topic.slug);
+});
+---
+
+<Shell i18nPagePaths={getPageI18NPathMap("postTopics")}>
+  <div class="posts-topic">
+    <PostsSearch>
+      <h2 class="topic-title">"{topic.label}" posts</h2>
+      <PostsList>
+        {filteredPosts.map((post) => <PostListItem post={post} searcheble />)}
+      </PostsList>
+    </PostsSearch>
+  </div>
+</Shell>
+
+<style lang="scss">
+  .topic-title {
+    margin-top: 20px;
+  }
+</style>

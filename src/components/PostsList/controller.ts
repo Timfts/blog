@@ -8,72 +8,101 @@ import elementController from "@lib/elementController";
 elementController(
   "search-posts",
   ({ query, queryAll, root }) => {
+    const showTopics = !!root.dataset.showTopics;
     const searchInput = query(".search-input") as HTMLInputElement;
     const list = query(".posts-list") as HTMLUListElement;
     const originalPosts = queryAll(".post-link") as HTMLLIElement[];
-    let currentPosts = originalPosts;
+
     const searchTopics = query(".search-topics") as HTMLFormElement;
+    const allTopics = showTopics && searchTopics.dataset.topics.split(",");
+    const topicsChecks = queryAll('input[name="topics"]') as HTMLInputElement[];
+
     const searchQuery = "search";
+    const topicsQuery = "topics";
 
     setup();
 
     function setup() {
-      searchInput.addEventListener("input", handleSearch);
-      if (searchTopics) {
-        searchTopics.addEventListener("change", handleTopicsForm);
-      }
-      checkQuerySearch();
+      checkQueries();
+      searchInput.addEventListener("input", handleFiltering);
+      if (showTopics) searchTopics.addEventListener("change", handleFiltering);
     }
 
-    function handleFiltering(){
-        // triggered when type in field
-        // triggered when change in inputs topics
+    function checkQueries() {
+      const searchQueryValue = getSearchQuery(searchQuery);
+      const topicsSearchValue = getSearchQuery(topicsQuery);
+      const shouldFilterByTopics =
+        showTopics && validateTopicsQuery(topicsSearchValue);
 
-    }
-
-    function applyFilters(search: string, topics: string[]){
-        //empty search and empty topics -> original
-
-        // filter by search
-        // filter by topics
-
-        // nothing is found, render not found
-    }
-
-    function checkQuerySearch() {
-      const searchQueryCheck = getSearchQuery(searchQuery);
-      if (searchQueryCheck) {
-        searchInput.value = searchQueryCheck;
-        searchInput.dispatchEvent(new Event("input"));
-      }
-    }
-
-    function handleSearch(ev: Event) {
-      const inputedValue = (ev.target as HTMLInputElement).value;
-      if (!inputedValue) {
-        removeSearchQuery(searchQuery);
-        return renderOriginalList();
+      if (searchQueryValue) {
+        searchInput.value = searchQueryValue;
       }
 
-      const filteredPosts = originalPosts.filter((post) => {
+      if (shouldFilterByTopics) {
+        const searchTopics = topicsSearchValue.split(",");
+        topicsChecks.forEach((input) => {
+          const topic = input.value;
+          if (searchTopics.includes(topic)) {
+            input.checked = true;
+          }
+        });
+      }
+
+      if (searchQueryValue || shouldFilterByTopics) {
+        handleFiltering();
+      }
+    }
+
+    function validateTopicsQuery(topicsSearch: string) {
+      if (!topicsSearch) return false;
+      const items = topicsSearch.split(",");
+      return items.some((topic) => allTopics.includes(topic));
+    }
+
+    function handleFiltering() {
+      const searchValue = searchInput.value;
+      const topicsValues = topicsChecks
+        .filter((topic) => topic.checked)
+        .map((topic) => topic.value);
+
+      searchValue
+        ? addSearchQuery(searchQuery, searchValue)
+        : removeSearchQuery(searchQuery);
+
+      topicsValues.length
+        ? addSearchQuery(topicsQuery, topicsValues.join(","))
+        : removeSearchQuery(topicsQuery);
+
+      const searchPosts = searchValue
+        ? filterPostsByText(searchValue, originalPosts)
+        : originalPosts;
+
+      const withTopics = topicsValues.length
+        ? filterPostsByTopics(topicsValues, searchPosts)
+        : searchPosts;
+
+      renderPosts(withTopics);
+    }
+
+    function filterPostsByText(searchText: string, posts: HTMLLIElement[]) {
+      return posts.filter((post) => {
         const title = post?.dataset?.postTitle;
         const excerpt = post?.dataset?.postExcerpt;
         return (
-          title.toLowerCase().includes(inputedValue) ||
-          excerpt.toLowerCase().includes(inputedValue)
+          title.toLowerCase().includes(searchText) ||
+          excerpt.toLowerCase().includes(searchText)
         );
       });
-
-      addSearchQuery(searchQuery, inputedValue);
-      renderPosts(filteredPosts);
     }
 
-    function renderOriginalList() {
-      renderPosts(originalPosts);
+    function filterPostsByTopics(topics: string[], posts: HTMLLIElement[]) {
+      return posts.filter((post) => {
+        const itemTopics: string[] = JSON.parse(post?.dataset?.topics || "[]");
+        return topics.every((topic) => itemTopics.includes(topic));
+      });
     }
 
     function renderPosts(posts: HTMLLIElement[]) {
-      currentPosts = posts;
       list.innerHTML = "";
       if (!posts.length) {
         renderNotFound();
@@ -91,24 +120,6 @@ elementController(
       ) as HTMLTemplateElement;
       const instance = notFoundTemplate.content.cloneNode(true);
       list.appendChild(instance);
-    }
-
-    function handleTopicsForm() {
-      const checked = Array.from(
-        searchTopics.querySelectorAll('input[name="topics"]:checked')
-      ) as HTMLInputElement[];
-
-      const values = checked.map((field) => field.value);
-      filterPostsByTopics(values);
-    }
-
-    function filterPostsByTopics(topics: string[]) {
-      const newPosts = currentPosts.filter((post) => {
-        const itemTopics = JSON.parse(post?.dataset?.topics || "[]");
-        return itemTopics.some((topic) => topics.includes(topic));
-      });
-
-      console.log(newPosts);
     }
   },
   { rerun: "sameroute" }

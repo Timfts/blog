@@ -2,6 +2,7 @@
 import Image from "astro/components/Image.astro";
 import Button from "@components/Button.astro";
 import LocalImage from "@components/Image/index.astro";
+import isDarkColor from "@helpers/isDarkColor";
 import postTopics from "@content/_post-topics.json";
 import searchImg from "./assets/posts.png";
 import notFoundImg from "./assets/not-found.webp";
@@ -15,32 +16,50 @@ const lang = Astro.currentLocale as Lang;
 const { searchPlaceholder } = i18n[lang];
 
 const { showTopics = false } = Astro.props;
+
+const topicsList = postTopics?.["topics-list"] || [];
+const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
 ---
 
-<div class="search" data-fragment="search-posts">
+<div
+  class="search"
+  data-fragment="search-posts"
+  data-show-topics={showTopics && "true"}
+>
   <div class="search-line">
+    <h1 class="search-semantic-title">posts</h1>
     <Image class="search-logo" width="130" alt="Posts" src={searchImg} />
     <input class="search-input" type="text" />
     <Button class="search-button">{searchPlaceholder}</Button>
   </div>
-  {
-    showTopics && (
-      <form class="search-topics">
-        {postTopics["topics-list"].map(({ slug, label }) => (
-          <div>
-            <input
-              class="search-topic-inp"
-              type="checkbox"
-              id={slug}
-              name="topics"
-              value={slug}
-            />
-            <label for={slug}>{label}</label>
-          </div>
-        ))}
-      </form>
-    )
-  }
+  <slot name="topics-slot">
+    {
+      showTopics && (
+        <form class="search-topics" data-topics={topicsSlugs}>
+          {topicsList.map(({ slug, label, color }) => (
+            <div
+              class="search-topic"
+              style={{
+                backgroundColor: color,
+                color: isDarkColor(color) ? "white" : "black",
+              }}
+            >
+              <input
+                class="search-topic-check"
+                type="checkbox"
+                id={slug}
+                name="topics"
+                value={slug}
+              />
+              <label class="search-topic-label" for={slug}>
+                {label}
+              </label>
+            </div>
+          ))}
+        </form>
+      )
+    }
+  </slot>
 
   <slot />
   <template id="not-found-template">
@@ -66,6 +85,11 @@ const { showTopics = false } = Astro.props;
       @include aboveTurningPoint() {
         flex-direction: row;
       }
+    }
+
+    &-semantic-title {
+      position: absolute;
+      opacity: 0;
     }
 
     &-logo {
@@ -95,10 +119,15 @@ const { showTopics = false } = Astro.props;
       transition: all 0.2s ease;
       cursor: pointer;
 
-      &-active {
+      &:checked {
         background-color: var(--blue-10);
         color: var(--white);
       }
+    }
+
+    &-topic-label {
+      font-family: arial;
+      font-size: 12px;
     }
   }
 
