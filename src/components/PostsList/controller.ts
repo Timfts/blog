@@ -122,5 +122,5 @@ elementController(
       list.appendChild(instance);
     }
   },
-  { rerun: "sameroute" }
+  { rerun: "changeroute" }
 );
