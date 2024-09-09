@@ -14,7 +14,7 @@ const pagePaths = {
     contact: "/pt-br/contato",
     work: "/pt-br/trabalho",
     posts: "/pt-br/posts",
-    postTopics: "/posts/topico",
+    postTopics: "/pt-br/posts/topico",
     projects: "/pt-br/projetos",
     notFound: "/pt-br/404",
   },
