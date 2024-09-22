@@ -4,7 +4,7 @@ import PostsList from "@components/PostsList/index.astro";
 import PostListItem from "@components/PostsList/Item.astro";
 import PostsSearch from "@components/PostsList/Search.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
-import { getPostsByLang } from "@cms/helpers";
+import { getPostsByLang } from "@cms/collections/posts/helpers";
 
 const lang = Astro.currentLocale as Lang;
 const allPosts = await getPostsByLang(lang);

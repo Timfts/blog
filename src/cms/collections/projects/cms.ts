@@ -1,7 +1,6 @@
-import { defineCollection, z } from "astro:content";
-import { FILE_COLLECTIONS_PATH } from "../constants";
+import { FILE_COLLECTIONS_PATH } from "@cms/constants";
 
-export const projects = {
+const projectsCMSConfig = {
   name: "projects",
   label: "Projects",
   label_singular: "project",
@@ -80,16 +79,4 @@ export const projects = {
   ],
 };
 
-export const projectsCollection = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    featured: z.boolean(),
-    project_link: z.string().optional(),
-    proj_created_year: z.number(),
-    created_date: z.union([z.date(), z.string()]),
-    thumbnail: z.string().optional(),
-    excerpt: z.string(),
-    body: z.string().optional(),
-    learnings: z.array(z.string()),
-  }),
-});
+export default projectsCMSConfig;

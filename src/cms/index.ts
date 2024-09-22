@@ -1,8 +1,8 @@
 import { SITE_URL } from "../constants";
 import postTopics from "./collections/posts-topics";
 import learnings from "./collections/learnings";
-import { projects } from "./collections/projects";
-import { posts } from "./collections/posts";
+import projectsCMSConfig from "./collections/projects/cms";
+import postsCMSConfig from "./collections/posts/cms";
 import socialLinks from "./collections/social-links";
 
 const decapCMSConfig = {
@@ -39,8 +39,8 @@ const decapCMSConfig = {
         label: "Personal Info",
         files: [socialLinks],
       },
-      posts,
-      projects,
+      postsCMSConfig,
+      projectsCMSConfig,
     ],
   },
 };

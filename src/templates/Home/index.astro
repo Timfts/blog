@@ -8,7 +8,7 @@ import pagePaths from "@constants/pagePaths";
 
 import introImg from "./assets/intro-mobile.webp";
 import i18n from "./i18n";
-import { getPostsByLang } from "@cms/helpers";
+import { getPostsByLang } from "@cms/collections/posts/helpers";
 
 const currentLang = Astro.currentLocale as Lang;
 const pageData = i18n[currentLang];
