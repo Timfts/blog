@@ -12,8 +12,6 @@ const { entries } = Astro.props;
 const currentLang = Astro.currentLocale;
 const entry = entries[currentLang];
 const i18NMap = getI18NPostPaths(entries);
-
-const { Content } = await entry.render();
 ---
 
 <PostTemplate i18nPagePaths={i18NMap} entry={entry} />

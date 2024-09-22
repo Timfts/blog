@@ -4,8 +4,13 @@ import { getPageI18NPathMap } from "@helpers/server/i18n";
 import i18n from "./i18n";
 import range from "@helpers/range";
 
+import { getProjectsByLanguage } from "@cms/collections/projects/helpers";
+
 const lang = Astro.currentLocale as Lang;
 const data = i18n[lang];
+
+const projects = await getProjectsByLanguage(lang);
+const projs = JSON.stringify(projects);
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("projects")}>
@@ -22,6 +27,7 @@ const data = i18n[lang];
       ))
     }
   </div>
+  {projs}
 </Shell>
 
 <style lang="scss">
