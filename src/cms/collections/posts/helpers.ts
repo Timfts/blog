@@ -1,14 +1,16 @@
 import { CollectionEntry, getCollection } from "astro:content";
 
+type Post = CollectionEntry<"posts">;
+
 type PostsMap = {
-  [slug: string]: Record<string, CollectionEntry<"posts">>;
+  [slug: string]: Record<string, Post>;
 };
 
 /**
  * Creates a map that groups different language versions of the same post
  * under the same slug
  */
-export function getPostsMap(allPosts: CollectionEntry<"posts">[]) {
+export function getPostsMap(allPosts: Post[]) {
   const allPostsMap: PostsMap = allPosts.reduce((acc, entry) => {
     const [lang, postID] = entry.slug.split("/");
     const postEntry = acc[postID];
@@ -47,9 +49,9 @@ export async function getPostsPathsByLanguage(
 ) {
   const blogPosts = await getAllPosts(externalPosts);
   const allPostsMap = getPostsMap(blogPosts);
-  const langPosts = blogPosts.filter((post) => {
-    return post.slug.startsWith(`${lang}/`);
-  });
+  const langPosts = blogPosts.filter((post) =>
+    post.slug.startsWith(`${lang}/`)
+  );
 
   return langPosts.map((entry) => {
     const [, rawPostSlug] = entry.slug.split("/");
@@ -60,4 +62,19 @@ export async function getPostsPathsByLanguage(
       props: { entries: postEntries },
     };
   });
+}
+
+export function getI18NPostPaths(
+  postVersions: Record<string, Post>
+): I18NPagePaths {
+  const postLangs = Object.keys(postVersions);
+  let pathsMap: Record<string, string> = {};
+
+  postLangs.forEach((lang) => {
+    const rootPath = lang === "en" ? "" : `/${lang}`;
+    const versionUrl = postVersions[lang]?.data?.page_url;
+    pathsMap[lang] = `${rootPath}/posts/${versionUrl}`;
+  });
+
+  return pathsMap;
 }

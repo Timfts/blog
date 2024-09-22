@@ -18,17 +18,4 @@ export function getPageI18NPathMap(pageName: PageKeys) {
   return pathMap;
 }
 
-export function getI18NPostPaths(
-  postVersions: Record<string, CollectionEntry<"posts">>
-): I18NPagePaths {
-  const postLangs = Object.keys(postVersions);
-  let pathsMap: Record<string, string> = {};
 
-  postLangs.forEach((lang) => {
-    const rootPath = lang === "en" ? "" : `/${lang}`;
-    const versionUrl = postVersions[lang]?.data?.page_url;
-    pathsMap[lang] = `${rootPath}/posts/${versionUrl}`;
-  });
-
-  return pathsMap;
-}

@@ -34,3 +34,38 @@ export async function getProjectsByLanguage(lang: Lang) {
 
   return langProjects;
 }
+
+export async function getProjectsPathsByLanguage(lang: Lang) {
+  const projects = await getAllProjects();
+  const allProjectsMap = getProjectsMap(projects);
+  const langProjects = projects.filter((proj) =>
+    proj.slug.startsWith(`${lang}/`)
+  );
+
+  return langProjects.map((entry) => {
+    const [, rawProjSlug] = entry.slug.split("/");
+    const projsEntries = allProjectsMap[rawProjSlug];
+    return {
+      params: { slug: rawProjSlug },
+      props: { entries: projsEntries },
+    };
+  });
+}
+
+export function getI18NProjectPaths(projVersions: Record<string, Project>) {
+  const projLangs = Object.keys(projVersions);
+  let pathsMap: Record<string, string> = {};
+
+  projLangs.forEach((lang) => {
+    const rootPath = lang === "en" ? "" : `/${lang}`;
+    const proj = projVersions[lang];
+    const [, slug] = proj.slug.split("/");
+    const segment = {
+      en: "project",
+      "pt-br": "projeto",
+    }[lang];
+    pathsMap[lang] = `${rootPath}/${segment}/${slug}`;
+  });
+
+  return pathsMap;
+}

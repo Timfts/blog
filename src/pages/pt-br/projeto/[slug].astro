@@ -1,20 +1,19 @@
 ---
-import { getCollection } from "astro:content";
+import {
+  getI18NProjectPaths,
+  getProjectsPathsByLanguage,
+} from "@cms/collections/projects/helpers";
+import ProjectTemplate from "@templates/Project/index.astro";
 
 export async function getStaticPaths() {
-  const projects = await getCollection("projects", ({ id }) => {
-    return id.startsWith("pt-br/");
-  });
-
-  return projects.map((entry) => ({
-    params: { slug: entry?.slug?.split("/")[1] },
-    props: { entry },
-  }));
+  const projectsPaths = await getProjectsPathsByLanguage("pt-br");
+  return projectsPaths;
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { entries } = Astro.props;
+const currentLang = Astro.currentLocale as Lang;
+const entry = entries[currentLang];
+const i18nMap = getI18NProjectPaths(entries);
 ---
 
-<h1>{entry.data.title}</h1>
-<Content />
+<ProjectTemplate entry={entry} i18nPagePaths={i18nMap} />

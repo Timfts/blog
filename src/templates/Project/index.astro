@@ -1,15 +1,23 @@
 ---
 import Shell from "@components/Shell/index.astro";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
 import i18n from "./i18n";
+import { CollectionEntry } from "astro:content";
+
+type Props = {
+  i18nPagePaths: I18NPagePaths;
+  entry: CollectionEntry<"projects">;
+};
 
 const lang = Astro.currentLocale as Lang;
 const { title } = i18n[lang];
+
+const { i18nPagePaths, entry } = Astro.props;
+console.log(i18nPagePaths)
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("projects")}>
+<Shell i18nPagePaths={i18nPagePaths}>
   <div class="projects-page">
-    <h1 class="project-title">{title}</h1>
+    <h1 class="project-title">{entry.data.title}</h1>
   </div>
 </Shell>
 <style lang="scss">
