@@ -1,10 +1,11 @@
 import elementController from "@lib/elementController";
 import { events } from "src/constants";
-import { navigate } from 'astro:transitions/client';
+import { navigate } from "astro:transitions/client";
 
-elementController("search-bar", ({ query, emit }) => {
+elementController("search-bar", ({ query, emit, root }) => {
   const searchForm = query(".search-form") as HTMLFormElement;
   const searchField = query("#search-field") as HTMLInputElement;
+  const emptyFieldMessage = root.dataset.errorMsg;
 
   searchForm.addEventListener("submit", handleSearch);
 
@@ -13,7 +14,7 @@ elementController("search-bar", ({ query, emit }) => {
     const fieldValue = searchField.value;
 
     if (!fieldValue) {
-      emit(events.OPEN_ALERT, { message: "No value provided to search field" });
+      emit(events.OPEN_ALERT, { message: emptyFieldMessage });
       return;
     }
 

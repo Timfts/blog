@@ -1,6 +1,7 @@
+import { defineCollection, z } from "astro:content";
 import { FILE_COLLECTIONS_PATH } from "../constants";
 
-const posts = {
+export const posts = {
   name: "posts",
   label: "Posts",
   label_singular: "Post",
@@ -87,4 +88,17 @@ const posts = {
   ],
 };
 
-export default posts;
+export const postsColection = defineCollection({
+  schema: z.object({
+    title: z.string().optional(),
+    enabled: z.boolean(),
+    page_url: z.string().optional(),
+    external_link: z.string().optional(),
+    created_date: z.date().optional(),
+    updated_date: z.union([z.date(), z.string()]).optional(),
+    thumbnail: z.string().optional(),
+    excerpt: z.string().optional(),
+    body: z.string().optional().optional(),
+    topics: z.array(z.string()).optional(),
+  }),
+});

@@ -4,9 +4,14 @@ import { getPageI18NPathMap } from "@helpers/server/i18n";
 import i18n from "./i18n";
 
 const lang = Astro.currentLocale as Lang;
-const data = i18n[lang];
+const { title } = i18n[lang];
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("projects")}>
-  <p>{data.title}</p>
+  <div class="projects-page">
+    <h1 class="project-title">{title}</h1>
+  </div>
 </Shell>
+<style lang="scss">
+  @import "./styles.scss";
+</style>

@@ -1,8 +1,8 @@
 import { SITE_URL } from "../constants";
 import postTopics from "./collections/posts-topics";
 import learnings from "./collections/learnings";
-import projects from "./collections/projects";
-import posts from "./collections/posts";
+import { projects } from "./collections/projects";
+import { posts } from "./collections/posts";
 import socialLinks from "./collections/social-links";
 
 const decapCMSConfig = {

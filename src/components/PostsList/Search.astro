@@ -2,7 +2,6 @@
 import Image from "astro/components/Image.astro";
 import Button from "@components/Button.astro";
 import LocalImage from "@components/Image/index.astro";
-import isDarkColor from "@helpers/isDarkColor";
 import postTopics from "@content/_post-topics.json";
 import searchImg from "./assets/posts.png";
 import notFoundImg from "./assets/not-found.webp";
@@ -37,13 +36,7 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
       showTopics && (
         <form class="search-topics" data-topics={topicsSlugs}>
           {topicsList.map(({ slug, label, color }) => (
-            <div
-              class="search-topic"
-              style={{
-                backgroundColor: color,
-                color: isDarkColor(color) ? "white" : "black",
-              }}
-            >
+            <div class="search-topic">
               <input
                 class="search-topic-check"
                 type="checkbox"

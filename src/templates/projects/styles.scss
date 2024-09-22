@@ -1,0 +1,15 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+
+  @include belowTurningPoint(){
+    
+  }
+}
+
+.project {
+  background-color: orangered;
+  height: 250px;
+}

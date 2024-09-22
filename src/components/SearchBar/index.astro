@@ -1,10 +1,14 @@
 ---
 import i18n from "./i18n";
 
-const placeholder = i18n[Astro.currentLocale].placeholder;
+const { placeholder, emptyFieldMessage } = i18n[Astro.currentLocale as Lang];
 ---
 
-<div class="search-bar" data-fragment="search-bar">
+<div
+  class="search-bar"
+  data-fragment="search-bar"
+  data-error-msg={emptyFieldMessage}
+>
   <form class="search-form" autocomplete="off">
     <input
       id="search-field"

@@ -1,11 +1,10 @@
 const i18n = {
   en: {
-    title: "projects",
+    title: "Projects",
   },
   "pt-br": {
-    title: "projetos",
+    title: "Projetos",
   },
 };
 
-
-export default i18n
+export default i18n;

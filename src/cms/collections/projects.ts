@@ -1,6 +1,7 @@
+import { defineCollection, z } from "astro:content";
 import { FILE_COLLECTIONS_PATH } from "../constants";
 
-const projects = {
+export const projects = {
   name: "projects",
   label: "Projects",
   label_singular: "project",
@@ -17,6 +18,13 @@ const projects = {
       required: true,
     },
     {
+      label: "Featured",
+      name: "featured",
+      widget: "boolean",
+      i18n: "duplicate",
+      required: true,
+    },
+    {
       label: "Project link",
       name: "project_link",
       required: false,
@@ -27,8 +35,8 @@ const projects = {
       label: "Year",
       name: "proj_created_year",
       i18n: "duplicate",
-      widget: "date",
-      date_format: "YYYY"
+      widget: "number",
+      date_format: "YYYY",
     },
     {
       label: "Publish Date",
@@ -72,4 +80,16 @@ const projects = {
   ],
 };
 
-export default projects;
+export const projectsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    featured: z.boolean(),
+    project_link: z.string().optional(),
+    proj_created_year: z.number(),
+    created_date: z.union([z.date(), z.string()]),
+    thumbnail: z.string().optional(),
+    excerpt: z.string(),
+    body: z.string().optional(),
+    learnings: z.array(z.string()),
+  }),
+});
