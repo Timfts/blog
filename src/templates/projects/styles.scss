@@ -1,15 +1,17 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, max-content);
   gap: 15px;
   margin-top: 20px;
+  list-style: none;
 
-  @include belowTurningPoint(){
-    
+  @include belowTurningPoint() {
   }
 }
 
-.project {
-  background-color: orangered;
-  height: 250px;
+.featured-projects,
+.all-projects {
+  margin-top: 40px;
 }
+

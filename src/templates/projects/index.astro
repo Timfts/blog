@@ -1,20 +1,41 @@
 ---
 import Shell from "@components/Shell/index.astro";
+import ProjectCard from "@components/ProjectCard/index.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
 import i18n from "./i18n";
 import range from "@helpers/range";
 
 import { getProjectsByLanguage } from "@cms/collections/projects/helpers";
+import replicate from "@helpers/replicate";
 
 const lang = Astro.currentLocale as Lang;
 const data = i18n[lang];
 
 const projects = await getProjectsByLanguage(lang);
 const projs = JSON.stringify(projects);
+
+const featured = replicate(projects[1], 6);
+
+const formatExcerpt = (excerpt: string, maxExcerptSize = 100) =>
+  `${excerpt.slice(0, maxExcerptSize)}${excerpt.length > maxExcerptSize ? "..." : ""}`;
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("projects")}>
   <h1>{data.title}</h1>
+  <div class="featured-projects">
+    <h2>{data.featuredTitle}</h2>
+    <ul class="projects-grid">
+      {
+        featured.map((project) => {
+          return <ProjectCard project={project} />;
+        })
+      }
+    </ul>
+  </div>
+
+  <div class="all-projects">
+    <h2>{data.allProjects}</h2>
+  </div>
   <div class="projects-grid">
     {
       range(15).map(() => (
@@ -27,7 +48,6 @@ const projs = JSON.stringify(projects);
       ))
     }
   </div>
-  {projs}
 </Shell>
 
 <style lang="scss">

@@ -1,0 +1,34 @@
+---
+import { CollectionEntry } from "astro:content";
+
+type Props = {
+  project: CollectionEntry<"projects">;
+};
+
+const { project } = Astro.props;
+
+const { data } = project;
+
+const maxExcerptSize = 100;
+const fmtExcerpt = `${data?.excerpt.slice(0, maxExcerptSize)}${data?.excerpt.length > maxExcerptSize ? "..." : ""}`;
+---
+
+<li class="project">
+  <a class="project-link" href="#">
+    <div class="project-thumb-holder">
+      {data.thumbnail && <img class="project-thumb" src={data.thumbnail} />}
+    </div>
+    <div class="project-body">
+      <h4 class="project-title">{data.title}</h4>
+      <p class="project-desc">
+        {fmtExcerpt}
+      </p>
+      <ul class="project-learnings">
+        {data.learnings.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </a>
+</li>
+<style lang="scss">
+  @import "./styles.scss";
+</style>
