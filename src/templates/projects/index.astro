@@ -24,7 +24,7 @@ const formatExcerpt = (excerpt: string, maxExcerptSize = 100) =>
   <h1>{data.title}</h1>
   <div class="featured-projects">
     <h2>{data.featuredTitle}</h2>
-    <ul class="projects-grid">
+    <ul class="projects-grid projects-grid--featured">
       {
         featured.map((project) => {
           return <ProjectCard project={project} />;

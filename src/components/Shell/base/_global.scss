@@ -130,7 +130,7 @@ summary {
   background: var(--button-face);
 }
 ::-webkit-scrollbar-track {
-  background-image: var("--scrollbar-background");
+  background-image: var(--scrollbar-background);
 
   &:vertical {
     image-rendering: pixelated;
