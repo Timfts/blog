@@ -38,14 +38,9 @@ const formatExcerpt = (excerpt: string, maxExcerptSize = 100) =>
   </div>
   <div class="projects-grid">
     {
-      range(15).map(() => (
-        <div class="project">
-          <div
-            style={{ width: "100%", backgroundColor: "gray", height: "150px" }}
-          />
-          prject
-        </div>
-      ))
+      featured.map((project) => {
+        return <ProjectCard project={project} />;
+      })
     }
   </div>
 </Shell>
