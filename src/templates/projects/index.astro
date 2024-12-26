@@ -1,49 +1,91 @@
 ---
 import Shell from "@components/Shell/index.astro";
 import ProjectCard from "@components/ProjectCard/index.astro";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
-import i18n from "./i18n";
-import range from "@helpers/range";
+import Groupbox from "@components/Groupbox.astro";
+import Button from "@components/Button.astro";
 
+import { getPageI18NPathMap } from "@helpers/server/i18n";
 import { getProjectsByLanguage } from "@cms/collections/projects/helpers";
 import replicate from "@helpers/replicate";
+import learnings from "@content/_learnings.json";
+
+import i18n from "./i18n";
+
+
+const showFeatured = false;
 
 const lang = Astro.currentLocale as Lang;
 const data = i18n[lang];
 
 const projects = await getProjectsByLanguage(lang);
-const projs = JSON.stringify(projects);
-
+const learningsList = learnings["learnings-list"];
 const featured = replicate(projects[1], 6);
-
-const formatExcerpt = (excerpt: string, maxExcerptSize = 100) =>
-  `${excerpt.slice(0, maxExcerptSize)}${excerpt.length > maxExcerptSize ? "..." : ""}`;
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("projects")}>
-  <h1>{data.title}</h1>
-  <div class="featured-projects">
-    <h2>{data.featuredTitle}</h2>
-    <ul class="projects-grid projects-grid--featured">
+  <div class="projects-page" data-fragment="projects-page">
+    <h1>{data.title}</h1>
+    {
+      showFeatured && (
+        <div class="featured-projects">
+          <h2>{data.featuredTitle}</h2>
+
+          <ul class="featured-list">
+            {featured.map((project) => {
+              return <ProjectCard project={project} />;
+            })}
+          </ul>
+        </div>
+      )
+    }
+
+    <div class="all-projects">
+      <div class="all-projects-head">
+        {showFeatured && <h2>{data.allProjects}</h2>}
+        <Button
+          data-filter
+          data-show={data.showFilters}
+          data-hide={data.hideFilters}
+        >
+          {data.showFilters}
+        </Button>
+      </div>
+      <form class="filters-box">
+        <Groupbox legend={data.filters}>
+          <div class="filters-container">
+            {
+              learningsList.map(({ slug, label }) => (
+                <div class="learning-filter">
+                  <input
+                    class="learning-filter-check"
+                    type="checkbox"
+                    id={slug}
+                    name="learnings"
+                    value={slug}
+                  />
+                  <label class="learning-filter-label" for={slug}>
+                    {label}
+                  </label>
+                </div>
+              ))
+            }
+          </div>
+        </Groupbox>
+      </form>
+    </div>
+    <ul class="projects-grid">
       {
-        featured.map((project) => {
+        projects.map((project) => {
           return <ProjectCard project={project} />;
         })
       }
     </ul>
   </div>
-
-  <div class="all-projects">
-    <h2>{data.allProjects}</h2>
-  </div>
-  <div class="projects-grid">
-    {
-      featured.map((project) => {
-        return <ProjectCard project={project} />;
-      })
-    }
-  </div>
 </Shell>
+
+<script>
+  import "./controller";
+</script>
 
 <style lang="scss">
   @import "./styles.scss";

@@ -9,6 +9,11 @@
       "slug": "potato",
       "label": "potato",
       "color": "#944d4d"
+    },
+    {
+      "slug": "test",
+      "label": "teste",
+      "color": "#e79191"
     }
   ]
 }

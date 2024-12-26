@@ -2,7 +2,7 @@
 export type Props = {
   legend?: string;
   class?: string;
-}
+};
 
 const { legend, class: className } = Astro.props;
 ---
@@ -27,5 +27,6 @@ const { legend, class: className } = Astro.props;
   legend {
     background: transparent;
     color: #0046d5;
+    font-size: 12px;
   }
 </style>

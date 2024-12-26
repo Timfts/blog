@@ -1,4 +1,5 @@
 ---
+import { map } from "astro/zod";
 import { CollectionEntry } from "astro:content";
 
 type Props = {
@@ -11,9 +12,10 @@ const { data } = project;
 
 const maxExcerptSize = 100;
 const fmtExcerpt = `${data?.excerpt.slice(0, maxExcerptSize)}${data?.excerpt.length > maxExcerptSize ? "..." : ""}`;
+const learningsSlugs = JSON.stringify(data.learnings || []);
 ---
 
-<li class="project">
+<li class="project" data-learnings={learningsSlugs}>
   <a class="project-link" href="#">
     <div class="project-thumb-holder">
       {data.thumbnail && <img class="project-thumb" src={data.thumbnail} />}

@@ -25,7 +25,7 @@ elementController(
     function setup() {
       checkQueries();
       searchInput.addEventListener("input", handleFiltering);
-      if (showTopics) searchTopics.addEventListener("change", handleFiltering);
+      if (showTopics) searchTopics.onchange = handleFiltering;
     }
 
     function checkQueries() {
