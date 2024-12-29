@@ -35,6 +35,7 @@
     padding: 40px 20px;
     position: relative;
     max-width: 890px;
+    overflow: hidden;
 
     @include aboveTurningPoint() {
       margin: 20px 0;

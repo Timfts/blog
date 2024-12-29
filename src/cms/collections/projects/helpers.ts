@@ -61,8 +61,8 @@ export function getI18NProjectPaths(projVersions: Record<string, Project>) {
     const proj = projVersions[lang];
     const [, slug] = proj.slug.split("/");
     const segment = {
-      en: "project",
-      "pt-br": "projeto",
+      en: "projects",
+      "pt-br": "projetos",
     }[lang];
     pathsMap[lang] = `${rootPath}/${segment}/${slug}`;
   });

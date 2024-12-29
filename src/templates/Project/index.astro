@@ -12,11 +12,16 @@ const lang = Astro.currentLocale as Lang;
 const { title } = i18n[lang];
 
 const { i18nPagePaths, entry } = Astro.props;
+const { Content } = await entry.render();
 ---
 
 <Shell i18nPagePaths={i18nPagePaths}>
-  <div class="projects-page">
+  <div class="project">
     <h1 class="project-title">{entry.data.title}</h1>
+    <div class="project-stats"></div>
+    <div class="project-desc">
+      <Content />
+    </div>
   </div>
 </Shell>
 <style lang="scss">
