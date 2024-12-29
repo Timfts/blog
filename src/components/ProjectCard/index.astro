@@ -1,14 +1,19 @@
 ---
-import { map } from "astro/zod";
 import { CollectionEntry } from "astro:content";
+import pagePaths from "@constants/pagePaths";
 
 type Props = {
   project: CollectionEntry<"projects">;
 };
 
+const currentLang = Astro.currentLocale as Lang;
+const usedPagePaths = pagePaths[currentLang];
+const { projects } = usedPagePaths;
 const { project } = Astro.props;
-
 const { data } = project;
+
+const [_, projectSlug] = project.slug.split("/");
+const projectPath = `${projects}/${projectSlug}`;
 
 const maxExcerptSize = 100;
 const fmtExcerpt = `${data?.excerpt.slice(0, maxExcerptSize)}${data?.excerpt.length > maxExcerptSize ? "..." : ""}`;
@@ -16,7 +21,7 @@ const learningsSlugs = JSON.stringify(data.learnings || []);
 ---
 
 <li class="project" data-learnings={learningsSlugs}>
-  <a class="project-link" href="#">
+  <a class="project-link" href={projectPath}>
     <div class="project-thumb-holder">
       {data.thumbnail && <img class="project-thumb" src={data.thumbnail} />}
     </div>
