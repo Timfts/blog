@@ -1,4 +1,5 @@
 import { getCurrentLocale, redirectToLocalizedPage } from "@helpers/i18n";
+import loadVideoBackground from "./plugins/animated-background";
 
 // TODO - avoid unecessary logic run when none is select
 
@@ -32,26 +33,7 @@ const featuresExecutors = {
   },
 
   "desk-background": (value) => {
-    const backgroundId = "video-background";
-    const shell = document.querySelector(".shell");
-
-    if (value === "matrix") {
-      const video = document.createElement("video");
-      video.autoplay = true;
-      video.muted = true;
-      video.loop = true;
-      video.id = backgroundId;
-      video.style.cssText = "inset:0; position:fixed; z-index:0;";
-      const source = document.createElement("source");
-      source.src = "/videos/matrix-background.mp4";
-      source.type = "video/mp4";
-      video.appendChild(source);
-      shell.appendChild(video);
-      return;
-    } else {
-      const videoBackground = document.querySelector(`#${backgroundId}`);
-      videoBackground && shell.removeChild(videoBackground);
-    }
+    loadVideoBackground(value);
   },
   pointer: async (value: boolean) => {
     if (value) {

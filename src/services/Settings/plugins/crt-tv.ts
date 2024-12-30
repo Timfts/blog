@@ -1,5 +1,3 @@
-import { html } from "lit";
-
 const filterStyle = `
 @keyframes flicker {
   0% {
