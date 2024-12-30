@@ -17,12 +17,12 @@ export default function loadVideoBackground(value: string) {
   if (videoBackground) shell.removeChild(videoBackground);
 
   if (value === "cat") {
-    shell.style.backgroundImage = "url(images/cathacker.gif)";
+    shell.style.backgroundImage = "url(/images/cathacker.gif)";
     return;
   }
 
   if (value === "dog") {
-    shell.style.backgroundImage = "url(images/dog-hacker.gif)";
+    shell.style.backgroundImage = "url(/images/dog-hacker.gif)";
     return;
   }
 
