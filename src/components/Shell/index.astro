@@ -11,7 +11,7 @@ import { fade } from "astro:transitions";
 export type Props = {
   title?: string;
   i18nPagePaths: I18NPagePaths;
-}
+};
 
 const { title = "Tim Fontes", i18nPagePaths } = Astro.props as Props;
 const { htmlLang } = i18n[Astro.currentLocale];
@@ -68,6 +68,7 @@ const stringfiedI18NMap = JSON.stringify(I18NMap);
           </div>
         </div>
       </div>
+
       <div id="music-player-slot"></div>
       <Alert />
       <Settings />

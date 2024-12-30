@@ -20,6 +20,12 @@
   }
 }
 
+.settings-background {
+  @include belowTurningPoint() {
+    display: none;
+  }
+}
+
 .settings-backdrop {
   cursor: var(--pointer-cursor);
   z-index: 1;

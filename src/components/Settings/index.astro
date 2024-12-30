@@ -22,6 +22,7 @@ const {
   customPointerLabel,
   customPointerOption,
   language,
+  backgroundImage,
 } = i18n[currentLang];
 
 const fmtDefaultLabel = `(${defaultLabel})`;
@@ -44,7 +45,13 @@ const fieldsNames = {
   textSize: "text-size",
   customPointer: "pointer",
   language: "lang",
+  backgroundImg: "desk-background",
 };
+
+const deskBackgrounds = [
+  { label: "none", id: "none" },
+  { label: "matrix", id: "matrix" },
+];
 ---
 
 <div class="settings-window" data-fragment="settings-window" transition:persist>
@@ -75,6 +82,15 @@ const fieldsNames = {
                   </FieldRow>
                 ))
               }
+            </Groupbox>
+            <Groupbox legend={backgroundImage} class="settings-background">
+              <select name={fieldsNames.backgroundImg} style="width:100%;">
+                {
+                  deskBackgrounds.map(({ label, id }) => (
+                    <option value={id}>{label}</option>
+                  ))
+                }
+              </select>
             </Groupbox>
             <div class="settings-side-by-side">
               <Groupbox legend={screenFilterOption} class="settings-filter">
