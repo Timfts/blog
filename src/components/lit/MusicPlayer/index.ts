@@ -1,5 +1,5 @@
 import { getCurrentLocale } from "@helpers/i18n";
-import { LitElement, html, css } from "lit";
+import { LitElement } from "lit";
 import { property } from "lit/decorators.js";
 import * as THREE from "three";
 import i18n from "./i18n";

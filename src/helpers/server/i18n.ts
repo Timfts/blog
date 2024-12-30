@@ -1,4 +1,3 @@
-import { CollectionEntry } from "astro:content";
 import pagePaths from "src/constants/pagePaths";
 
 type PageKeys = keyof (typeof pagePaths)[Lang]

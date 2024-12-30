@@ -4,6 +4,7 @@ import learnings from "./collections/learnings";
 import projectsCMSConfig from "./collections/projects/cms";
 import postsCMSConfig from "./collections/posts/cms";
 import socialLinks from "./collections/social-links";
+import workExperiencesCMSConfig from "./collections/work-experiences/cms";
 
 const decapCMSConfig = {
   config: {
@@ -41,6 +42,7 @@ const decapCMSConfig = {
       },
       postsCMSConfig,
       projectsCMSConfig,
+      workExperiencesCMSConfig,
     ],
   },
 };

@@ -10,7 +10,7 @@ type MusicPlayerArgs = {
 export default litView(
   ({ label, onClick, onAlert }: MusicPlayerArgs) => html`
     <div>
-      ${label}
+      <p>Under construction</p>
       <button @click="${onClick}">close</button>
       <button @click=${onAlert}>alert</button>
     </div>
