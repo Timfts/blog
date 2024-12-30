@@ -12,7 +12,7 @@ const i18n = {
       I plan to document my crazy ideas, experiments, studies and 
       projects, bringing a touch of creativity to the technique.`,
 
-      "Welcome!!!",
+      "𝖜𝖊𝖑𝖈𝖔𝖒𝖊",
     ],
     latestPostsTitle: "Latest posts",
     morePosts: "more",
@@ -31,7 +31,7 @@ const i18n = {
         minhas ideias malucas, experimentos, estudos e projetos, 
         trazendo um toque de criatividade para a técnica`,
 
-      "Seja bem-vindo(a)!!!",
+      "𝖇𝖊𝖒 𝖛𝖎𝖓𝖉𝖔(𝖆)",
     ],
     latestPostsTitle: "Últimas publicações",
     morePosts: "mais",
