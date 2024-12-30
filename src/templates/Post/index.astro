@@ -4,6 +4,7 @@ import ImageLoader from "@components/Image/ImageLoader.astro";
 import i18n from "./i18n";
 import { CollectionEntry } from "astro:content";
 import pagePaths from "@constants/pagePaths";
+import { fmtDate } from "@helpers/date";
 
 type Props = {
   i18nPagePaths: I18NPagePaths;
@@ -23,12 +24,7 @@ const locale = {
   "pt-br": "pt-BR",
 }[lang];
 
-const fmtDate = (date: Date) =>
-  date.toLocaleDateString(locale, {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+
 
 const hasUpdate = !!updated_date && updated_date instanceof Date;
 ---
@@ -37,11 +33,11 @@ const hasUpdate = !!updated_date && updated_date instanceof Date;
   <div class="post">
     <h1 class="post-title">{title}</h1>
     <div class="post-date">
-      <time datetime={created_date.toISOString()}>{fmtDate(created_date)}</time>
+      <time datetime={created_date.toISOString()}>{fmtDate(created_date, locale)}</time>
       {
         hasUpdate && (
           <time datetime={updated_date.toISOString()}>
-            ({updatedLabel}: {fmtDate(updated_date)})
+            ({updatedLabel}: {fmtDate(updated_date, locale)})
           </time>
         )
       }

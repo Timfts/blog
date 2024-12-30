@@ -1,9 +1,15 @@
 const i18n = {
   en: {
-    title: "project",
+    projectNameLabel: "Name",
+    projectYearLabel: "Year",
+    projectDescriptionLabel: "Short description",
+    projectLearningsLabel: "Learnings",
   },
   "pt-br": {
-    title: "projeto",
+    projectNameLabel: "Nome",
+    projectYearLabel: "Ano",
+    projectDescriptionLabel: "Descrição",
+    projectLearningsLabel: "Aprendizados",
   },
 };
 

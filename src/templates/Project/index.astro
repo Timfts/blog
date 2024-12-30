@@ -2,6 +2,7 @@
 import Shell from "@components/Shell/index.astro";
 import i18n from "./i18n";
 import { CollectionEntry } from "astro:content";
+import ImageLoader from "@components/Image/ImageLoader.astro";
 
 type Props = {
   i18nPagePaths: I18NPagePaths;
@@ -9,16 +10,68 @@ type Props = {
 };
 
 const lang = Astro.currentLocale as Lang;
-const { title } = i18n[lang];
+const {
+  projectDescriptionLabel,
+  projectLearningsLabel,
+  projectNameLabel,
+  projectYearLabel,
+} = i18n[lang];
 
 const { i18nPagePaths, entry } = Astro.props;
 const { Content } = await entry.render();
+
+const stats = [
+  {
+    label: projectNameLabel,
+    value: entry.data.title,
+  },
+  {
+    label: projectYearLabel,
+    value: entry.data.proj_created_year,
+  },
+  {
+    label: projectDescriptionLabel,
+    value: entry.data.excerpt,
+  },
+  {
+    label: projectLearningsLabel,
+    value: (entry.data.learnings || []).join(", "),
+  },
+];
+
+const getLogoAlt = (title: string) => `${title} logo`;
 ---
 
 <Shell i18nPagePaths={i18nPagePaths}>
   <div class="project">
     <h1 class="project-title">{entry.data.title}</h1>
-    <div class="project-stats"></div>
+    <div class="project-stats">
+      {
+        entry.data.thumbnail && (
+          <div class="project-stats-logo">
+            <ImageLoader
+              style={{ height: "100%", flex: 1 }}
+              alt={getLogoAlt(entry.data.title)}
+            >
+              <img
+                class="project-logo-img"
+                src={entry.data.thumbnail}
+                alt={getLogoAlt(entry.data.title)}
+              />
+            </ImageLoader>
+          </div>
+        )
+      }
+      <ul class="project-stats-list">
+        {
+          stats.map((i) => (
+            <li class="project-stat">
+              <strong>{i.label}: </strong> {i.value}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
     <div class="project-desc">
       <Content />
     </div>
