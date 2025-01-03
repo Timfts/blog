@@ -2,11 +2,56 @@
 import Shell from "@components/Shell/index.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
 import i18n from "./i18n";
+import PageTitle from "@components/PageTitle.astro";
+import { getWorkExperiencesByLang } from "@cms/collections/work-experiences/helpers";
 
 const lang = Astro.currentLocale as Lang;
-const data = i18n[lang];
+const pageData = i18n[lang];
+
+const experiences = await getWorkExperiencesByLang(lang);
+
+const locale = {
+  en: "en-US",
+  "pt-br": "pt-BR",
+}[lang];
+
+const fmtDate = (date: Date) => {
+  return date.toLocaleDateString(locale, {
+    month: "short",
+    year: "numeric",
+  });
+};
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("work")}>
-  <p>{data.title}</p>
+  <div class="work-page">
+    <PageTitle>{pageData.title}</PageTitle>
+    <div class="work-page-list">
+      {
+        experiences.map(({ data }) => (
+          <div class="work-entry">
+            <div class="work-entry-content">
+              <h3 class="work-entry-title">{data.title}</h3>
+              <h4 class="work-entry-company">{data.company_name}</h4>
+              <p class="work-entry-date">
+                {fmtDate(data.start_date as Date)}{" "}
+                {`- ${data.end_date ? fmtDate(data.end_date as Date) : pageData.currentWork}`}
+              </p>
+              <p class="work-entry-desc">{data.description}</p>
+            </div>
+
+            <img
+              src={data.company_logo}
+              class="work-entry-img"
+              alt={`${data.company_name} logo`}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </Shell>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>

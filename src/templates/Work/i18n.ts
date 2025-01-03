@@ -1,9 +1,11 @@
 const i18n = {
   en: {
-    title: "work",
+    title: "Work",
+    currentWork: "Currently",
   },
   "pt-br": {
     title: "Trabalho",
+    currentWork: "Atualmente",
   },
 };
 

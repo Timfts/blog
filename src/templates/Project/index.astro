@@ -3,6 +3,7 @@ import Shell from "@components/Shell/index.astro";
 import i18n from "./i18n";
 import { CollectionEntry } from "astro:content";
 import ImageLoader from "@components/Image/ImageLoader.astro";
+import PageTitle from "@components/PageTitle.astro";
 
 type Props = {
   i18nPagePaths: I18NPagePaths;
@@ -44,7 +45,7 @@ const getLogoAlt = (title: string) => `${title} logo`;
 
 <Shell i18nPagePaths={i18nPagePaths}>
   <div class="project">
-    <h1 class="project-title">{entry.data.title}</h1>
+    <PageTitle>{entry.data.title}</PageTitle>
     <div class="project-stats">
       {
         entry.data.thumbnail && (

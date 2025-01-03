@@ -5,5 +5,5 @@ import workExperiencesCollection from "@cms/collections/work-experiences/collect
 export const collections = {
   projects: projectsCollection,
   posts: postsColection,
-  workExperiences: workExperiencesCollection,
+  "work-experiences": workExperiencesCollection,
 };

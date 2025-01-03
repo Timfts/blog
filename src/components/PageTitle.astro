@@ -1,0 +1,15 @@
+---
+type Props = {
+  customClass?: string;
+};
+
+const { customClass } = Astro.props;
+---
+
+<h1 class="page-title"><slot /></h1>
+
+<style lang="scss">
+  .page-title {
+    margin: 20px 0;
+  }
+</style>
