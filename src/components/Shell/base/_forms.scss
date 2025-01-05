@@ -12,11 +12,12 @@ input {
   font-family: var(--sans-serif);
   font-size: 11px;
 }
+
 textarea {
   font-family: var(--sans-serif);
   font-size: 11px;
   padding: 3px 4px;
-  border: none;
+  border: 1px solid #7f9db9;
   background-color: var(--button-highlight);
   box-sizing: border-box;
   -webkit-appearance: none;

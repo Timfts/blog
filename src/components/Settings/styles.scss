@@ -20,7 +20,7 @@
   }
 }
 
-.settings-background {
+.desktop-only-option {
   @include belowTurningPoint() {
     display: none;
   }

@@ -1,13 +1,34 @@
 ---
 import Shell from "@components/Shell/index.astro";
+import FieldRow from "@components/FieldRow.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
 
 import i18n from "./i18n";
+import PageTitle from "@components/PageTitle.astro";
 
 const lang = Astro.currentLocale as Lang;
 const data = i18n[lang];
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("contact")}>
-  <p>{data.title}</p>
+  <PageTitle>{data.title}</PageTitle>
+
+  <form class="contact-form">
+    <div>
+      <label class="field-label" for="email-field">Email:</label>
+      <input type="email" id="email-field" />
+    </div>
+    <div>
+      <label class="field-label" for="subject-field">Subject:</label>
+      <input type="text" id="subject-field" />
+    </div>
+    <div>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" rows="8"></textarea>
+    </div>
+  </form>
 </Shell>
+
+<style lang="scss">
+  @import "./style.scss";
+</style>

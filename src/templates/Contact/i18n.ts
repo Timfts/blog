@@ -1,9 +1,9 @@
 const i18n = {
   en: {
-    title: "contact",
+    title: "Contact",
   },
   "pt-br": {
-    title: "contato",
+    title: "Contato",
   },
 };
 

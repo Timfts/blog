@@ -23,14 +23,17 @@ const {
   customPointerOption,
   language,
   backgroundImage,
+  inConstructionLabel,
 } = i18n[currentLang];
 
-const fmtDefaultLabel = `(${defaultLabel})`;
-
 const themes = [
-  { label: `Luna ${fmtDefaultLabel}`, id: "default" },
-  { label: "Silver Luna", id: "luna-silver", disabled: true },
-  { label: "Zune Style", id: "zune", disabled: true },
+  { label: `Luna (${defaultLabel})`, id: "default" },
+  {
+    label: `Silver Luna (${inConstructionLabel})`,
+    id: "luna-silver",
+    disabled: true,
+  },
+  { label: `Zune Style (${inConstructionLabel})`, id: "zune", disabled: true },
 ];
 
 const uiFilters = [
@@ -85,7 +88,7 @@ const deskBackgrounds = [
                 ))
               }
             </Groupbox>
-            <Groupbox legend={backgroundImage} class="settings-background">
+            <Groupbox legend={backgroundImage} class="desktop-only-option">
               <select name={fieldsNames.backgroundImg} style="width:100%;">
                 {
                   deskBackgrounds.map(({ label, id }) => (
@@ -121,7 +124,7 @@ const deskBackgrounds = [
             </div>
           </Tab>
           <Tab id="misc">
-            <Groupbox legend={customPointerOption}>
+            <Groupbox legend={customPointerOption} class="desktop-only-option">
               <FieldRow>
                 <input
                   type="checkbox"
