@@ -2,19 +2,23 @@
   "social-links-list": [
     {
       "label": "Github",
-      "link": "https://github.com/Timfts"
+      "link": "https://github.com/Timfts",
+      "logo": "/images/uploads/github.png"
     },
     {
       "label": "LinkedIn",
-      "link": "https://www.linkedin.com/in/timfts/"
+      "link": "https://www.linkedin.com/in/timfts/",
+      "logo": "/images/uploads/linkedin.png"
     },
     {
       "label": "Instagram",
-      "link": "https://www.instagram.com/timfts"
+      "link": "https://www.instagram.com/timfts",
+      "logo": "/images/uploads/instagram.png"
     },
     {
       "label": "Discord",
-      "link": "https://discord.gg/EsthyJk49a"
+      "link": "https://discord.gg/EsthyJk49a",
+      "logo": "/images/uploads/discord.png"
     }
   ]
 }

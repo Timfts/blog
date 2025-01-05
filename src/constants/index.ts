@@ -1,5 +1,7 @@
 export const SITE_URL = "http://timfontes.com";
 
+export const CONTACT_EMAIL_ADRESS = "hello@timfontes.com";
+
 export const LANGS = {
   EN: "en",
   PTBR: "pt-br",

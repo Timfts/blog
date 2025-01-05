@@ -21,6 +21,11 @@ const socialLinks = {
           name: "link",
           widget: "string",
         },
+        {
+          label: "Logo",
+          name: "logo",
+          widget: "image",
+        },
       ],
     },
   ],

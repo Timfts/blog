@@ -1,7 +1,57 @@
+.contact-top {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.contact-image {
+  width: 150px;
+}
+
+.social-list {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.social-list-item {
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+}
+
+.social-link-logo {
+  width: 38px;
+  display: block;
+  height: auto;
+}
+
+.contact-text {
+  max-width: 600px;
+  margin: 30px 0;
+}
+
 .contact-form {
-  max-width: 300px;
+  padding-left: 25px;
+  border-left: 1px solid #808080;
+  margin-top: 50px;
+}
+
+.form-field {
+  margin-bottom: 24px;
 }
 
 .field-label {
+  width: 200px;
+  display: block;
   margin-bottom: 5px;
+}
+
+.field-input {
+  width: 400px;
 }
