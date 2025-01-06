@@ -15,7 +15,7 @@ const i18n = {
       "𝖜𝖊𝖑𝖈𝖔𝖒𝖊",
     ],
     latestPostsTitle: "Latest updates",
-    morePosts: "more",
+    morePosts: "see all",
   },
   "pt-br": {
     mainTitle: "Olá!",
@@ -34,7 +34,7 @@ const i18n = {
       "𝖇𝖊𝖒 𝖛𝖎𝖓𝖉𝖔(𝖆)",
     ],
     latestPostsTitle: "Últimas atualizações",
-    morePosts: "mais",
+    morePosts: "ver todos",
   },
 };
 
