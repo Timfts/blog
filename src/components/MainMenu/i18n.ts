@@ -13,15 +13,15 @@ const i18n = {
         path: enPaths.home,
         iconAlt: "Icon of a house",
       },
-      projects: {
-        label: "Projects",
-        path: enPaths.projects,
-        iconAlt: "Icon of folder with a document",
-      },
       posts: {
         label: "Posts",
         path: enPaths.posts,
         iconAlt: "Icon of a notepad",
+      },
+      projects: {
+        label: "Projects",
+        path: enPaths.projects,
+        iconAlt: "Icon of folder with a document",
       },
       work: {
         label: "Work",
@@ -54,15 +54,15 @@ const i18n = {
         path: ptPaths.home,
         iconAlt: "Icone de uma casa",
       },
-      projects: {
-        label: "Projetos",
-        path: ptPaths.projects,
-        iconAlt: "Icone de uma pasta com um documento",
-      },
       posts: {
         label: "Posts",
         path: ptPaths.posts,
         iconAlt: "Icone de um bloco de notas",
+      },
+      projects: {
+        label: "Projetos",
+        path: ptPaths.projects,
+        iconAlt: "Icone de uma pasta com um documento",
       },
       work: {
         label: "Trabalho",
