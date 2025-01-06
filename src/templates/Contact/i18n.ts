@@ -5,6 +5,10 @@ const i18n = {
       "You can contact me through any social media platform above, or reach out via email at",
     orBy: "or filling the form:",
     subject: "Let's talk!",
+    sendForm: "Send !!!",
+    nameField: "Name:",
+    messageField: "Message:",
+    imageAlt: "Animated Image of a flip phone",
   },
   "pt-br": {
     title: "Contato",
@@ -12,6 +16,10 @@ const i18n = {
       "Você pode me contatar por qualquer rede social acima, ou entrar em contato pelo email",
     orBy: "ou pelo formulário:",
     subject: "Vamos conversar!",
+    sendForm: "Enviar !!!",
+    nameField: "Nome:",
+    messageField: "Menssagem:",
+    imageAlt: "Imagem animada de um celular antigo",
   },
 };
 

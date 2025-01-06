@@ -18,6 +18,9 @@ elementController("search-bar", ({ query, emit, root }) => {
       return;
     }
 
+    searchField.blur();
+    searchField.value = "";
+
     navigate(`/posts?search=${fieldValue}`);
   }
 });

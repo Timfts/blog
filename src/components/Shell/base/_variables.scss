@@ -1,5 +1,9 @@
 .font-size-0 {
-  --body-font: 12px;
+  --txt-regular: 14px;
+  --txt-small: 12px;
+  --txt-xsmall: 10px;
+  --txt-window-title: 11px;
+  --txt-title-link: 16px;
   --paragraph-bottom: 18px;
   --search-field-font: 16px;
   --title-1: 28px;
@@ -7,7 +11,6 @@
   --title-3: 16px;
   --title-4: 14px;
   --menu-items: 12px;
-  --label: 11px;
 
   @include aboveTurningPoint() {
     --search-field-font: 12px;
@@ -15,7 +18,11 @@
 }
 
 .font-size-50 {
-  --body-font: 16px;
+  --txt-regular: 16px;
+  --txt-small: 14px;
+  --txt-xsmall: 12px;
+  --txt-window-title: 13px;
+  --txt-title-link: 18px;
   --search-field-font: 16px;
   --paragraph-bottom: 20px;
   --title-1: 32px;
@@ -23,7 +30,6 @@
   --title-3: 20px;
   --title-4: 18px;
   --menu-items: 12.5px;
-  --label: 11px;
 
   @include aboveTurningPoint() {
     --search-field-font: 12px;
@@ -31,7 +37,11 @@
 }
 
 .font-size-100 {
-  --body-font: 18px;
+  --txt-regular: 18px;
+  --txt-small: 16px;
+  --txt-xsmall: 14px;
+  --txt-window-title: 15px;
+  --txt-title-link: 20px;
   --search-field-font: 16px;
   --paragraph-bottom: 22px;
   --title-1: 34px;
@@ -39,7 +49,6 @@
   --title-3: 22px;
   --title-4: 20px;
   --menu-items: 14px;
-  --label: 13px;
 }
 
 :root {

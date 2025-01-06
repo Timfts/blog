@@ -1,5 +1,6 @@
 ---
 import Shell from "@components/Shell/index.astro";
+import Button from "@components/Button.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
 import socialLinks from "@content/_social-links.json";
 import flipPhone from "./assets/flip-phone.webp";
@@ -20,7 +21,12 @@ const mailTo = `mailto:${CONTACT_EMAIL_ADRESS}?subject=${encodedSubject}`;
   <PageTitle>{data.title}</PageTitle>
 
   <div class="contact-top">
-    <Image src={flipPhone} class="contact-image" alt={"s"} loading="eager" />
+    <Image
+      src={flipPhone}
+      class="contact-image"
+      alt={data.imageAlt}
+      loading="eager"
+    />
     <ul class="social-list">
       {
         socialLinks["social-links-list"].map((s) => (
@@ -50,15 +56,15 @@ const mailTo = `mailto:${CONTACT_EMAIL_ADRESS}?subject=${encodedSubject}`;
     class="contact-form"
   >
     <div class="form-field">
-      <label class="field-label" for="name">Name:</label>
+      <label class="field-label" for="name">{data.nameField}</label>
       <input class="field-input" name="name" type="text" id="name" required />
     </div>
     <div class="form-field">
-      <label class="field-label" for="comment">Mensagem:</label>
+      <label class="field-label" for="comment">{data.messageField}</label>
       <textarea class="field-input" name="comment" id="comment" rows="8"
       ></textarea>
     </div>
-    <button type="submit">Send</button>
+    <Button type="submit">{data.sendForm}</Button>
   </form>
 </Shell>
 

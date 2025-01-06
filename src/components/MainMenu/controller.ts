@@ -16,6 +16,7 @@ elementController("main-menu", ({ root, query, on, emit }) => {
     on("document:astro:page-load", updateActiveMenuItem);
     if (isMobile()) {
       on("global:scroll", handleHeaderHide);
+      on("submit", hideMobileMenu);
       menuBtn.addEventListener("click", handleMenuClick);
     }
 

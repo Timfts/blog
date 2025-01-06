@@ -2,7 +2,7 @@
   --title-bar-bg: black;
 }
 .window {
-  font-size: 12px;
+  font-size: var(--txt-xsmall);
   background: var(--surface);
   box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9,
     inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda,
@@ -38,7 +38,7 @@
   border-right: 1px solid #001ea0;
   border-top-left-radius: 8px;
   border-top-right-radius: 7px;
-  font-size: 13px; // TODO - window title
+  font-size: var(--txt-window-title);
   text-shadow: 1px 1px #0f1089;
   height: 28px;
 }

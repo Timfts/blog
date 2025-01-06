@@ -19,16 +19,16 @@
   }
 
   &-company {
-    font-size: 14px;
+    font-size: var(--txt-small);
   }
 
   &-date {
-    font-size: 14px;
+    font-size: var(--txt-small);
     color: #898989;
   }
 
   &-desc {
-    font-size: 14px;
+    font-size: var(--txt-small);
   }
 
   &-img {
