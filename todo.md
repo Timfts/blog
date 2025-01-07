@@ -1,7 +1,6 @@
 - base texts
-- go back link on page header
-- favicon
 - theme color
+- 404
 - Lighthouse check
 - ordenate posts by updated date
 - projects introduction
