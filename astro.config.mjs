@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 
 // import lit from "@astrojs/lit";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   /* integrations: [lit()] */
@@ -10,8 +12,8 @@ export default defineConfig({
     defaultLocale: "en",
     locales: ["en", "pt-br"],
     routing: {
-      prefixDefaultLocale: false,
-    },
+      prefixDefaultLocale: false
+    }
   },
   //one dark pro vitesse-black
   markdown: {
@@ -27,9 +29,10 @@ export default defineConfig({
           additionalData: `
             @import "src/scss/colors";
             @import "src/scss/mixins";
-          `,
-        },
-      },
-    },
+          `
+        }
+      }
+    }
   },
+  integrations: [sitemap()]
 });
