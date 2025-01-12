@@ -6,7 +6,7 @@ import PostListItem from "@components/PostsList/Item.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
 import pagePaths from "@constants/pagePaths";
 
-import introImg from "./assets/intro-mobile.webp";
+import introImg from "./assets/intro-mobile-new.webp";
 import i18n from "./i18n";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
 
@@ -34,7 +34,7 @@ const latestUpdates = allPosts.slice(0, 5);
         <div class="main-image-holder">
           <Image
             src={introImg}
-            class="main-image"
+            class="main-image main-image--desk"
             alt={pageData.mainImgAlt}
             loading="eager"
           />
