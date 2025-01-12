@@ -1,6 +1,4 @@
-- 404
 - theme color
-- page titles
 - ordenate posts by updated date
 - base texts
 - Lighthouse check
