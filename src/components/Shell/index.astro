@@ -14,7 +14,7 @@ export type Props = {
 };
 
 const { title, i18nPagePaths } = Astro.props as Props;
-const { htmlLang } = i18n[Astro.currentLocale];
+const { htmlLang, metaDescription } = i18n[Astro.currentLocale as Lang];
 const BaseTitle = "Tim Fontes";
 const formattedTitle = title ? `${title} - ${BaseTitle}` : BaseTitle;
 
@@ -26,6 +26,8 @@ const I18NMap: I18NMap = {
 };
 
 const stringfiedI18NMap = JSON.stringify(I18NMap);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const fmtCanonical = `${canonicalURL}/`;
 ---
 
 <!doctype html>
@@ -36,6 +38,10 @@ const stringfiedI18NMap = JSON.stringify(I18NMap);
     <meta name="theme-color" content="#7D7F82" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={metaDescription} />
+    <link rel="canonical" href={fmtCanonical} />
+    <meta name="robots" content="index, follow">
+
     {
       forceViewTransitionsPolyfill ? (
         <script is:inline>document.startViewTransition = false;</script>
