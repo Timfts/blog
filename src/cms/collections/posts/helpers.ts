@@ -24,15 +24,27 @@ export function getPostsMap(allPosts: Post[]) {
   return allPostsMap;
 }
 
+function ordenatePostsByUpdatedDate(posts: Post[]) {
+  return posts.slice().sort((a, b) => {
+    const aDate = a.data.updated_date || a.data.created_date;
+    const bDate = b.data.updated_date || b.data.updated_date;
+    return (bDate as any) - (aDate as any);
+  });
+}
+
 async function getAllPosts(externalPosts = true) {
   const blogPosts = await getCollection(
     "posts",
     (post) => !!post?.data?.enabled
   );
+
+  const orderedPosts = ordenatePostsByUpdatedDate(blogPosts);
+
+  //  console.log(orderedPosts)
   if (!externalPosts) {
-    return blogPosts.filter((post) => !post.data.external_link);
+    return orderedPosts.filter((post) => !post.data.external_link);
   }
-  return blogPosts;
+  return orderedPosts;
 }
 
 export async function getPostsByLang(lang: Lang, externalPosts = true) {

@@ -3,7 +3,7 @@ title: Teste cenoura
 enabled: true
 page_url: lulu-hehe
 created_date: 2023-08-28T01:54:28.792Z
-updated_date: ""
+updated_date: 2025-01-12T18:38:00.000Z
 thumbnail: /images/uploads/frame-2-2-.png
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
   scelerisque dui id pretium varius. Sed suscipit neque ut nisi interdum, eget

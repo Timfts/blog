@@ -16,8 +16,7 @@ const usedPagePaths = pagePaths[currentLang];
 const { posts: postsPath } = usedPagePaths;
 
 const allPosts = await getPostsByLang(currentLang);
-/* const latestPosts = allPosts.slice(0, 5); */
-const latestPosts = [...allPosts, ...allPosts];
+const latestUpdates = allPosts.slice(0, 5);
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("home")}>
@@ -45,7 +44,7 @@ const latestPosts = [...allPosts, ...allPosts];
     <section class="latest-posts">
       <h3 class="section-title">{pageData.latestPostsTitle}</h3>
       <PostsList>
-        {latestPosts.map((post) => <PostListItem post={post} />)}
+        {latestUpdates.map((post) => <PostListItem post={post} />)}
       </PostsList>
       <a href={postsPath} class="more-posts-link">...{pageData.morePosts}</a>
     </section>

@@ -1,5 +1,3 @@
-- theme color
-- ordenate posts by updated date
 - base texts
 - Lighthouse check
 - projects introduction
