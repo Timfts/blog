@@ -1,7 +1,8 @@
 ---
 import i18n from "./i18n";
 
-const { placeholder, emptyFieldMessage } = i18n[Astro.currentLocale as Lang];
+const { placeholder, emptyFieldMessage, submitAriaLabel } =
+  i18n[Astro.currentLocale as Lang];
 ---
 
 <div
@@ -16,7 +17,7 @@ const { placeholder, emptyFieldMessage } = i18n[Astro.currentLocale as Lang];
       type="text"
       placeholder={placeholder}
     />
-    <button class="submit" type="submit"></button>
+    <button class="submit" type="submit" aria-label={submitAriaLabel}></button>
   </form>
 </div>
 

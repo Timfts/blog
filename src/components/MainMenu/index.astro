@@ -11,6 +11,7 @@ const {
   mainProfileAlt,
   menuItems: menuItemsMap,
   homePath,
+  menuToggleAriaLabel,
 } = i18n[currentLocale];
 
 const menuItemsEntries = Object.entries(menuItemsMap);
@@ -31,7 +32,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
       <h1 class="name">Tim Fontes</h1>
     </a>
     <div class="header-right">
-      <button class="menu-button"></button>
+      <button class="menu-button" aria-label={menuToggleAriaLabel}></button>
     </div>
   </header>
   <div class="menu-body">

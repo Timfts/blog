@@ -9,6 +9,7 @@ import pagePaths from "@constants/pagePaths";
 import introImg from "./assets/intro-mobile-new.webp";
 import i18n from "./i18n";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
+import PageTitle from "@components/PageTitle.astro";
 
 const currentLang = Astro.currentLocale as Lang;
 const pageData = i18n[currentLang];
@@ -22,7 +23,7 @@ const latestUpdates = allPosts.slice(0, 5);
 <Shell i18nPagePaths={getPageI18NPathMap("home")}>
   <div class="main-page" data-fragment="main-page">
     <section class="presentation">
-      <h1 class="section-title">{pageData.mainTitle}</h1>
+      <PageTitle>{pageData.mainTitle}</PageTitle>
       <div class="presentation-panels">
         <div>
           {
@@ -42,7 +43,7 @@ const latestUpdates = allPosts.slice(0, 5);
       </div>
     </section>
     <section class="latest-posts">
-      <h3 class="section-title">{pageData.latestPostsTitle}</h3>
+      <h2 class="section-title">{pageData.latestPostsTitle}</h2>
       <PostsList>
         {latestUpdates.map((post) => <PostListItem post={post} />)}
       </PostsList>

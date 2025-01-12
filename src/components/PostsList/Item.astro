@@ -49,9 +49,9 @@ const fmtTopics = (topics || []).map((topic) => ({
       ))
     }
   </div>
-  <a href={postPath} class="post-link-path" target={external_link && "__blank"}>
+  <p class="post-link-path">
     {postPageUrl}
-  </a>
+  </p>
 </li>
 
 <style lang="scss">
@@ -76,7 +76,7 @@ const fmtTopics = (topics || []).map((topic) => ({
 
     &-cat-title,
     &-cat-link {
-      color: rgb(137, 137, 137);
+      color: var(--gray-30);
     }
 
     &-path {
