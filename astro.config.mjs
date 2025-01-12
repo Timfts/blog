@@ -23,6 +23,9 @@ export default defineConfig({
   },
   scopedStyleStrategy: "class",
   vite: {
+    build: {
+      inlineStylesheets: "always"
+    },
     css: {
       preprocessorOptions: {
         scss: {
@@ -33,6 +36,7 @@ export default defineConfig({
         }
       }
     }
+    
   },
   integrations: [sitemap()]
 });
