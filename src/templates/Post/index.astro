@@ -4,7 +4,7 @@ import ImageLoader from "@components/Image/ImageLoader.astro";
 import i18n from "./i18n";
 import { CollectionEntry } from "astro:content";
 import pagePaths from "@constants/pagePaths";
-import { fmtDate } from "@helpers/date";
+import { fmtDate, fmtYYYYMMDD } from "@helpers/date";
 import EditorialContainer from "@components/EditorialContainer.astro";
 import PageTitle from "@components/PageTitle.astro";
 
@@ -27,6 +27,15 @@ const locale = {
 }[lang];
 
 const hasUpdate = !!updated_date && updated_date instanceof Date;
+const usedPublishedDate = (updated_date || created_date) as Date;
+const dataSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  author: "Tim Fontes",
+  datePublished: fmtYYYYMMDD(usedPublishedDate),
+  image: thumbnail ? new URL(thumbnail, Astro.site) : "",
+});
 ---
 
 <Shell title={title} i18nPagePaths={i18nPagePaths}>
@@ -73,6 +82,7 @@ const hasUpdate = !!updated_date && updated_date instanceof Date;
       }
     </div>
   </EditorialContainer>
+  <script is:inline type="application/ld+json" set:html={dataSchema} />
 </Shell>
 
 <style lang="scss">
