@@ -17,7 +17,7 @@ const encodedSubject = encodeURIComponent(data.subject);
 const mailTo = `mailto:${CONTACT_EMAIL_ADRESS}?subject=${encodedSubject}`;
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("contact")}>
+<Shell title={data.title} i18nPagePaths={getPageI18NPathMap("contact")}>
   <PageTitle>{data.title}</PageTitle>
 
   <div class="contact-top">

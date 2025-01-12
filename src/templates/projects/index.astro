@@ -10,7 +10,7 @@ import replicate from "@helpers/replicate";
 import learnings from "@content/_learnings.json";
 
 import i18n from "./i18n";
-
+import PageTitle from "@components/PageTitle.astro";
 
 const showFeatured = false;
 
@@ -22,9 +22,9 @@ const learningsList = learnings["learnings-list"];
 const featured = replicate(projects[1], 6);
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("projects")}>
+<Shell title={data.title} i18nPagePaths={getPageI18NPathMap("projects")}>
   <div class="projects-page" data-fragment="projects-page">
-    <h1>{data.title}</h1>
+    <PageTitle>{data.title}</PageTitle>
     {
       showFeatured && (
         <div class="featured-projects">

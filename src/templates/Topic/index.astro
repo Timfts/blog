@@ -23,9 +23,19 @@ const filteredPosts = allPosts.filter((post) => {
   const postTopics = post?.data?.topics || [];
   return postTopics.includes(topic.slug);
 });
+
+const title = {
+  en: `Topic "${topic.label}"`,
+  "pt-br": `Tópico "${topic.label}"`,
+}[lang];
+
+const i18nMap: I18NPagePaths = {
+  "pt-br": `/pt-br/posts/topico/${topic.slug}`,
+  en: `/posts/topic/${topic.slug}`,
+};
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("postTopics")}>
+<Shell title={title} i18nPagePaths={i18nMap}>
   <div class="posts-topic">
     <PostsSearch>
       <h2 class="topic-title">"{topic.label}" posts</h2>

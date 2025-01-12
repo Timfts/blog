@@ -44,7 +44,7 @@ const stats = [
 const getLogoAlt = (title: string) => `${title} logo`;
 ---
 
-<Shell i18nPagePaths={i18nPagePaths}>
+<Shell title={entry.data.title} i18nPagePaths={i18nPagePaths}>
   <div class="project-heading">
     <PageTitle>{entry.data.title}</PageTitle>
     <div class="project-stats">

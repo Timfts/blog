@@ -10,7 +10,7 @@ const lang = Astro.currentLocale as Lang;
 const allPosts = await getPostsByLang(lang);
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("posts")}>
+<Shell title="Posts" i18nPagePaths={getPageI18NPathMap("posts")}>
   <div class="posts">
     <PostsSearch showTopics>
       <PostsList>

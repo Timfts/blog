@@ -2,11 +2,43 @@
 import Shell from "@components/Shell/index.astro";
 import i18n from "./i18n";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
+import GameRoot from "./ChromeDinosaur/GameRoot.astro";
+import PageTitle from "@components/PageTitle.astro";
 
 const lang = Astro.currentLocale as Lang;
-const { disclaimer } = i18n[lang];
+const { disclaimer, errorMessageDesk, errorMessageMobile } = i18n[lang];
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("notFound")}>
-  {disclaimer}
+<Shell title={disclaimer} i18nPagePaths={getPageI18NPathMap("notFound")}>
+  <div class="not-found-disclaimer" data-fragment="not-found-disclaimer">
+    <PageTitle>{disclaimer}</PageTitle>
+    <p
+      class="not-found-message not-found-message--desk"
+      set:html={errorMessageDesk}
+    />
+    <p
+      class="not-found-message not-found-message--mobile"
+      set:html={errorMessageMobile}
+    />
+  </div>
+  <GameRoot />
 </Shell>
+
+<script>
+  import "./controller";
+</script>
+
+<style lang="scss">
+  .not-found-message {
+    font-family: "Perfect DOS VGA 437 Win";
+    font-size: 25px;
+    color: #535353;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+
+    :global(span) {
+      color: red;
+    }
+  }
+</style>

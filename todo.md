@@ -1,13 +1,13 @@
-- base texts
-- theme color
 - 404
-- Lighthouse check
+- theme color
+- page titles
 - ordenate posts by updated date
+- base texts
+- Lighthouse check
 - projects introduction
 - RSS Feed
 - SEO Check
-  - Robots.txt
-  - sitemap
+- Readme
 
 ----- ready state
 
