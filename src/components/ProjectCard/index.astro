@@ -23,7 +23,11 @@ const learningsSlugs = JSON.stringify(data.learnings || []);
 <li class="project" data-learnings={learningsSlugs}>
   <a class="project-link" href={projectPath}>
     <div class="project-thumb-holder">
-      {data.thumbnail && <img class="project-thumb" src={data.thumbnail} />}
+      {
+        data.thumbnail && (
+          <img class="project-thumb" src={data.thumbnail} loading="lazy" />
+        )
+      }
     </div>
     <div class="project-body">
       <h4 class="project-title">{data.title}</h4>

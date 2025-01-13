@@ -12,7 +12,7 @@ type Props = {
 };
 
 const lang = Astro.currentLocale as Lang;
-const { searchPlaceholder } = i18n[lang];
+const { searchPlaceholder, searchAriaLabel } = i18n[lang];
 
 const { showTopics = false } = Astro.props;
 
@@ -28,7 +28,7 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
   <div class="search-line">
     <h1 class="search-semantic-title">posts</h1>
     <Image class="search-logo" width="130" alt="Posts" src={searchImg} />
-    <input class="search-input" type="text" />
+    <input class="search-input" type="text" aria-label={searchAriaLabel} />
     <Button class="search-button">{searchPlaceholder}</Button>
   </div>
   <slot name="topics-slot">
