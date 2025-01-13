@@ -1,8 +1,6 @@
 - base texts
-- Lighthouse check
 - projects introduction
 - RSS Feed
-- SEO Check
 - Readme
 
 ----- ready state

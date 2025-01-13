@@ -64,7 +64,7 @@ elementController("main-menu", ({ root, query, on, emit }) => {
     const links = root.querySelectorAll(".menu-content-link");
     const activeItemClass = "menu-content-link--active";
     links.forEach((linkEl: HTMLAnchorElement) => {
-      const linkPath = linkEl.href;
+      const linkPath = new URL(linkEl.href).pathname;
       const isCurrentPath = location.pathname === linkPath;
       if (!isCurrentPath) {
         linkEl.classList.remove(activeItemClass);
