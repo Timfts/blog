@@ -34,6 +34,11 @@ const i18n = {
         path: enPaths.contact,
         iconAlt: "Icon of a letter envelope",
       },
+      rss: {
+        label: "RSS",
+        path: "",
+        iconAlt: "RSS icon",
+      },
       music: {
         label: "Playlists",
         path: "",
@@ -75,6 +80,11 @@ const i18n = {
         label: "Contato",
         path: ptPaths.contact,
         iconAlt: "Icone de um envelope de carta",
+      },
+      rss: {
+        label: "RSS",
+        path: "",
+        iconAlt: "Icone de RSS",
       },
       music: {
         label: "Playlists",
