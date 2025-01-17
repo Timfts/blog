@@ -36,7 +36,7 @@ const i18n = {
       },
       rss: {
         label: "RSS",
-        path: "",
+        path: enPaths.feedRSS,
         iconAlt: "RSS icon",
       },
       music: {
@@ -83,7 +83,7 @@ const i18n = {
       },
       rss: {
         label: "RSS",
-        path: "",
+        path: ptPaths.feedRSS,
         iconAlt: "Icone de RSS",
       },
       music: {

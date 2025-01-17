@@ -7,6 +7,7 @@ const pagePaths = {
     posts: "/posts",
     postTopics: "/posts/topic",
     notFound: "/404",
+    feedRSS: "/feed.xml",
   },
 
   "pt-br": {
@@ -17,6 +18,7 @@ const pagePaths = {
     postTopics: "/pt-br/posts/topico",
     projects: "/pt-br/projetos",
     notFound: "/pt-br/404",
+    feedRSS: "/pt-br/feed.xml",
   },
 };
 
