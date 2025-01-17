@@ -1,6 +1,5 @@
 - base texts
 - projects introduction
-- RSS Feed
 - Readme
 
 ----- ready state

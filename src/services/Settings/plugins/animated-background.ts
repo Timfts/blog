@@ -16,6 +16,11 @@ export default function loadVideoBackground(value: string) {
   const videoBackground = document.querySelector(`#${backgroundId}`);
   if (videoBackground) shell.removeChild(videoBackground);
 
+  if (value === "black") {
+    shell.style.backgroundColor = "black";
+    return;
+  }
+
   if (value === "cat") {
     shell.style.backgroundImage = "url(/images/cathacker.gif)";
     return;
