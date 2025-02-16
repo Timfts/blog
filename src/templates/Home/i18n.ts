@@ -8,9 +8,9 @@ const i18n = {
       focused on solution architecture and exploring subjects such as design systems, 
       web performance optimization, cloud computing and more.`,
 
-      `The idea behind this blog is to be my little slice of the web where 
-      I plan to document my crazy ideas, experiments, studies and 
-      projects, bringing a touch of creativity to the technique.`,
+      `This blog was created to be my little personal space on the web, 
+      a place where I can document my crazy ideas, experiments, studies, and projects. 
+      Bringing a touch of creativity to the craft.`,
 
       "𝖜𝖊𝖑𝖈𝖔𝖒𝖊",
     ],
@@ -27,11 +27,11 @@ const i18n = {
         focado em arquitetura de soluções e explorando assuntos como design systems, 
         web performance, cloud computing e mais.`,
 
-      `A ideia desse blog é ser meu pequeno espaço na web onde planejo documentar
-        minhas ideias malucas, experimentos, estudos e projetos, 
-        trazendo um toque de criatividade para a técnica`,
+      `Este blog foi criado para ser meu pequeno espaço pessoal na web, 
+      um lugar onde posso documentar minhas ideias malucas, experimentos, 
+      estudos e projetos. Trazendo um toque de criatividade à técnica.`,
 
-      "𝖇𝖊𝖒 𝖛𝖎𝖓𝖉𝖔(𝖆)",
+      "𝖜𝖊𝖑𝖈𝖔𝖒𝖊",
     ],
     latestPostsTitle: "Últimas atualizações",
     morePosts: "ver todos",
