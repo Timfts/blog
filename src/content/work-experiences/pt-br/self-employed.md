@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Freelancer/desenvolvedor independente
 start_date: 2017-01-01T08:46:00.000Z
 end_date: 2019-10-01T17:51:00.000Z
 company_logo: /images/uploads/funky-code.webp
