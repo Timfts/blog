@@ -11,8 +11,11 @@ const decapCMSConfig = {
     site_url: SITE_URL,
     display_url: SITE_URL,
     backend: {
-      name: "git-gateway",
+      name: "github",
+      repo: "Timfts/blog",
       branch: "main",
+      base_url: "https://qbfqx34jec.execute-api.sa-east-1.amazonaws.com",
+      auth_endpoint: "/prod/auth",
       commit_messages: {
         create: "chore: :memo: Create {{collection}} “{{slug}}”",
         update: "chore: :memo: Update {{collection}} “{{slug}}”",
