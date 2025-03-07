@@ -1,47 +1,35 @@
 import { getCurrentLocale, redirectToLocalizedPage } from "@helpers/i18n";
-import loadVideoBackground from "./plugins/animated-background";
 
-// TODO - avoid unecessary logic run when none is select
+import {
+  clearVideoBackground,
+  createVideoBackground,
+  loadPublicCSSFile,
+  setPreferenceClass,
+} from "./helpers";
 
 const featuresExecutors = {
   theme: () => {
     console.log("changed theme");
   },
-  filter: async (option: string) => {
-    const clear = () => {
-      document.body.style.filter = "none";
-      document.body.classList.remove("crt-tv");
-    };
-
-    clear();
-    switch (option) {
-      case "vintage-monitor":
-        document.body.style.filter = "blur(0.05em) hue-rotate(0)";
-        break;
-      case "crt-tv":
-        const plugin = await import("./plugins/crt-tv");
-        plugin.default();
-        break;
-    }
+  filter: (option: string) => {
+    if (option !== "none") loadPublicCSSFile("filters.css");
+    setPreferenceClass("filter", option);
   },
   "text-size": (value) => {
-    const currentSize = Array.from(document.body.classList.values()).find(
-      (item) => item.startsWith("font-size")
-    );
-    const newSize = `font-size-${value}`;
-    document.body.classList.replace(currentSize, newSize);
+    setPreferenceClass("font-size", value);
   },
 
   "desk-background": (value) => {
-    loadVideoBackground(value);
+    const videoBackgrounds = { matrix: "/videos/matrix-background.mp4" };
+    const videoBackground = videoBackgrounds[value];
+    videoBackground
+      ? createVideoBackground(videoBackground)
+      : clearVideoBackground();
+
+    setPreferenceClass("background", value, "shell");
   },
-  pointer: async (value: boolean) => {
-    if (value) {
-      const plugin = await import("./plugins/custom-pointer");
-      plugin.default();
-    } else {
-      document.body.classList.remove("custom-pointer");
-    }
+  pointer: (value: boolean) => {
+    setPreferenceClass("pointer", value ? "yellow" : "default");
   },
   lang: (lang: Lang) => {
     const alreadyOnDefinedLang = lang === getCurrentLocale();
