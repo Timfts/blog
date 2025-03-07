@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import "./base/main.scss";
+import "src/scss/global/main.scss";
 import MainMenu from "@components/MainMenu/index.astro";
 import Alert from "@components/Alert/index.astro";
 import Settings from "@components/Settings/index.astro";
@@ -71,7 +71,7 @@ const feedPath = {
     }
     <ViewTransitions />
   </head>
-  <body class="font-size-50">
+  <body class="text-size-50">
     <div class="shell" class="background-none" data-fragment="shell">
       <div class="shell-container">
         <div class="shell-menu">

@@ -16,7 +16,7 @@ const featuresExecutors = {
     setPreferenceClass("filter", option);
   },
   "text-size": (value) => {
-    setPreferenceClass("font-size", value);
+    setPreferenceClass("text-size", value);
   },
 
   "desk-background": (value) => {
@@ -26,7 +26,9 @@ const featuresExecutors = {
       ? createVideoBackground(videoBackground)
       : clearVideoBackground();
 
-    setPreferenceClass("background", value, "shell");
+    const shell = document.querySelector<HTMLDivElement>(".shell");
+
+    setPreferenceClass("background", value, shell);
   },
   pointer: (value: boolean) => {
     setPreferenceClass("pointer", value ? "yellow" : "default");

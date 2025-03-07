@@ -1,4 +1,56 @@
-.font-size-0 {
+:root {
+  /* --minimize: url("images/icons/minimize.png");
+    --minimize-hover: url("images/icons/minimize-hover.png");
+    --minimize-active: url("images/icons/minimize-active.png");
+    --maximize: url("images/icons/maximize.png");
+    --maximize-hover: url("images/icons/maximize-hover.png");
+    --maximize-active: url("images/icons/maximize-active.png");
+    --restore: url("images/icons/restore.png");
+    --restore-hover: url("images/icons/restore-hover.png");
+    --restore-active: url("images/icons/restore-active.png");
+    --help: url("images/icons/help.png");
+    --help-hover: url("images/icons/help-hover.png");
+    --help-active: url("images/icons/help-active.png"); */
+  --close: url("images/icons/close.png");
+  --menu: url("images/icons/menu.png");
+  --close-hover: url("images/icons/close-hover.png");
+  --close-active: url("images/icons/close-active.png");
+  --dropdown: url("images/icons/dropdown.png");
+  --dropdown-hover: url("images/icons/dropdown-hover.png");
+  --dropdown-active: url("images/icons/dropdown-active.png");
+  --radio-dot: url("images/icons/radio-dot.png");
+  --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
+  --checkmark: url("images/icons/checkmark.png");
+  --checkmark-disabled: url("images/icons/checkmark-disabled.png");
+  --indicator-horizontal: url("images/icons/indicator-horizontal.png");
+  --indicator-rectangle-horizontal: url("images/icons/indicator-rectangle-horizontal.png");
+  // TODO - load directly in html
+  /* --scrollbar-background: url("images/icons/scrollbar-background.png"); */
+  --scroll-background: url("images/icons/scroll-background.png");
+  --scroll-background-horizontal: url("images/icons/scroll-background-horizontal.png");
+  --scroll-thumb: url("images/icons/scroll-thumb.png");
+  --scroll-thumb-horizontal: url("images/icons/scroll-thumb-horizontal.png");
+  --scroll-arrow-up: url("images/icons/scroll-arrow-up.png");
+  --scroll-arrow-down: url("images/icons/scroll-arrow-down.png");
+  --scroll-arrow-left: url("images/icons/scroll-arrow-left.png");
+  --scroll-arrow-right: url("images/icons/scroll-arrow-right.png");
+  /* --groupbox-border: url("images/icons/groupbox-border.png"); */
+
+  /* Window */
+  --window-top: linear-gradient(
+    180deg,
+    rgba(9, 151, 255, 1) 0%,
+    rgba(0, 83, 238, 1) 8%,
+    rgba(0, 80, 238, 1) 40%,
+    rgba(0, 102, 255, 1) 88%,
+    rgba(0, 102, 255, 1) 93%,
+    rgba(0, 91, 255, 1) 95%,
+    rgba(0, 61, 215, 1) 96%,
+    rgba(0, 61, 215, 1) 100%
+  );
+}
+
+.text-size-0 {
   --txt-regular: 14px;
   --txt-small: 12px;
   --txt-xsmall: 10px;
@@ -17,7 +69,7 @@
   }
 }
 
-.font-size-50 {
+.text-size-50 {
   --txt-regular: 16px;
   --txt-small: 14px;
   --txt-xsmall: 12px;
@@ -36,7 +88,7 @@
   }
 }
 
-.font-size-100 {
+.text-size-100 {
   --txt-regular: 18px;
   --txt-small: 16px;
   --txt-xsmall: 14px;
@@ -49,119 +101,6 @@
   --title-3: 22px;
   --title-4: 20px;
   --menu-items: 14px;
-}
-
-:root {
-  --default-cursor: default;
-  --pointer-cursor: pointer;
-
-  --main-name: 18px;
-  --header-size: 90px;
-  --sans-serif: "Pixelated MS Sans Serif", Arial;
-
-  /* Color */
-  --yellow-light: #ece9d8;
-  --white: #fff;
-  --gray-0: #dfdfdf;
-  --gray-10: #d9d9d9;
-  --gray-20: #808080;
-  --gray-30: #5f5f5f;
-  --black: #0a0a0a;
-  --blue-10: #1084d0;
-  --blue-20: #2267cb;
-  --blue-30: #0000ff;
-
-  /* Color tokens */
-  --surface: var(--yellow-light);
-  --button-highlight: var(--white);
-  --button-face: var(--gray-0);
-  --button-shadow: var(--gray-20);
-  --window-frame: var(--black);
-  --dialog-blue: var(--blue-20);
-  --dialog-blue-light: var(--blue-10);
-  --link-blue: var(--blue-30);
-  --border-color: var(--gray-10);
-
-  /* Spacing */
-  --element-spacing: 8px;
-
-  --grouped-element-spacing: 6px;
-  --radio-width: 15px;
-  --checkbox-width: 15px;
-  --radio-label-spacing: 6px;
-  --range-spacing: 10px;
-
-  /* Some detailed computations for radio buttons and checkboxes */
-  --radio-total-width-precalc: var(--radio-width) + var(--radio-label-spacing);
-  --radio-total-width: calc(var(--radio-total-width-precalc));
-  --radio-dot-width: 5px;
-  --radio-dot-top: 5px;
-  --radio-dot-left: calc(
-    -1 * (var(--radio-total-width-precalc)) + var(--radio-width) / 2 - var(
-        --radio-dot-width
-      ) / 2
-  );
-  --radio-inner-shadow-hover: inset -2px -2px #f8b636, inset 2px 2px #fedf9c;
-  --radio-bg-active: linear-gradient(
-    135deg,
-    rgba(176, 176, 167, 1) 0%,
-    rgba(227, 225, 210, 1) 100%
-  );
-  --radio-bg: linear-gradient(
-    135deg,
-    rgba(220, 220, 215, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  --radio-border: 1px solid #1d5281;
-  --radio-border-disabled: 1px solid #cac8bb;
-  --checkbox-total-width-precalc: var(--checkbox-width) +
-    var(--radio-label-spacing);
-  --checkbox-total-width: calc(var(--checkbox-total-width-precalc));
-  --checkbox-left: calc(-1 * var(--checkbox-total-width-precalc));
-  --checkmark-width: 11px;
-  --checkmark-top: 3px;
-  --checkmark-left: 3px;
-
-  /* Borders */
-  --border-width: 1px;
-  --border-raised-outer: inset -1px -1px var(--window-frame),
-    inset 1px 1px var(--button-highlight);
-  --border-raised-inner: inset -2px -2px var(--button-shadow),
-    inset 2px 2px var(--button-face);
-  --border-sunken-outer: inset -1px -1px var(--button-highlight),
-    inset 1px 1px var(--window-frame);
-  --border-sunken-inner: inset -2px -2px var(--button-face),
-    inset 2px 2px var(--button-shadow);
-  --input-border-color: #789dbc;
-
-  /* Window borders flip button-face and button-highlight */
-  --border-window-outer: inset -1px -1px var(--window-frame),
-    inset 1px 1px var(--button-face);
-  --border-window-inner: inset -2px -2px var(--button-shadow),
-    inset 2px 2px var(--button-highlight);
-  --border-field: inset -1px -1px var(--button-highlight),
-    inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
-    inset 2px 2px var(--window-frame);
-
-  --border-status-bar-field: inset -1px -1px var(--button-face),
-    inset 1px 1px var(--button-shadow);
-
-  /* Scroll bar */
-  --scrollbar-bg: linear-gradient(
-    90deg,
-    rgba(197, 213, 255, 1) 0%,
-    rgba(181, 211, 255, 1) 86%,
-    rgba(182, 202, 247, 1) 100%
-  );
-  --scrollbar-shadow: inset 1px 1px white, inset -1px -1px white,
-    inset 2px 2px #b9cdfa, inset -2px -2px #b6c9f7;
-
-  --tab-bg: linear-gradient(
-    180deg,
-    rgba(252, 252, 254, 1) 0%,
-    rgba(244, 243, 238, 1) 100%
-  );
-  --tab-border: 1px solid #919b9c;
 }
 
 .pointer-yellow {

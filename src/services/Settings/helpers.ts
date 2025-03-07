@@ -42,12 +42,8 @@ export function clearVideoBackground() {
 export function setPreferenceClass(
   pref: string,
   option: string,
-  root: "shell" | "body" = "body"
+  rootEl: HTMLElement = document.body
 ) {
-  const rootEl = {
-    body: document.body,
-    shell: document.querySelector<HTMLDivElement>(".shell"),
-  }[root];
   const bodyClasses = rootEl.classList.values();
   const newClass = `${pref}-${option}`;
   const current = bodyClasses.find((i) => i.startsWith(pref));
