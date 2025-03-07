@@ -8,8 +8,8 @@ import {
 } from "./helpers";
 
 const featuresExecutors = {
-  theme: () => {
-    console.log("changed theme");
+  theme: (option) => {
+    setPreferenceClass("theme", option);
   },
   filter: (option: string) => {
     if (option !== "none") loadPublicCSSFile("filters.css");

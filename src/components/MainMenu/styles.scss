@@ -18,16 +18,16 @@
 
 .header {
   height: var(--header-size);
-  background: var(--window-top);
+  background: var(--theme-menu-top);
   position: relative;
   padding: 10px var(--lateral-padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
-  border-top: 1px solid #0831d9;
-  border-left: 1px solid #0831d9;
-  border-right: 1px solid #001ea0;
+  border-top: 1px solid var(--theme-window-bt);
+  border-left: 1px solid var(--theme-window-bl);
+  border-right: 1px solid var(--theme-window-br);
   transition: transform 0.3s ease;
   transform: translateY(0);
 
@@ -128,7 +128,7 @@
     padding-top: 0;
     transform: translate(0);
     height: auto;
-    flex:1;
+    flex: 1;
   }
 }
 
@@ -212,7 +212,7 @@
 }
 
 .social-li {
-  flex:1;
+  flex: 1;
   text-align: center;
   height: auto;
   @include aboveTurningPoint {

@@ -47,6 +47,7 @@ export function setPreferenceClass(
   const bodyClasses = rootEl.classList.values();
   const newClass = `${pref}-${option}`;
   const current = bodyClasses.find((i) => i.startsWith(pref));
+  if (current === newClass) return;
   if (current) rootEl.classList.remove(current);
 
   rootEl.classList.add(newClass);
