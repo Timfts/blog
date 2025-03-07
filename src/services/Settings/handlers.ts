@@ -11,7 +11,7 @@ const prefsHandlers = {
     if (option !== "none") loadPublicCSSFile("filters.css");
   },
 
-  "desk-background": (value) => {
+  "background": (value) => {
     const videoBackgrounds = { matrix: "/videos/matrix-background.mp4" };
     const videoBackground = videoBackgrounds[value];
     videoBackground

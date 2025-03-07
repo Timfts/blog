@@ -7,7 +7,7 @@ type PreferencesState = {
   "text-size"?: number;
   pointer?: boolean;
   lang?: Lang;
-  "desk-background"?: string;
+  "background"?: string;
 };
 
 const Settings = () => {

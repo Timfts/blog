@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import "src/scss/global/main.scss";
 import MainMenu from "@components/MainMenu/index.astro";
 import Alert from "@components/Alert/index.astro";
@@ -45,8 +45,8 @@ const feedPath = {
 <!doctype html>
 <html
   lang={htmlLang}
-  transition:animate="none"
-  class="theme-default text-size-50 desk-background-none"
+  transition:persist
+  class="theme-default text-size-50 background-none"
 >
   <head>
     <meta charset="utf-8" />
@@ -69,12 +69,7 @@ const feedPath = {
       href={feedPath}
     />
 
-    <!-- {
-      forceViewTransitionsPolyfill ? (
-        <script is:inline>document.startViewTransition = false;</script>
-      ) : null
-    }
-    <ViewTransitions /> -->
+    <ClientRouter />
     <LoadThemeScript />
   </head>
   <body>
