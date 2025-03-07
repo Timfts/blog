@@ -117,23 +117,32 @@
     --theme-window-bl: #0831d9;
     --theme-window-br: #001ea0;
     --theme-default-surface: var(--yellow-light);
+    --theme-start-background: #fff;
+    --theme-start-link: black;
+    --theme-border-1: #7f9db9;
+    --theme-outline-link: #00f;
+    --theme-social-bg: #d3e5fa;
   }
 
   &-dark {
     --theme-menu-top: linear-gradient(
       to bottom,
       #777777 0%,
-      #333333 15%,
-      #101010 45%,
-      #000000 50%,
-      #0f0f0f 55%,
-      #3a3a3a 85%,
-      #7d7d7d 100%
+      #333333 45%,
+      #101010 50%,
+      #000000 60%,
+      #0f0f0f 75%
     );
     --theme-window-bt: #404040;
     --theme-window-bl: #404040;
     --theme-window-br: #202020;
     --theme-default-surface: #161616;
+
+    --theme-start-background: #2f2f2f;
+    --theme-start-link: #c8c8c8;
+    --theme-border-1: #404040;
+    --theme-outline-link: #a8a8a8;
+    --theme-social-bg: #515050;
   }
 }
 

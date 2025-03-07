@@ -111,8 +111,8 @@
   padding-top: var(--header-size);
   height: 100vh;
   position: absolute;
-  background-color: white;
-  border: 1px solid #7f9db9;
+  background-color: var(--theme-start-background);
+  border: 1px solid var(--theme-border-1);
   overflow-y: scroll;
   inset: 0;
   z-index: 1;
@@ -139,7 +139,7 @@
 .menu-list {
   position: relative;
   list-style: none;
-  padding-top: 5px;
+  padding-top: 10px;
 
   &:before {
     content: "";
@@ -156,7 +156,7 @@
 
 .menu-content-link {
   font-family: var(--sans-serif);
-  color: black;
+  color: var(--theme-start-link);
   text-decoration: none;
   padding: 14px var(--lateral-padding);
   display: block;
@@ -172,7 +172,7 @@
 
   &:focus,
   &--active {
-    outline: 1px dotted #00f;
+    outline: 1px dotted var(--theme-outline-link);
   }
 }
 
@@ -186,7 +186,7 @@
 
 .social-holder {
   padding: var(--lateral-padding);
-  background: #d3e5fa;
+  background: var(--theme-social-bg);
   flex: 1;
 
   @include aboveTurningPoint {
@@ -221,7 +221,7 @@
 }
 
 .social-link {
-  color: black;
+  color: var(--theme-start-link);
   line-height: 2;
   font-size: var(--menu-items);
   -webkit-font-smoothing: auto;
