@@ -90,7 +90,7 @@
   --menu-items: 14px;
 }
 
-.pointer-yellow {
+.pointer-true {
   //TODO use regular import
   --default-cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAF0UExURQAAADo3AgEBAXZxGxYUAAAAAK2rURcWAAoLCrCvTBESAQcHB7KwQRUUAAAAALKyPBMSAAMDA7KyORMTAAUFBbKyNxQTAAAAALKyNA8PAAAAALKyMgwNAAMDA7GxMiUjARcXAA8QAAsMAAgIAbGxMQsLAFJSD3NrDB8dAIuLGlZWEi4uB3FvBcXFNgwLAGRjCDg4CKWkKRkXAFdXAX9/C87OOjo3AAcHAqurLhQTAIqJFdfXOy4sAAMDA7KxKTAtAAoJAammFmFfDxoYAGVhBbazL0ZIA+zqUWJlCU9OAP7+WqSfFHdzAFlWAP7+WNzZNm1sAGpqAFJRAP7+V/38Unx7CmBjBGhnAFFQAP7+Vv7+Vbq4JWZnAWtqAHFtAFhVAPTxQ25tAXJvAHZxAGZkAEhJAP7+VP39VL+/OTo2ASMgAMXFPUtGBn1zET48AM3NQOrqQJaQC9rWKUhEAPHwQoeABMrFIPHvPXJsALq0F83KLf///50ZJEsAAABEdFJOUwChA/6pA/6sBf60CP69C/7CDP7GEP7OFf7VF/7XGv7Pw7+/mf5P127C/uYgBOI18CxzqDQP8foejo0e+/EOqP5PMrAwYLlFvwAAAAFiS0dEe0/StfwAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfoBxkBBBTWhowEAAAAAW9yTlQBz6J3mgAAALtJREFUOMtjYGRiwA+YWVjxK2BzYefAq4DT1Y2LG58CHncPT14+PAr4vbx9fAUEcSsQ8vMPCAwSFsGpQDQ4JDQsPEJMHJcCicio6JjYuHhJKRwKpKOiEhKTklNSZWSxK5BLS8/IzJJXUFRSxq5AJT07JzdPFbcvVPLV1AsKNXAr0NTS1tEtKtbDqUDfgIHBsKTUCKcCYyA2MS0zM8cbYxblFZZ4FVhZV9rY4lVhV2XvgFeBo5MzwygY7AAA1w8ej1C4hEoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDctMjVUMDE6MDQ6MjArMDA6MDAiPk3qAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTA3LTI1VDAxOjA0OjE5KzAwOjAwSHS3ZgAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyNC0wNy0yNVQwMTowNDoyMCswMDowMAR21IkAAAAASUVORK5CYII="),
     auto;
@@ -137,18 +137,20 @@
   }
 }
 
-.background-none {
-  background-color: var(--theme-default-surface);
-}
+.desk-background {
+  &-none {
+    --bg: var(--theme-default-surface);
+  }
 
-.background-black {
-  background-color: black;
-}
+  &-black {
+    --bg: black;
+  }
 
-.background-cat {
-  background-image: url("/images/cathacker.gif");
-}
+  &-cat {
+    --bg: url("/images/cathacker.gif");
+  }
 
-.background-dog {
-  background-image: url("/images/dog-hacker.gif");
+  &-dog {
+    --bg: url("/images/dog-hacker.gif");
+  }
 }

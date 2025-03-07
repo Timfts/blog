@@ -39,11 +39,8 @@ export function clearVideoBackground() {
   shell.style.cssText = "";
 }
 
-export function setPreferenceClass(
-  pref: string,
-  option: string,
-  rootEl: HTMLElement = document.body
-) {
+export function setPreferenceClass(pref: string, option: string) {
+  const rootEl = document.querySelector("html");
   const bodyClasses = rootEl.classList.values();
   const newClass = `${pref}-${option}`;
   const current = bodyClasses.find((i) => i.startsWith(pref));

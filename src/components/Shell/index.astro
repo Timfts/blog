@@ -7,6 +7,7 @@ import Settings from "@components/Settings/index.astro";
 import LanguageSelector from "@components/LanguageSelector.astro";
 import i18n from "./i18n";
 import { fade } from "astro:transitions";
+import LoadThemeScript from "./LoadThemeScript.astro";
 
 export type Props = {
   title?: string;
@@ -42,7 +43,11 @@ const feedPath = {
 ---
 
 <!doctype html>
-<html lang={htmlLang} transition:animate="none">
+<html
+  lang={htmlLang}
+  transition:animate="none"
+  class="theme-default text-size-50 desk-background-none"
+>
   <head>
     <meta charset="utf-8" />
     <title>{formattedTitle}</title>
@@ -64,15 +69,16 @@ const feedPath = {
       href={feedPath}
     />
 
-    {
+    <!-- {
       forceViewTransitionsPolyfill ? (
         <script is:inline>document.startViewTransition = false;</script>
       ) : null
     }
-    <ViewTransitions />
+    <ViewTransitions /> -->
+    <LoadThemeScript />
   </head>
-  <body class="theme-default text-size-50">
-    <div class="shell background-none" data-fragment="shell">
+  <body>
+    <div class="shell" data-fragment="shell">
       <div class="shell-container">
         <div class="shell-menu">
           <MainMenu />
