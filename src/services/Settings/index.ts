@@ -1,4 +1,5 @@
-import featuresExecutors from "./features";
+import prefsHandlers from "./handlers";
+import { setPreferenceClass } from "./helpers";
 
 type PreferencesState = {
   theme?: string;
@@ -6,7 +7,7 @@ type PreferencesState = {
   "text-size"?: number;
   pointer?: boolean;
   lang?: Lang;
-  "desk-background"?: string;
+  "background"?: string;
 };
 
 const Settings = () => {
@@ -18,30 +19,26 @@ const Settings = () => {
     return currentPrefs;
   }
 
-  function saveNewPreferences(newPrefs: PreferencesState) {
-    localStorage.setItem(preferencesKey, JSON.stringify(newPrefs));
-  }
-
-  async function loadSavedPrefs() {
+  async function loadPrefsSideEffects() {
     const currentPrefs = getCurrentPreferences();
 
     for (const [key, value] of Object.entries(currentPrefs)) {
-      const executor = featuresExecutors[key];
-      await executor(value);
+      const prefSideEffect = prefsHandlers[key];
+      if (prefSideEffect) prefSideEffect(value);
     }
   }
 
   async function setPref(setting: string, value: any) {
-    const executor = featuresExecutors[setting];
-    if (!executor) return;
     const currentPrefs = getCurrentPreferences();
     const newState: PreferencesState = { ...currentPrefs, [setting]: value };
-    saveNewPreferences(newState);
-    await executor(value);
+    setPreferenceClass(setting, String(value));
+    localStorage.setItem(preferencesKey, JSON.stringify(newState));
+    const prefSideEffect = prefsHandlers[setting];
+    if (prefSideEffect) prefSideEffect(value);
   }
 
   return {
-    loadSavedPrefs,
+    loadPrefsSideEffects,
     setPref,
     getCurrentPreferences,
   };

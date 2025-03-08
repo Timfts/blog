@@ -1,0 +1,27 @@
+<script is:inline>
+  // Loading user settings on head to avoid FOUC on theme change
+  function setupPrefs(el) {
+    const preferences = localStorage.getItem("USR_PREFS");
+    if (!preferences) return;
+
+    const parsedPrefs = JSON.parse(preferences);
+    const root = el.querySelector("html");
+
+    // Remove existing preference-related classes
+    root.classList.forEach((cls) => {
+      const [pref] = cls.split("-");
+      if (parsedPrefs.hasOwnProperty(pref)) {
+        root.classList.remove(cls);
+      }
+    });
+
+    // Add new preference-related classes
+    Object.entries(parsedPrefs).forEach(([pref, value]) => {
+      root.classList.add(`${pref}-${value}`);
+    });
+  }
+  setupPrefs(document);
+  document.addEventListener("astro:before-swap", (e) =>
+    setupPrefs(e.newDocument)
+  );
+</script>

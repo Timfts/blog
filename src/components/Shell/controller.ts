@@ -15,7 +15,7 @@ elementController(
 
     function setup() {
       if (!alreadyLoadedPrefs) {
-        SettingsService.loadSavedPrefs();
+        SettingsService.loadPrefsSideEffects();
       }
       on(events.OPEN_MEDIA_PLAYER, handleLoadMusicPlayer);
       on(events.CLOSE_MEDIA_PLAYER, handleCloseMusicPlayer);

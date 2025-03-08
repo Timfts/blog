@@ -12,31 +12,27 @@ export default defineConfig({
     defaultLocale: "en",
     locales: ["en", "pt-br"],
     routing: {
-      prefixDefaultLocale: false
-    }
+      prefixDefaultLocale: false,
+    },
   },
   //one dark pro vitesse-black
   markdown: {
     shikiConfig: {
-      theme: "github-dark-default"
-    }
+      theme: "github-dark-default",
+    },
   },
   scopedStyleStrategy: "class",
   vite: {
     build: {
-      inlineStylesheets: "always"
+      inlineStylesheets: "always",
     },
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `
-            @import "src/scss/colors";
-            @import "src/scss/mixins";
-          `
-        }
-      }
-    }
-    
+          additionalData: '@import "src/scss/mixins";',
+        },
+      },
+    },
   },
-  integrations: [sitemap()]
+  integrations: [sitemap()],
 });
