@@ -69,14 +69,13 @@ const deskBackgrounds = [
           <Tab id="ui">
             <Groupbox legend={themeOption}>
               {
-                themes.map(({ id, label, disabled }) => (
+                themes.map(({ id, label }) => (
                   <FieldRow>
                     <input
                       name={fieldsNames.theme}
                       id={id}
                       type="radio"
                       value={id}
-                      disabled={disabled}
                       checked={id === "default"}
                     />
                     <label for={id}>{label}</label>
