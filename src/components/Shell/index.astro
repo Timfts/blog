@@ -1,12 +1,13 @@
 ---
-import { ViewTransitions } from "astro:transitions";
-import "./base/main.scss";
+import { ClientRouter } from "astro:transitions";
+import "src/scss/global/main.scss";
 import MainMenu from "@components/MainMenu/index.astro";
 import Alert from "@components/Alert/index.astro";
 import Settings from "@components/Settings/index.astro";
 import LanguageSelector from "@components/LanguageSelector.astro";
 import i18n from "./i18n";
 import { fade } from "astro:transitions";
+import LoadThemeScript from "./LoadThemeScript.astro";
 
 export type Props = {
   title?: string;
@@ -42,7 +43,11 @@ const feedPath = {
 ---
 
 <!doctype html>
-<html lang={htmlLang} transition:animate="none">
+<html
+  lang={htmlLang}
+  transition:persist
+  class="theme-default text-size-50 background-none"
+>
   <head>
     <meta charset="utf-8" />
     <title>{formattedTitle}</title>
@@ -64,14 +69,10 @@ const feedPath = {
       href={feedPath}
     />
 
-    {
-      forceViewTransitionsPolyfill ? (
-        <script is:inline>document.startViewTransition = false;</script>
-      ) : null
-    }
-    <ViewTransitions />
+    <ClientRouter />
+    <LoadThemeScript />
   </head>
-  <body class="font-size-50">
+  <body>
     <div class="shell" data-fragment="shell">
       <div class="shell-container">
         <div class="shell-menu">

@@ -28,12 +28,7 @@ const {
 
 const themes = [
   { label: `Luna (${defaultLabel})`, id: "default" },
-  {
-    label: `Silver Luna (${inConstructionLabel})`,
-    id: "luna-silver",
-    disabled: true,
-  },
-  { label: `Zune Style (${inConstructionLabel})`, id: "zune", disabled: true },
+  { label: `Zune (dark)`, id: "dark" },
 ];
 
 const uiFilters = [
@@ -48,11 +43,11 @@ const fieldsNames = {
   textSize: "text-size",
   customPointer: "pointer",
   language: "lang",
-  backgroundImg: "desk-background",
+  backgroundImg: "background",
 };
 
 const deskBackgrounds = [
-  { label: "Cream (default)", id: "none" },
+  { label: "Default", id: "none" },
   { label: "Black", id: "black" },
   { label: "Matrix", id: "matrix" },
   { label: "Cat hacker", id: "cat" },
@@ -74,14 +69,13 @@ const deskBackgrounds = [
           <Tab id="ui">
             <Groupbox legend={themeOption}>
               {
-                themes.map(({ id, label, disabled }) => (
+                themes.map(({ id, label }) => (
                   <FieldRow>
                     <input
                       name={fieldsNames.theme}
                       id={id}
                       type="radio"
                       value={id}
-                      disabled={disabled}
                       checked={id === "default"}
                     />
                     <label for={id}>{label}</label>
