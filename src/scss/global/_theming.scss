@@ -117,11 +117,16 @@
     --theme-window-bl: #0831d9;
     --theme-window-br: #001ea0;
     --theme-default-surface: var(--yellow-light);
-    --theme-start-background: #fff;
+    --theme-background: #fff;
     --theme-start-link: black;
     --theme-border-1: #7f9db9;
     --theme-outline-link: #00f;
     --theme-social-bg: #d3e5fa;
+
+    --theme-text-color: #222222;
+    --theme-link-color: #0000ff;
+    --theme-post-url-color: green;
+    --theme-search-logo: url("/images/posts.webp");
   }
 
   &-dark {
@@ -138,11 +143,16 @@
     --theme-window-br: #202020;
     --theme-default-surface: #161616;
 
-    --theme-start-background: #2f2f2f;
-    --theme-start-link: #c8c8c8;
+    --theme-background: #2f2f2f;
+    --theme-start-link: #bbbaba;
     --theme-border-1: #404040;
     --theme-outline-link: #a8a8a8;
-    --theme-social-bg: #515050;
+    --theme-social-bg: #404040;
+
+    --theme-text-color: #bbbaba;
+    --theme-link-color: #ff9800;
+    --theme-post-url-color: #6bb571;
+    --theme-search-logo: url("/images/posts2.webp");
   }
 }
 

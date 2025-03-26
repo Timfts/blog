@@ -27,7 +27,7 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
 >
   <div class="search-line">
     <h1 class="search-semantic-title">posts</h1>
-    <Image class="search-logo" width="130" alt="Posts" src={searchImg} />
+    <div class="search-logo"></div>
     <input class="search-input" type="text" aria-label={searchAriaLabel} />
     <Button class="search-button">{searchPlaceholder}</Button>
   </div>
@@ -86,6 +86,10 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
     }
 
     &-logo {
+      width: 130px;
+      height: 68px;
+      background-image: var(--theme-search-logo);
+      background-size: cover;
       @include aboveTurningPoint() {
         margin-right: 20px;
       }

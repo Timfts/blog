@@ -9,7 +9,7 @@
 body {
   font-family: Arial;
   font-size: var(--txt-regular);
-  color: #222222;
+  color: var(--theme-text-color);
   background: var(--bg);
 }
 
@@ -38,10 +38,10 @@ u {
 }
 
 a {
-  color: var(--link-blue);
+  color: var(--theme-link-color);
   cursor: var(--pointer-cursor);
   &:focus {
-    outline: 1px dotted var(--link-blue);
+    outline: 1px dotted var(--theme-link-color);
   }
 }
 
