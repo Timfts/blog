@@ -102,7 +102,7 @@
 
 .theme {
   &-default {
-    --theme-menu-top: linear-gradient(
+    --theme-top-window: linear-gradient(
       180deg,
       rgba(9, 151, 255, 1) 0%,
       rgba(0, 83, 238, 1) 8%,
@@ -116,6 +116,9 @@
     --theme-window-bt: #0831d9;
     --theme-window-bl: #0831d9;
     --theme-window-br: #001ea0;
+    --theme-window-bshadow: inset -1px -1px #00138c, inset 1px 1px #0831d9,
+      inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda,
+      inset 3px 3px #0855dd;
     --theme-default-surface: var(--yellow-light);
     --theme-background: #fff;
     --theme-start-link: black;
@@ -126,11 +129,20 @@
     --theme-text-color: #222222;
     --theme-link-color: #0000ff;
     --theme-post-url-color: green;
+    --theme-input-bg-color: #fff;
     --theme-search-logo: url("/images/posts.webp");
+    --theme-input-outline-color: #7f9db9;
+    --theme-legend-color: #0046d5;
+    --theme-tab-bg: linear-gradient(180deg, #fcfcfe, #f4f3ee);
+    --theme-tab-bshadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe,
+      1px 2px 2px 0 hsla(53, 15%, 78%, 0.75);
+    --theme-surface: var(--yellow-light);
+    --theme-fieldset-border: #d0d0bf;
+    --theme-highlight-color: #2267cb;
   }
 
   &-dark {
-    --theme-menu-top: linear-gradient(
+    --theme-top-window: linear-gradient(
       to bottom,
       #777777 0%,
       #333333 45%,
@@ -141,6 +153,9 @@
     --theme-window-bt: #404040;
     --theme-window-bl: #404040;
     --theme-window-br: #202020;
+    --theme-window-bshadow: inset -1px -1px #0d0d0d, inset 1px 1px #1a1a1a,
+      inset -2px -2px #131313, inset 2px 2px #262626, inset -3px -3px #1e1e1e,
+      inset 3px 3px #333333;
     --theme-default-surface: #161616;
 
     --theme-background: #2f2f2f;
@@ -152,7 +167,15 @@
     --theme-text-color: #bbbaba;
     --theme-link-color: #ff9800;
     --theme-post-url-color: #6bb571;
+    --theme-input-bg-color: #161616;
     --theme-search-logo: url("/images/posts2.webp");
+    --theme-input-outline-color: #696969;
+    --theme-tab-bg: linear-gradient(180deg, #2f2f2f, #1e1e1e);
+    --theme-tab-bshadow: none;
+    --theme-legend-color: #ff9800;
+    --theme-surface: #2c2a26;
+    --theme-fieldset-border: #515151;
+    --theme-highlight-color: #595959;
   }
 }
 

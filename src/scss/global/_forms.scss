@@ -13,8 +13,9 @@ textarea {
   font-family: var(--sans-serif);
   font-size: var(--txt-xsmall);
   padding: 3px 4px;
-  border: 1px solid #7f9db9;
-  background-color: var(--button-highlight);
+  color: var(--theme-text-color);
+  border: 1px solid var(--theme-input-outline-color);
+  background-color: var(--theme-input-bg-color);
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -37,8 +38,8 @@ select {
   font-family: var(--sans-serif);
   font-size: var(--txt-xsmall);
   padding: 3px 4px;
-  color: black;
-  background-color: var(--button-highlight);
+  color: var(--theme-text-color);
+  background-color: var(--theme-input-bg-color);
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -53,7 +54,7 @@ select {
   background-position: top 2px right 2px;
   background-repeat: no-repeat;
   border-radius: 0;
-  border: 1px solid #7f9db9;
+  border: 1px solid var(--theme-input-outline-color);
   image-rendering: pixelated;
   background-image: var(--dropdown);
   background-size: 15px;
@@ -61,7 +62,7 @@ select {
   &:focus {
     outline: none;
     color: var(--button-highlight);
-    background-color: var(--dialog-blue);
+    background-color: var(--theme-highlight-color);
     box-shadow: inset 2px 2px white, inset -2px -2px white;
     option {
       color: #000;
@@ -286,8 +287,9 @@ input[type="text"],
 input[type="password"],
 input[type="email"] {
   padding: 3px 4px;
-  border: solid #7f9db9 1px;
-  background-color: var(--button-highlight);
+  border: solid var(--theme-input-outline-color) 1px;
+  background-color: var(--theme-input-bg-color);
+  color: var(--theme-text-color);
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -302,7 +304,7 @@ input[type="email"] {
 
 input::selection,
 textarea::selection {
-  background: var(--dialog-blue);
+  background: var(--theme-highlight-color);
   color: white;
 }
 

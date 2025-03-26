@@ -18,7 +18,7 @@
 
 .header {
   height: var(--header-size);
-  background: var(--theme-menu-top);
+  background: var(--theme-top-window);
   position: relative;
   padding: 10px var(--lateral-padding);
   display: flex;
@@ -166,7 +166,7 @@
 
   &:hover {
     text-decoration: underline;
-    background-color: #2267cb;
+    background-color: var(--theme-highlight-color);
     color: #fff;
   }
 

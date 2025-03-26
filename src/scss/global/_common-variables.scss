@@ -24,8 +24,6 @@
   --button-face: var(--gray-0);
   --button-shadow: var(--gray-20);
   --window-frame: var(--black);
-  --dialog-blue: var(--blue-20);
-  --dialog-blue-light: var(--blue-10);
   --link-blue: var(--blue-30);
   --border-color: var(--gray-10);
 
@@ -103,10 +101,5 @@
   --scrollbar-shadow: inset 1px 1px white, inset -1px -1px white,
     inset 2px 2px #b9cdfa, inset -2px -2px #b6c9f7;
 
-  --tab-bg: linear-gradient(
-    180deg,
-    rgba(252, 252, 254, 1) 0%,
-    rgba(244, 243, 238, 1) 100%
-  );
   --tab-border: 1px solid #919b9c;
 }
