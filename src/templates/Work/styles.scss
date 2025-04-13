@@ -9,9 +9,10 @@
   justify-content: space-between;
   padding-left: 25px;
   border-left: 1px solid var(--border-color);
+  align-items: center;
 
   &-content {
-    max-width: 480px;
+    max-width: 550px;
   }
 
   &-title {
@@ -39,6 +40,7 @@
     object-fit: cover;
     display: block;
     flex-shrink: 0;
+    margin-top: 25px;
 
     @include belowTurningPoint {
       display: none;
