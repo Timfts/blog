@@ -1,7 +1,6 @@
 :root {
-  
   --checkmark-disabled: url("images/icons/checkmark-disabled.png");
-
+  --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
   --scroll-background: url("images/icons/scroll-background.png");
   --scroll-background-horizontal: url("images/icons/scroll-background-horizontal.png");
 }
@@ -112,7 +111,6 @@
     --theme-scrollbar-thumb-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
 
     --radio-dot: url("images/icons/radio-dot.png");
-    --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
     --radio-bg-active: linear-gradient(
       135deg,
       rgba(176, 176, 167, 1) 0%,
@@ -183,7 +181,6 @@
     --theme-scrollbar-thumb-shadow: inset -3px 0 #d4d0c8, inset 1px 1px #a79d94;
 
     --radio-dot: url("images/icons/zune/radio-dot.png");
-    --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
     --radio-bg-active: linear-gradient(
       135deg,
       rgba(176, 176, 167, 1) 0%,

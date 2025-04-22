@@ -6,7 +6,9 @@ const cssNano = require("cssnano");
 const inlineUrl = postcssUrl({
   filter: (filename) => {
     const file = filename?.url || "";
-    return file.endsWith("png") || file.endsWith("svg");
+    const hasAllowedExtension = file.endsWith("png") || file.endsWith("svg");
+    const isFromCustomTheme = file.includes("zune");
+    return hasAllowedExtension && !isFromCustomTheme;
   },
   url: "inline",
   basePath: path.resolve("public"),
