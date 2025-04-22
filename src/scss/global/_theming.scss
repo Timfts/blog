@@ -1,8 +1,8 @@
 :root {
-  --checkmark-disabled: url("images/icons/checkmark-disabled.png");
-  --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
-  --scroll-background: url("images/icons/scroll-background.png");
-  --scroll-background-horizontal: url("images/icons/scroll-background-horizontal.png");
+  --checkmark-disabled: url("/images/icons/checkmark-disabled.png");
+  --radio-dot-disabled: url("/images/icons/radio-dot-disabled.png");
+  --scroll-background: url("/images/icons/scroll-background.png");
+  --scroll-background-horizontal: url("/images/icons/scroll-background-horizontal.png");
 }
 
 .text-size-0 {
@@ -110,7 +110,7 @@
     --theme-scrollbar-thumb-bg: #c8d6fb;
     --theme-scrollbar-thumb-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
 
-    --radio-dot: url("images/icons/radio-dot.png");
+    --radio-dot: url("/images/icons/radio-dot.png");
     --radio-bg-active: linear-gradient(
       135deg,
       rgba(176, 176, 167, 1) 0%,
@@ -124,22 +124,22 @@
     --radio-border: 1px solid #1d5281;
     --radio-border-disabled: 1px solid #cac8bb;
 
-    --close: url("images/icons/close.png");
-    --close-hover: url("images/icons/close-hover.png");
-    --close-active: url("images/icons/close-active.png");
-    --indicator-horizontal: url("images/icons/indicator-horizontal.png");
-    --indicator-rectangle-horizontal: url("images/icons/indicator-rectangle-horizontal.png");
-    --scroll-arrow-up: url("images/icons/scroll-arrow-up.png");
-    --scroll-arrow-down: url("images/icons/scroll-arrow-down.png");
-    --scroll-arrow-left: url("images/icons/scroll-arrow-left.png");
-    --scroll-arrow-right: url("images/icons/scroll-arrow-right.png");
-    --scroll-thumb: url("images/icons/scroll-thumb.png");
-    --scroll-thumb-horizontal: url("images/icons/scroll-thumb-horizontal.png");
-    --dropdown: url("images/icons/dropdown.png");
-    --dropdown-hover: url("images/icons/dropdown-hover.png");
-    --dropdown-active: url("images/icons/dropdown-active.png");
-    --checkmark: url("images/icons/checkmark.png");
-    --menu: url("images/icons/menu.png");
+    --close: url("/images/icons/close.png");
+    --close-hover: url("/images/icons/close-hover.png");
+    --close-active: url("/images/icons/close-active.png");
+    --indicator-horizontal: url("/images/icons/indicator-horizontal.png");
+    --indicator-rectangle-horizontal: url("/images/icons/indicator-rectangle-horizontal.png");
+    --scroll-arrow-up: url("/images/icons/scroll-arrow-up.png");
+    --scroll-arrow-down: url("/images/icons/scroll-arrow-down.png");
+    --scroll-arrow-left: url("/images/icons/scroll-arrow-left.png");
+    --scroll-arrow-right: url("/images/icons/scroll-arrow-right.png");
+    --scroll-thumb: url("/images/icons/scroll-thumb.png");
+    --scroll-thumb-horizontal: url("/images/icons/scroll-thumb-horizontal.png");
+    --dropdown: url("/images/icons/dropdown.png");
+    --dropdown-hover: url("/images/icons/dropdown-hover.png");
+    --dropdown-active: url("/images/icons/dropdown-active.png");
+    --checkmark: url("/images/icons/checkmark.png");
+    --menu: url("/images/icons/menu.png");
   }
 
   &-dark {
@@ -180,7 +180,7 @@
     --theme-scrollbar-thumb-bg: #e7e3d6;
     --theme-scrollbar-thumb-shadow: inset -3px 0 #d4d0c8, inset 1px 1px #a79d94;
 
-    --radio-dot: url("images/icons/zune/radio-dot.png");
+    --radio-dot: url("/images/icons/zune/radio-dot.png");
     --radio-bg-active: linear-gradient(
       135deg,
       rgba(176, 176, 167, 1) 0%,
@@ -194,22 +194,22 @@
     --radio-border: 2px solid rgb(37, 37, 37);
     --radio-border-disabled: 1px solid #cac8bb;
 
-    --close: url("images/icons/zune/close.png");
-    --close-hover: url("images/icons/zune/close-hover.png");
-    --close-active: url("images/icons/zune/close-active.png");
-    --indicator-horizontal: url("images/icons/zune/indicator-horizontal.png");
-    --indicator-rectangle-horizontal: url("images/icons/zune/indicator-rectangle-horizontal.png");
-    --scroll-arrow-up: url("images/icons/zune/scroll-arrow-up.png");
-    --scroll-arrow-down: url("images/icons/zune/scroll-arrow-down.png");
-    --scroll-arrow-left: url("images/icons/zune/scroll-arrow-left.png");
-    --scroll-arrow-right: url("images/icons/zune/scroll-arrow-right.png");
-    --scroll-thumb: url("images/icons/zune/scroll-thumb.png");
-    --scroll-thumb-horizontal: url("images/icons/zune/scroll-thumb-horizontal.png");
-    --dropdown: url("images/icons/zune/dropdown.png");
-    --dropdown-hover: url("images/icons/zune/dropdown-hover.png");
-    --dropdown-active: url("images/icons/zune/dropdown-active.png");
-    --checkmark: url("images/icons/zune/checkmark.png");
-    --menu: url("images/icons/zune/menu.png");
+    --close: url("/images/icons/zune/close.png");
+    --close-hover: url("/images/icons/zune/close-hover.png");
+    --close-active: url("/images/icons/zune/close-active.png");
+    --indicator-horizontal: url("/images/icons/zune/indicator-horizontal.png");
+    --indicator-rectangle-horizontal: url("/images/icons/zune/indicator-rectangle-horizontal.png");
+    --scroll-arrow-up: url("/images/icons/zune/scroll-arrow-up.png");
+    --scroll-arrow-down: url("/images/icons/zune/scroll-arrow-down.png");
+    --scroll-arrow-left: url("/images/icons/zune/scroll-arrow-left.png");
+    --scroll-arrow-right: url("/images/icons/zune/scroll-arrow-right.png");
+    --scroll-thumb: url("/images/icons/zune/scroll-thumb.png");
+    --scroll-thumb-horizontal: url("/images/icons/zune/scroll-thumb-horizontal.png");
+    --dropdown: url("/images/icons/zune/dropdown.png");
+    --dropdown-hover: url("/images/icons/zune/dropdown-hover.png");
+    --dropdown-active: url("/images/icons/zune/dropdown-active.png");
+    --checkmark: url("/images/icons/zune/checkmark.png");
+    --menu: url("/images/icons/zune/menu.png");
   }
 }
 
