@@ -11,10 +11,7 @@
     --help: url("images/icons/help.png");
     --help-hover: url("images/icons/help-hover.png");
     --help-active: url("images/icons/help-active.png"); */
-  --close: url("images/icons/close.png");
   --menu: url("images/icons/menu.png");
-  --close-hover: url("images/icons/close-hover.png");
-  --close-active: url("images/icons/close-active.png");
   --dropdown: url("images/icons/dropdown.png");
   --dropdown-hover: url("images/icons/dropdown-hover.png");
   --dropdown-active: url("images/icons/dropdown-active.png");
@@ -139,6 +136,10 @@
     --theme-surface: var(--yellow-light);
     --theme-fieldset-border: #d0d0bf;
     --theme-highlight-color: #2267cb;
+
+    --close: url("images/icons/close.png");
+    --close-hover: url("images/icons/close-hover.png");
+    --close-active: url("images/icons/close-active.png");
   }
 
   &-dark {
@@ -176,6 +177,10 @@
     --theme-surface: #2c2a26;
     --theme-fieldset-border: #515151;
     --theme-highlight-color: #595959;
+
+    --close: url("images/icons/zune/close.png");
+    --close-hover: url("images/icons/zune/close-hover.png");
+    --close-active: url("images/icons/zune/close-active.png");
   }
 }
 
