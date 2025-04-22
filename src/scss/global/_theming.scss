@@ -15,8 +15,6 @@
   --dropdown: url("images/icons/dropdown.png");
   --dropdown-hover: url("images/icons/dropdown-hover.png");
   --dropdown-active: url("images/icons/dropdown-active.png");
-  --radio-dot: url("images/icons/radio-dot.png");
-  --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
   --checkmark: url("images/icons/checkmark.png");
   --checkmark-disabled: url("images/icons/checkmark-disabled.png");
   --indicator-horizontal: url("images/icons/indicator-horizontal.png");
@@ -137,6 +135,21 @@
     --theme-fieldset-border: #d0d0bf;
     --theme-highlight-color: #2267cb;
 
+    --radio-dot: url("images/icons/radio-dot.png");
+    --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
+    --radio-bg-active: linear-gradient(
+      135deg,
+      rgba(176, 176, 167, 1) 0%,
+      rgba(227, 225, 210, 1) 100%
+    );
+    --radio-bg: linear-gradient(
+      135deg,
+      rgba(220, 220, 215, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    --radio-border: 1px solid #1d5281;
+    --radio-border-disabled: 1px solid #cac8bb;
+
     --close: url("images/icons/close.png");
     --close-hover: url("images/icons/close-hover.png");
     --close-active: url("images/icons/close-active.png");
@@ -177,6 +190,22 @@
     --theme-surface: #2c2a26;
     --theme-fieldset-border: #515151;
     --theme-highlight-color: #595959;
+
+
+    --radio-dot: url("images/icons/zune/radio-dot.png");
+    --radio-dot-disabled: url("images/icons/radio-dot-disabled.png");
+    --radio-bg-active: linear-gradient(
+      135deg,
+      rgba(176, 176, 167, 1) 0%,
+      rgba(227, 225, 210, 1) 100%
+    );
+    --radio-bg: linear-gradient(
+      135deg,
+      rgb(177, 177, 177) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    --radio-border: 2px solid rgb(37, 37, 37);
+    --radio-border-disabled: 1px solid #cac8bb;
 
     --close: url("images/icons/zune/close.png");
     --close-hover: url("images/icons/zune/close-hover.png");
