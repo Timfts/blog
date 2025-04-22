@@ -1,3 +1,4 @@
+import { isMobile } from "@helpers/device";
 import prefsHandlers from "./handlers";
 import { setPreferenceClass } from "./helpers";
 
@@ -7,7 +8,7 @@ type PreferencesState = {
   "text-size"?: number;
   pointer?: boolean;
   lang?: Lang;
-  "background"?: string;
+  background?: string;
 };
 
 const Settings = () => {
@@ -35,6 +36,14 @@ const Settings = () => {
     localStorage.setItem(preferencesKey, JSON.stringify(newState));
     const prefSideEffect = prefsHandlers[setting];
     if (prefSideEffect) prefSideEffect(value);
+
+    const shouldAutoApplyMatrixBG =
+      setting === "theme" && value === "dark" && !isMobile();
+
+
+    if (shouldAutoApplyMatrixBG) {
+      setPref("background", "matrix");
+    }
   }
 
   return {

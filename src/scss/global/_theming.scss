@@ -1,7 +1,5 @@
 :root {
-  --menu: url("images/icons/menu.png");
-
-  --checkmark: url("images/icons/checkmark.png");
+  
   --checkmark-disabled: url("images/icons/checkmark-disabled.png");
 
   --scroll-background: url("images/icons/scroll-background.png");
@@ -142,6 +140,8 @@
     --dropdown: url("images/icons/dropdown.png");
     --dropdown-hover: url("images/icons/dropdown-hover.png");
     --dropdown-active: url("images/icons/dropdown-active.png");
+    --checkmark: url("images/icons/checkmark.png");
+    --menu: url("images/icons/menu.png");
   }
 
   &-dark {
@@ -211,6 +211,8 @@
     --dropdown: url("images/icons/zune/dropdown.png");
     --dropdown-hover: url("images/icons/zune/dropdown-hover.png");
     --dropdown-active: url("images/icons/zune/dropdown-active.png");
+    --checkmark: url("images/icons/zune/checkmark.png");
+    --menu: url("images/icons/zune/menu.png");
   }
 }
 
