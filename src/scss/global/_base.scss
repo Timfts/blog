@@ -114,11 +114,11 @@ summary {
 ::-webkit-scrollbar-thumb {
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #c8d6fb;
+  background-color: var(--theme-scrollbar-thumb-bg);
   background-size: 7px;
   border: 1px solid white;
   border-radius: 2px;
-  box-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
+  box-shadow: var(--theme-scrollbar-thumb-shadow);
   &:vertical {
     image-rendering: pixelated;
     background-image: var(--scroll-thumb);
