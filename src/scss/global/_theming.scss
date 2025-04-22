@@ -17,8 +17,6 @@
   --dropdown-active: url("images/icons/dropdown-active.png");
   --checkmark: url("images/icons/checkmark.png");
   --checkmark-disabled: url("images/icons/checkmark-disabled.png");
-  --indicator-horizontal: url("images/icons/indicator-horizontal.png");
-  --indicator-rectangle-horizontal: url("images/icons/indicator-rectangle-horizontal.png");
   // TODO - load directly in html
   /* --scrollbar-background: url("images/icons/scrollbar-background.png"); */
   --scroll-background: url("images/icons/scroll-background.png");
@@ -153,6 +151,8 @@
     --close: url("images/icons/close.png");
     --close-hover: url("images/icons/close-hover.png");
     --close-active: url("images/icons/close-active.png");
+    --indicator-horizontal: url("images/icons/indicator-horizontal.png");
+    --indicator-rectangle-horizontal: url("images/icons/indicator-rectangle-horizontal.png");
   }
 
   &-dark {
@@ -210,6 +210,8 @@
     --close: url("images/icons/zune/close.png");
     --close-hover: url("images/icons/zune/close-hover.png");
     --close-active: url("images/icons/zune/close-active.png");
+    --indicator-horizontal: url("images/icons/zune/indicator-horizontal.png");
+    --indicator-rectangle-horizontal: url("images/icons/zune/indicator-rectangle-horizontal.png");
   }
 }
 
