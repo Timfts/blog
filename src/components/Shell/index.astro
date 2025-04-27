@@ -79,7 +79,7 @@ const feedPath = {
                 <a
                   class:list={["shell-back", { "shell-back--disabled": !defaultGoBack }]}
                   data-go-back
-                  href={defaultGoBack}
+                  href={defaultGoBack || "#"}
                   aria-disabled={!defaultGoBack}
                 >
                   <div class="shell-back-icon"></div>
