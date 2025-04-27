@@ -27,7 +27,8 @@ export function getPostsMap(allPosts: Post[]) {
 function ordenatePostsByUpdatedDate(posts: Post[]) {
   return posts.slice().sort((a, b) => {
     const aDate = a.data.updated_date || a.data.created_date;
-    const bDate = b.data.updated_date || b.data.updated_date;
+    const bDate = b.data.updated_date || b.data.created_date;
+
     return (bDate as any) - (aDate as any);
   });
 }
