@@ -1,25 +1,18 @@
 ---
 import Shell from "@components/Shell/index.astro";
-import i18n from "./i18n";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
+import i18n, { pathMap } from "./i18n";
 import GameRoot from "./ChromeDinosaur/GameRoot.astro";
 import PageTitle from "@components/PageTitle.astro";
 
 const lang = Astro.currentLocale as Lang;
-const { disclaimer, errorMessageDesk, errorMessageMobile } = i18n[lang];
+const { disclaimer, errorMessageDesk, errorMessageMobile, defaultGoBackPage } = i18n[lang];
 ---
 
-<Shell title={disclaimer} i18nPagePaths={getPageI18NPathMap("notFound")}>
+<Shell title={disclaimer} i18nPagePaths={pathMap} defaultGoBack={defaultGoBackPage}>
   <div class="not-found-disclaimer" data-fragment="not-found-disclaimer">
     <PageTitle>{disclaimer}</PageTitle>
-    <p
-      class="not-found-message not-found-message--desk"
-      set:html={errorMessageDesk}
-    />
-    <p
-      class="not-found-message not-found-message--mobile"
-      set:html={errorMessageMobile}
-    />
+    <p class="not-found-message not-found-message--desk" set:html={errorMessageDesk} />
+    <p class="not-found-message not-found-message--mobile" set:html={errorMessageMobile} />
   </div>
   <GameRoot />
 </Shell>

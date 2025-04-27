@@ -9,7 +9,7 @@ import { getProjectsByLanguage } from "@cms/collections/projects/helpers";
 import replicate from "@helpers/replicate";
 import learnings from "@content/_learnings.json";
 
-import i18n from "./i18n";
+import i18n, { pathMap } from "./i18n";
 import PageTitle from "@components/PageTitle.astro";
 
 const showFeatured = false;
@@ -22,7 +22,7 @@ const learningsList = learnings["learnings-list"];
 const featured = replicate(projects[1], 6);
 ---
 
-<Shell title={data.title} i18nPagePaths={getPageI18NPathMap("projects")}>
+<Shell title={data.title} i18nPagePaths={pathMap} defaultGoBack={data.defaultGoBackPage}>
   <div class="projects-page" data-fragment="projects-page">
     <PageTitle>{data.title}</PageTitle>
     {
@@ -42,11 +42,7 @@ const featured = replicate(projects[1], 6);
     <div class="all-projects">
       <div class="all-projects-head">
         {showFeatured && <h2>{data.allProjects}</h2>}
-        <Button
-          data-filter
-          data-show={data.showFilters}
-          data-hide={data.hideFilters}
-        >
+        <Button data-filter data-show={data.showFilters} data-hide={data.hideFilters}>
           {data.showFilters}
         </Button>
       </div>
@@ -56,13 +52,7 @@ const featured = replicate(projects[1], 6);
             {
               learningsList.map(({ slug, label }) => (
                 <div class="learning-filter">
-                  <input
-                    class="learning-filter-check"
-                    type="checkbox"
-                    id={slug}
-                    name="learnings"
-                    value={slug}
-                  />
+                  <input class="learning-filter-check" type="checkbox" id={slug} name="learnings" value={slug} />
                   <label class="learning-filter-label" for={slug}>
                     {label}
                   </label>

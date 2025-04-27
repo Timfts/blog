@@ -1,3 +1,7 @@
+import { getPageI18NPathMap } from "@helpers/server/i18n";
+
+export const pathMap = getPageI18NPathMap("home");
+
 const i18n = {
   en: {
     mainTitle: "Hi There!",
@@ -21,8 +25,7 @@ const i18n = {
   },
   "pt-br": {
     mainTitle: "Olá!",
-    mainImgAlt:
-      "Imagem animada de um homem chacoalhando o monitor de um computador antigo",
+    mainImgAlt: "Imagem animada de um homem chacoalhando o monitor de um computador antigo",
     introParagraphs: [
       `Sou programador e músico, apaixonado por misturar tecnologia e arte. <br />
         Atualmente trabalhando como <del>cientista maluco</del> engenheiro de software, 

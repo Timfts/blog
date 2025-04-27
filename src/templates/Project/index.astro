@@ -12,12 +12,7 @@ type Props = {
 };
 
 const lang = Astro.currentLocale as Lang;
-const {
-  projectDescriptionLabel,
-  projectLearningsLabel,
-  projectNameLabel,
-  projectYearLabel,
-} = i18n[lang];
+const { projectDescriptionLabel, projectLearningsLabel, projectNameLabel, projectYearLabel, defaultGoBackPage } = i18n[lang];
 
 const { i18nPagePaths, entry } = Astro.props;
 const { Content } = await entry.render();
@@ -44,22 +39,15 @@ const stats = [
 const getLogoAlt = (title: string) => `${title} logo`;
 ---
 
-<Shell title={entry.data.title} i18nPagePaths={i18nPagePaths}>
+<Shell title={entry.data.title} i18nPagePaths={i18nPagePaths} defaultGoBack={defaultGoBackPage}>
   <div class="project-heading">
     <PageTitle>{entry.data.title}</PageTitle>
     <div class="project-stats">
       {
         entry.data.thumbnail && (
           <div class="project-stats-logo">
-            <ImageLoader
-              style={{ height: "100%", flex: 1 }}
-              alt={getLogoAlt(entry.data.title)}
-            >
-              <img
-                class="project-logo-img"
-                src={entry.data.thumbnail}
-                alt={getLogoAlt(entry.data.title)}
-              />
+            <ImageLoader style={{ height: "100%", flex: 1 }} alt={getLogoAlt(entry.data.title)}>
+              <img class="project-logo-img" src={entry.data.thumbnail} alt={getLogoAlt(entry.data.title)} />
             </ImageLoader>
           </div>
         )

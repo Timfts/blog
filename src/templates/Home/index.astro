@@ -8,7 +8,7 @@ import postTopics from "@content/_post-topics.json";
 import pagePaths from "@constants/pagePaths";
 
 import introImg from "./assets/intro-mobile-new.webp";
-import i18n from "./i18n";
+import i18n, { pathMap } from "./i18n";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
 import PageTitle from "@components/PageTitle.astro";
 
@@ -37,7 +37,7 @@ const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
 });
 ---
 
-<Shell i18nPagePaths={getPageI18NPathMap("home")}>
+<Shell i18nPagePaths={pathMap}>
   <div class="main-page" data-fragment="main-page">
     <section class="presentation">
       <PageTitle>{pageData.mainTitle}</PageTitle>

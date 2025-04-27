@@ -4,7 +4,7 @@ import PostsList from "@components/PostsList/index.astro";
 import PostListItem from "@components/PostsList/Item.astro";
 import PostsSearch from "@components/PostsList/Search.astro";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
+import pagePaths from "@constants/pagePaths";
 
 type Props = {
   topic: {
@@ -24,18 +24,26 @@ const filteredPosts = allPosts.filter((post) => {
   return postTopics.includes(topic.slug);
 });
 
-const title = {
-  en: `Topic "${topic.label}"`,
-  "pt-br": `Tópico "${topic.label}"`,
-}[lang];
-
 const i18nMap: I18NPagePaths = {
   "pt-br": `/pt-br/posts/topico/${topic.slug}`,
   en: `/posts/topic/${topic.slug}`,
 };
+
+const i18n = {
+  en: {
+    title: `Topic "${topic.label}"`,
+    defaultGoBackPage: pagePaths.en.posts,
+  },
+  "pt-br": {
+    title: `Tópico "${topic.label}"`,
+    defaultGoBackPage: pagePaths["pt-br"].posts,
+  },
+}[lang];
+
+const { title, defaultGoBackPage } = i18n;
 ---
 
-<Shell title={title} i18nPagePaths={i18nMap}>
+<Shell title={title} i18nPagePaths={i18nMap} defaultGoBack={defaultGoBackPage}>
   <div class="posts-topic">
     <PostsSearch>
       <h2 class="topic-title">"{topic.label}" posts</h2>

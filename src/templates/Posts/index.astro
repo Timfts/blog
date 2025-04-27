@@ -1,25 +1,17 @@
 ---
 import Shell from "@components/Shell/index.astro";
+import i18n, { pathMap } from "./i18n";
 import PostsList from "@components/PostsList/index.astro";
 import PostListItem from "@components/PostsList/Item.astro";
 import PostsSearch from "@components/PostsList/Search.astro";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
-import pagePaths from "@constants/pagePaths";
 
 const lang = Astro.currentLocale as Lang;
 const allPosts = await getPostsByLang(lang);
-const i18n = {
-  en: {
-    defaultGoBackPage: pagePaths.en.home,
-  },
-  "pt-br": {
-    defaultGoBackPage: pagePaths["pt-br"].home,
-  },
-}[lang];
+const { defaultGoBackPage } = i18n[lang];
 ---
 
-<Shell title="Posts" i18nPagePaths={getPageI18NPathMap("posts")} defaultGoBack={i18n.defaultGoBackPage}>
+<Shell title="Posts" i18nPagePaths={pathMap} defaultGoBack={defaultGoBackPage}>
   <div class="posts">
     <PostsSearch showTopics>
       <PostsList>
