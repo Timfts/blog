@@ -25,6 +25,48 @@
       "label": "Creative Coding",
       "label-ptbr": "Programação Criativa",
       "color": "#f70000"
+    },
+    {
+      "slug": "life",
+      "label": "Life",
+      "label-ptbr": "Vida",
+      "color": "#ffda44"
+    },
+    {
+      "slug": "music",
+      "label": "Music",
+      "label-ptbr": "Música",
+      "color": "#4f8caf"
+    },
+    {
+      "slug": "typescript",
+      "label": "Typescript",
+      "label-ptbr": "Typescript",
+      "color": "#2ca5ff"
+    },
+    {
+      "slug": "javascript",
+      "label": "Javascript",
+      "label-ptbr": "Javascript",
+      "color": "#ffe13f"
+    },
+    {
+      "slug": "readings",
+      "label": "Readings",
+      "label-ptbr": "Leituras",
+      "color": "#63319e"
+    },
+    {
+      "slug": "cloud",
+      "label": "Cloud",
+      "label-ptbr": "Cloud",
+      "color": "#f29a19"
+    },
+    {
+      "slug": "ai",
+      "label": "AI",
+      "label-ptbr": "IA",
+      "color": "#e02a91"
     }
   ]
 }

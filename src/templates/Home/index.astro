@@ -4,6 +4,7 @@ import Image from "@components/Image/index.astro";
 import PostsList from "@components/PostsList/index.astro";
 import PostListItem from "@components/PostsList/Item.astro";
 import { getPageI18NPathMap } from "@helpers/server/i18n";
+import postTopics from "@content/_post-topics.json";
 import pagePaths from "@constants/pagePaths";
 
 import introImg from "./assets/intro-mobile-new.webp";
@@ -18,6 +19,22 @@ const { posts: postsPath } = usedPagePaths;
 
 const allPosts = await getPostsByLang(currentLang);
 const latestUpdates = allPosts.slice(0, 5);
+
+const formattedTopics = postTopics["topics-list"]
+  .map((topic) => {
+    return {
+      label: postTopics["topics-list"].find(({ slug }) => slug === topic.slug)?.[pageData.topicLabelProperty],
+      path: `${postsPath}/topic/${topic.slug}`,
+    };
+  })
+  .sort((a, b) => a.label.localeCompare(b.label));
+
+const topicsColumnsNumber = 3;
+const topicsPerColumn = Math.ceil(formattedTopics.length / topicsColumnsNumber);
+
+const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
+  return formattedTopics.slice(i * topicsPerColumn, (i + 1) * topicsPerColumn);
+});
 ---
 
 <Shell i18nPagePaths={getPageI18NPathMap("home")}>
@@ -26,19 +43,10 @@ const latestUpdates = allPosts.slice(0, 5);
       <PageTitle>{pageData.mainTitle}</PageTitle>
       <div class="presentation-panels">
         <div>
-          {
-            pageData.introParagraphs.map((paragraph) => (
-              <p set:html={paragraph} />
-            ))
-          }
+          {pageData.introParagraphs.map((paragraph) => <p set:html={paragraph} />)}
         </div>
         <div class="main-image-holder">
-          <Image
-            src={introImg}
-            class="main-image main-image--desk"
-            alt={pageData.mainImgAlt}
-            loading="eager"
-          />
+          <Image src={introImg} class="main-image main-image--desk" alt={pageData.mainImgAlt} loading="eager" />
         </div>
       </div>
     </section>
@@ -48,6 +56,22 @@ const latestUpdates = allPosts.slice(0, 5);
         {latestUpdates.map((post) => <PostListItem post={post} />)}
       </PostsList>
       <a href={postsPath} class="more-posts-link">...{pageData.morePosts}</a>
+    </section>
+    <section class="post-topics">
+      <h2 class="section-title">{pageData.categoriesTitle}</h2>
+      <div class="topics-columns">
+        {
+          topicsColumns.map((column, index) => (
+            <div class="topics-column">
+              {column.map((topic) => (
+                <a class="post-topic-link" href={topic.path}>
+                  {topic.label}
+                </a>
+              ))}
+            </div>
+          ))
+        }
+      </div>
     </section>
   </div>
 </Shell>

@@ -33,8 +33,12 @@
   height: auto;
 }
 
-.latest-posts {
+.latest-posts,
+.post-topics {
   margin-top: 50px;
+}
+
+.latest-posts {
   border-top: 1px solid var(--border-color);
   padding-top: 40px;
 }
@@ -43,4 +47,24 @@
   display: block;
   text-align: center;
   text-decoration: none;
+}
+
+.topics-columns {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+
+  @include belowTurningPoint() {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.topics-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-topic-link {
+  margin-bottom: 5px;
 }

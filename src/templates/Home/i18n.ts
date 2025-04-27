@@ -16,6 +16,8 @@ const i18n = {
     ],
     latestPostsTitle: "Latest updates",
     morePosts: "see all",
+    categoriesTitle: "Categories",
+    topicLabelProperty: "label",
   },
   "pt-br": {
     mainTitle: "Olá!",
@@ -35,6 +37,8 @@ const i18n = {
     ],
     latestPostsTitle: "Últimas atualizações",
     morePosts: "ver todos",
+    categoriesTitle: "Categorias",
+    topicLabelProperty: "label-ptbr",
   },
 };
 

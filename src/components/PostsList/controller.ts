@@ -1,8 +1,4 @@
-import {
-  addSearchQuery,
-  getSearchQuery,
-  removeSearchQuery,
-} from "@helpers/navigation";
+import { addSearchQuery, getSearchQuery, removeSearchQuery } from "@helpers/navigation";
 import elementController from "@lib/elementController";
 
 elementController(
@@ -31,8 +27,7 @@ elementController(
     function checkQueries() {
       const searchQueryValue = getSearchQuery(searchQuery);
       const topicsSearchValue = getSearchQuery(topicsQuery);
-      const shouldFilterByTopics =
-        showTopics && validateTopicsQuery(topicsSearchValue);
+      const shouldFilterByTopics = showTopics && validateTopicsQuery(topicsSearchValue);
 
       if (searchQueryValue) {
         searchInput.value = searchQueryValue;
@@ -61,25 +56,13 @@ elementController(
 
     function handleFiltering() {
       const searchValue = searchInput.value;
-      const topicsValues = topicsChecks
-        .filter((topic) => topic.checked)
-        .map((topic) => topic.value);
+      const topicsValues = topicsChecks.filter((topic) => topic.checked).map((topic) => topic.value);
 
-      searchValue
-        ? addSearchQuery(searchQuery, searchValue)
-        : removeSearchQuery(searchQuery);
+      searchValue ? addSearchQuery(searchQuery, searchValue) : removeSearchQuery(searchQuery);
+      topicsValues.length ? addSearchQuery(topicsQuery, topicsValues.join(",")) : removeSearchQuery(topicsQuery);
 
-      topicsValues.length
-        ? addSearchQuery(topicsQuery, topicsValues.join(","))
-        : removeSearchQuery(topicsQuery);
-
-      const searchPosts = searchValue
-        ? filterPostsByText(searchValue, originalPosts)
-        : originalPosts;
-
-      const withTopics = topicsValues.length
-        ? filterPostsByTopics(topicsValues, searchPosts)
-        : searchPosts;
+      const searchPosts = searchValue ? filterPostsByText(searchValue, originalPosts) : originalPosts;
+      const withTopics = topicsValues.length ? filterPostsByTopics(topicsValues, searchPosts) : searchPosts;
 
       renderPosts(withTopics, searchValue);
     }
@@ -88,10 +71,7 @@ elementController(
       const filteredPosts = posts.filter((post) => {
         const title = post?.dataset?.postTitle;
         const excerpt = post?.dataset?.postExcerpt;
-        return (
-          title.toLowerCase().includes(searchText) ||
-          excerpt.toLowerCase().includes(searchText)
-        );
+        return title.toLowerCase().includes(searchText) || excerpt.toLowerCase().includes(searchText);
       });
 
       return filteredPosts;
@@ -138,9 +118,7 @@ elementController(
     }
 
     function renderNotFound() {
-      const notFoundTemplate = query(
-        "#not-found-template"
-      ) as HTMLTemplateElement;
+      const notFoundTemplate = query("#not-found-template") as HTMLTemplateElement;
       const instance = notFoundTemplate.content.cloneNode(true);
       list.appendChild(instance);
     }
