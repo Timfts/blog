@@ -55,7 +55,7 @@ elementController(
     }
 
     function handleFiltering() {
-      const searchValue = searchInput.value;
+      const searchValue = (searchInput.value || "").toLowerCase().trim();
       const topicsValues = topicsChecks.filter((topic) => topic.checked).map((topic) => topic.value);
 
       searchValue ? addSearchQuery(searchQuery, searchValue) : removeSearchQuery(searchQuery);

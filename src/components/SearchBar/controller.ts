@@ -20,7 +20,8 @@ elementController("search-bar", ({ query, emit, root }) => {
 
     searchField.blur();
     searchField.value = "";
+    const fmtFieldValue = fieldValue.toLowerCase().trim();
 
-    navigate(`/posts?search=${fieldValue}`);
+    navigate(`/posts?search=${fmtFieldValue}`);
   }
 });
