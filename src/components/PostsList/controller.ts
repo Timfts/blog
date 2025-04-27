@@ -109,8 +109,6 @@ elementController(
     }
 
     function emphasizeText(searchText: string, text: string) {
-      const isWord = searchText.trim().length >= 3;
-      if (!isWord) return text;
       const regex = new RegExp(searchText, "gi");
       return text.replace(regex, (match) => {
         return `<strong>${match}</strong>`;

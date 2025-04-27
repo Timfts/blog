@@ -39,12 +39,12 @@ const postDate = `| ${fmtDate(created_date, currentLang)}${updated_date ? ` (${i
   data-post-excerpt={searcheble && excerpt}
   data-topics={searcheble && JSON.stringify(topics)}
 >
-  <a href={postPath} data-title class="post-link-link" target={external_link && "__blank"}>
-    {title}
+  <a href={postPath} class="post-link-link" target={external_link && "__blank"}>
+    <span data-title>{title}</span>
     {external_link && <span>&#x2197;</span>}
   </a>
-  <p class="post-link-excerpt" data-excerpt>
-    {fmtExcerpt}
+  <p class="post-link-excerpt">
+    <span data-excerpt>{fmtExcerpt}</span>
     <span class="post-link-date">{postDate}</span>
   </p>
   <div class="post-link-categories">
