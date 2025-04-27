@@ -2,12 +2,14 @@ const i18n = {
   en: {
     topicsTitle: "topics",
     searchPlaceholder: "Search",
-    searchAriaLabel: "Search posts"
+    searchAriaLabel: "Search posts",
+    updatedLabel: "Updated",
   },
   "pt-br": {
     topicsTitle: "topicos",
     searchPlaceholder: "Buscar",
-    searchAriaLabel: "Buscar posts"
+    searchAriaLabel: "Buscar posts",
+    updatedLabel: "Atualizado",
   },
 };
 

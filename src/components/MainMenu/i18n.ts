@@ -3,6 +3,13 @@ import pagePaths from "src/constants/pagePaths";
 const enPaths = pagePaths.en;
 const ptPaths = pagePaths["pt-br"];
 
+type MenuItem = {
+  label: string;
+  path: string;
+  iconAlt: string;
+  target?: string;
+};
+
 const i18n = {
   en: {
     mainProfileAlt: "Tim's Profile image",
@@ -38,6 +45,7 @@ const i18n = {
         label: "RSS",
         path: enPaths.feedRSS,
         iconAlt: "RSS icon",
+        target: "_blank",
       },
       music: {
         label: "Playlists",
@@ -49,7 +57,7 @@ const i18n = {
         path: "#",
         iconAlt: "Icon of a gear",
       },
-    },
+    } as Record<string, MenuItem>,
   },
   "pt-br": {
     mainProfileAlt: "Imagem de perfil de Tim",
@@ -85,6 +93,7 @@ const i18n = {
         label: "RSS",
         path: ptPaths.feedRSS,
         iconAlt: "Icone de RSS",
+        target: "_blank",
       },
       music: {
         label: "Playlists",
@@ -96,7 +105,7 @@ const i18n = {
         path: "",
         iconAlt: "Icone de uma engrenagem",
       },
-    },
+    } as Record<string, MenuItem>,
   },
 };
 

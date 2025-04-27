@@ -38,7 +38,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
   <div class="menu-body">
     <menu class="menu-list">
       {
-        menuItemsEntries.map(([key, { label, path, iconAlt }]) => (
+        menuItemsEntries.map(([key, { label, path, iconAlt, target }]) => (
           <li class="menu-content-item" id={`menu-item-${key}`}>
             <a
               class:list={[
@@ -47,6 +47,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
                   "menu-content-link--active": path === currentPage,
                 },
               ]}
+              target={target}
               href={path}
             >
               <Picture

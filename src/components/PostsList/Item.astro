@@ -1,5 +1,6 @@
 ---
 import { CollectionEntry } from "astro:content";
+import { fmtDate } from "@helpers/date";
 import pagePaths from "@constants/pagePaths";
 import i18n from "./i18n";
 
@@ -13,7 +14,15 @@ const { post, searcheble } = Astro.props;
 const currentLang = Astro.currentLocale as Lang;
 const usedPagePaths = pagePaths[currentLang];
 const { posts: postsPath, postTopics: postTopicsPath } = usedPagePaths;
-const { page_url, title, excerpt, topics, external_link } = post.data;
+const {
+  page_url,
+  title,
+  excerpt,
+  topics,
+  external_link,
+  created_date,
+  updated_date,
+} = post.data;
 const { topicsTitle } = i18n[currentLang];
 
 const maxExcerptSize = 200;
@@ -26,6 +35,8 @@ const fmtTopics = (topics || []).map((topic) => ({
   topic,
   path: `${postTopicsPath}/${topic}`,
 }));
+
+const postDate = `| ${fmtDate(created_date, currentLang)}${updated_date ? ` (${i18n[currentLang].updatedLabel}: ${fmtDate(updated_date as Date, currentLang)})` : ""}`;
 ---
 
 <li
@@ -34,11 +45,14 @@ const fmtTopics = (topics || []).map((topic) => ({
   data-post-excerpt={searcheble && excerpt}
   data-topics={searcheble && JSON.stringify(topics)}
 >
-  <a href={postPath} class="post-link-link" target={external_link && "__blank"}>
+  <a href={postPath} data-title class="post-link-link" target={external_link && "__blank"}>
     {title}
     {external_link && <span>&#x2197;</span>}
   </a>
-  <p class="post-link-excerpt">{fmtExcerpt}</p>
+  <p class="post-link-excerpt" data-excerpt>
+    {fmtExcerpt}
+    <span class="post-link-date">{postDate}</span>
+  </p>
   <div class="post-link-categories">
     <span class="post-link-cat-title">{topicsTitle}:</span>
     {
@@ -55,34 +69,5 @@ const fmtTopics = (topics || []).map((topic) => ({
 </li>
 
 <style lang="scss">
-  .post-link {
-    margin-bottom: 18px;
-    max-width: 650px;
-    &-link {
-      font-size: var(--txt-title-link);
-      text-decoration: underline;
-    }
-
-    &-excerpt {
-      font-size: var(--body-text);
-      line-height: 1;
-    }
-
-    &-categories {
-      font-size: var(--txt-small);
-      display: flex;
-      gap: 7px;
-    }
-
-    &-cat-title,
-    &-cat-link {
-      color: var(--gray-30);
-    }
-
-    &-path {
-      font-size: var(--txt-small);
-      text-decoration: none;
-      color: var(--theme-post-url-color);
-    }
-  }
+  @import "./styles.scss";
 </style>

@@ -81,11 +81,11 @@ elementController(
         ? filterPostsByTopics(topicsValues, searchPosts)
         : searchPosts;
 
-      renderPosts(withTopics);
+      renderPosts(withTopics, searchValue);
     }
 
     function filterPostsByText(searchText: string, posts: HTMLLIElement[]) {
-      return posts.filter((post) => {
+      const filteredPosts = posts.filter((post) => {
         const title = post?.dataset?.postTitle;
         const excerpt = post?.dataset?.postExcerpt;
         return (
@@ -93,6 +93,8 @@ elementController(
           excerpt.toLowerCase().includes(searchText)
         );
       });
+
+      return filteredPosts;
     }
 
     function filterPostsByTopics(topics: string[], posts: HTMLLIElement[]) {
@@ -102,7 +104,7 @@ elementController(
       });
     }
 
-    function renderPosts(posts: HTMLLIElement[]) {
+    function renderPosts(posts: HTMLLIElement[], searchText?: string) {
       list.innerHTML = "";
       if (!posts.length) {
         renderNotFound();
@@ -110,7 +112,28 @@ elementController(
       }
 
       posts.forEach((post) => {
-        list.appendChild(post);
+        const clonnedNode = post.cloneNode(true) as HTMLLIElement;
+        const formattedPost = applySearchHighlight(searchText, clonnedNode);
+        list.appendChild(formattedPost);
+      });
+    }
+
+    function applySearchHighlight(searchText: string, post: HTMLLIElement) {
+      if (!searchText) return post;
+
+      const title = post?.querySelector("[data-title]");
+      const excerpt = post?.querySelector("[data-excerpt]");
+      title.innerHTML = emphasizeText(searchText, title.innerHTML);
+      excerpt.innerHTML = emphasizeText(searchText, excerpt.innerHTML);
+      return post;
+    }
+
+    function emphasizeText(searchText: string, text: string) {
+      const isWord = searchText.trim().length >= 3;
+      if (!isWord) return text;
+      const regex = new RegExp(searchText, "gi");
+      return text.replace(regex, (match) => {
+        return `<strong>${match}</strong>`;
       });
     }
 

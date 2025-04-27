@@ -1,0 +1,37 @@
+.post-link {
+  margin-bottom: 18px;
+  max-width: 650px;
+  &-link {
+    font-size: var(--txt-title-link);
+    text-decoration: underline;
+  }
+
+  &-excerpt {
+    font-size: var(--body-text);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  &-date {
+    font-size: var(--txt-xsmall);
+    color: var(--gray-30);
+    margin-bottom: 5px;
+  }
+
+  &-categories {
+    font-size: var(--txt-small);
+    display: flex;
+    gap: 7px;
+  }
+
+  &-cat-title,
+  &-cat-link {
+    color: var(--gray-30);
+  }
+
+  &-path {
+    font-size: var(--txt-small);
+    text-decoration: none;
+    color: var(--theme-post-url-color);
+  }
+}
