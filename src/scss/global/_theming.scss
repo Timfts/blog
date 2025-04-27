@@ -3,6 +3,8 @@
   --radio-dot-disabled: url("/images/icons/radio-dot-disabled.png");
   --scroll-background: url("/images/icons/scroll-background.png");
   --scroll-background-horizontal: url("/images/icons/scroll-background-horizontal.png");
+
+  --back-btn-disabled: url("/images/icons/back-disabled.png");
 }
 
 .text-size-0 {
@@ -84,8 +86,7 @@
     --theme-window-bt: #0831d9;
     --theme-window-bl: #0831d9;
     --theme-window-br: #001ea0;
-    --theme-window-bshadow: inset -1px -1px #00138c, inset 1px 1px #0831d9,
-      inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda,
+    --theme-window-bshadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda,
       inset 3px 3px #0855dd;
     --theme-default-surface: var(--yellow-light);
     --theme-background: #fff;
@@ -102,8 +103,7 @@
     --theme-input-outline-color: #7f9db9;
     --theme-legend-color: #0046d5;
     --theme-tab-bg: linear-gradient(180deg, #fcfcfe, #f4f3ee);
-    --theme-tab-bshadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe,
-      1px 2px 2px 0 hsla(53, 15%, 78%, 0.75);
+    --theme-tab-bshadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0 hsla(53, 15%, 78%, 0.75);
     --theme-surface: var(--yellow-light);
     --theme-fieldset-border: #d0d0bf;
     --theme-highlight-color: #2267cb;
@@ -111,16 +111,8 @@
     --theme-scrollbar-thumb-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
 
     --radio-dot: url("/images/icons/radio-dot.png");
-    --radio-bg-active: linear-gradient(
-      135deg,
-      rgba(176, 176, 167, 1) 0%,
-      rgba(227, 225, 210, 1) 100%
-    );
-    --radio-bg: linear-gradient(
-      135deg,
-      rgba(220, 220, 215, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    --radio-bg-active: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);
+    --radio-bg: linear-gradient(135deg, rgba(220, 220, 215, 1) 0%, rgba(255, 255, 255, 1) 100%);
     --radio-border: 1px solid #1d5281;
     --radio-border-disabled: 1px solid #cac8bb;
 
@@ -140,22 +132,15 @@
     --dropdown-active: url("/images/icons/dropdown-active.png");
     --checkmark: url("/images/icons/checkmark.png");
     --menu: url("/images/icons/menu.png");
+    --back-btn: url("/images/icons/back.png");
   }
 
   &-dark {
-    --theme-top-window: linear-gradient(
-      to bottom,
-      #777777 0%,
-      #333333 45%,
-      #101010 50%,
-      #000000 60%,
-      #0f0f0f 75%
-    );
+    --theme-top-window: linear-gradient(to bottom, #777777 0%, #333333 45%, #101010 50%, #000000 60%, #0f0f0f 75%);
     --theme-window-bt: #404040;
     --theme-window-bl: #404040;
     --theme-window-br: #202020;
-    --theme-window-bshadow: inset -1px -1px #0d0d0d, inset 1px 1px #1a1a1a,
-      inset -2px -2px #131313, inset 2px 2px #262626, inset -3px -3px #1e1e1e,
+    --theme-window-bshadow: inset -1px -1px #0d0d0d, inset 1px 1px #1a1a1a, inset -2px -2px #131313, inset 2px 2px #262626, inset -3px -3px #1e1e1e,
       inset 3px 3px #333333;
     --theme-default-surface: #161616;
 
@@ -181,16 +166,8 @@
     --theme-scrollbar-thumb-shadow: inset -3px 0 #d4d0c8, inset 1px 1px #a79d94;
 
     --radio-dot: url("/images/icons/zune/radio-dot.png");
-    --radio-bg-active: linear-gradient(
-      135deg,
-      rgba(176, 176, 167, 1) 0%,
-      rgba(227, 225, 210, 1) 100%
-    );
-    --radio-bg: linear-gradient(
-      135deg,
-      rgb(177, 177, 177) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    --radio-bg-active: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);
+    --radio-bg: linear-gradient(135deg, rgb(177, 177, 177) 0%, rgba(255, 255, 255, 1) 100%);
     --radio-border: 2px solid rgb(37, 37, 37);
     --radio-border-disabled: 1px solid #cac8bb;
 
@@ -210,6 +187,7 @@
     --dropdown-active: url("/images/icons/zune/dropdown-active.png");
     --checkmark: url("/images/icons/zune/checkmark.png");
     --menu: url("/images/icons/zune/menu.png");
+    --back-btn: url("/images/icons/zune/back.png");
   }
 }
 

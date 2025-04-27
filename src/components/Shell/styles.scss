@@ -10,7 +10,7 @@
     width: 100%;
     position: relative;
     flex: 1;
-    z-index:1;
+    z-index: 1;
 
     @include aboveTurningPoint() {
       display: flex;
@@ -32,25 +32,53 @@
   &-page {
     margin: 100px 10px 10px 10px;
     background-color: var(--theme-background);
-    padding: 40px 20px;
     position: relative;
     max-width: 890px;
     overflow: hidden;
 
     @include aboveTurningPoint() {
       margin: 20px 0;
-      padding: 50px;
-      padding-bottom: 30px;
     }
   }
 
-  &-i18n-holder {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+  &-page-heading {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-page-container {
+    padding: 0 50px 30px;
+    @include belowTurningPoint() {
+      padding: 0px 20px 40px;
+    }
   }
 
   &-footer {
     padding-top: 50px;
+  }
+
+  &-back {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--gray-30);
+    font-size: var(--txt-xsmall);
+
+    &--disabled {
+      cursor: not-allowed;
+      .shell-back-icon {
+        background-image: var(--back-btn-disabled);
+      }
+    }
+  }
+
+  &-back-icon {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: var(--back-btn);
+    background-size: cover;
   }
 }

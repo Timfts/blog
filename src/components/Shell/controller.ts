@@ -10,6 +10,7 @@ elementController(
   "shell",
   ({ root, query, on }) => {
     const playerSlot = query("#music-player-slot");
+    const goBackBtn = query("[data-go-back]") as HTMLButtonElement;
 
     setup();
 
@@ -20,6 +21,15 @@ elementController(
       on(events.OPEN_MEDIA_PLAYER, handleLoadMusicPlayer);
       on(events.CLOSE_MEDIA_PLAYER, handleCloseMusicPlayer);
       on("change", handleLangChange);
+
+      if (goBackBtn) goBackBtn.addEventListener("click", handleGoBack);
+    }
+
+    function handleGoBack(e: Event) {
+      e.preventDefault();
+      const isDisabled = goBackBtn.ariaDisabled === "true";
+      if (isDisabled) return;
+      window.history.back();
     }
 
     function handleLangChange(e: Event) {
