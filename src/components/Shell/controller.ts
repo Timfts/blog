@@ -11,6 +11,7 @@ elementController(
   ({ root, query, on }) => {
     const playerSlot = query("#music-player-slot");
     const goBackBtn = query("[data-go-back]") as HTMLButtonElement;
+    const themeToggleBtn = query("[data-theme-toggle]") as HTMLButtonElement;
 
     setup();
 
@@ -23,6 +24,7 @@ elementController(
       on("change", handleLangChange);
 
       if (goBackBtn) goBackBtn.addEventListener("click", handleGoBack);
+      themeToggleBtn.addEventListener("click", handleThemeToggle);
     }
 
     function handleGoBack(e: Event) {
@@ -40,6 +42,12 @@ elementController(
       if (!isLangChange) return;
       const lang = target.value as Lang;
       SettingsService.setPref("lang", lang);
+    }
+
+    function handleThemeToggle(e: Event) {
+      const currentTheme = SettingsService.getCurrentPreferences().theme || "default";
+      const newTheme = currentTheme === "default" ? "dark" : "default";
+      SettingsService.setPref("theme", newTheme);
     }
 
     async function handleLoadMusicPlayer() {

@@ -1,8 +1,4 @@
-import {
-  addSearchQuery,
-  hasSearchQuery,
-  removeSearchQuery,
-} from "@helpers/navigation";
+import { addSearchQuery, hasSearchQuery, removeSearchQuery } from "@helpers/navigation";
 import elementController from "@lib/elementController";
 import SettingsService from "@services/Settings";
 import { events } from "src/constants";
@@ -16,7 +12,6 @@ elementController("settings-window", ({ root, on, query }) => {
   function onStart() {
     setupEvents();
     if (hasSearchQuery(settingsQuery)) openSettings();
-    loadCurrentPreferences();
   }
 
   function setupEvents() {
@@ -29,6 +24,7 @@ elementController("settings-window", ({ root, on, query }) => {
   function openSettings() {
     root.style.display = "block";
     addSearchQuery(settingsQuery, "open");
+    loadCurrentPreferences();
   }
 
   function closeSettings() {
@@ -65,8 +61,7 @@ elementController("settings-window", ({ root, on, query }) => {
     const field = fieldRoot?.name;
     if (!field) return;
     const formdata = new FormData(settingsForm);
-    const value =
-      fieldRoot.type === "checkbox" ? fieldRoot.checked : formdata.get(field);
+    const value = fieldRoot.type === "checkbox" ? fieldRoot.checked : formdata.get(field);
 
     SettingsService.setPref(field, value);
   }

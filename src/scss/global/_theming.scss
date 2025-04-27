@@ -109,6 +109,7 @@
     --theme-highlight-color: #2267cb;
     --theme-scrollbar-thumb-bg: #c8d6fb;
     --theme-scrollbar-thumb-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
+    --theme-selector-bg: #8ac8ef;
 
     --radio-dot: url("/images/icons/radio-dot.png");
     --radio-bg-active: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);
@@ -133,6 +134,7 @@
     --checkmark: url("/images/icons/checkmark.png");
     --menu: url("/images/icons/menu.png");
     --back-btn: url("/images/icons/back.png");
+    --theme-icn: url("/images/icons/theme-icon.png");
   }
 
   &-dark {
@@ -164,6 +166,7 @@
     --theme-highlight-color: #595959;
     --theme-scrollbar-thumb-bg: #e7e3d6;
     --theme-scrollbar-thumb-shadow: inset -3px 0 #d4d0c8, inset 1px 1px #a79d94;
+    --theme-selector-bg: #000149;
 
     --radio-dot: url("/images/icons/zune/radio-dot.png");
     --radio-bg-active: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);
@@ -188,6 +191,7 @@
     --checkmark: url("/images/icons/zune/checkmark.png");
     --menu: url("/images/icons/zune/menu.png");
     --back-btn: url("/images/icons/zune/back.png");
+    --theme-icn: url("/images/icons/zune/theme-icon.png");
   }
 }
 

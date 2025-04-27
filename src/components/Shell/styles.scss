@@ -48,6 +48,43 @@
     align-items: center;
   }
 
+  &-heading-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    @include belowTurningPoint() {
+      gap: 15px;
+    }
+  }
+
+  &-theme-toggle {
+    height: 35px;
+    min-width: 35px;
+    width: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-theme-toggle-bg {
+    background-color: var(--theme-selector-bg);
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-theme-toggle-icon {
+    background-image: var(--theme-icn);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   &-page-container {
     padding: 0 50px 30px;
     @include belowTurningPoint() {

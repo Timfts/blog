@@ -8,6 +8,7 @@ import LanguageSelector from "@components/LanguageSelector.astro";
 import i18n from "./i18n";
 import { fade } from "astro:transitions";
 import LoadThemeScript from "./LoadThemeScript.astro";
+import Button from "@components/Button.astro";
 
 export type Props = {
   title?: string;
@@ -90,6 +91,11 @@ const feedPath = {
                   <LanguageSelector />
                   <script is:inline id="i18nMap" type="application/json" set:html={stringfiedI18NMap} />
                 </div>
+                <Button class="shell-theme-toggle" aria-label="Toggle theme" data-theme-toggle>
+                  <div class="shell-theme-toggle-bg">
+                    <div class="shell-theme-toggle-icon"></div>
+                  </div>
+                </Button>
               </div>
             </div>
             <div class="shell-page-container">
