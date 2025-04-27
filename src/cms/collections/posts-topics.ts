@@ -29,6 +29,11 @@ const postTopics = {
           widget: "string",
         },
         {
+          label: "Label (PT-BR)",
+          name: "label-ptbr",
+          widget: "string",
+        },
+        {
           label: "Color",
           name: "color",
           widget: "color",
@@ -40,6 +45,7 @@ const postTopics = {
           widget: "image",
           allow_multiple: false,
           choose_url: false,
+          required: false,
         },
       ],
     },

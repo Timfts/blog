@@ -41,7 +41,6 @@ async function getAllPosts(externalPosts = true) {
 
   const orderedPosts = ordenatePostsByUpdatedDate(blogPosts);
 
-  //  console.log(orderedPosts)
   if (!externalPosts) {
     return orderedPosts.filter((post) => !post.data.external_link);
   }

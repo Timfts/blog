@@ -1,6 +1,7 @@
 ---
 import { CollectionEntry } from "astro:content";
 import { fmtDate } from "@helpers/date";
+import postTopics from "@content/_post-topics.json";
 import pagePaths from "@constants/pagePaths";
 import i18n from "./i18n";
 
@@ -14,27 +15,20 @@ const { post, searcheble } = Astro.props;
 const currentLang = Astro.currentLocale as Lang;
 const usedPagePaths = pagePaths[currentLang];
 const { posts: postsPath, postTopics: postTopicsPath } = usedPagePaths;
-const {
-  page_url,
-  title,
-  excerpt,
-  topics,
-  external_link,
-  created_date,
-  updated_date,
-} = post.data;
-const { topicsTitle } = i18n[currentLang];
+const { page_url, title, excerpt, topics, external_link, created_date, updated_date } = post.data;
+const { topicsTitle, topicLabelProperty } = i18n[currentLang];
 
 const maxExcerptSize = 200;
 const fmtExcerpt = `${excerpt.slice(0, maxExcerptSize)}${excerpt.length > maxExcerptSize ? "..." : ""}`;
-const postPageUrl = external_link
-  ? external_link
-  : `https://${Astro.site.host}${postsPath}/${page_url}`;
+const postPageUrl = external_link ? external_link : `https://${Astro.site.host}${postsPath}/${page_url}`;
 const postPath = external_link ? external_link : `${postsPath}/${page_url}`;
-const fmtTopics = (topics || []).map((topic) => ({
-  topic,
-  path: `${postTopicsPath}/${topic}`,
-}));
+const fmtTopics = (topics || []).map((topic) => {
+  const topicLabel = postTopics["topics-list"].find(({ slug }) => slug === topic)?.[topicLabelProperty];
+  return {
+    topic: topicLabel || topic,
+    path: `${postTopicsPath}/${topic}`,
+  };
+});
 
 const postDate = `| ${fmtDate(created_date, currentLang)}${updated_date ? ` (${i18n[currentLang].updatedLabel}: ${fmtDate(updated_date as Date, currentLang)})` : ""}`;
 ---

@@ -1,9 +1,7 @@
 ---
-import Image from "astro/components/Image.astro";
 import Button from "@components/Button.astro";
 import LocalImage from "@components/Image/index.astro";
 import postTopics from "@content/_post-topics.json";
-import searchImg from "./assets/posts.png";
 import notFoundImg from "./assets/not-found.webp";
 import i18n from "./i18n";
 
@@ -20,11 +18,7 @@ const topicsList = postTopics?.["topics-list"] || [];
 const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
 ---
 
-<div
-  class="search"
-  data-fragment="search-posts"
-  data-show-topics={showTopics && "true"}
->
+<div class="search" data-fragment="search-posts" data-show-topics={showTopics && "true"}>
   <div class="search-line">
     <h1 class="search-semantic-title">posts</h1>
     <div class="search-logo"></div>
@@ -37,13 +31,7 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
         <form class="search-topics" data-topics={topicsSlugs}>
           {topicsList.map(({ slug, label, color }) => (
             <div class="search-topic">
-              <input
-                class="search-topic-check"
-                type="checkbox"
-                id={slug}
-                name="topics"
-                value={slug}
-              />
+              <input class="search-topic-check" type="checkbox" id={slug} name="topics" value={slug} />
               <label class="search-topic-label" for={slug}>
                 {label}
               </label>
@@ -56,12 +44,7 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
 
   <slot />
   <template id="not-found-template">
-    <LocalImage
-      class="not-found-img"
-      id="not-found-image"
-      src={notFoundImg}
-      alt="not found"
-    />
+    <LocalImage class="not-found-img" id="not-found-image" src={notFoundImg} alt="not found" />
   </template>
 </div>
 <script>

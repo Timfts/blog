@@ -3,13 +3,15 @@ const i18n = {
     topicsTitle: "topics",
     searchPlaceholder: "Search",
     searchAriaLabel: "Search posts",
-    updatedLabel: "Updated",
+    updatedLabel: "updated",
+    topicLabelProperty: "label",
   },
   "pt-br": {
     topicsTitle: "topicos",
     searchPlaceholder: "Buscar",
     searchAriaLabel: "Buscar posts",
-    updatedLabel: "Atualizado",
+    updatedLabel: "atualizado",
+    topicLabelProperty: "label-ptbr",
   },
 };
 

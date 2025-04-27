@@ -3,14 +3,28 @@
     {
       "slug": "asdsfa",
       "label": "asdsfs",
+      "label-ptbr": "asdsfs",
       "color": "#b64a4a",
       "image": "/images/uploads/folder-files-and-folders-svgrepo-com.svg"
     },
     {
       "slug": "cebola",
       "label": "Cebola",
+      "label-ptbr": "Cebolinha",
       "color": "#854444",
       "image": "/images/uploads/folder-files-and-folders-svgrepo-com.svg"
+    },
+    {
+      "slug": "webdev",
+      "label": "Webdev",
+      "label-ptbr": "Webdev",
+      "color": "#7b3d3d"
+    },
+    {
+      "slug": "creative-coding",
+      "label": "Creative Coding",
+      "label-ptbr": "Programação Criativa",
+      "color": "#f70000"
     }
   ]
 }
