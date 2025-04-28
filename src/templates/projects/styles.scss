@@ -25,13 +25,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.filters-box {
-  margin-top: 20px;
-  display: none;
-}
-
-.filters-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}

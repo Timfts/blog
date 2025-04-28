@@ -1,0 +1,17 @@
+.categories-filter {
+  width: 100%;
+}
+
+.filters-form {
+  margin-top: 10px;
+  display: none;
+}
+
+.filters-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.learning-filter {
+  padding: 5px 0;
+}
