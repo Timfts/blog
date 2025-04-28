@@ -64,7 +64,7 @@ const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
           topicsColumns.map((column, index) => (
             <ul class="topics-column">
               {column.map((topic) => (
-                <li>
+                <li class="topic-item">
                   <a class="post-topic-link" href={topic.path}>
                     {topic.label}
                   </a>

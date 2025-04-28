@@ -56,10 +56,10 @@
   display: flex;
   gap: 60px;
   margin-top: 20px;
+  list-style-position: inside;
 
   @include belowTurningPoint() {
     flex-direction: column;
-    list-style-position: inside;
     gap: 0;
   }
 }
@@ -70,6 +70,6 @@
 }
 
 .post-topic-link {
-  display: block;
+  display: inline-block;
   padding: 8px 0;
 }
