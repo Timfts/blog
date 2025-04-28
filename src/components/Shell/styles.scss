@@ -35,6 +35,7 @@
     position: relative;
     max-width: 890px;
     overflow: hidden;
+    border: 1px solid var(--theme-border-1);
 
     @include aboveTurningPoint() {
       margin: 20px 0;
@@ -42,10 +43,16 @@
   }
 
   &-page-heading {
-    padding: 20px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--theme-shell-heading-bg);
+    border-bottom: 1px solid var(--theme-border-1);
+
+    @include belowTurningPoint() {
+      padding: 10px 20px;
+    }
   }
 
   &-heading-right {
