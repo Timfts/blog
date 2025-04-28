@@ -67,5 +67,5 @@ elementController(
       playerSlot.innerHTML = "";
     }
   },
-  { rerun: "changeroute" }
+  { rerun: true }
 );

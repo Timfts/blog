@@ -55,6 +55,6 @@ elementController(
     }
   },
   {
-    rerun: "sameroute",
+    rerun: true,
   }
 );

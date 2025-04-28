@@ -42,5 +42,5 @@ elementController(
       isShowingFilters = false;
     }
   },
-  { rerun: "sameroute" }
+  { rerun: true }
 );
