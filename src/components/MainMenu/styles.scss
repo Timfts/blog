@@ -3,16 +3,20 @@
 
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 10;
+  width: 290px;
+  padding: 20px 0;
+  border-radius: 0px 5px 0px 0px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 
-  @include aboveTurningPoint() {
-    padding: 20px 0;
-    width: 290px;
-    border-radius: 0px 5px 0px 0px;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
+  @include belowTurningPoint() {
+    width: 100%;
+    padding: 0;
+    border-radius: 0px;
+    display: block;
+    height: auto;
   }
 }
 
@@ -30,11 +34,12 @@
   border-right: 1px solid var(--theme-window-br);
   transition: transform 0.3s ease;
   transform: translateY(0);
+  border-radius: 7px 7px 0px 0px;
+  flex-shrink: 0;
+  flex-grow: 0;
 
-  @include aboveTurningPoint() {
-    border-radius: 7px 7px 0px 0px;
-    flex-shrink: 0;
-    flex-grow: 0;
+  @include belowTurningPoint() {
+    border-radius: 0px;
   }
 }
 
@@ -49,9 +54,10 @@
 }
 
 .header-right {
-  flex-shrink: 0;
-  @include aboveTurningPoint {
-    display: none;
+  display: none;
+  @include belowTurningPoint() {
+    flex-shrink: 0;
+    display: block;
   }
 }
 
@@ -212,11 +218,11 @@
 }
 
 .social-li {
-  flex: 1;
   text-align: center;
   height: auto;
-  @include aboveTurningPoint {
-    flex: unset;
+
+  @include belowTurningPoint {
+    flex: 1;
   }
 }
 
@@ -236,9 +242,5 @@
   margin-top: 10px;
   position: relative;
   justify-content: flex-end;
-  padding-bottom: 50px;
-
-  @include aboveTurningPoint {
-    padding-bottom: 14px;
-  }
+  padding-bottom: 14px;
 }
