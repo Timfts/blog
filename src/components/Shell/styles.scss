@@ -98,9 +98,9 @@
   }
 
   &-page-container {
-    padding: 0 50px 30px;
+    padding: 10px 50px;
     @include belowTurningPoint() {
-      padding: 0px 20px 40px;
+      padding: 10px 20px;
     }
   }
 

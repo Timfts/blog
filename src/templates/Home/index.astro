@@ -62,13 +62,15 @@ const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
       <div class="topics-columns">
         {
           topicsColumns.map((column, index) => (
-            <div class="topics-column">
+            <ul class="topics-column">
               {column.map((topic) => (
-                <a class="post-topic-link" href={topic.path}>
-                  {topic.label}
-                </a>
+                <li>
+                  <a class="post-topic-link" href={topic.path}>
+                    {topic.label}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           ))
         }
       </div>
