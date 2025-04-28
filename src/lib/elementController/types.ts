@@ -1,20 +1,13 @@
 export type GenericFunction = (...any: any[]) => any;
 
-export type RerunOpts = "changeroute" | "sameroute" | false;
-
 export interface ControllerOpts {
-  rerun?: RerunOpts;
+  rerun?: boolean;
 }
 
-type ControllerEventHandler = (
-  eventName: string,
-  eventHandler: GenericFunction
-) => void;
+type ControllerEventHandler = (eventName: string, eventHandler: GenericFunction) => void;
 
 export type Queryfunction = (queryStrirng: string) => HTMLElement | null;
-export type QueryAllFunction = (
-  queryStrirng: string
-) => HTMLElement[];
+export type QueryAllFunction = (queryStrirng: string) => HTMLElement[];
 export type EmitFunction = (eventName: string, payload?: Object) => void;
 
 export interface IBuilderFunctionArgs {

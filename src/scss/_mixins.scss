@@ -6,20 +6,8 @@ $xl: 1800px;
 
 $turningPoint: 1000px;
 
-@mixin aboveUnit($unit) {
-  @media (min-width: $unit) {
-    @content;
-  }
-}
-
 @mixin belowUnit($unit) {
   @media (max-width: $unit) {
-    @content;
-  }
-}
-
-@mixin aboveTurningPoint() {
-  @include aboveUnit($turningPoint) {
     @content;
   }
 }
@@ -27,38 +15,6 @@ $turningPoint: 1000px;
 @mixin belowTurningPoint() {
   @include belowUnit($turningPoint) {
     @content;
-  }
-}
-
-@mixin above($breakpoint) {
-  @if $breakpoint == xs {
-    @include aboveUnit($xs) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == sm {
-    @include aboveUnit($sm) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == m {
-    @include aboveUnit($m) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == l {
-    @include aboveUnit($l) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == xl {
-    @include aboveUnit($xl) {
-      @content;
-    }
   }
 }
 

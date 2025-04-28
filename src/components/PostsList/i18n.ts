@@ -5,6 +5,9 @@ const i18n = {
     searchAriaLabel: "Search posts",
     updatedLabel: "updated",
     topicLabelProperty: "label",
+    showFiltersLabel: "Show Topics",
+    legendFiltersLabel: "Topics",
+    hideFiltersLabel: "Hide Topics",
   },
   "pt-br": {
     topicsTitle: "topicos",
@@ -12,6 +15,9 @@ const i18n = {
     searchAriaLabel: "Buscar posts",
     updatedLabel: "atualizado",
     topicLabelProperty: "label-ptbr",
+    showFiltersLabel: "Mostrar tópicos",
+    legendFiltersLabel: "Tópicos",
+    hideFiltersLabel: "Ocultar tópicos",
   },
 };
 

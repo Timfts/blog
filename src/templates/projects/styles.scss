@@ -21,22 +21,7 @@
   padding: 8px 2px;
 }
 
-.featured-projects,
-.all-projects {
-  margin-top: 40px;
-}
-
 .all-projects-head {
   display: flex;
   justify-content: space-between;
-}
-
-.filters-box {
-  margin-top: 20px;
-  display: none;
-}
-
-.filters-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }

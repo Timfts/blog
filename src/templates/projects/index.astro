@@ -1,10 +1,8 @@
 ---
 import Shell from "@components/Shell/index.astro";
 import ProjectCard from "@components/ProjectCard/index.astro";
-import Groupbox from "@components/Groupbox.astro";
-import Button from "@components/Button.astro";
+import CategoriesFilter from "@components/CategoriesFilter/index.astro";
 
-import { getPageI18NPathMap } from "@helpers/server/i18n";
 import { getProjectsByLanguage } from "@cms/collections/projects/helpers";
 import replicate from "@helpers/replicate";
 import learnings from "@content/_learnings.json";
@@ -42,26 +40,16 @@ const featured = replicate(projects[1], 6);
     <div class="all-projects">
       <div class="all-projects-head">
         {showFeatured && <h2>{data.allProjects}</h2>}
-        <Button data-filter data-show={data.showFilters} data-hide={data.hideFilters}>
-          {data.showFilters}
-        </Button>
+        <CategoriesFilter
+          items={learningsList}
+          legend={data.filters}
+          name="learnings"
+          id="learnings"
+          searchQuery="learnings"
+          showLabel={data.showFilters}
+          hideLabel={data.hideFilters}
+        />
       </div>
-      <form class="filters-box">
-        <Groupbox legend={data.filters}>
-          <div class="filters-container">
-            {
-              learningsList.map(({ slug, label }) => (
-                <div class="learning-filter">
-                  <input class="learning-filter-check" type="checkbox" id={slug} name="learnings" value={slug} />
-                  <label class="learning-filter-label" for={slug}>
-                    {label}
-                  </label>
-                </div>
-              ))
-            }
-          </div>
-        </Groupbox>
-      </form>
     </div>
     <ul class="projects-grid">
       {

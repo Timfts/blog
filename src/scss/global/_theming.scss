@@ -14,15 +14,15 @@
   --txt-window-title: 11px;
   --txt-title-link: 16px;
   --paragraph-bottom: 18px;
-  --search-field-font: 16px;
+  --search-field-font: 12px;
   --title-1: 28px;
   --title-2: 20px;
   --title-3: 16px;
   --title-4: 14px;
   --menu-items: 12px;
 
-  @include aboveTurningPoint() {
-    --search-field-font: 12px;
+  @include belowTurningPoint() {
+    --search-field-font: 16px;
   }
 }
 
@@ -32,7 +32,7 @@
   --txt-xsmall: 12px;
   --txt-window-title: 13px;
   --txt-title-link: 18px;
-  --search-field-font: 16px;
+  --search-field-font: 12px;
   --paragraph-bottom: 20px;
   --title-1: 32px;
   --title-2: 24px;
@@ -40,8 +40,8 @@
   --title-4: 18px;
   --menu-items: 12.5px;
 
-  @include aboveTurningPoint() {
-    --search-field-font: 12px;
+  @include belowTurningPoint() {
+    --search-field-font: 16px;
   }
 }
 
@@ -110,6 +110,7 @@
     --theme-scrollbar-thumb-bg: #c8d6fb;
     --theme-scrollbar-thumb-shadow: inset -3px 0 #bad1fc, inset 1px 1px #b7caf5;
     --theme-selector-bg: #d3e5fa;
+    --theme-shell-heading-bg: #d3e5fa;
 
     --radio-dot: url("/images/icons/radio-dot.png");
     --radio-bg-active: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);
@@ -167,6 +168,7 @@
     --theme-scrollbar-thumb-bg: #e7e3d6;
     --theme-scrollbar-thumb-shadow: inset -3px 0 #d4d0c8, inset 1px 1px #a79d94;
     --theme-selector-bg: #000149;
+    --theme-shell-heading-bg: #d3e5fa;
 
     --radio-dot: url("/images/icons/zune/radio-dot.png");
     --radio-bg-active: linear-gradient(135deg, rgba(176, 176, 167, 1) 0%, rgba(227, 225, 210, 1) 100%);

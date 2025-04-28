@@ -9,9 +9,9 @@ elementController(
     const list = query(".posts-list") as HTMLUListElement;
     const originalPosts = queryAll(".post-link") as HTMLLIElement[];
 
-    const searchTopics = query(".search-topics") as HTMLFormElement;
-    const allTopics = showTopics && searchTopics.dataset.topics.split(",");
-    const topicsChecks = queryAll('input[name="topics"]') as HTMLInputElement[];
+    const searchTopics = query("[data-filter-form]") as HTMLFormElement;
+    const allTopics = showTopics && root.dataset.topics.split(",");
+    const topicsChecks = queryAll('input[name="search-topics"]') as HTMLInputElement[];
 
     const searchQuery = "search";
     const topicsQuery = "topics";
@@ -121,5 +121,5 @@ elementController(
       list.appendChild(instance);
     }
   },
-  { rerun: "changeroute" }
+  { rerun: true }
 );

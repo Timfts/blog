@@ -1,0 +1,50 @@
+---
+import Button from "@components/Button.astro";
+import Groupbox from "@components/Groupbox.astro";
+
+type CheckItem = {
+  slug: string;
+  label: string;
+};
+type Props = {
+  items: CheckItem[];
+  name: string;
+  id: string;
+  legend: string;
+  showLabel: string;
+  hideLabel: string;
+  searchQuery?: string;
+};
+
+const { items, name, id, showLabel, hideLabel, searchQuery } = Astro.props;
+---
+
+<div class="categories-filter" data-fragment="categories-filter">
+  <Button data-filter data-show={showLabel} data-hide={hideLabel} data-search-query={searchQuery}>
+    {showLabel}
+  </Button>
+  <form class="filters-form" data-filter-form data-form={id}>
+    <Groupbox legend={name}>
+      <div class="filters-container">
+        {
+          items.map(({ slug, label }) => (
+            <div class="learning-filter">
+              <input class="learning-filter-check" type="checkbox" id={slug} name={name} value={slug} />
+              <label class="learning-filter-label" for={slug}>
+                {label}
+              </label>
+            </div>
+          ))
+        }
+      </div>
+    </Groupbox>
+  </form>
+</div>
+
+<style lang="scss">
+  @import "./styles.scss";
+</style>
+
+<script>
+  import "./controller";
+</script>

@@ -9,19 +9,24 @@
     max-width: 1200px;
     width: 100%;
     position: relative;
+    display: flex;
     flex: 1;
     z-index: 1;
+    gap: 20px;
 
-    @include aboveTurningPoint() {
-      display: flex;
-      gap: 20px;
+    @include belowTurningPoint() {
+      display: block;
+      gap: unset;
     }
   }
 
   &-menu {
-    @include aboveTurningPoint() {
-      width: 290px;
-      position: relative;
+    width: 290px;
+    position: relative;
+
+    @include belowTurningPoint {
+      width: unset;
+      position: unset;
     }
   }
 
@@ -30,22 +35,29 @@
   }
 
   &-page {
-    margin: 100px 10px 10px 10px;
+    margin: 20px 0;
     background-color: var(--theme-background);
     position: relative;
     max-width: 890px;
     overflow: hidden;
+    border: 1px solid var(--theme-border-1);
 
-    @include aboveTurningPoint() {
-      margin: 20px 0;
+    @include belowTurningPoint() {
+      margin: 100px 10px 10px 10px;
     }
   }
 
   &-page-heading {
-    padding: 20px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--theme-shell-heading-bg);
+    border-bottom: 1px solid var(--theme-border-1);
+
+    @include belowTurningPoint() {
+      padding: 10px 20px;
+    }
   }
 
   &-heading-right {
@@ -86,9 +98,9 @@
   }
 
   &-page-container {
-    padding: 0 50px 30px;
+    padding: 10px 50px;
     @include belowTurningPoint() {
-      padding: 0px 20px 40px;
+      padding: 10px 20px;
     }
   }
 

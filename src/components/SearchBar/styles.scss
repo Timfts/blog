@@ -16,10 +16,10 @@
 .field {
   flex: 1;
   font-size: var(--search-field-font);
-  height: 30px;
+  height: 25px;
 
-  @include aboveTurningPoint() {
-    height: 25px;
+  @include belowTurningPoint() {
+    height: 30px;
   }
 }
 

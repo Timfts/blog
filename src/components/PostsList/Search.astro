@@ -1,6 +1,7 @@
 ---
 import Button from "@components/Button.astro";
 import LocalImage from "@components/Image/index.astro";
+import CategoriesFilter from "@components/CategoriesFilter/index.astro";
 import postTopics from "@content/_post-topics.json";
 import notFoundImg from "./assets/not-found.webp";
 import i18n from "./i18n";
@@ -10,15 +11,21 @@ type Props = {
 };
 
 const lang = Astro.currentLocale as Lang;
-const { searchPlaceholder, searchAriaLabel } = i18n[lang];
+const { searchPlaceholder, searchAriaLabel, showFiltersLabel, legendFiltersLabel, hideFiltersLabel } = i18n[lang];
 
 const { showTopics = false } = Astro.props;
 
 const topicsList = postTopics?.["topics-list"] || [];
 const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
+const fmtTopics = topicsList.map(({ slug, label, "label-ptbr": labelPtbr }) => {
+  return {
+    slug,
+    label: lang === "pt-br" ? labelPtbr : label,
+  };
+});
 ---
 
-<div class="search" data-fragment="search-posts" data-show-topics={showTopics && "true"}>
+<div class="search" data-fragment="search-posts" data-show-topics={showTopics && "true"} data-topics={topicsSlugs}>
   <div class="search-line">
     <h1 class="search-semantic-title">posts</h1>
     <div class="search-logo"></div>
@@ -28,16 +35,17 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
   <slot name="topics-slot">
     {
       showTopics && (
-        <form class="search-topics" data-topics={topicsSlugs}>
-          {topicsList.map(({ slug, label, color }) => (
-            <div class="search-topic">
-              <input class="search-topic-check" type="checkbox" id={slug} name="topics" value={slug} />
-              <label class="search-topic-label" for={slug}>
-                {label}
-              </label>
-            </div>
-          ))}
-        </form>
+        <div class="search-topics">
+          <CategoriesFilter
+            items={fmtTopics}
+            name="search-topics"
+            id="search-topics"
+            searchQuery="topics"
+            showLabel={showFiltersLabel}
+            hideLabel={hideFiltersLabel}
+            legend={legendFiltersLabel}
+          />
+        </div>
       )
     }
   </slot>
@@ -56,10 +64,10 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
       display: flex;
       align-items: center;
       gap: 10px;
-      flex-direction: column;
+      flex-direction: row;
 
-      @include aboveTurningPoint() {
-        flex-direction: row;
+      @include belowTurningPoint() {
+        flex-direction: column;
       }
     }
 
@@ -73,8 +81,10 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
       height: 68px;
       background-image: var(--theme-search-logo);
       background-size: cover;
-      @include aboveTurningPoint() {
-        margin-right: 20px;
+      margin-right: 20px;
+
+      @include belowTurningPoint() {
+        margin-right: 0;
       }
     }
 
@@ -86,28 +96,7 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
     }
 
     &-topics {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
-    }
-
-    &-topic {
-      background-color: var(--gray-10);
-      padding: 5px;
-      border-radius: 3px;
-      border: 1px solid transparent;
-      transition: all 0.2s ease;
-      cursor: pointer;
-
-      &:checked {
-        background-color: var(--blue-10);
-        color: var(--white);
-      }
-    }
-
-    &-topic-label {
-      font-family: arial;
-      font-size: var(--txt-xsmall);
+      padding: 30px 0;
     }
   }
 
