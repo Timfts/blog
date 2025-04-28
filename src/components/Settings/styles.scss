@@ -7,7 +7,7 @@
 
 .settings-container {
   position: absolute;
-  width: 90vw;
+  width: 450px;
   top: 20vh;
   z-index: 1000;
   left: 50%;
@@ -15,8 +15,8 @@
   z-index: 2;
   max-width: 500px;
 
-  @include aboveTurningPoint() {
-    width: 450px;
+  @include belowTurningPoint() {
+    width: 90vw;
   }
 }
 

@@ -56,10 +56,10 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
       display: flex;
       align-items: center;
       gap: 10px;
-      flex-direction: column;
+      flex-direction: row;
 
-      @include aboveTurningPoint() {
-        flex-direction: row;
+      @include belowTurningPoint() {
+        flex-direction: column;
       }
     }
 
@@ -73,8 +73,10 @@ const topicsSlugs = topicsList.map(({ slug }) => slug).join(",");
       height: 68px;
       background-image: var(--theme-search-logo);
       background-size: cover;
-      @include aboveTurningPoint() {
-        margin-right: 20px;
+      margin-right: 20px;
+
+      @include belowTurningPoint() {
+        margin-right: 0;
       }
     }
 

@@ -6,25 +6,28 @@
 }
 
 .presentation-panels {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
   p:not(:last-of-type) {
     margin-bottom: var(--paragraph-bottom); // TODO - improve
   }
 
-  @include aboveTurningPoint() {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  @include belowTurningPoint {
+    display: block;
   }
 }
 
 .main-image-holder {
-  width: 100%;
-  margin-top: 20px;
+  width: 300px;
+  flex-shrink: 0;
+  margin-top: 0;
 
-  @include aboveTurningPoint() {
-    width: 300px;
-    flex-shrink: 0;
-    margin-top: 0;
+  @include belowTurningPoint {
+    width: 100%;
+    margin-top: 20px;
+    flex-shrink: unset;
   }
 }
 
