@@ -22,13 +22,17 @@
   display: flex;
   align-items: center;
   font-family: var(--sans-serif);
-  gap: 8px;
+  gap: 22px;
 }
 
 .social-link-logo {
-  width: 38px;
+  width: 40px;
   display: block;
   height: auto;
+
+  &--discord {
+    width: 43px;
+  }
 }
 
 .contact-text {

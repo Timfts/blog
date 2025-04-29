@@ -52,7 +52,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--theme-shell-heading-bg);
+    background-color: var(--theme-submenu-bg);
     border-bottom: 1px solid var(--theme-border-1);
 
     @include belowTurningPoint() {

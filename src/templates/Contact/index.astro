@@ -26,7 +26,13 @@ const mailTo = `mailto:${CONTACT_EMAIL_ADRESS}?subject=${encodedSubject}`;
         socialLinks["social-links-list"].map((s) => (
           <li class="social-list-item">
             <a href={s.link} target="__blank" class="social-link">
-              <img class="social-link-logo" src={s.logo} alt={`${s.label} logo`} width="38" height="38" />
+              <img
+                class:list={["social-link-logo", `social-link-logo--${s.label.toLowerCase()}`]}
+                src={s.logo}
+                alt={`${s.label} logo`}
+                width="38"
+                height="38"
+              />
               <span class="social-link-label">{s.label}</span>
             </a>
           </li>

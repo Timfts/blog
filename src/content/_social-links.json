@@ -3,12 +3,12 @@
     {
       "label": "Github",
       "link": "https://github.com/Timfts",
-      "logo": "/images/uploads/github.png"
+      "logo": "/images/uploads/github.webp"
     },
     {
       "label": "LinkedIn",
       "link": "https://www.linkedin.com/in/timfts/",
-      "logo": "/images/uploads/linkedin.png"
+      "logo": "/images/uploads/linkedin.webp"
     },
     {
       "label": "Instagram",
@@ -18,7 +18,7 @@
     {
       "label": "Discord",
       "link": "https://discord.gg/EsthyJk49a",
-      "logo": "/images/uploads/discord.png"
+      "logo": "/images/uploads/discord.webp"
     }
   ]
 }
