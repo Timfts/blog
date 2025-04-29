@@ -7,12 +7,7 @@ import i18n from "./i18n";
 
 const currentLocale = Astro.currentLocale as Lang;
 const currentPage = Astro.url.pathname;
-const {
-  mainProfileAlt,
-  menuItems: menuItemsMap,
-  homePath,
-  menuToggleAriaLabel,
-} = i18n[currentLocale];
+const { mainProfileAlt, menuItems: menuItemsMap, homePath, menuToggleAriaLabel, blogTitle } = i18n[currentLocale];
 
 const menuItemsEntries = Object.entries(menuItemsMap);
 ---
@@ -21,15 +16,12 @@ const menuItemsEntries = Object.entries(menuItemsMap);
   <header class="header">
     <a href={homePath} class="header-left">
       <div class="avatar">
-        <img
-          class="avatar-image"
-          src="/images/profile-new.jpg"
-          width="44"
-          height="44"
-          alt={mainProfileAlt}
-        />
+        <img class="avatar-image" src="/images/profile-new.jpg" width="44" height="44" alt={mainProfileAlt} />
       </div>
-      <h1 class="name">Tim Fontes</h1>
+      <div>
+        <h1 class="name">Tim Fontes</h1>
+        <h2 class="blog-title">{blogTitle}</h2>
+      </div>
     </a>
     <div class="header-right">
       <button class="menu-button" aria-label={menuToggleAriaLabel}></button>
@@ -50,14 +42,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
               target={target}
               href={path}
             >
-              <Picture
-                class="menu-content-icon"
-                width={24}
-                height={24}
-                formats={["webp"]}
-                src={icons[key]}
-                alt={iconAlt}
-              />
+              <Picture class="menu-content-icon" width={24} height={24} formats={["webp"]} src={icons[key]} alt={iconAlt} />
               {label}
             </a>
           </li>

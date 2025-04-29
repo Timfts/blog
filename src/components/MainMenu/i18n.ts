@@ -15,6 +15,7 @@ const i18n = {
     mainProfileAlt: "Tim's Profile image",
     homePath: enPaths.home,
     menuToggleAriaLabel: "Toggle menu",
+    blogTitle: "in reverie",
     menuItems: {
       home: {
         label: "Home",
@@ -63,6 +64,7 @@ const i18n = {
     mainProfileAlt: "Imagem de perfil de Tim",
     homePath: ptPaths.home,
     menuToggleAriaLabel: "Abrir ou fechar menu",
+    blogTitle: "em devaneio",
     menuItems: {
       home: {
         label: "Home",

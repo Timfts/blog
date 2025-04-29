@@ -99,13 +99,26 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.name {
+.name,
+.blog-title {
   text-shadow: 1px 1px #0f1089;
-  color: white;
   font-weight: bold;
   letter-spacing: 0;
   font-family: "Trebuchet MS";
-  font-size: var(--main-name);
+}
+
+.name {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.blog-title {
+  color: rgb(212, 212, 212);
+  font-weight: bold;
+
+  font-size: 14px;
+  font-style: italic;
 }
 
 .avatar-image {
