@@ -2,91 +2,25 @@
   --default-cursor: default;
   --pointer-cursor: pointer;
 
-  --header-size: 90px;
   --sans-serif: "Pixelated MS Sans Serif", Arial;
 
   /* Color */
   --yellow-light: #ece9d8;
-  --white: #fff;
   --gray-0: #dfdfdf;
   --gray-10: #d9d9d9;
   --gray-20: #808080;
   --gray-30: #5f5f5f;
-  --black: #0a0a0a;
-  --blue-10: #1084d0;
-  --blue-20: #2267cb;
-  --blue-30: #0000ff;
 
-  /* Color tokens */
-  --surface: var(--yellow-light);
-  --button-highlight: var(--white);
-  --button-face: var(--gray-0);
-  --button-shadow: var(--gray-20);
-  --window-frame: var(--black);
-  --link-blue: var(--blue-30);
+  //theme
   --border-color: var(--gray-10);
 
-  /* Spacing */
-  --element-spacing: 8px;
-
+  // scss
+  --header-size: 90px;
   --grouped-element-spacing: 6px;
   --radio-width: 15px;
   --checkbox-width: 15px;
-  --radio-label-spacing: 6px;
-  --range-spacing: 10px;
-
-  /* Some detailed computations for radio buttons and checkboxes */
-  --radio-total-width-precalc: var(--radio-width) + var(--radio-label-spacing);
-  --radio-total-width: calc(var(--radio-total-width-precalc));
-  --radio-dot-width: 5px;
-  --radio-dot-top: 5px;
-  --radio-dot-left: calc(
-    -1 * (var(--radio-total-width-precalc)) + var(--radio-width) / 2 - var(
-        --radio-dot-width
-      ) / 2
-  );
-  --radio-inner-shadow-hover: inset -2px -2px #f8b636, inset 2px 2px #fedf9c;
-  --checkbox-total-width-precalc: var(--checkbox-width) +
-    var(--radio-label-spacing);
-  --checkbox-total-width: calc(var(--checkbox-total-width-precalc));
-  --checkbox-left: calc(-1 * var(--checkbox-total-width-precalc));
-  --checkmark-width: 11px;
-  --checkmark-top: 3px;
-  --checkmark-left: 3px;
-
-  /* Borders */
-  --border-width: 1px;
-  --border-raised-outer: inset -1px -1px var(--window-frame),
-    inset 1px 1px var(--button-highlight);
-  --border-raised-inner: inset -2px -2px var(--button-shadow),
-    inset 2px 2px var(--button-face);
-  --border-sunken-outer: inset -1px -1px var(--button-highlight),
-    inset 1px 1px var(--window-frame);
-  --border-sunken-inner: inset -2px -2px var(--button-face),
-    inset 2px 2px var(--button-shadow);
-  --input-border-color: #789dbc;
-
-  /* Window borders flip button-face and button-highlight */
-  --border-window-outer: inset -1px -1px var(--window-frame),
-    inset 1px 1px var(--button-face);
-  --border-window-inner: inset -2px -2px var(--button-shadow),
-    inset 2px 2px var(--button-highlight);
-  --border-field: inset -1px -1px var(--button-highlight),
-    inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
-    inset 2px 2px var(--window-frame);
-
-  --border-status-bar-field: inset -1px -1px var(--button-face),
-    inset 1px 1px var(--button-shadow);
-
-  /* Scroll bar */
-  --scrollbar-bg: linear-gradient(
-    90deg,
-    rgba(197, 213, 255, 1) 0%,
-    rgba(181, 211, 255, 1) 86%,
-    rgba(182, 202, 247, 1) 100%
-  );
-  --scrollbar-shadow: inset 1px 1px white, inset -1px -1px white,
-    inset 2px 2px #b9cdfa, inset -2px -2px #b6c9f7;
-
+  --radio-label-spacing: 6px; //scss
+  --radio-dot-width: 5px; // todo scss
+  --radio-inner-shadow-hover: inset -2px -2px #f8b636, inset 2px 2px #fedf9c; // todo scss
   --tab-border: 1px solid #919b9c;
 }

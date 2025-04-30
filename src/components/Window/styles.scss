@@ -109,7 +109,7 @@
   }
 }
 .window-body {
-  margin: var(--element-spacing);
+  margin: 8px;
   pre {
     margin: -8px;
   }
@@ -118,7 +118,7 @@
 .status-bar {
   display: flex;
   margin: 0 3px;
-  box-shadow: inset 0px 1px 2px var(--button-shadow);
+  box-shadow: inset 0px 1px 2px var(--gray-20);
   padding: 2px 1px;
   gap: 0px;
 }

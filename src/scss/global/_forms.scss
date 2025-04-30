@@ -61,7 +61,7 @@ select {
 
   &:focus {
     outline: none;
-    color: var(--button-highlight);
+    color: #fff;
     background-color: var(--theme-highlight-color);
     box-shadow: inset 2px 2px white, inset -2px -2px white;
     option {
@@ -84,18 +84,8 @@ option {
   width: 4px;
   height: 20px;
   background: #c0c0c0;
-  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px var(--gray-20), inset 2px 2px var(--gray-0);
 }
-/* &:disabled {
-    color: var(--button-shadow);
-    text-shadow: 1px 1px 0 var(--button-highlight);
-    + {
-      label {
-        color: var(--button-shadow);
-        text-shadow: 1px 1px 0 var(--button-highlight);
-      }
-    }
-  } */
 
 input[type="radio"] {
   -webkit-appearance: none;
@@ -113,13 +103,13 @@ input[type="radio"] {
   + {
     label {
       position: relative;
-      margin-left: var(--radio-total-width);
+      margin-left: calc(var(--radio-width) + var(--radio-label-spacing));
       line-height: 16px;
       &::before {
         content: "";
         position: absolute;
         top: 0;
-        left: calc(-1 * (var(--radio-total-width-precalc)));
+        left: calc(-1 * (var(--radio-width) + var(--radio-label-spacing)));
         display: inline-block;
         width: var(--radio-width);
         height: var(--radio-width);
@@ -154,8 +144,8 @@ input[type="radio"] {
           display: block;
           width: var(--radio-dot-width);
           height: var(--radio-dot-width);
-          top: var(--radio-dot-top);
-          left: var(--radio-dot-left);
+          top: 5px;
+          left: calc(-1 * (var(--radio-width) + var(--radio-label-spacing)) + var(--radio-width) / 2 - var(--radio-dot-width) / 2);
           position: absolute;
           image-rendering: pixelated;
           background: var(--radio-dot);
@@ -184,11 +174,11 @@ input[type="checkbox"] {
     label {
       line-height: 13px;
       position: relative;
-      margin-left: var(--checkbox-total-width);
+      margin-left: calc(var(--checkbox-width) + var(--radio-label-spacing));
       &::before {
         content: "";
         position: absolute;
-        left: calc(-1 * (var(--checkbox-total-width-precalc)));
+        left: calc(-1 * (var(--checkbox-width) + var(--radio-label-spacing)));
         display: inline-block;
         width: var(--checkbox-width);
         height: var(--checkbox-width);
@@ -235,8 +225,8 @@ input[type="checkbox"] {
         &::after {
           content: "";
           display: block;
-          width: var(--checkmark-width);
-          height: var(--checkmark-width);
+          width: 11px;
+          height: 11px;
           position: absolute;
           background: var(--checkmark);
           top: 1px;
@@ -340,8 +330,8 @@ input[type="range"] {
     border-right: 1px solid #f3f2ea;
     border-bottom: 1px solid #f3f2ea;
     border-radius: 2px;
-    box-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 0 0 #9d9c99,
-      -1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, -1px 1px 0 white, 1px -1px #9d9c99;
+    box-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 0 0 #9d9c99, -1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, -1px 1px 0 white,
+      1px -1px #9d9c99;
   }
   &::-moz-range-track {
     width: 100%;
@@ -351,8 +341,8 @@ input[type="range"] {
     border-right: 1px solid #f3f2ea;
     border-bottom: 1px solid #f3f2ea;
     border-radius: 2px;
-    box-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 0 0 #9d9c99,
-      -1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, -1px 1px 0 white, 1px -1px #9d9c99;
+    box-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 0 0 #9d9c99, -1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, -1px 1px 0 white,
+      1px -1px #9d9c99;
   }
 }
 input[type="range"].has-box-indicator {
@@ -375,24 +365,21 @@ input[type="range"].has-box-indicator {
   > input[type="range"] {
     width: 150px;
     height: 4px;
-    margin: 0 calc(var(--grouped-element-spacing) + var(--range-spacing)) 0
-      var(--range-spacing);
+    margin: 0 calc(var(--grouped-element-spacing) + 10px) 0 10px;
     transform-origin: left;
-    transform: rotate(270deg) translateX(calc(-50% + var(--element-spacing)));
+    transform: rotate(270deg) translateX(calc(-50% + 8px));
     &::-webkit-slider-runnable-track {
       border-left: 1px solid #f3f2ea;
       border-right: 0;
       border-bottom: 1px solid #f3f2ea;
-      box-shadow: -1px 0 0 white, -1px 1px 0 white, 0 1px 0 white,
-        1px 0 0 #9d9c99, 1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, 1px 1px 0 white,
+      box-shadow: -1px 0 0 white, -1px 1px 0 white, 0 1px 0 white, 1px 0 0 #9d9c99, 1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, 1px 1px 0 white,
         -1px -1px #9d9c99;
     }
     &::-moz-range-track {
       border-left: 1px solid #f3f2ea;
       border-right: 0;
       border-bottom: 1px solid #f3f2ea;
-      box-shadow: -1px 0 0 white, -1px 1px 0 white, 0 1px 0 white,
-        1px 0 0 #9d9c99, 1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, 1px 1px 0 white,
+      box-shadow: -1px 0 0 white, -1px 1px 0 white, 0 1px 0 white, 1px 0 0 #9d9c99, 1px -1px 0 #9d9c99, 0 -1px 0 #9d9c99, 1px 1px 0 white,
         -1px -1px #9d9c99;
     }
     &::-webkit-slider-thumb {
