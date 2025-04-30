@@ -1,3 +1,9 @@
+$radio-width: 15px;
+$checkbox-width: 15px;
+$radio-label-spacing: 6px;
+$radio-dot-width: 5px;
+$radio-inner-shadow-hover: inset -2px -2px #f8b636, inset 2px 2px #fedf9c;
+
 label {
   font-family: var(--sans-serif);
   font-size: var(--txt-xsmall);
@@ -103,17 +109,17 @@ input[type="radio"] {
   + {
     label {
       position: relative;
-      margin-left: calc(var(--radio-width) + var(--radio-label-spacing));
+      margin-left: calc($radio-width + $radio-label-spacing);
       line-height: 16px;
       &::before {
         content: "";
         position: absolute;
         top: 0;
-        left: calc(-1 * (var(--radio-width) + var(--radio-label-spacing)));
+        left: calc(-1 * ($radio-width + $radio-label-spacing));
         display: inline-block;
-        width: var(--radio-width);
-        height: var(--radio-width);
-        margin-right: var(--radio-label-spacing);
+        width: $radio-width;
+        height: $radio-width;
+        margin-right: $radio-label-spacing;
         background: var(--radio-bg);
         border-radius: 50%;
         border: var(--radio-border);
@@ -123,7 +129,7 @@ input[type="radio"] {
   &:not([disabled]):not(:active) {
     + label {
       &:hover:before {
-        box-shadow: var(--radio-inner-shadow-hover);
+        box-shadow: $radio-inner-shadow-hover;
       }
     }
   }
@@ -142,10 +148,10 @@ input[type="radio"] {
         &::after {
           content: "";
           display: block;
-          width: var(--radio-dot-width);
-          height: var(--radio-dot-width);
+          width: $radio-dot-width;
+          height: $radio-dot-width;
           top: 5px;
-          left: calc(-1 * (var(--radio-width) + var(--radio-label-spacing)) + var(--radio-width) / 2 - var(--radio-dot-width) / 2);
+          left: calc(-1 * ($radio-width + $radio-label-spacing) + $radio-width / 2 - $radio-dot-width / 2);
           position: absolute;
           image-rendering: pixelated;
           background: var(--radio-dot);
@@ -174,15 +180,15 @@ input[type="checkbox"] {
     label {
       line-height: 13px;
       position: relative;
-      margin-left: calc(var(--checkbox-width) + var(--radio-label-spacing));
+      margin-left: calc($checkbox-width + $radio-label-spacing);
       &::before {
         content: "";
         position: absolute;
-        left: calc(-1 * (var(--checkbox-width) + var(--radio-label-spacing)));
+        left: calc(-1 * ($checkbox-width + $radio-label-spacing));
         display: inline-block;
-        width: var(--checkbox-width);
-        height: var(--checkbox-width);
-        margin-right: var(--radio-label-spacing);
+        width: $checkbox-width;
+        height: $checkbox-width;
+        margin-right: $radio-label-spacing;
         box-shadow: none;
         border: var(--radio-border);
         background: var(--radio-bg);
@@ -199,7 +205,7 @@ input[type="checkbox"] {
   &:not([disabled]):not(:active) {
     + label {
       &:hover:before {
-        box-shadow: var(--radio-inner-shadow-hover);
+        box-shadow: $radio-inner-shadow-hover;
       }
     }
   }
@@ -365,7 +371,7 @@ input[type="range"].has-box-indicator {
   > input[type="range"] {
     width: 150px;
     height: 4px;
-    margin: 0 calc(var(--grouped-element-spacing) + 10px) 0 10px;
+    margin: 0 16px 0 10px;
     transform-origin: left;
     transform: rotate(270deg) translateX(calc(-50% + 8px));
     &::-webkit-slider-runnable-track {

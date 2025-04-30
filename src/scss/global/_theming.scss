@@ -1,9 +1,23 @@
 :root {
+  --default-cursor: default;
+  --pointer-cursor: pointer;
+  --sans-serif: "Pixelated MS Sans Serif", Arial;
+
+  /* Color */
+  --yellow-light: #ece9d8;
+  --gray-0: #dfdfdf;
+  --gray-10: #d9d9d9;
+  --gray-20: #808080;
+  --gray-30: #5f5f5f;
+
+  //theme
+  --border-color: var(--gray-10);
+  --tab-border: 1px solid #919b9c;
+
   --checkmark-disabled: url("/images/icons/checkmark-disabled.png");
   --radio-dot-disabled: url("/images/icons/radio-dot-disabled.png");
   --scroll-background: url("/images/icons/scroll-background.png");
   --scroll-background-horizontal: url("/images/icons/scroll-background-horizontal.png");
-
   --back-btn-disabled: url("/images/icons/back-disabled.png");
 }
 

@@ -12,16 +12,17 @@ const { as: Element = "div", stacked, ...props } = Astro.props;
 </div>
 
 <style lang="scss">
+  $grouped-element-spacing: 6px;
   .field-row {
     display: flex;
     align-items: center;
     margin-top: 6px;
     > * + * {
-      margin-left: var(--grouped-element-spacing);
+      margin-left: $grouped-element-spacing;
     }
 
     &:not(:first-of-type) {
-      margin-top: var(--grouped-element-spacing);
+      margin-top: $grouped-element-spacing;
     }
   }
 
@@ -31,7 +32,7 @@ const { as: Element = "div", stacked, ...props } = Astro.props;
     * {
       + {
         * {
-          margin-top: var(--grouped-element-spacing);
+          margin-top: $grouped-element-spacing;
         }
       }
     }

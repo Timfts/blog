@@ -1,3 +1,5 @@
+$header-size: 90px;
+
 .main-menu {
   --lateral-padding: 20px;
 
@@ -21,7 +23,7 @@
 }
 
 .header {
-  height: var(--header-size);
+  height: $header-size;
   background: var(--theme-top-window);
   position: relative;
   padding: 10px var(--lateral-padding);
@@ -139,7 +141,7 @@
   justify-content: space-between;
 
   @include belowTurningPoint() {
-    padding-top: var(--header-size);
+    padding-top: $header-size;
     height: 100vh;
     position: absolute;
     overflow-y: scroll;
