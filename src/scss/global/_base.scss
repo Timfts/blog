@@ -34,7 +34,7 @@ h4 {
 }
 u {
   text-decoration: none;
-  border-bottom: 0.5px solid #222222;
+  border-bottom: 0.5px solid var(--theme-text-color);
 }
 
 a {
@@ -58,7 +58,7 @@ code {
 pre {
   display: block;
   padding: 12px 8px;
-  background-color: black;
+  background-color: var(--black);
   color: #c0c0c0;
   font-family: "Perfect DOS VGA 437 Win";
   font-size: 1rem;
@@ -72,7 +72,7 @@ summary {
   cursor: pointer;
   display: inline;
   &:focus {
-    outline: 1px dotted #000000;
+    outline: 1px dotted var(--black);
   }
 }
 

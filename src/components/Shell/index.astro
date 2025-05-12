@@ -1,7 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import "src/scss/global/main.scss";
 import MainMenu from "@components/MainMenu/index.astro";
+import Footer from "@components/Footer/index.astro";
 import Alert from "@components/Alert/index.astro";
 import Settings from "@components/Settings/index.astro";
 import LanguageSelector from "@components/LanguageSelector.astro";
@@ -9,6 +9,7 @@ import i18n from "./i18n";
 import { fade } from "astro:transitions";
 import LoadThemeScript from "./LoadThemeScript.astro";
 import Button from "@components/Button.astro";
+import "src/scss/global/main.scss";
 
 export type Props = {
   title?: string;
@@ -25,7 +26,7 @@ const lang = Astro.currentLocale as Lang;
 const { htmlLang, metaDescription, goBack } = i18n[lang];
 
 const forceViewTransitionsPolyfill = false;
-const currentYear = new Date().getFullYear();
+
 const I18NMap: I18NMap = {
   currentLang: Astro.currentLocale,
   paths: i18nPagePaths,
@@ -100,9 +101,7 @@ const feedPath = {
             </div>
             <div class="shell-page-container">
               <slot />
-              <div class="shell-footer">
-                &copy; {currentYear}
-              </div>
+              <Footer />
             </div>
           </div>
         </div>

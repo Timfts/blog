@@ -73,7 +73,7 @@ $header-size: 90px;
   width: 32px;
   background-size: cover;
   box-shadow: none;
-  background-color: #0050ee;
+  background-color: var(--theme-action-bg);
   transition: background 100ms;
   border: none;
   background-image: var(--menu);
@@ -103,7 +103,7 @@ $header-size: 90px;
 
 .name,
 .blog-title {
-  text-shadow: 1px 1px #0f1089;
+  text-shadow: 1px 1px var(--title-shadow);
   font-weight: bold;
   letter-spacing: 0;
   font-family: "Trebuchet MS";
@@ -187,7 +187,7 @@ $header-size: 90px;
   &:hover {
     text-decoration: underline;
     background-color: var(--theme-highlight-color);
-    color: #fff;
+    color: var(--white);
   }
 
   &:focus,

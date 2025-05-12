@@ -67,12 +67,12 @@ select {
 
   &:focus {
     outline: none;
-    color: #fff;
+    color: var(--white);
     background-color: var(--theme-highlight-color);
-    box-shadow: inset 2px 2px white, inset -2px -2px white;
+    box-shadow: inset 2px 2px var(--white), inset -2px -2px var(--white);
     option {
-      color: #000;
-      background-color: #fff;
+      color: var(--black);
+      background-color: var(--white);
     }
   }
   &:hover {
