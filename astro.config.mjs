@@ -1,12 +1,9 @@
 import { defineConfig } from "astro/config";
-
-// import lit from "@astrojs/lit";
-
 import sitemap from "@astrojs/sitemap";
+import msnEmoticons from "./plugins/msn-emoticons/index.js";
 
 // https://astro.build/config
 export default defineConfig({
-  /* integrations: [lit()] */
   site: "https://timfontes.com",
   i18n: {
     defaultLocale: "en",
@@ -17,6 +14,9 @@ export default defineConfig({
   },
   //one dark pro vitesse-black
   markdown: {
+    remarkPlugins: [
+      msnEmoticons
+    ],
     shikiConfig: {
       theme: "github-dark-default",
     },

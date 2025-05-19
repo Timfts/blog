@@ -11,6 +11,7 @@ import introImg from "./assets/intro-mobile-new.webp";
 import i18n, { pathMap } from "./i18n";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
 import PageTitle from "@components/PageTitle.astro";
+import Emoticon from "@components/Emoticon.astro";
 
 const currentLang = Astro.currentLocale as Lang;
 const pageData = i18n[currentLang];

@@ -1,0 +1,13 @@
+---
+import MSN_EMOTICONS from "@constants/msn-emoticons";
+
+type Props = {
+  exp: string;
+};
+
+const { exp } = Astro.props as Props;
+
+const emoticon = MSN_EMOTICONS.find((e) => e.shortcuts.includes(exp));
+---
+
+<img src={`/images/emoticons/${emoticon.name}.gif`} loading="lazy" alt={emoticon.desc} title={exp} class="msn-emoticon" />
