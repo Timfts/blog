@@ -8,6 +8,7 @@ const pagePaths = {
     postTopics: "/posts/topic",
     notFound: "/404",
     feedRSS: "/feed.xml",
+    emoticons: "/emoticons",
   },
 
   "pt-br": {
@@ -19,6 +20,7 @@ const pagePaths = {
     projects: "/pt-br/projetos",
     notFound: "/pt-br/404",
     feedRSS: "/pt-br/feed.xml",
+    emoticons: "/pt-br/emoticons",
   },
 };
 

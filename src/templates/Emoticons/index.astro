@@ -1,0 +1,76 @@
+---
+import Shell from "@components/Shell/index.astro";
+import PageTitle from "@components/PageTitle.astro";
+import MSN_EMOTICONS from "@constants/msn-emoticons";
+import i18n, { pathMap } from "./i18n";
+
+const lang = Astro.currentLocale as Lang;
+
+const { title, tableHeaders, orLabel } = i18n[lang];
+
+const emoticonsTable = MSN_EMOTICONS.map((emoticon) => ({
+  image: `/images/emoticons/${emoticon.name}.gif`,
+  name: emoticon.desc,
+  shortcuts: emoticon.shortcuts.map((shortcut) => `<b> ${shortcut} </b>`).join(`<span> ${orLabel} </span>`),
+}));
+---
+
+<Shell title={title} i18nPagePaths={pathMap}>
+  <PageTitle>{title}</PageTitle>
+
+  <div class="emoticons-container">
+    <table class="emoticons-table">
+      <thead>
+        <tr>
+          <th>{tableHeaders.emoticon}</th>
+          <th>{tableHeaders.name}</th>
+          <th>{tableHeaders.shortcuts}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          emoticonsTable.map((emoticon) => (
+            <tr>
+              <td>
+                <img src={emoticon.image} alt={emoticon.name} class="msn-emoticon" loading="lazy" />
+              </td>
+              <td>{emoticon.name}</td>
+              <td class="shortcuts-cell" set:html={emoticon.shortcuts} />
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Shell>
+
+<style lang="scss">
+  .emoticons-container {
+    padding: 0 20px 20px;
+    font-family: var(--sans-serif);
+    font-size: 12px;
+  }
+
+  .emoticons-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid var(--theme-border-1);
+    }
+
+    th {
+      background-color: var(--theme-submenu-bg);
+      font-weight: bold;
+    }
+  }
+
+  .msn-emoticon {
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+  }
+</style>

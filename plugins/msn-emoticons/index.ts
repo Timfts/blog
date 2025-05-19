@@ -3,21 +3,14 @@ import type { Parent } from "unist";
 import { visit } from "unist-util-visit";
 import MSN_EMOTICONS from "../../src/constants/msn-emoticons";
 
-type TextNode = {
-  type: "text";
-  value: string;
-};
-
-type HtmlNode = {
-  type: "html";
-  value: string;
-};
-
-
-
 type TextSegment = {
   type: "text" | "emoticon";
   content: string;
+};
+
+type Node = {
+  type: "text" | "html";
+  value: string;
 };
 
 /**
@@ -25,7 +18,7 @@ type TextSegment = {
  */
 export default function remarkMsnEmoticons() {
   return function transformer(tree: Root) {
-    visit(tree, "text", function (node: TextNode, index: number, parent: Parent) {
+    visit(tree, "text", function (node: Node, index: number, parent: Parent) {
       // Early return if no msn[] pattern is found
       if (!node.value.includes("msn[")) return;
 
@@ -60,7 +53,7 @@ function splitTextIntoSegments(text: string): TextSegment[] {
 /**
  * Convert a text segment into a MDAST node
  */
-function segmentToNode(segment: TextSegment): TextNode | HtmlNode {
+function segmentToNode(segment: TextSegment): Node {
   if (segment.type === "emoticon") {
     const emoticon = MSN_EMOTICONS.find((e) => e.shortcuts.includes(segment.content));
     if (!emoticon) {
