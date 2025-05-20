@@ -3,7 +3,6 @@ import Shell from "@components/Shell/index.astro";
 import Image from "@components/Image/index.astro";
 import PostsList from "@components/PostsList/index.astro";
 import PostListItem from "@components/PostsList/Item.astro";
-import { getPageI18NPathMap } from "@helpers/server/i18n";
 import postTopics from "@content/_post-topics.json";
 import pagePaths from "@constants/pagePaths";
 
@@ -11,7 +10,6 @@ import introImg from "./assets/intro-mobile-new.webp";
 import i18n, { pathMap } from "./i18n";
 import { getPostsByLang } from "@cms/collections/posts/helpers";
 import PageTitle from "@components/PageTitle.astro";
-import Emoticon from "@components/Emoticon.astro";
 
 const currentLang = Astro.currentLocale as Lang;
 const pageData = i18n[currentLang];
@@ -36,6 +34,8 @@ const topicsPerColumn = Math.ceil(formattedTopics.length / topicsColumnsNumber);
 const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
   return formattedTopics.slice(i * topicsPerColumn, (i + 1) * topicsPerColumn);
 });
+
+const randomStaff = [{ title: pageData.randomStaff.emoticons.title, path: pageData.randomStaff.emoticons.path }];
 ---
 
 <Shell i18nPagePaths={pathMap}>
@@ -51,14 +51,14 @@ const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
         </div>
       </div>
     </section>
-    <section class="latest-posts">
+    <section class="section latest-posts">
       <h2 class="section-title">{pageData.latestPostsTitle}</h2>
       <PostsList>
         {latestUpdates.map((post) => <PostListItem post={post} />)}
       </PostsList>
       <a href={postsPath} class="more-posts-link">...{pageData.morePosts}</a>
     </section>
-    <section class="post-topics">
+    <section class="section post-topics">
       <h2 class="section-title">{pageData.categoriesTitle}</h2>
       <div class="topics-columns">
         {
@@ -75,6 +75,20 @@ const topicsColumns = Array.from({ length: topicsColumnsNumber }, (_, i) => {
           ))
         }
       </div>
+    </section>
+    <section class="section random-staff">
+      <h2 class="section-title">{pageData.randomStaffTitle}</h2>
+      <ul class="random-staff-list">
+        {
+          randomStaff.map((staff) => (
+            <li class="random-staff-item">
+              <a class="random-staff-link" href={staff.path}>
+                {staff.title}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
     </section>
   </div>
 </Shell>

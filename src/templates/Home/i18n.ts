@@ -22,6 +22,13 @@ const i18n = {
     morePosts: "see all",
     categoriesTitle: "Categories",
     topicLabelProperty: "label",
+    randomStaffTitle: "Random sh*t",
+    randomStaff: {
+      emoticons: {
+        title: "Classic emoticons",
+        path: getPageI18NPathMap("emoticons").en,
+      },
+    },
   },
   "pt-br": {
     mainTitle: "Olá!",
@@ -42,6 +49,13 @@ const i18n = {
     morePosts: "ver todos",
     categoriesTitle: "Categorias",
     topicLabelProperty: "label-ptbr",
+    randomStaffTitle: "Tranqueiras aleatórias",
+    randomStaff: {
+      emoticons: {
+        title: "Emoticons clássicos",
+        path: getPageI18NPathMap("emoticons")["pt-br"],
+      },
+    },
   },
 };
 

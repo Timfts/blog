@@ -7,7 +7,7 @@ import i18n, { pathMap } from "./i18n";
 
 const lang = Astro.currentLocale as Lang;
 
-const { title, tableHeaders, orLabel } = i18n[lang];
+const { title, tableHeaders, orLabel, defaultGoBackPage, scrapedText } = i18n[lang];
 
 const emoticonsTable = MSN_EMOTICONS.map((emoticon) => ({
   name: emoticon.desc,
@@ -16,7 +16,7 @@ const emoticonsTable = MSN_EMOTICONS.map((emoticon) => ({
 }));
 ---
 
-<Shell title={title} i18nPagePaths={pathMap}>
+<Shell title={title} i18nPagePaths={pathMap} defaultGoBack={defaultGoBackPage}>
   <PageTitle>{title}</PageTitle>
 
   <div class="emoticons-container">
@@ -43,11 +43,14 @@ const emoticonsTable = MSN_EMOTICONS.map((emoticon) => ({
       </tbody>
     </table>
   </div>
+  <p class="scraped-disclaimer">
+    <span set:html={scrapedText} />
+    <Emoticon exp=":p" />
+  </p>
 </Shell>
 
 <style lang="scss">
   .emoticons-container {
-    padding: 0 20px 20px;
     font-family: var(--sans-serif);
     font-size: 12px;
   }
@@ -69,9 +72,7 @@ const emoticonsTable = MSN_EMOTICONS.map((emoticon) => ({
     }
   }
 
-  .msn-emoticon {
-    width: 19px;
-    height: 19px;
-    vertical-align: middle;
+  .scraped-disclaimer {
+    margin-top: 30px;
   }
 </style>

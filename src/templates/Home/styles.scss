@@ -36,8 +36,7 @@
   height: auto;
 }
 
-.latest-posts,
-.post-topics {
+.section {
   margin-top: 50px;
 }
 
@@ -52,11 +51,15 @@
   text-decoration: none;
 }
 
+.random-staff-list,
+.topics-column {
+  list-style-position: inside;
+}
+
 .topics-columns {
   display: flex;
   gap: 60px;
   margin-top: 20px;
-  list-style-position: inside;
 
   @include belowTurningPoint() {
     flex-direction: column;
