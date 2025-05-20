@@ -14,7 +14,7 @@ const i18n = {
     
   },
   en: {
-    orLabel: "ou",
+    orLabel: "or",
     title: "Emoticons",
     tableHeaders: {
       emoticon: "Emoticon",

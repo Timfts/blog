@@ -61,7 +61,11 @@ function segmentToNode(segment: TextSegment): Node {
     }
     return {
       type: "html",
-      value: `<img src="/images/emoticons/${emoticon.name}.gif" loading="lazy" alt="${emoticon.desc}" title="${segment.content}" class="msn-emoticon" />`,
+      value: `
+      <picture>
+        <source srcset="/images/emoticons/webp/${emoticon.name}.webp" type="image/webp">
+        <img src="/images/emoticons/${emoticon.name}.gif" loading="lazy" alt="${emoticon.desc}" title="${segment.content}" class="msn-emoticon" />
+      </picture>`,
     };
   }
   return { type: "text", value: segment.content };

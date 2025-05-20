@@ -10,4 +10,7 @@ const { exp } = Astro.props as Props;
 const emoticon = MSN_EMOTICONS.find((e) => e.shortcuts.includes(exp));
 ---
 
-<img src={`/images/emoticons/${emoticon.name}.gif`} loading="lazy" alt={emoticon.desc} title={exp} class="msn-emoticon" />
+<picture>
+  <source srcset={`/images/emoticons/webp/${emoticon.name}.webp`} type="image/webp">
+  <img src={`/images/emoticons/${emoticon.name}.gif`} loading="lazy" alt={emoticon.desc} title={exp} class="msn-emoticon" />
+</picture>

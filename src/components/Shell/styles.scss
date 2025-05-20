@@ -119,6 +119,7 @@
       cursor: not-allowed;
       .shell-back-icon {
         background-image: var(--back-btn-disabled);
+        image-rendering: pixelated;
       }
     }
   }
