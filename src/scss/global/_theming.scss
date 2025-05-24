@@ -110,6 +110,9 @@
     --theme-tab-border: 1px solid #919b9c;
     --theme-highlight-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
     --theme-focus-shadow: inset -1px 1px #cee7ff, inset 1px 2px #98b8ea, inset -2px 2px #bcd4f6, inset 1px -1px #89ade4, inset 2px -2px #89ade4;
+    --theme-tab-active-shadow: inset 0px 2px #ffc73c;
+    --theme-tab-active-border: #e68b2c;
+    --theme-tab-hover-shadow: inset 0px 2px #ffc73c;
 
     --theme-text-color: #222222;
     --theme-text-muted: #5f5f5f;
@@ -170,9 +173,12 @@
     --theme-border-1: #404040;
     --theme-outline-link: #a8a8a8;
     --theme-submenu-bg: #404040;
-    --theme-tab-border: 1px solid #919b9c;
+    --theme-tab-border: 1px solid #5a5a5a;
     --theme-highlight-shadow: inset -1px 1px #636363, inset 1px 2px #8a8a8a, inset -2px 2px #707070, inset 2px -2px #5a5a5a;
     --theme-focus-shadow: inset -1px 1px #505050, inset 1px 2px #5f5f5f, inset -2px 2px #4a4a4a, inset 1px -1px #404040, inset 2px -2px #3a3a3a;
+    --theme-tab-active-shadow: unset;
+    --theme-tab-active-border: #e68b2c;
+    --theme-tab-hover-shadow: none;
 
     --theme-text-color: #bbbaba;
     --theme-border-color: var(#d9d9d9);
