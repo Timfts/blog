@@ -8,7 +8,7 @@
   margin-bottom: 80px;
   justify-content: space-between;
   padding-left: 25px;
-  border-left: 1px solid var(--border-color);
+  border-left: 1px solid var(--theme-border-color);
   align-items: center;
 
   &-content {
@@ -26,7 +26,7 @@
 
   &-date {
     font-size: var(--txt-small);
-    color: var(--gray-30);
+    color: var(--theme-text-muted);
     margin-bottom: 3px;
   }
 

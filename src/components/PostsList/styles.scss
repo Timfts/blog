@@ -14,7 +14,7 @@
 
   &-date {
     font-size: var(--txt-xsmall);
-    color: var(--gray-30);
+    color: var(--theme-text-muted);
     margin-bottom: 5px;
   }
 
@@ -26,7 +26,7 @@
 
   &-cat-title,
   &-cat-link {
-    color: var(--gray-30);
+    color: var(--theme-text-muted);
   }
 
   &-path {
