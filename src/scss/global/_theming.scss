@@ -9,7 +9,6 @@
   --yellow-light: #ece9d8;
   --gray-0: #dfdfdf;
   --gray-20: #808080;
-  --title-shadow: #0f1089;
 
   --checkmark-disabled: url("/images/icons/checkmark-disabled.png");
   --radio-dot-disabled: url("/images/icons/radio-dot-disabled.png");
@@ -112,6 +111,7 @@
     --theme-tab-active-shadow: inset 0px 2px #ffc73c;
     --theme-tab-active-border: #e68b2c;
     --theme-tab-hover-shadow: inset 0px 2px #ffc73c;
+    --theme-title-shadow: #0f1089;
 
     --theme-text-color: #222222;
     --theme-text-muted: #5f5f5f;
@@ -179,6 +179,7 @@
     --theme-tab-active-shadow: unset;
     --theme-tab-active-border: #e68b2c;
     --theme-tab-hover-shadow: none;
+    --theme-title-shadow: #000000;
     --theme-project-status-bg: #404040;
 
     --theme-text-color: #bbbaba;

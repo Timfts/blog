@@ -1,12 +1,85 @@
 ---
+import randomInArray from "@helpers/randomInArray";
+
+// Badges
+import y2k1 from "./badges/2000-1.gif";
+import y2k2 from "./badges/2000-2.gif";
+import anyBrowser from "./badges/any-browser-1.gif";
+import css1 from "./badges/css-1.gif";
+import css2 from "./badges/css-2.gif";
+import html1 from "./badges/html-1.gif";
+import html2 from "./badges/html-2.gif";
+import js1 from "./badges/js-1.webp";
+import js2 from "./badges/js-2.gif";
+import madeWith1 from "./badges/made-with-1.gif";
+import madeWith2 from "./badges/made-with-2.gif";
+import misc3 from "./badges/misc-3.gif";
+import vamp1 from "./badges/vamp-1.gif";
+import vamp2 from "./badges/vamp-2.gif";
+import vamp3 from "./badges/vamp-3.webp";
+
+const badges = [
+  {
+    alt: "Any browser badge",
+    src: anyBrowser,
+  },
+  {
+    alt: "CSS badge",
+    src: randomInArray([css1, css2]),
+  },
+  {
+    alt: "Y2K1 badge",
+    src: randomInArray([y2k1, y2k2]),
+  },
+  {
+    alt: "HTML badge",
+    src: randomInArray([html1, html2]),
+  },
+  {
+    alt: "JavaScript badge",
+    src: randomInArray([js1, js2]),
+  },
+  {
+    alt: "Made with badge",
+    src: randomInArray([madeWith1, madeWith2]),
+  },
+  {
+    alt: "Misc badge",
+    src: misc3,
+  },
+  {
+    alt: "Vamp badge",
+    src: randomInArray([vamp1, vamp2, vamp3]),
+  },
+];
+
 const currentYear = new Date().getFullYear();
 ---
 
 <div class="footer">
+  <div class="badges">
+    {badges.map((badge) => <img class="badge" src={badge.src.src} alt={badge.alt} width={88} height={31} loading="lazy" />)}
+  </div>
   &copy; {currentYear}
 </div>
 
 <style lang="scss">
+  .footer {
+  }
+  .badges {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    //justify-content: center;
+    //max-width: 532px;
+    //margin: 0 auto;
+    padding: 40px 0;
+  }
+  .badge {
+    flex-shrink: 0;
+    flex-grow: 0;
+    image-rendering: pixelated;
+  }
   .footer {
     padding: 50px 0 20px;
   }
