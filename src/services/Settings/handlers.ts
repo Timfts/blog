@@ -28,6 +28,24 @@ const prefsHandlers = {
     const themeMeta = document.querySelector("meta[name=theme-color]");
     themeMeta.setAttribute("content", themeColor);
   },
+
+  ads: async (value) => {
+    const adElementName = "app-ad";
+    const isAlreadyRegistered = customElements.get(adElementName);
+    const holder = document.querySelector("#ad-slot");
+    if (!value) {
+      holder.innerHTML = "";
+      return;
+    }
+
+    if (!isAlreadyRegistered) {
+      const { AdsBanner } = await import("@components/lit/AdsBanner");
+      customElements.define(adElementName, AdsBanner);
+    }
+
+    const bannerInst = document.createElement(adElementName);
+    holder.appendChild(bannerInst);
+  },
 };
 
 export default prefsHandlers;

@@ -23,7 +23,8 @@ const {
   customPointerOption,
   language,
   backgroundImage,
-  inConstructionLabel,
+  adsLabel,
+  adsOption,
 } = i18n[currentLang];
 
 const themes = [
@@ -42,6 +43,7 @@ const fieldsNames = {
   filter: "filter",
   textSize: "text-size",
   customPointer: "pointer",
+  showAds: "ads",
   language: "lang",
   backgroundImg: "background",
 };
@@ -71,13 +73,7 @@ const deskBackgrounds = [
               {
                 themes.map(({ id, label }) => (
                   <FieldRow>
-                    <input
-                      name={fieldsNames.theme}
-                      id={id}
-                      type="radio"
-                      value={id}
-                      checked={id === "default"}
-                    />
+                    <input name={fieldsNames.theme} id={id} type="radio" value={id} checked={id === "default"} />
                     <label for={id}>{label}</label>
                   </FieldRow>
                 ))
@@ -85,34 +81,19 @@ const deskBackgrounds = [
             </Groupbox>
             <Groupbox legend={backgroundImage} class="desktop-only-option">
               <select name={fieldsNames.backgroundImg} style="width:100%;">
-                {
-                  deskBackgrounds.map(({ label, id }) => (
-                    <option value={id}>{label}</option>
-                  ))
-                }
+                {deskBackgrounds.map(({ label, id }) => <option value={id}>{label}</option>)}
               </select>
             </Groupbox>
             <div class="settings-side-by-side">
               <Groupbox legend={screenFilterOption} class="settings-filter">
                 <select name={fieldsNames.filter} style="width:100%;">
-                  {
-                    uiFilters.map(({ label, id }) => (
-                      <option value={id}>{label}</option>
-                    ))
-                  }
+                  {uiFilters.map(({ label, id }) => <option value={id}>{label}</option>)}
                 </select>
               </Groupbox>
               <Groupbox legend={textSizeOption} class="settings-txt">
                 <div class="text-range">
                   <label for="text-size">{textSizeMin}</label>
-                  <input
-                    id={fieldsNames.textSize}
-                    name={fieldsNames.textSize}
-                    type="range"
-                    min="0"
-                    max="100"
-                    step="50"
-                  />
+                  <input id={fieldsNames.textSize} name={fieldsNames.textSize} type="range" min="0" max="100" step="50" />
                   <label for="text-size">{textSizeMax}</label>
                 </div>
               </Groupbox>
@@ -121,14 +102,17 @@ const deskBackgrounds = [
           <Tab id="misc">
             <Groupbox legend={customPointerOption} class="desktop-only-option">
               <FieldRow>
-                <input
-                  type="checkbox"
-                  value="true"
-                  id={fieldsNames.customPointer}
-                  name={fieldsNames.customPointer}
-                />
+                <input type="checkbox" value="true" id={fieldsNames.customPointer} name={fieldsNames.customPointer} />
                 <label for={fieldsNames.customPointer}>
                   {customPointerLabel}
+                </label>
+              </FieldRow>
+            </Groupbox>
+            <Groupbox legend={adsOption} class="desktop-only-option">
+              <FieldRow>
+                <input type="checkbox" value="true" id={fieldsNames.showAds} name={fieldsNames.showAds} />
+                <label for={fieldsNames.showAds}>
+                  {adsLabel}
                 </label>
               </FieldRow>
             </Groupbox>

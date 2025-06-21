@@ -4,7 +4,6 @@ export default {
     windowTitle: "Settings",
     cancelBtn: "Cancel",
     defaultLabel: "default",
-    inConstructionLabel: "in construction",
     themeOption: "Theme",
     backgroundImage: "Desktop background",
     screenFilterOption: "Screen filter",
@@ -13,6 +12,8 @@ export default {
     textSizeMax: "Large",
     customPointerOption: "Custom Cursor",
     customPointerLabel: "Use custom cursor",
+    adsOption: "Show Ads?",
+    adsLabel: "Yes!!!",
     language: "Language",
   },
   "pt-br": {
@@ -20,7 +21,6 @@ export default {
     windowTitle: "Configurações",
     cancelBtn: "Cancelar",
     defaultLabel: "Padrão",
-    inConstructionLabel: "em construção",
     themeOption: "Tema",
     backgroundImage: "Background desktop",
     screenFilterOption: "Filtro de tela",
@@ -29,6 +29,8 @@ export default {
     textSizeMax: "Grande",
     customPointerOption: "Cursor customizado",
     customPointerLabel: "Usar cursor customizada",
+    adsOption: "Mostrar propagandas?",
+    adsLabel: "Sim!!!",
     language: "Idioma",
   },
 };

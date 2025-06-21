@@ -13,4 +13,5 @@ export const events = {
   OPEN_MEDIA_PLAYER: "openMediaPlayer",
   CLOSE_MEDIA_PLAYER: "closeMediaPlayer",
   CLOSE_WINDOW: "closeWindow",
+  OPEN_AD: "openAd"
 };
