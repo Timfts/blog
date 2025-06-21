@@ -60,13 +60,20 @@ const badges = [
 ];
 
 const currentYear = new Date().getFullYear();
+
+const currentLocale = Astro.currentLocale as Lang;
+
+const i18nText = {
+  en: "See a bug? Refresh the page and pretend you didn’t.",
+  "pt-br": "Viu um bug? dá F5 e finge que não viu.",
+}[currentLocale];
 ---
 
 <div class="footer">
   <div class="badges">
     {badges.map((badge) => <img class="badge" src={badge.src.src} alt={badge.alt} width={88} height={31} loading="lazy" />)}
   </div>
-  &copy; {currentYear}
+  <span class="footer-copy">&copy; {currentYear} - {i18nText}</span>
 </div>
 
 <style lang="scss">
@@ -86,5 +93,9 @@ const currentYear = new Date().getFullYear();
   }
   .footer {
     padding: 50px 0 20px;
+  }
+
+  .footer-copy {
+    font-size: 14px;
   }
 </style>
