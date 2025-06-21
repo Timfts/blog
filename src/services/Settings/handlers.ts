@@ -32,7 +32,7 @@ const prefsHandlers = {
   ads: async (value) => {
     const adElementName = "app-ad";
     const isAlreadyRegistered = customElements.get(adElementName);
-    const holder = document.querySelector("#ad-slot");
+    const holder = document.querySelector("#banner-slot");
     if (!value) {
       holder.innerHTML = "";
       return;
