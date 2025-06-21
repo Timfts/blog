@@ -89,7 +89,7 @@ export class AdsBanner extends LitElement {
   render() {
     return html`<div class="banner-holder">
       <button class="shuffle-btn" @click=${this._randomizeAd}>${this.changeLabel}</button>
-      <img class="banner-img" @click=${this._callAdClick} src=${`/images/ads/${this.currentBanner}.gif`} alt="fake ad banner" />
+      <img class="banner-img" @click=${this._callAdClick} src=${`/images/banners/${this.currentBanner}.gif`} alt="fake ad banner" />
     </div>`;
   }
 }
