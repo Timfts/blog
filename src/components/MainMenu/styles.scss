@@ -123,9 +123,13 @@ $header-size: 90px;
   font-style: italic;
 }
 
-.avatar-image {
+.avatar-profile {
+  width: 100%;
   height: 100%;
-  width: auto;
+  background-size: cover;
+  background-repeat: none;
+  image-rendering: pixelated;
+  background-image: var(--theme-profile);
 }
 
 .menu-body {

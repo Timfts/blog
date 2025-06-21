@@ -17,6 +17,8 @@ import misc3 from "./badges/misc-3.gif";
 import vamp1 from "./badges/vamp-1.gif";
 import vamp2 from "./badges/vamp-2.gif";
 import vamp3 from "./badges/vamp-3.webp";
+import cause1 from "./badges/cause-1.gif";
+import cause2 from "./badges/cause-2.gif";
 
 const badges = [
   {
@@ -51,6 +53,10 @@ const badges = [
     alt: "Vamp badge",
     src: randomInArray([vamp1, vamp2, vamp3]),
   },
+  {
+    alt: "Cause",
+    src: randomInArray([cause1, cause2]),
+  },
 ];
 
 const currentYear = new Date().getFullYear();
@@ -70,9 +76,7 @@ const currentYear = new Date().getFullYear();
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
-    //justify-content: center;
-    //max-width: 532px;
-    //margin: 0 auto;
+    max-width: 532px;
     padding: 40px 0;
   }
   .badge {

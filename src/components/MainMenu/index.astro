@@ -1,5 +1,5 @@
 ---
-import { Picture } from "astro:assets";
+import { Picture, Image } from "astro:assets";
 import socialLinks from "@content/_social-links.json";
 import SearchBar from "@components/SearchBar/index.astro";
 import { icons } from "./data";
@@ -7,7 +7,7 @@ import i18n from "./i18n";
 
 const currentLocale = Astro.currentLocale as Lang;
 const currentPage = Astro.url.pathname;
-const { mainProfileAlt, menuItems: menuItemsMap, homePath, menuToggleAriaLabel, blogTitle } = i18n[currentLocale];
+const { menuItems: menuItemsMap, homePath, menuToggleAriaLabel, blogTitle } = i18n[currentLocale];
 
 const menuItemsEntries = Object.entries(menuItemsMap);
 ---
@@ -16,7 +16,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
   <header class="header">
     <a href={homePath} class="header-left">
       <div class="avatar">
-        <img class="avatar-image" src="/images/profile-new.jpg" width="44" height="44" alt={mainProfileAlt} />
+        <div class="avatar-profile"></div>
       </div>
       <div>
         <h1 class="name">Tim Fontes</h1>
@@ -43,7 +43,7 @@ const menuItemsEntries = Object.entries(menuItemsMap);
               href={path}
             >
               <Picture class="menu-content-icon" width={24} height={24} formats={["webp"]} src={icons[key]} alt={iconAlt} />
-              {label}
+              <span set:html={label} />
             </a>
           </li>
         ))

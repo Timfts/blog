@@ -20,9 +20,10 @@
   }
 
   &-stats-logo {
-    width: 300px;
     flex-shrink: 0;
     border: 1px solid var(--theme-border-1);
+    max-width: 300px;
+    width: 100%;
   }
 
   &-logo-img {

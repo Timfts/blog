@@ -12,7 +12,6 @@ type MenuItem = {
 
 const i18n = {
   en: {
-    mainProfileAlt: "Tim's Profile image",
     homePath: enPaths.home,
     menuToggleAriaLabel: "Toggle menu",
     blogTitle: "in reverie",
@@ -43,7 +42,7 @@ const i18n = {
         iconAlt: "Icon of a letter envelope",
       },
       rss: {
-        label: "RSS",
+        label: "RSS &#x2197;",
         path: enPaths.feedRSS,
         iconAlt: "RSS icon",
         target: "_blank",
@@ -61,7 +60,6 @@ const i18n = {
     } as Record<string, MenuItem>,
   },
   "pt-br": {
-    mainProfileAlt: "Imagem de perfil de Tim",
     homePath: ptPaths.home,
     menuToggleAriaLabel: "Abrir ou fechar menu",
     blogTitle: "em devaneio",
