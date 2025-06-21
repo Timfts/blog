@@ -37,10 +37,11 @@ const Settings = () => {
     const prefSideEffect = prefsHandlers[setting];
     if (prefSideEffect) prefSideEffect(value);
 
-    const shouldAutoApplyMatrixBG = setting === "theme" && value === "dark" && !isMobile() && currentPrefs?.background === "none";
+    const shouldAutoApplyMatrixBG =
+      setting === "theme" && value === "dark" && !isMobile() && (currentPrefs?.background === "none" || !currentPrefs?.background);
 
     const shouldAutoRemoveMatrixBG = currentPrefs?.theme === "dark" && value === "default" && currentPrefs?.background === "matrix";
-
+    console.log({ setting, value, currentPrefs }, "lala");
     if (shouldAutoApplyMatrixBG) {
       setPref("background", "matrix");
     }
