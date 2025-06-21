@@ -10,6 +10,17 @@ This project is a personal blog and portfolio website built with [Astro](https:/
 - Projects showcase
 - Dark/light theme support
 
+## 💻 Tech Stack
+
+- **Framework**: [Astro](https://astro.build/)
+- **CMS**: [Decap CMS](https://decapcms.org/)
+- **Styling**: SCSS/Sass
+- **Languages**: TypeScript, JavaScript
+- **Build Tools**: PostCSS, Autoprefixer, CSSnano
+- **UI Components**: Custom Astro components and Web Components (Lit)
+- **Content**: Markdown
+- **Deployment**: Static site generation
+
 ## 📋 Requirements
 
 - Node.js 20 or higher
@@ -51,14 +62,6 @@ To preview the production build:
 
 ```bash
 npm run preview
-```
-
-## 🧪 Testing
-
-Run tests with:
-
-```bash
-npm test
 ```
 
 ## 🔧 Project Structure
