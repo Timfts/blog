@@ -1,0 +1,43 @@
+---
+const lang = Astro.currentLocale as Lang;
+
+const message = {
+  "pt-br": "anunsio nao encontrado",
+  en: "ad not fond",
+}[lang];
+---
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>{message}</p>
+  </body>
+</html>
+
+<style lang="scss">
+  body {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    height: 100vh;
+  }
+</style>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const hornyParam = urlParams.get("horny");
+  if (hornyParam) {
+    const img = document.createElement("img");
+    img.src = "/images/horny-jail.webp";
+    img.height = 500;
+    const body = document.querySelector("body");
+    body.appendChild(img);
+  }
+</script>

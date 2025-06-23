@@ -1,4 +1,4 @@
-import { events } from "@constants/index";
+import pagePaths from "@constants/pagePaths";
 import { getCurrentLocale } from "@helpers/i18n";
 import randomInArray from "@helpers/randomInArray";
 import { css, html, LitElement } from "lit";
@@ -80,10 +80,11 @@ export class AdsBanner extends LitElement {
   }
 
   private _callAdClick() {
-    const closeEvent = new CustomEvent(events.OPEN_AD, {
-      bubbles: true,
-    });
-    this.dispatchEvent(closeEvent);
+    const hornyAds = ["alone", "enlarge", "habbo", "meet"];
+    const isHorny = hornyAds.includes(this.currentBanner);
+    const pagePath = pagePaths[this.currentLang as Lang].anf;
+    const fmtPath = `${pagePath}${isHorny ? "?horny=true" : ""}`;
+    window.open(fmtPath, "_blank");
   }
 
   render() {

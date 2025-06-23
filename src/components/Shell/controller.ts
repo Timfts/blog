@@ -21,7 +21,6 @@ elementController(
       }
       on(events.OPEN_MEDIA_PLAYER, handleLoadMusicPlayer);
       on(events.CLOSE_MEDIA_PLAYER, handleCloseMusicPlayer);
-      on(events.OPEN_AD, handleOpenAd);
       on("change", handleLangChange);
 
       if (goBackBtn) goBackBtn.addEventListener("click", handleGoBack);
@@ -33,10 +32,6 @@ elementController(
       const isDisabled = goBackBtn.ariaDisabled === "true";
       if (isDisabled) return;
       window.history.back();
-    }
-
-    function handleOpenAd() {
-      alert("potato");
     }
 
     function handleLangChange(e: Event) {

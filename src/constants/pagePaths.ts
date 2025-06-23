@@ -9,6 +9,7 @@ const pagePaths = {
     notFound: "/404",
     feedRSS: "/feed.xml",
     emoticons: "/emoticons",
+    anf: "/nesquik",
   },
 
   "pt-br": {
@@ -21,6 +22,7 @@ const pagePaths = {
     notFound: "/pt-br/404",
     feedRSS: "/pt-br/feed.xml",
     emoticons: "/pt-br/emoticons",
+    anf: "/pt-br/nesquik",
   },
 };
 
