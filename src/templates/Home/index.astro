@@ -15,6 +15,10 @@ const currentLang = Astro.currentLocale as Lang;
 const pageData = i18n[currentLang];
 const usedPagePaths = pagePaths[currentLang];
 const { posts: postsPath } = usedPagePaths;
+const topicPath = {
+  en: "topic",
+  "pt-br": "topico",
+}[currentLang];
 
 const allPosts = await getPostsByLang(currentLang);
 const latestUpdates = allPosts.slice(0, 5);
@@ -23,7 +27,7 @@ const formattedTopics = postTopics["topics-list"]
   .map((topic) => {
     return {
       label: postTopics["topics-list"].find(({ slug }) => slug === topic.slug)?.[pageData.topicLabelProperty],
-      path: `${postsPath}/topic/${topic.slug}`,
+      path: `${postsPath}/${topicPath}/${topic.slug}`,
     };
   })
   .sort((a, b) => a.label.localeCompare(b.label));
