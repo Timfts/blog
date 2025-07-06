@@ -51,15 +51,13 @@ Estava no Figma, editado há 7 anos. Curioso, eu jurava que tinha feito no Adobe
 
 ![Print do layout do primeiro portfólio no figma](/images/uploads/figma-portfolio.png "Figma print")
 
-
-
 Sim, meu nome de nascimento é Ítalo. Apesar de sempre ter sido chamado de Tim, nessa época eu não tinha muita segurança — até sentia uma certa vergonha de usar esse nome fora do círculo familiar, já que não era nada comum. Mas, com o tempo, fui aceitando Tim como meu nome definitivo.
 
 Sempre fui fã de trazer uma dose de nostalgia pras minhas criações, e não foi diferente com esse site. Adotei uma estética que lembrava uma era pré-computadores: os componentes da página pareciam diários, com tipografia de máquinas de escrever, fotos de câmeras analógicas e cores creme que remetiam a camadas de papéis antigos.
 
 Sobre o desenvolvimento, vejo que consegui chegar bem perto do design que tinha imaginado, adicionando uma camada de animações que deu vida ao projeto.
 
-Naquela época, apesar de já ter mexido com ferramentas como React, Webpack e WordPress, decidi fazer essa landing page no bom e velho “vanilla”: HTML, CSS e JavaScript. Uns steps de build e processamento de assets entraram com Gulp, principalmente pra compilar o SASS em CSS. (Hoje, olhando em retrospectro, acho que nem isso precisava pra esse projeto, mas foi essencial pra eu aprender a lidar com processamento de arquivos — algo que, aliás, acabei fazendo muito na carreira depois).
+Naquela época, apesar de já ter mexido com ferramentas como React, Webpack e WordPress, decidi fazer essa landing page no bom e velho “vanilla”: HTML, CSS e JavaScript. Uns steps de build e processamento de assets entraram com Gulp, principalmente pra compilar o SASS em CSS. (Hoje, olhando em retrospecto, acho que nem isso precisava pra esse projeto, mas foi essencial pra eu aprender a lidar com processamento de arquivos — algo que, aliás, acabei fazendo muito na carreira depois).
 
 Revisando o código agora, sete anos depois, acho que ele envelheceu muito bem. Muitos dos meus maneirismos mudaram, especialmente no JavaScript, mas em termos de HTML e CSS ainda é bem parecido com o que faço hoje.
 
