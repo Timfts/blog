@@ -14,6 +14,21 @@
       "slug": "test",
       "label": "teste",
       "color": "#e79191"
+    },
+    {
+      "slug": "webdev",
+      "label": "webdev",
+      "color": "#e13030"
+    },
+    {
+      "slug": "website",
+      "label": "website",
+      "color": "#6fa7ff"
+    },
+    {
+      "slug": "css",
+      "label": "CSS",
+      "color": "#58ecff"
     }
   ]
 }
