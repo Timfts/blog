@@ -31,11 +31,9 @@ E foi assim que comecei meu primeiro portfólio.
 
 Não lembro exatamente de todos os detalhes do processo de criar aquilo, mas lembro bem do que eu queria. Meus “requisitos” eram:
 
-\* Não podia parecer um portfólio genérico ou com cara de template — precisava ter um mínimo de autenticidade;
-
-\* Não deveria ser muito complexo ou usar tecnologias muito alienígenas (não queria gastar tanto tempo nisso);
-
-\* Tinha que ter algumas animações simples, pra mostrar meu lado criativo e o que manjava de CSS.
+* Não podia parecer um portfólio genérico ou com cara de template — precisava ter um mínimo de autenticidade;
+* Não deveria ser muito complexo ou usar tecnologias muito alienígenas (não queria gastar tanto tempo nisso);
+* Tinha que ter algumas animações simples, pra mostrar meu lado criativo e o que manjava de CSS.
 
 E assim foi...
 
