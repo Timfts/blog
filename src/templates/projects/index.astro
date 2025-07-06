@@ -10,36 +10,20 @@ import learnings from "@content/_learnings.json";
 import i18n, { pathMap } from "./i18n";
 import PageTitle from "@components/PageTitle.astro";
 
-const showFeatured = false;
-
 const lang = Astro.currentLocale as Lang;
 const data = i18n[lang];
 
 const projects = await getProjectsByLanguage(lang);
+
 const learningsList = learnings["learnings-list"];
-const featured = replicate(projects[1], 6);
 ---
 
 <Shell title={data.title} i18nPagePaths={pathMap} defaultGoBack={data.defaultGoBackPage}>
   <div class="projects-page" data-fragment="projects-page">
     <PageTitle>{data.title}</PageTitle>
-    {
-      showFeatured && (
-        <div class="featured-projects">
-          <h2>{data.featuredTitle}</h2>
-
-          <ul class="featured-list">
-            {featured.map((project) => {
-              return <ProjectCard project={project} />;
-            })}
-          </ul>
-        </div>
-      )
-    }
 
     <div class="all-projects">
       <div class="all-projects-head">
-        {showFeatured && <h2>{data.allProjects}</h2>}
         <CategoriesFilter
           items={learningsList}
           legend={data.filters}
