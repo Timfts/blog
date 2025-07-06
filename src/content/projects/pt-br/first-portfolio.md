@@ -5,9 +5,11 @@ project_link: https://italofontes.com/
 proj_created_year: 2018
 created_date: 2023-08-28T02:12:49.747Z
 thumbnail: /images/uploads/portfolio-1.jpg
-excerpt: asdsfs
+excerpt: "Meu primeiro (simples, peculiar e animado) portfólio "
 learnings:
-  - sdfd-dfdg
+  - webdev
+  - website
+  - css
 ---
 O ano era 2018, e eu tinha... bem... 18 anos. Apesar de ter aprendido a programar uns 2 ou 3 anos antes, ainda estava só engatinhando no mundo profissional, fazendo alguns freelas e quebrando a cabeça pra aprender novas linguagens, frameworks, técnicas e por aí vai.
 
