@@ -11,9 +11,7 @@ learnings:
   - website
   - css
 ---
-The year was 2018, I was... well... 18 years old. Even though I had learned to program about 2 or 3 years earlier, I was just having my first steps into the professional world, doing some freelance jobs and banging my head against the wall trying to learn some new languages, frameworks, techniques...
-
-Estudar tudo isso era assustador, mas ao mesmo tempo instigante. Eram tantas possibilidades: “o que eu vou escolher?”, eu pensava. Não sabia se deveria aprender a fazer APIs com Python, “ou quem sabe .NET?”, “já sei! Por que não aplicativos mobile?”, “quero aprender Java? Com certeza não!”, “React ou Vue?”... (concatene aqui mais uns milhares de pensamentos aleatórios).\
+The year was 2018, I was... well... 18 years old. Even though I had learned to program about 2 or 3 years earlier, I was just having my first steps into the professional world, doing some freelance jobs and banging my head against the wall trying to learn some new languages, frameworks, techniques...\
 \
 Studying all of this was scary, but exciting at the same time. There were so many possibilities: “What am I gonna choose?” I thought. I didn’t know if I should learn to build APIs with Python, “or maybe .NET?”, “I know! Why not start with mobile apps?”, “do I want to learn Java? Absolutely not!”, “React or Vue?”... (insert a million more random thoughts here).
 
@@ -33,13 +31,9 @@ And that's how I started my first portfolio.
 
 I don’t remember every little detail of how I built it, but I sure remember what I wanted. My "requirements" were:
 
-\* It couldn’t look like some generic portfolio or a cookie-cutter template — it needed at least a bit of authenticity.
-
-\* It shouldn’t be too complex or rely on alien technologies (I didn’t want to spend that much time on it).
-
-\* It had to have a few simple animations, just to show off my creative side and what I could do with CSS.
-
-
+*  It couldn’t look like some generic portfolio or a cookie-cutter template — it needed at least a bit of authenticity.
+* It shouldn’t be too complex or rely on alien technologies (I didn’t want to spend that much time on it).
+* It had to have a few simple animations, just to show off my creative side and what I could do with CSS.
 
 And that was...
 
@@ -63,11 +57,7 @@ Yes, my given name is Ítalo. Even though I’ve always been called Tim, back th
 
 I've always been a fan of adding a dose of nostalgia to my creations, and this website was no different. I went with a kind of pre-computer aesthetic: the page elements looked like diaries, with typewriter fonts, analog cameras photos and cream colors that evoked old layers of papers.
 
-Sobre o desenvolvimento, vejo que consegui chegar bem perto do design que tinha imaginado, adicionando uma camada de animações que deu vida ao projeto.
-
 About the development, I feel that I got really close the design I had imagined, adding a layer of animations that brought life to the project.
-
-Naquela época, apesar de já ter mexido com ferramentas como React, Webpack e WordPress, decidi fazer essa landing page no bom e velho “vanilla”: HTML, CSS e JavaScript. Uns steps de build e processamento de assets entraram com Gulp, principalmente pra compilar o SASS em CSS. (Hoje, olhando em retrospecto, acho que nem isso precisava pra esse projeto, mas foi essencial pra eu aprender a lidar com processamento de arquivos — algo que, aliás, acabei fazendo muito na carreira depois).
 
 Back then, even though I had worked with tools like React, Webpack and Wordpress, I decided to build this landing page with the good old "vanilla" stack: HTML, CSS and Javascript. Some build steps were added with Gulp, mainly to compile the SASS code into CSS. (Today, looking back, I think even that wasn’t really necessary for this particular project, but it was essential for me to learn how to deal with asset processing — something that, by the way, I ended up doing a lot in my career later on).
 
