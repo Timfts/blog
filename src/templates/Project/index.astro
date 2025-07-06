@@ -12,7 +12,7 @@ type Props = {
 };
 
 const lang = Astro.currentLocale as Lang;
-const { projectDescriptionLabel, projectLearningsLabel, projectNameLabel, projectYearLabel, defaultGoBackPage } = i18n[lang];
+const { projectDescriptionLabel, projectLinkLabel, projectLearningsLabel, projectNameLabel, projectYearLabel, defaultGoBackPage } = i18n[lang];
 
 const { i18nPagePaths, entry } = Astro.props;
 const { Content } = await entry.render();
@@ -59,6 +59,13 @@ const getLogoAlt = (title: string) => `${title} logo`;
               <strong>{i.label}: </strong> {i.value}
             </li>
           ))
+        }
+        {
+          entry.data.project_link && (
+            <li class="project-stat">
+              <strong>{projectLinkLabel}: </strong> <a href={entry.data.project_link} target="_blank">{entry.data.project_link}</a>
+            </li>
+          )
         }
       </ul>
     </div>

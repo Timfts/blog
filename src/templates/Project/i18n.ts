@@ -7,6 +7,7 @@ const i18n = {
     projectDescriptionLabel: "Short description",
     projectLearningsLabel: "Learnings",
     defaultGoBackPage: pagePaths.en.projects,
+    projectLinkLabel: "Link",
   },
   "pt-br": {
     projectNameLabel: "Nome",
@@ -14,6 +15,7 @@ const i18n = {
     projectDescriptionLabel: "Descrição",
     projectLearningsLabel: "Aprendizados",
     defaultGoBackPage: pagePaths["pt-br"].projects,
+    projectLinkLabel: "Link",
   },
 };
 

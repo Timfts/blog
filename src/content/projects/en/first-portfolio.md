@@ -11,8 +11,8 @@ learnings:
   - website
   - css
 ---
-The year was 2018, I was... well... 18 years old. Even though I had learned to program about 2 or 3 years earlier, I was just having my first steps into the professional world, doing some freelance jobs and banging my head against the wall trying to learn some new languages, frameworks, techniques...\
-\
+The year was 2018, I was... well... 18 years old. Even though I had learned to program about 2 or 3 years earlier, I was just having my first steps into the professional world, doing some freelance jobs and banging my head against the wall trying to learn some new languages, frameworks, techniques...
+
 Studying all of this was scary, but exciting at the same time. There were so many possibilities: “What am I gonna choose?” I thought. I didn’t know if I should learn to build APIs with Python, “or maybe .NET?”, “I know! Why not start with mobile apps?”, “do I want to learn Java? Absolutely not!”, “React or Vue?”... (insert a million more random thoughts here).
 
 At the end of the day, I ended up falling in love with front-end development, animations and microinteractions — Actually, it makes perfect sense, since I come from a family with a strong artistic background. Visual, aesthetic, creative and interactive things have always drawn me in way more than just writing code.
@@ -35,7 +35,6 @@ I don’t remember every little detail of how I built it, but I sure remember wh
 * It shouldn’t be too complex or rely on alien technologies (I didn’t want to spend that much time on it).
 * It had to have a few simple animations, just to show off my creative side and what I could do with CSS.
 
-And that was...
 
 And so it was...
 
