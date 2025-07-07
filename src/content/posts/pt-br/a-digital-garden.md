@@ -36,7 +36,7 @@ Mas algo mudou no caminho...
 
 Escrever tem se tornado um hábito mais presente em minha vida, às vezes ao criar alguns simples versos de uma música ou poesia, às vezes ao desenhar textos introspectivos que me ajudam a domar os fantasmas da ansiedade.
 
-E nesses momentos tenho aprendido que o técnico não me satisfaz.
+E nesses momentos tenho aprendido que a técnica não me satisfaz.
 Não me atrai mais a ideia de ter um blog somente para escrever sobre sites, aplicativos, robôs, ensinar a configurar ou programar coisas... (ainda assim farei isso, mas não somente isso).
 
 O técnico é somente uma parte, mas não a totalidade de quem sou.
@@ -55,12 +55,13 @@ Ele não vai ser exatamente um "blog", mas sim um "digital garden". Recentemente
 Uma dessas referências foi esse post no maravilhoso [jardim digital da Rach Smith](https://rachsmith.com/my-blog-is-dead/), que me levou até outras referências sobre o assunto.
 
 Basicamente, em um jardim digital tratamos cada publicação como algo vivo, como uma planta que regamos. As publicações não precisam ser perfeitamente construídas, com início, meio e fim, elas estão vivas.
+
 Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-lo daqui meses quando esse experimento se desdobrar (ou simplesmente deixa-lo morrer. só de ter registrado o começo já é algo positivo).
 
 Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar uma publicação, sem um fim bem definido.
 
 Talvez até poemas sejam publicações válidas nesse jardim maluco.
-Essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo para minhas criações dificulta muito o processo de mostrá-las ao mundo.
+Essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo para minhas criações dificulta  o processo de mostrá-las ao mundo.
 
 E a consistência? o foco? o público? vai misturar tudo mesmo?
 A resposta é simples: Foda-se!
@@ -70,6 +71,7 @@ Não estou aqui para ganhar dinheiro. a última coisa que quero com esse projeto
 Acredito que essas cobranças têm se tornado muito mais presentes em nossa vida, não somente no meio profissional, mas em nossa forma de criar e consumir conteúdo também (mostre em poucos segundos ou perca o interesse do público).
 
 E isso tem refletido em mim de várias formas negativas. doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes para fugir de interações sociais quando não sei exatamente o que falar).
+
 Aqui eu busco desacelerar, aprender devagar, degustar, escrever (em inglês, português), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
 
 Um programador fugindo de tecnologia, contraditório não? 
