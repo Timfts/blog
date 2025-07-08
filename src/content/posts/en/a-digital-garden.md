@@ -12,17 +12,15 @@ I never know how to take the first step — sometimes I even run from it...
 
 But they say the most important thing is to begin, no matter how. so here i am.
 
-It's pretty obvious how hard it is for me to actually do that:  to begin, to start simple, from the basics, to work with whatever I've got.
+It's pretty obvious how hard it is for me to actually do that:  to begin, to start simple, from the basics, to work with whatever I've got. My stuff always seems to involve big, elaborate, perfectly ordered plans... but that's not how real life works. Not everything is sync or unfolds in some neat, predefined order.
 
-São óbvias minhas dificuldades de praticar isso: o ato de começar, começar do simples, do básico, com o que tiver à mão. Minhas coisas tendem sempre envolver grandes planos mirabolantes, cronológicos e perfeitos... mas não é assim que a vida real funciona. Nem todas as coisas são síncronas e perfeitamente executadas em uma ordem predefinida.
+The journeys that led me here were long, far longer than they should've been.
 
-Longas foram as jornadas que me trouxeram até aqui, longas até demais.
+For a long time, I wanted to have a place like this to call my own, to do whatever I wanted with it — my dimension, my plane, my garden.
 
-Por muito tempo quis ter esse espaço para chamar de meu, para fazer dele o que bem entender, minha dimensão, meu plano, meu jardim.
+Initially, I just wanted a place to keep track of my technical learnings, personal programming projects, or any other related topics.
 
-Inicialmente queria apenas um lugar para registrar aprendizados técnicos, projetos pessoais de programação ou quaisquer outros assuntos relacionados.
-
-Mas a ideia se transformou, evoluiu, decaiu, permaneceu e quase se apagou.
+But something changed the idea... it evolved, decayed, lingered — and nearly disappeared.
 
 Foram anos de pensamentos e planejamentos, mas nenhuma palavra escrita. Por muito tempo gastei neurônios pensando sobre o que eu deveria escrever aqui ou como esse espaço deveria se parecer. Fazendo com que eu nunca começasse a de fato, escrever. Um exemplo clássico de procrastinação crônica.
 
