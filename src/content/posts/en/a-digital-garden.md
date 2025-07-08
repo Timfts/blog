@@ -36,10 +36,16 @@ That was the idea.
 
 But something changed along the way...
 
-Escrever tem se tornado um hábito mais presente na minha vida, vezes ao criar simples versos de uma música/poema, vezes ao desenhar textos introspectivos que me ajudam a domar os fantasmas da ansiedade.
+Writing has become a more present habit in my life, sometimes when crafting simple verses for a song or a poem, sometimes when sketching introspective texts that help me tame the  ghosts of anxiety.
 
-E nesses momentos mais solitários da escrita, tenho aprendido que a técnica por si só é algo vazio. 
-Não mais me atrai a ideia de ter um blog para somente escrever sobre sites, aplicativos, robôs, ensinar a configurar ou programar coisas... (ainda falarei sobre essas coisas, mas não pode ser somente isso).
+In those solitary moments of writing, I've learned that technique alone feels empty.
+
+I don't like anymore the idea of having a blot to write only about sites, apps, robots, teach how to configure or program stuff... (I still gonna talk about those thing, but it can't be just about that).
+
+I'm no longer attracted to the idea of having a blog just to write about websites, apps, robots or teaching how to set up or program things... (I'll still talk about those things, but it can't be only that).
+
+
+
 
 O técnico é uma parte, mas não a totalidade de quem sou (ou de quem quero ser um dia).
 
