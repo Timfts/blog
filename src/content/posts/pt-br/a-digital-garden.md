@@ -8,7 +8,7 @@ excerpt: Em construção
 topics:
   - life
 ---
-Nunca sei como começar, às vezes até evito...
+Nunca sei como dar o primeiro passo, às vezes até fujo dele...
 
 Mas disseram que o importante é começar, não importa como. Então aqui tô eu.
 
@@ -28,7 +28,7 @@ Agora aqui tô eu... finalmente (?).
 
 Sempre senti que deveria registrar meus aprendizados como programador, mostrar pro mundo o que eu sei fazer, expandir para além do ambiente de trabalho e também encarar isso como uma forma de manter guardado meu caminho, para mim mesmo.
 
-Deveria então fazer um blog de tecnologia?
+Deveria então realmente fazer um blog de tecnologia?
 
 Essa era a ideia.
 
@@ -36,21 +36,23 @@ Mas algo mudou no caminho...
 
 Escrever tem se tornado um hábito mais presente na minha vida, vezes ao criar simples versos de uma música/poema, vezes ao desenhar textos introspectivos que me ajudam a domar os fantasmas da ansiedade.
 
-E nesses momentos mais solitários da escrita, tenho aprendido que a somente a técnica não me satisfaz, seja ela qual for, a técnica é vazia.
-Não mais me atrai a ideia de ter um blog para somente escrever sobre sites, aplicativos, robôs, ensinar a configurar ou programar coisas... (ainda assim farei isso, mas não pode ser somente isso).
+E nesses momentos mais solitários da escrita, tenho aprendido que a técnica por si só é algo vazio. 
+Não mais me atrai a ideia de ter um blog para somente escrever sobre sites, aplicativos, robôs, ensinar a configurar ou programar coisas... (ainda falarei sobre essas coisas, mas não pode ser somente isso).
 
 O técnico é uma parte, mas não a totalidade de quem sou (ou de quem quero ser um dia).
 
-Não sou Tim, nem programador, nem desenvolvedor ou qualquer outro nome genérico inventado pelo mercado. Só gosto de quebrar a cabeça com um monte de códigos pra ver o que sai deles.
+Não sou Tim, "o programador", nem "o desenvolvedor" (ou qualquer outro nome genérico inventado por ai). 
+Só gosto de quebrar a cabeça com códigos pra ver o que sai deles.
 
-Não sou Tim, nem músico, nem poeta. só embaralho palavras, faço sons e espero que isso tudo traga silêncio pra minha mente.
+Não sou Tim,  "o músico", nem "o poeta". 
+Só embaralho palavras e sons, torcendo para que tragam silêncio.
 
 Sou só eu... tento misturar, criar e colar coisas, como uma criança que 
 combina todos seus brinquedos (outrora incompatíveis) em uma única narrativa harmoniosa.
 
 E esse vai ser o espírito deste site
 
-Ele não vai ser exatamente um "blog", nem será focado em tecnologia, mas sim uma mistura de aprendizados técnicos e humanidades, algo que chamam de "digital garden". Recentemente, ao buscar referências para esse projeto, me deparei com esse conceito de jardins digitais e achei que era algo interessante e alinhado com o que busco.
+Ele não vai ser exatamente um "blog", nem será focado em tecnologia, mas sim uma mistura de aprendizados técnicos e humanos, algo que chamam de "digital garden". Recentemente, ao buscar referências para esse projeto, me deparei com esse conceito de jardins digitais e achei que era algo interessante e alinhado com o que busco.
 
 Uma dessas referências foi esse post no maravilhoso [jardim digital da Rach Smith](https://rachsmith.com/my-blog-is-dead/), que me levou até outras referências sobre o assunto.
 
@@ -63,7 +65,7 @@ Quero também escrever artigos bem estruturados, mas eles não são a regra, nem
 > Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. Hora de morrer.
 
 Talvez até poemas sejam publicações válidas nesse jardim maluco.
-Essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo que me aflige ao trabalhar em algo, deverá estar menos presente.
+Acredito que essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo que me aflige ao trabalhar em algo, deverá ser dissipado. 
 
 E a consistência? o foco? o público? vai misturar tudo mesmo?
 A resposta é simples: Foda-se!
@@ -72,8 +74,10 @@ Não estou aqui para ganhar dinheiro. a última coisa que quero com esse projeto
 
 Acredito que essas cobranças têm se tornado muito mais presentes em nossa vida, não somente no meio profissional, mas em nossa forma de criar e consumir conteúdo também (mostre em poucos segundos ou perca o interesse do público).
 
-E isso tem refletido em mim de várias formas negativas. doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes para fugir de interações sociais quando não sei exatamente o que falar).
+E isso tem refletido em mim de várias formas negativas. doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes até para fugir de interações sociais quando não sei exatamente o que falar).
 
-Aqui eu busco desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
+Aqui eu quero desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
 
-Um programador fugindo de tecnologia, contraditório, não? Tudo bem...
+Um programador fugindo de tecnologia.
+Contraditório?
+Tudo bem.
