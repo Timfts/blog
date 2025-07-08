@@ -3,16 +3,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-    <script
-      is:inline
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-    ></script>
+    <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body>
     <script>
       import CMS from "decap-cms-app";
       import decapCMSConfig from "@cms/index";
+      import { enable } from "darkreader";
 
       if (window["netlifyIdentity"]) {
         window["netlifyIdentity"].on("init", (user) => {
@@ -26,6 +24,11 @@
 
       window["CMS_MANUAL_INIT"] = true;
       CMS.init(decapCMSConfig as any);
+      enable({
+        brightness: 100,
+        contrast: 90,
+        sepia: 10,
+      });
     </script>
   </body>
 </html>

@@ -28,6 +28,7 @@
     "unist-util-visit": "^5.0.0"
   },
   "dependencies": {
+    "darkreader": "^4.9.109",
     "decap-cms-app": "3.1.10",
     "lit": "3.2.0",
     "shader-doodle": "1.0.0-alpha.20",
