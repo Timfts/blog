@@ -41,10 +41,10 @@ Não mais me atrai a ideia de ter um blog para somente escrever sobre sites, apl
 
 O técnico é uma parte, mas não a totalidade de quem sou (ou de quem quero ser um dia).
 
-Não sou Tim, "o programador", nem "o desenvolvedor" (ou qualquer outro nome genérico inventado por ai). 
+Não sou Tim "o programador", nem "o desenvolvedor" (ou qualquer outro nome genérico inventado por ai). 
 Só gosto de quebrar a cabeça com códigos pra ver o que sai deles.
 
-Não sou Tim,  "o músico", nem "o poeta". 
+Não sou Tim "o músico", nem "o poeta". 
 Só embaralho palavras e sons, torcendo para que tragam silêncio.
 
 Sou só eu... tento misturar, criar e colar coisas, como uma criança que 

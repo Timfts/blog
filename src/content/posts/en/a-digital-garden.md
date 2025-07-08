@@ -44,16 +44,15 @@ I don't like anymore the idea of having a blot to write only about sites, apps, 
 
 I'm no longer attracted to the idea of having a blog just to write about websites, apps, robots or teaching how to set up or program things... (I'll still talk about those things, but it can't be only that).
 
+The technical side is a part of me, but not the whole of who I am (or who I want to be someday).
+
+I'm not Tim, "the programmer", or "the developer" (or any other generic label people come up with)
+I just like to bang my head against some code and see what comes out of it.
+
+I'm not Tim, "the musician" nor "the poet".
+I just jumble words and sounds, hoping they'll bring me some silence.
 
 
-
-O técnico é uma parte, mas não a totalidade de quem sou (ou de quem quero ser um dia).
-
-Não sou Tim, "o programador", nem "o desenvolvedor" (ou qualquer outro nome genérico inventado por ai). 
-Só gosto de quebrar a cabeça com códigos pra ver o que sai deles.
-
-Não sou Tim,  "o músico", nem "o poeta". 
-Só embaralho palavras e sons, torcendo para que tragam silêncio.
 
 Sou só eu... tento misturar, criar e colar coisas, como uma criança que 
 combina todos seus brinquedos (outrora incompatíveis) em uma única narrativa harmoniosa.
