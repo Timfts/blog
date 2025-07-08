@@ -28,9 +28,9 @@ A classic case of chronic procrastination.
 
 Here I am... finally (?).
 
+I always felt I should document what I learn as a programmer, show the world what I can do, expand beyond just my workplace — and also use this as a way to preserve my own path, for myself.
 
 
-Sempre senti que deveria registrar meus aprendizados como programador, mostrar pro mundo o que eu sei fazer, expandir para além do ambiente de trabalho e também encarar isso como uma forma de manter guardado meu caminho, para mim mesmo.
 
 Deveria então realmente fazer um blog de tecnologia?
 
