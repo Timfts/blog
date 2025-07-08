@@ -56,9 +56,9 @@ Uma dessas referências foi esse post no maravilhoso [jardim digital da Rach Smi
 
 Basicamente, em um jardim digital tratamos cada publicação como algo vivo, como uma planta que podemos ou não regar. As publicações não precisam ser perfeitamente construídas, com início, meio e fim, elas só são... algo.
 
-Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-lo daqui meses quando esse experimento se desdobrar (ou simplesmente deixa-lo morrer. só de ter registrado o começo já é algo positivo).
+Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-lo daqui meses quando esse experimento se desdobrar (ou simplesmente deixá-lo morrer. só de ter registrado o começo já é algo positivo).
 
-Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem um fim bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monologo na chuva:
+Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem um fim bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo na chuva:
 
 > Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. Hora de morrer.
 
@@ -76,4 +76,4 @@ E isso tem refletido em mim de várias formas negativas. doom scrolling, reels/t
 
 Aqui eu busco desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
 
-Um programador fugindo de tecnologia, contraditório, não? tudo bem...
+Um programador fugindo de tecnologia, contraditório, não? Tudo bem...
