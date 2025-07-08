@@ -22,9 +22,13 @@ Initially, I just wanted a place to keep track of my technical learnings, person
 
 But something changed the idea... it evolved, decayed, lingered — and nearly disappeared.
 
-Foram anos de pensamentos e planejamentos, mas nenhuma palavra escrita. Por muito tempo gastei neurônios pensando sobre o que eu deveria escrever aqui ou como esse espaço deveria se parecer. Fazendo com que eu nunca começasse a de fato, escrever. Um exemplo clássico de procrastinação crônica.
+It was years of thoughts and planning, but not a single word written. I burned through neurons wondering what I should write here, or what this space should even look like — keeping me from ever actually starting to write.
 
-Agora aqui tô eu... finalmente (?).
+A classic case of chronic procrastination.
+
+Here I am... finally (?).
+
+
 
 Sempre senti que deveria registrar meus aprendizados como programador, mostrar pro mundo o que eu sei fazer, expandir para além do ambiente de trabalho e também encarar isso como uma forma de manter guardado meu caminho, para mim mesmo.
 
