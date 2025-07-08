@@ -30,13 +30,11 @@ Here I am... finally (?).
 
 I always felt I should document what I learn as a programmer, show the world what I can do, expand beyond just my workplace — and also use this as a way to preserve my own path, for myself.
 
+Should I really make a tech blog?
 
+That was the idea.
 
-Deveria então realmente fazer um blog de tecnologia?
-
-Essa era a ideia.
-
-Mas algo mudou no caminho...
+But something changed along the way...
 
 Escrever tem se tornado um hábito mais presente na minha vida, vezes ao criar simples versos de uma música/poema, vezes ao desenhar textos introspectivos que me ajudam a domar os fantasmas da ansiedade.
 
