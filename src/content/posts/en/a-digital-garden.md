@@ -10,19 +10,19 @@ topics:
 ---
 I never know how to take the first step, sometimes I even run from it...
 
-But they say the most important thing is to begin, no matter how. so here i am.
+But they say the most important thing is to begin, no matter how. So here I am.
 
-It's pretty obvious how hard it is for me to actually do that:  to begin, to start simple, from the basics, to work with whatever I've got. My stuff always seems to involve big, elaborate, perfectly ordered plans... but that's not how real life works. Not everything is sync or unfolds in some neat, predefined order.
+It's pretty obvious how hard it is for me to actually do that:  to begin, to start simple, from the basics, to work with whatever I've got. My stuff always seems to involve big, elaborate, perfectly ordered plans... but that's not how real life works. Not everything is in sync or unfolds in some neat, predefined order.
 
 The journeys that led me here were long, far longer than they should've been.
 
-For a long time, I wanted to have a place like this to call my own, to do whatever I wanted with it — my dimension, my plane, my garden.
+For a long time, I wanted to have a place like this to call my own, to do whatever I wanted with it, my dimension, my plane, my garden.
 
 Initially, I just wanted a place to keep track of my technical learnings, personal programming projects, or any other related topics.
 
-But something changed the idea... it evolved, decayed, lingered — and nearly disappeared.
+But something changed the idea... it evolved, decayed, lingered, and nearly disappeared.
 
-It was years of thoughts and planning, but not a single word written. I burned through neurons wondering what I should write here, or what this space should even look like — keeping me from ever actually starting to write.
+It was years of thought and planning, but not a single word was written. I racked my brain wondering what I should write here, or what this space should even look like — keeping me from ever actually starting to write.
 
 A classic case of chronic procrastination.
 
@@ -40,7 +40,7 @@ Writing has become a more present habit in my life, sometimes when crafting simp
 
 In those solitary moments of writing, I've learned that technique alone feels empty.
 
-I don't like anymore the idea of having a blot to write only about sites, apps, robots, teach how to configure or program stuff... (I still gonna talk about those thing, but it can't be just about that).
+I don’t like the idea anymore of having a blog to write only about sites, apps, robots, teach how to configure or program stuff... (I'm still gonna talk about those things, but it can't be just about that).
 
 I'm no longer attracted to the idea of having a blog just to write about websites, apps, robots or teaching how to set up or program things... (I'll still talk about those things, but it can't be only that).
 
@@ -58,9 +58,9 @@ That's the spirit this website will have
 
 It won't be exactly a blog, nor will it be focused on technology, but rather a mix of technical and human learnings, what they call a "digital garden". Recently, while looking for references for this project, I came across the concept of digital gardens, and I thought it was something really interesting and somehow aligned with what I had in mind.
 
-One of the references was this post in [Rach Smith's wonderful digital garden](https://rachsmith.com/my-blog-is-dead/), which led me to other references on the subject.
+One of the references was this post from [Rach Smith's wonderful digital garden](https://rachsmith.com/my-blog-is-dead/), which led me to other references on the subject.
 
-Basically, in a digital garden, we treat each post as a living thing, like a plant we may or may not water. The posts don't need to be perfectly crafted, with a begining, middle and end, they just are... something.
+Basically, in a digital garden, we treat each post as a living thing, like a plant we may or may not water. The posts don't need to be perfectly crafted, with a beginning, middle and end. they just are... something.
 
 Nothing stops me from starting a post about a new experiment, and only updating it months later, when that experiment unfolds (or simply letting it die. Just having started, is already something good).
 
@@ -81,7 +81,7 @@ I'm not here to make money. The last thing I want with this project is to burden
 
 I believe these pressures have become much more present in our lives, not just in the professional world, but also in the way we create and consume content. (Show it in a few seconds or lose your audience's attention).
 
-And that's affected me in all sorts of negative ways. Doom scrolling, reels/tiktoks, impatience with longer videos, 2x speed audios, instant answers from chat GPT and constantly checking my phone (sometimes even just to escape social interactions when I don't know what to say). 
+And that's affected me in all sorts of negative ways. Doomscrolling, Reels/Tiktoks, impatience with longer videos, 2x speed audios, instant answers from ChatGPT and constantly checking my phone (sometimes even just to escape social interactions when I don't know what to say). 
 
 Here I want to slow down, learn at my own pace, savor things, write (in Portuguese and English), and seek the same peace I've been finding through my musical instruments, analog devices, vinyl records, tapes, pens, notebooks and physical books.
 

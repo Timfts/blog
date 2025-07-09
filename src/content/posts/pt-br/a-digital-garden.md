@@ -74,7 +74,7 @@ Não estou aqui para ganhar dinheiro. A última coisa que quero com esse projeto
 
 Acredito que essas cobranças têm se tornado muito mais presentes em nossa vida, não somente no meio profissional, mas em nossa forma de criar e consumir conteúdo também (mostre em poucos segundos ou perca o interesse do público).
 
-E isso tem refletido em mim de várias formas negativas. Doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes até para fugir de interações sociais quando não sei exatamente o que falar).
+E isso tem refletido em mim de várias formas negativas. Doomscrolling, Reels/Tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes até para fugir de interações sociais quando não sei exatamente o que falar).
 
 Aqui eu quero desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
 
