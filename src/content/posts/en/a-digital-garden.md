@@ -63,7 +63,7 @@ Basically, in a digital garden, we treat each post as a living thing, like a pla
 
 Nothing stops me from starting a post about a new experiment, and only updating it months later, when that experiment unfolds (or simply letting it die. Just having started, is already something good).
 
-I also want to write well-crafted articles, but they're not the norm, not even essential for me to write. Simple thoughts, observations, cheap philosophies might become registers in themselves, without a well-defined ending. Who knows, maybe that I'll avoid the tragic fate described by Roy Batty in his monologue:
+I also want to write well-crafted articles, but they're not the norm, not even essential for me to write. Simple thoughts, observations, cheap philosophies might become registers in themselves, without a well-defined ending. Who knows, maybe with that I'll avoid the tragic fate described by Roy Batty in his monologue:
 
 > I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched c-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain.
 >

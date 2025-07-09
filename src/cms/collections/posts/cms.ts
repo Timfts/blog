@@ -35,7 +35,7 @@ const postsCMSConfig = {
       name: "external_link",
       required: false,
       widget: "string",
-      i18n: "duplicate",
+      i18n: true,
     },
     {
       label: "Publish Date",
