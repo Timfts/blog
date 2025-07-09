@@ -4,6 +4,7 @@ enabled: true
 page_url: um-novo-jardim-digital
 created_date: 2025-07-06T22:10:00.000Z
 updated_date: ""
+thumbnail: /images/uploads/pixels-garden.jpeg
 excerpt: "Uma nova odisseia caótica se inicia nas planícies tortuosas da rede
   mundial de computadores. "
 topics:
@@ -63,8 +64,9 @@ Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-l
 
 Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem uma finalidade bem definida. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo:
 
-> Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. Hora de morrer.
-
+> Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. 
+>
+> Hora de morrer.
 
 Acredito que essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo que me aflige ao trabalhar em algo, deverá ser dissipado. 
 

@@ -4,6 +4,7 @@ enabled: true
 page_url: a-new-digital-garden
 created_date: 2025-07-06T22:10:00.000Z
 updated_date: ""
+thumbnail: /images/uploads/pixels-garden.jpeg
 excerpt: A new chaotic odyssey begins across the winding plains of the World Wide Web
 topics:
   - life
@@ -64,9 +65,7 @@ Nothing stops me from starting a post about a new experiment, and only updating 
 
 I also want to write well-crafted articles, but they're not the norm, not even essential for me to write. Simple thoughts, observations, cheap philosophies might become registers in themselves, without a well-defined ending. Who knows, maybe that I'll avoid the tragic fate described by Roy Batty in his monologue:
 
-> I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion.
->
-> I watched c-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain.
+> I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched c-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain.
 >
 > Time to die.
 
