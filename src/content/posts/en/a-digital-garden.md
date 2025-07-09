@@ -4,7 +4,7 @@ enabled: true
 page_url: a-new-digital-garden
 created_date: 2025-07-06T22:10:00.000Z
 updated_date: ""
-excerpt: under construction
+excerpt: A new chaotic odyssey begins across the winding plains of the World Wide Web
 topics:
   - life
 ---
@@ -12,7 +12,7 @@ I never know how to take the first step, sometimes I even run from it...
 
 But they say the most important thing is to begin, no matter how. So here I am.
 
-It's pretty obvious how hard it is for me to actually do that:  to begin, to start simple, from the basics, to work with whatever I've got. My stuff always seems to involve big, elaborate, perfectly ordered plans... but that's not how real life works. Not everything is in sync or unfolds in some neat, predefined order.
+It's pretty obvious how hard it is for me to actually do that: to begin, to start simple, from the basics, to work with whatever I've got. My stuff always seems to involve big, elaborate, perfectly ordered plans... but that's not how real life works. Not everything is in sync or unfolds in some neat, predefined order.
 
 The journeys that led me here were long, far longer than they should've been.
 
@@ -22,13 +22,13 @@ Initially, I just wanted a place to keep track of my technical learnings, person
 
 But something changed the idea... it evolved, decayed, lingered, and nearly disappeared.
 
-It was years of thought and planning, but not a single word was written. I racked my brain wondering what I should write here, or what this space should even look like — keeping me from ever actually starting to write.
+It was years of thought and planning, but not a single word was written. I racked my brain wondering what I should write here, or what this space should even look like, keeping me from ever actually starting to write.
 
 A classic case of chronic procrastination.
 
 Here I am... finally (?).
 
-I always felt I should document what I learn as a programmer, show the world what I can do, expand beyond just my workplace — and also use this as a way to preserve my own path, for myself.
+I always felt I should document what I learn as a programmer, show the world what I can do, expand beyond just my workplace. And also use this as a way to preserve my own path, for myself.
 
 Should I really make a tech blog?
 
@@ -39,8 +39,6 @@ But something changed along the way...
 Writing has become a more present habit in my life, sometimes when crafting simple verses for a song or a poem, sometimes when sketching introspective texts that help me tame the  ghosts of anxiety.
 
 In those solitary moments of writing, I've learned that technique alone feels empty.
-
-I don’t like the idea anymore of having a blog to write only about sites, apps, robots, teach how to configure or program stuff... (I'm still gonna talk about those things, but it can't be just about that).
 
 I'm no longer attracted to the idea of having a blog just to write about websites, apps, robots or teaching how to set up or program things... (I'll still talk about those things, but it can't be only that).
 
