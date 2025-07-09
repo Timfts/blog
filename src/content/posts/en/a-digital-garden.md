@@ -84,8 +84,6 @@ Here I want to slow down, learn at my own pace, savor things, write (in Portugue
 
 A programmer running from technology.
 
-
 Contradictory?
-
 
 That's alright.

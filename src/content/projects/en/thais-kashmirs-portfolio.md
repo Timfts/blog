@@ -12,4 +12,6 @@ learnings:
   - vue
   - ui-animation
 ---
-todo
+Portfolio project created for the super talented designer Thais Kashmir, with the design crafted by her.
+
+I’ll come back with more details about the process once my memory decides to cooperate.

@@ -11,4 +11,8 @@ learnings:
   - react
   - npm
 ---
-todo
+Firebolt was a project developed together with the iq contas team to solve issues related to multi-step forms in front-end applications.
+
+
+
+I’ll come back later to write more about it. In the meantime, if you’re curious, check out the [project README](https://github.com/IQ-tech/firebolt?tab=readme-ov-file).

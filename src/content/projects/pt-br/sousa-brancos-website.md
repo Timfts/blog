@@ -12,4 +12,6 @@ learnings:
   - vue
   - ui-animation
 ---
-teste
+Um dos primeiros projetos que realizei. Nesse caso especialmente pensado para apresentar o trabalho do meu saudoso pai, que já não está mais entre nós.
+
+Escreverei os detalhes aqui em breve, assim que sentir o chamado...

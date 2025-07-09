@@ -12,4 +12,6 @@ learnings:
   - vue
   - ui-animation
 ---
-todo
+Projeto de portfólio feito para a super talentosa designer Thais Kashmir, com design assinado por ela mesma.
+
+Volto com mais detalhes sobre o processo assim que minha memória ajudar.

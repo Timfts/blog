@@ -12,4 +12,6 @@ learnings:
   - vue
   - ui-animation
 ---
-teste
+One of the first projects I ever did, in this case especially created to showcase the work of my late father, who is no longer with us.
+
+I’ll write the details here soon, as soon as I feel the calling...

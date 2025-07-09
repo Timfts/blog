@@ -13,4 +13,12 @@ learnings:
   - npm
   - libraries
 ---
-todo
+o Blueberry foi o design system do antigo iq contas.
+
+descreverei melhor o projeto em breve, em algum momento que eu me sentir particularmente nostálgico. Trabalhei nele em conjunto com um time maravilhoso, em especial a Gabriela Biscáro que foi a lead designer do projeto (e eu como lead de desenvolvimento).
+
+Se tiver curiosidade sobre mais detalhes, veja essa publicação no site da Gabriela que traz muitos detalhes interessantes: [https://gabiscaro.com/projects/blueberry](https://gabiscaro.com/projects/blueberry) 
+
+
+
+Volto aqui em breve 

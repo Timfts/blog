@@ -13,4 +13,8 @@ learnings:
   - libraries
   - design-systems
 ---
-Todo
+Tenho trabalhado bastante ultimamente em conjunto com um time maravilhoso nesse projeto, o design system da Consumidor Positivo e do Acordo Certo.
+
+
+
+Volto mais tarde para mais infos, agora estou com preguiça msn\[h]

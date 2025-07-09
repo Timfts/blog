@@ -13,4 +13,6 @@ learnings:
   - libraries
   - design-systems
 ---
-Todo
+I’ve been working a lot lately with a wonderful team on this project — the design system for Consumidor Positivo and Acordo Certo.
+
+I’ll come back later with more info; I’m feeling lazy right now msn\[ (h) ].
