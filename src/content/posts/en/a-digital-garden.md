@@ -52,16 +52,15 @@ I just like to bang my head against some code and see what comes out of it.
 I'm not Tim, "the musician" nor "the poet".
 I just jumble words and sounds, hoping they'll bring me some silence.
 
+It's just me... trying to mix, create and glue things together, like a child who combines all their once-incompatible toys into a single graceful narrative.
+
+That's the spirit this website will have
+
+It won't be exactly a blog, nor will it be focused on technology, but rather a mix of technical and human learnings, what they call a "digital garden". Recently, while looking for references for this project, I came across the concept of digital gardens, and I thought it was something really interesting and somehow aligned with what I had in mind.
+
+One of the references was this post in [Rach Smith's wonderful digital garden](https://rachsmith.com/my-blog-is-dead/), which led me to other references on the subject.
 
 
-Sou só eu... tento misturar, criar e colar coisas, como uma criança que 
-combina todos seus brinquedos (outrora incompatíveis) em uma única narrativa harmoniosa.
-
-E esse vai ser o espírito deste site
-
-Ele não vai ser exatamente um "blog", nem será focado em tecnologia, mas sim uma mistura de aprendizados técnicos e humanos, algo que chamam de "digital garden". Recentemente, ao buscar referências para esse projeto, me deparei com esse conceito de jardins digitais e achei que era algo interessante e alinhado com o que busco.
-
-Uma dessas referências foi esse post no maravilhoso [jardim digital da Rach Smith](https://rachsmith.com/my-blog-is-dead/), que me levou até outras referências sobre o assunto.
 
 Basicamente, em um jardim digital tratamos cada publicação como algo vivo, como uma planta que podemos ou não regar. As publicações não precisam ser perfeitamente construídas, com início, meio e fim, elas só são... algo.
 
