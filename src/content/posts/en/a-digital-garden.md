@@ -8,7 +8,7 @@ excerpt: under construction
 topics:
   - life
 ---
-I never know how to take the first step — sometimes I even run from it...
+I never know how to take the first step, sometimes I even run from it...
 
 But they say the most important thing is to begin, no matter how. so here i am.
 
@@ -64,7 +64,7 @@ Basically, in a digital garden, we treat each post as a living thing, like a pla
 
 Nothing stops me from starting a post about a new experiment, and only updating it months later, when that experiment unfolds (or simply letting it die. Just having started, is already something good).
 
-I also want to write well-crafted articles, but they're not the norm, not even essential for me to write. Simple thoughts, observations, cheap philosophies might become registers in themselves, without a well-defined ending. Who knows, maybe that I'll avoid the tragic fate described by Roy Batty in his monologue in the rain:
+I also want to write well-crafted articles, but they're not the norm, not even essential for me to write. Simple thoughts, observations, cheap philosophies might become registers in themselves, without a well-defined ending. Who knows, maybe that I'll avoid the tragic fate described by Roy Batty in his monologue:
 
 > I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion.
 >
@@ -72,20 +72,19 @@ I also want to write well-crafted articles, but they're not the norm, not even e
 >
 > Time to die.
 
-Talvez até poemas sejam publicações válidas nesse jardim maluco.
-Acredito que essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo que me aflige ao trabalhar em algo, deverá ser dissipado. 
+I believe this way of looking at my posts will help me write more freely, since the perfectionism  that haunts me when I work on something, must fade.
 
-E a consistência? o foco? o público? vai misturar tudo mesmo?
-A resposta é simples: Foda-se!
+But what about the consistency? The focus?  The audience? Are you really going to mix everything together?
+The answer's simple: fuck it!
 
-Não estou aqui para ganhar dinheiro. a última coisa que quero com esse projeto é trazer cobranças mercado(lógicas) para minha mente, tentar ser eficiente, performático, consistente.
+I'm not here to make money. The last thing I want with this project is to burden my mind with market-driven demands, trying to be efficient, performative, consistent.
 
-Acredito que essas cobranças têm se tornado muito mais presentes em nossa vida, não somente no meio profissional, mas em nossa forma de criar e consumir conteúdo também (mostre em poucos segundos ou perca o interesse do público).
+I believe these pressures have become much more present in our lives, not just in the professional world, but also in the way we create and consume content. (Show it in a few seconds or lose your audience's attention).
 
-E isso tem refletido em mim de várias formas negativas. doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes até para fugir de interações sociais quando não sei exatamente o que falar).
+And that's affected me in all sorts of negative ways. Doom scrolling, reels/tiktoks, impatience with longer videos, 2x speed audios, instant answers from chat GPT and constantly checking my phone (sometimes even just to escape social interactions when I don't know what to say). 
 
-Aqui eu quero desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
+Here I want to slow down, learn at my own pace, savor things, write (in Portuguese and English), and seek the same peace I've been finding through my musical instruments, analog devices, vinyl records, tapes, pens, notebooks and physical books.
 
-Um programador fugindo de tecnologia.
-Contraditório?
-Tudo bem.
+A programmer running from technology.
+Contradictory?
+That's alright.

@@ -60,21 +60,21 @@ Basicamente, em um jardim digital tratamos cada publicação como algo vivo, com
 
 Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-lo daqui meses quando esse experimento se desdobrar (ou simplesmente deixá-lo morrer. só de ter registrado o começo já é algo positivo).
 
-Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem uma finalidade bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo na chuva:
+Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem uma finalidade bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo:
 
 > Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. Hora de morrer.
 
-Talvez até poemas sejam publicações válidas nesse jardim maluco.
+
 Acredito que essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo que me aflige ao trabalhar em algo, deverá ser dissipado. 
 
-E a consistência? o foco? o público? vai misturar tudo mesmo?
+E a consistência? O foco? O público? Vai misturar tudo mesmo?
 A resposta é simples: Foda-se!
 
-Não estou aqui para ganhar dinheiro. a última coisa que quero com esse projeto é trazer cobranças mercado(lógicas) para minha mente, tentar ser eficiente, performático, consistente.
+Não estou aqui para ganhar dinheiro. A última coisa que quero com esse projeto é trazer cobranças mercado(lógicas) para minha mente, tentar ser eficiente, performático, consistente.
 
 Acredito que essas cobranças têm se tornado muito mais presentes em nossa vida, não somente no meio profissional, mas em nossa forma de criar e consumir conteúdo também (mostre em poucos segundos ou perca o interesse do público).
 
-E isso tem refletido em mim de várias formas negativas. doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes até para fugir de interações sociais quando não sei exatamente o que falar).
+E isso tem refletido em mim de várias formas negativas. Doom scrolling, reels/tiktok, impaciência para vídeos grandes, áudios em 2x, respostas prontas no chat gpt e checagens constantes no celular (as vezes até para fugir de interações sociais quando não sei exatamente o que falar).
 
 Aqui eu quero desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
 
