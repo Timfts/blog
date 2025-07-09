@@ -24,7 +24,7 @@ const stats = [
   },
   {
     label: projectYearLabel,
-    value: entry.data.proj_created_year,
+    value: `${entry.data.proj_created_year} - ${entry.data.proj_finish_year || ""}`,
   },
   {
     label: projectDescriptionLabel,
@@ -63,7 +63,10 @@ const getLogoAlt = (title: string) => `${title} logo`;
         {
           entry.data.project_link && (
             <li class="project-stat">
-              <strong>{projectLinkLabel}: </strong> <a href={entry.data.project_link} target="_blank">{entry.data.project_link}</a>
+              <strong>{projectLinkLabel}: </strong>{" "}
+              <a href={entry.data.project_link} target="_blank">
+                {entry.data.project_link}
+              </a>
             </li>
           )
         }

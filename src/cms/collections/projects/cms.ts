@@ -38,6 +38,14 @@ const projectsCMSConfig = {
       date_format: "YYYY",
     },
     {
+      label: "End Year",
+      name: "proj_finish_year",
+      i18n: "duplicate",
+      required: false,
+      widget: "number",
+      date_format: "YYYY",
+    },
+    {
       label: "Publish Date",
       name: "created_date",
       i18n: "duplicate",
