@@ -45,8 +45,10 @@
 .project-learnings {
   font-size: var(--txt-xsmall);
   display: flex;
-  gap: 10px;
+  gap: 5px 10px;
   margin-top: 10px;
   color: var(--theme-text-muted);
   list-style: none;
+  flex-wrap: wrap;
+  line-height: 1.1;
 }

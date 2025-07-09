@@ -1,21 +1,6 @@
 {
   "learnings-list": [
     {
-      "slug": "sdfd-dfdg",
-      "label": "sdfdg",
-      "color": "#b92d2d"
-    },
-    {
-      "slug": "potato",
-      "label": "potato",
-      "color": "#944d4d"
-    },
-    {
-      "slug": "test",
-      "label": "teste",
-      "color": "#e79191"
-    },
-    {
       "slug": "webdev",
       "label": "webdev",
       "color": "#e13030"
@@ -29,6 +14,41 @@
       "slug": "css",
       "label": "CSS",
       "color": "#58ecff"
+    },
+    {
+      "slug": "vue",
+      "label": "Vue",
+      "color": "#80ed8c"
+    },
+    {
+      "slug": "nuxt",
+      "color": "#80ed8c",
+      "label": "Nuxt"
+    },
+    {
+      "slug": "npm",
+      "label": "NPM",
+      "color": "#df5353"
+    },
+    {
+      "slug": "design-systems",
+      "label": "Design Systems",
+      "color": "#4367f0"
+    },
+    {
+      "slug": "libraries",
+      "label": "Libraries",
+      "color": "#c2c045"
+    },
+    {
+      "slug": "react",
+      "label": "React",
+      "color": "#49e2f0"
+    },
+    {
+      "slug": "ui-animation",
+      "label": "UI animation",
+      "color": "#4044ac"
     }
   ]
 }

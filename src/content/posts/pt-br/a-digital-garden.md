@@ -82,5 +82,9 @@ E isso tem refletido em mim de várias formas negativas. Doomscrolling, Reels/Ti
 Aqui eu quero desacelerar, aprender devagar, degustar, escrever (em português, inglês), buscar a paz que tenho encontrado com meus instrumentos, aparelhos analógicos, discos, fitas, canetas, cadernos e livros físicos.
 
 Um programador fugindo de tecnologia.
+
+
 Contraditório?
+
+
 Tudo bem.

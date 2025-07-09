@@ -83,5 +83,9 @@ And that's affected me in all sorts of negative ways. Doomscrolling, Reels/Tikto
 Here I want to slow down, learn at my own pace, savor things, write (in Portuguese and English), and seek the same peace I've been finding through my musical instruments, analog devices, vinyl records, tapes, pens, notebooks and physical books.
 
 A programmer running from technology.
+
+
 Contradictory?
+
+
 That's alright.
