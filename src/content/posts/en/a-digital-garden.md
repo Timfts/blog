@@ -60,15 +60,17 @@ It won't be exactly a blog, nor will it be focused on technology, but rather a m
 
 One of the references was this post in [Rach Smith's wonderful digital garden](https://rachsmith.com/my-blog-is-dead/), which led me to other references on the subject.
 
+Basically, in a digital garden, we treat each post as a living thing, like a plant we may or may not water. The posts don't need to be perfectly crafted, with a begining, middle and end, they just are... something.
 
+Nothing stops me from starting a post about a new experiment, and only updating it months later, when that experiment unfolds (or simply letting it die. Just having started, is already something good).
 
-Basicamente, em um jardim digital tratamos cada publicação como algo vivo, como uma planta que podemos ou não regar. As publicações não precisam ser perfeitamente construídas, com início, meio e fim, elas só são... algo.
+I also want to write well-crafted articles, but they're not the norm, not even essential for me to write. Simple thoughts, observations, cheap philosophies might become registers in themselves, without a well-defined ending. Who knows, maybe that I'll avoid the tragic fate described by Roy Batty in his monologue in the rain:
 
-Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-lo daqui meses quando esse experimento se desdobrar (ou simplesmente deixá-lo morrer. só de ter registrado o começo já é algo positivo).
-
-Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem um fim bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo na chuva:
-
-> Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. Hora de morrer.
+> I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion.
+>
+> I watched c-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain.
+>
+> Time to die.
 
 Talvez até poemas sejam publicações válidas nesse jardim maluco.
 Acredito que essa forma de enxergar as postagens devem me ajudar a escrever mais livremente, uma vez que o perfeccionismo que me aflige ao trabalhar em algo, deverá ser dissipado. 

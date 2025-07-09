@@ -60,7 +60,7 @@ Basicamente, em um jardim digital tratamos cada publicação como algo vivo, com
 
 Nada impede de eu começar um post hoje sobre um experimento novo, e atualizá-lo daqui meses quando esse experimento se desdobrar (ou simplesmente deixá-lo morrer. só de ter registrado o começo já é algo positivo).
 
-Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem um fim bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo na chuva:
+Quero também escrever artigos bem estruturados, mas eles não são a regra, nem essenciais para que eu escreva algo. Simples pensamentos, constatações, filosofias baratas podem se tornar um registro, sem uma finalidade bem definido. quem sabe assim, evitando o trágico fim descrito por Roy Batty em seu monólogo na chuva:
 
 > Eu vi coisas que vocês não imaginariam. Naves de ataque em chamas ao largo de Órion. Eu vi raios-c brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva. Hora de morrer.
 
