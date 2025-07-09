@@ -15,6 +15,8 @@ export class AdsBanner extends LitElement {
   usedBanners = [
     ...COMMON_BANNERS,
     ...EN_NAUGHTY_BANNERS,
+    ...EN_NAUGHTY_BANNERS,
+    ...EN_NAUGHTY_BANNERS,
     ...(this.currentLang === "en" ? EN_ONLY_BANNERS : []),
     ...(this.currentLang === "pt-br" ? PT_ONLY_BANNERS : []),
   ];

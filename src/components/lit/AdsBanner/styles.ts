@@ -14,6 +14,7 @@ export default css`
     align-items: center;
     position: relative;
     justify-content: center;
+    cursor: pointer;
   }
 
   .banner-img {
@@ -21,12 +22,12 @@ export default css`
     width: auto;
     flex-shrink: 0;
     flex-grow: 0;
-    cursor: pointer;
   }
 
   .shuffle-btn {
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
   }
 `;
