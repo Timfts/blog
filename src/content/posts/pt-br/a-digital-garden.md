@@ -4,6 +4,7 @@ enabled: true
 page_url: um-novo-jardim-digital
 created_date: 2025-07-06T22:10:00.000Z
 updated_date: ""
+thumbnail: /images/uploads/pixels-garden.jpeg
 excerpt: "Uma nova odisseia caótica se inicia nas planícies tortuosas da rede
   mundial de computadores. "
 topics:

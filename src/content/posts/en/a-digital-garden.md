@@ -4,6 +4,7 @@ enabled: true
 page_url: a-new-digital-garden
 created_date: 2025-07-06T22:10:00.000Z
 updated_date: ""
+thumbnail: /images/uploads/pixels-garden.jpeg
 excerpt: A new chaotic odyssey begins across the winding plains of the World Wide Web
 topics:
   - life
