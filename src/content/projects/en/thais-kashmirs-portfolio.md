@@ -1,5 +1,5 @@
 ---
-title: Thais Kashmir's Portfolio
+title: Thais Kashmir's portfolio
 featured: true
 project_link: https://www.thaiskashmir.com.br/
 proj_created_year: 2021

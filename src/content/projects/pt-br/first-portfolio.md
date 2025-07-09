@@ -55,7 +55,7 @@ Sempre fui fã de trazer uma dose de nostalgia pras minhas criações, e não fo
 
 Sobre o desenvolvimento, vejo que consegui chegar bem perto do design que tinha imaginado, adicionando uma camada de animações que deu vida ao projeto.
 
-Naquela época, apesar de já ter mexido com ferramentas como React, Webpack e WordPress, decidi fazer essa landing page no bom e velho “vanilla”: HTML, CSS e JavaScript. Uns steps de build e processamento de assets entraram com Gulp, principalmente pra compilar o SASS em CSS. (Hoje, olhando em retrospecto, acho que nem isso precisava pra esse projeto, mas foi essencial pra eu aprender a lidar com processamento de arquivos, algo que, aliás, acabei fazendo muito na carreira depois).
+Naquela época, apesar de já ter mexido com ferramentas como React, Webpack e WordPress, decidi fazer essa landing page no bom e velho “vanilla”: HTML, CSS e JavaScript. Uns steps de build e processamento de assets entraram com Gulp, principalmente pra compilar o SASS em CSS. (Hoje, olhando em retrospecto, acho que nem isso precisava pra esse projeto, mas foi essencial pra eu aprender a lidar com processamento de arquivos, algo que, aliás, acabei fazendo muito depois).
 
 Revisando o código agora, sete anos depois, acho que ele envelheceu muito bem. Muitos dos meus maneirismos mudaram, especialmente no JavaScript, mas em termos de HTML e CSS ainda é bem parecido com o que faço hoje.
 

@@ -9,11 +9,11 @@ const i18n = {
     introParagraphs: [
       `I am a programmer and musician, passionate about combining technology and art. <br /> 
       Currently working as a <del>mad scientist</del> software engineer, 
-      focused on solution architecture and exploring subjects such as design systems, 
-      web performance optimization, cloud computing and more.`,
+      focused on solution architecture and exploring subjects such as design systems, creative programming, 
+      cloud computing, old tech and more.`,
 
-      `This blog was created to be my little personal space on the web, 
-      a place where I can document my crazy ideas, experiments, studies, and projects. 
+      `This website was created to be my little personal space on the web, 
+      a place where I can document my crazy ideas, experiments, findings, studies, poems, and projects. 
       Bringing a touch of creativity to the craft.`,
 
       "𝖜𝖊𝖑𝖈𝖔𝖒𝖊",
@@ -37,10 +37,10 @@ const i18n = {
       `Sou programador e músico, apaixonado por misturar tecnologia e arte. <br />
         Atualmente trabalhando como <del>cientista maluco</del> engenheiro de software, 
         focado em arquitetura de soluções e explorando assuntos como design systems, 
-        web performance, cloud computing e mais.`,
+        programação criativa, cloud computing, tecnologias antigas e mais.`,
 
-      `Este blog foi criado para ser meu pequeno espaço pessoal na web, 
-      um lugar onde posso documentar minhas ideias malucas, experimentos, 
+      `Este site foi criado para ser meu pequeno espaço pessoal na web, 
+      um lugar onde posso documentar minhas ideias malucas, experimentos, poemas, constatações, 
       estudos e projetos. Trazendo um toque de criatividade à técnica.`,
 
       "𝖜𝖊𝖑𝖈𝖔𝖒𝖊",

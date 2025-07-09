@@ -6,7 +6,7 @@ proj_created_year: 2021
 proj_finish_year: 2023
 created_date: 2025-07-09T00:20:00.000Z
 thumbnail: /images/uploads/blueberry-ds.jpg
-excerpt: Blueberry, Iq contas design system
+excerpt: Blueberry, Iq contas's design system
 learnings:
   - design-systems
   - react
