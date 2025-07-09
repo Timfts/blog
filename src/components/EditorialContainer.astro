@@ -1,4 +1,4 @@
-<div class="editorial-container">
+<div class="editorial-container" data-fragment="editorial-container">
   <div class="content">
     <slot />
   </div>
@@ -28,5 +28,36 @@
     :global(li) {
       margin-bottom: 20px;
     }
+
+    :global(blockquote) {
+      padding-left: 20px;
+      font-style: italic;
+      border-left: 1px solid var(--theme-divider-color);
+    }
   }
 </style>
+<script>
+  import elementController from "@lib/elementController";
+
+  elementController(
+    "editorial-container",
+    ({ root }) => {
+      onStart();
+
+      function onStart() {
+        root.onclick = handleLinkClick;
+      }
+
+      function handleLinkClick(ev: MouseEvent) {
+        const target = ev?.target as HTMLElement;
+        const isLink = target.tagName === "A";
+        if (isLink) {
+          ev.preventDefault();
+          const href = target.getAttribute("href");
+          window.open(href, "_blank");
+        }
+      }
+    },
+    { rerun: true }
+  );
+</script>
