@@ -9,17 +9,19 @@ topics:
   - music
   - life
 ---
-Já falei pra vários amigos que desde pequeno o piano é uma peça fundamental do meu cotidiano. Ele funciona quase como uma terapia, um receptor de todas minhas dores, anseios, amores ou outras sensações inerentes a todos os seres humanos. Quer dizer, não exatamente um receptor, mas sim um dissipador ou transformador. Ele sempre é capaz de simplificar um turbilhão de emoções em algo mais digerível, consegue absorver por entre meus dedos uma parte do peso outrora alojado em meus ombros, cabeça, costas, coração e pés.
+Já falei pra vários amigos que, desde pequeno, o piano é uma peça fundamental do meu cotidiano. Ele funciona quase como uma terapia, um receptor de todas as minhas dores, anseios, amores ou outras sensações inerentes a todos os seres humanos. Quer dizer, não exatamente um receptor, mas sim um dissipador ou transformador. Ele sempre é capaz de simplificar um turbilhão de emoções em algo mais digerível; consegue absorver, por entre meus dedos, uma parte do peso outrora alojado em meus ombros, cabeça, costas, coração e pés.
 
 E sempre foi algo extremamente pessoal...\
 \
-Minhas sessões de improviso as vezes duravam horas, ou as vezes ocorriam em pequenas doses espalhadas por um mesmo dia, principalmente após situações como reuniões exaustivas, frustrações emocionais, desejos não realizados e etc.
+Minhas sessões de improviso às vezes duravam horas, ou às vezes ocorriam em pequenas doses espalhadas por um mesmo dia, principalmente após situações como reuniões exaustivas, frustrações emocionais, desejos não realizados, etc.
 
-E nesses momentos surgiram melodias que lembro de me questionar se realmente eram minhas mesmo, era como ganhar um presente de outra pessoa feito sob medida para me trazer conforto. Era lindo vê-las nascer... como podia eu conseguir transformar sensações tão ruins em algo tão bonito? Pedra bruta em diamantes? E em tão pouco tempo? 
+E, nesses momentos, surgiam melodias que me faziam questionar se realmente eram minhas. Era como ganhar um presente de outra pessoa, feito sob medida para me trazer conforto. 
 
-Mas ao mesmo tempo era triste vê-las morrer, elas nasceram com o único objetivo de me salvar em momentos de fragilidade. E assim ficaram, perdidas naquele pequeno recorte do tempo-espaço.
+Era lindo vê-las nascer... como podia eu conseguir transformar sensações ruins em algo tão bonito? Pedra bruta em diamantes? E em tão pouco tempo?
 
-E de certa forma, sempre estive bem ok com isso. nunca liguei pra me expor pra ninguém, e até pouco tempo atrás detestava qualquer coisa que fizesse as pessoas ficarem olhando pra mim, vergonha talvez, não sei.
+Mas, ao mesmo tempo, era triste vê-las morrer. Elas nasceram com o único objetivo de me salvar em momentos de fragilidade. E assim ficaram, perdidas naquele pequeno recorte do tempo-espaço.
+
+E, de certa forma, sempre estive bem ok com isso. Nunca liguei pra me expor pra ninguém e, até pouco tempo atrás, detestava qualquer coisa que fizesse as pessoas ficarem olhando pra mim, vergonha, talvez. Não sei.
 
 Só que algo tem mudado...
 
