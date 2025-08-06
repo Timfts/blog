@@ -12,6 +12,7 @@ $header-size: 90px;
   display: flex;
   height: 100vh;
   flex-direction: column;
+  max-height: 855px;
 
   @include belowTurningPoint() {
     width: 100%;
