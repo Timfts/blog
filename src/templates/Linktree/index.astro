@@ -1,0 +1,42 @@
+---
+import Shell from "@components/Shell/index.astro";
+import i18n, { pathMap } from "./i18n";
+import Window from "@components/Window/index.astro";
+import links from "@content/_links.json";
+
+const lang = Astro.currentLocale as Lang;
+const { pageTitle } = i18n[lang];
+---
+
+<Shell title={pageTitle} i18nPagePaths={pathMap}>
+  <div class="window-holder">
+    <Window title={pageTitle} actions={[]}>
+      <ul class="links-list">
+        {
+          links["links-list"].map((l) => (
+            <li class="links-list-item">
+              <a class="links-list-link" href={l.link} target="_blank">
+                - {l.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </Window>
+  </div>
+</Shell>
+
+<style lang="scss">
+  .window-holder {
+    padding: 20px 0;
+  }
+
+  .links-list {
+    list-style: none;
+  }
+
+  .links-list-item {
+    font-size: var(--txt-regular);
+    padding: 8px 0;
+  }
+</style>

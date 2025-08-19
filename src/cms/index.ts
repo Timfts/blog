@@ -1,6 +1,7 @@
 import { SITE_URL } from "../constants";
 import postTopics from "./collections/posts-topics";
 import learnings from "./collections/learnings";
+import links from "./collections/links";
 import projectsCMSConfig from "./collections/projects/cms";
 import postsCMSConfig from "./collections/posts/cms";
 import socialLinks from "./collections/social-links";
@@ -42,6 +43,11 @@ const decapCMSConfig = {
         name: "personal-info",
         label: "Personal Info",
         files: [socialLinks],
+      },
+      {
+        name: "linktree-links",
+        label: "Linktree Links",
+        files: [links],
       },
       postsCMSConfig,
       projectsCMSConfig,

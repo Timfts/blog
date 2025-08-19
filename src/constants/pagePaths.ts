@@ -10,6 +10,7 @@ const pagePaths = {
     feedRSS: "/feed.xml",
     emoticons: "/emoticons",
     anf: "/nesquik",
+    linktree: "/linktree",
   },
 
   "pt-br": {
@@ -23,6 +24,7 @@ const pagePaths = {
     feedRSS: "/pt-br/feed.xml",
     emoticons: "/pt-br/emoticons",
     anf: "/pt-br/nesquik",
+    linktree: "/pt-br/linktree",
   },
 };
 

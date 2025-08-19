@@ -1,0 +1,20 @@
+{
+  "links-list": [
+    {
+      "label": "Blog home ",
+      "link": "/"
+    },
+    {
+      "label": "My latest single \"Daydream\" on Spotify",
+      "link": "https://open.spotify.com/intl-pt/track/6oiZnpqSjMt2yOFcgZ10xG?si=IRBUJUgXSF22Z6K4b3GeKQ&fbclid=PAZXh0bgNhZW0CMTEAAaf3aLlzBuYzHDRSCdbfh1pCWp1p3rVnPGJrAJEj0kRFb9W3T-xGJ-SIB_AJlQ_aem_kJObUgkTQMwd0S4k-QmMIw&nd=1&dlsi=d9f5d260ad154f1a"
+    },
+    {
+      "label": "Github",
+      "link": "https://github.com/Timfts"
+    },
+    {
+      "label": "Spotify (playlists)",
+      "link": "https://open.spotify.com/user/maiden_freak1513?si=de1d88ac161b477b"
+    }
+  ]
+}
