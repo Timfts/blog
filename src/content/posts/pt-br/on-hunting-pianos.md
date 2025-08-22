@@ -42,3 +42,5 @@ No fundo, acredito que a maior parte dos criadores gostam de sentir isso: Reconh
 E é depois desse enorme contexto que chego no foco dessa publicação viva. Sempre quis encontrar pianos estacionados em lugares públicos para praticar de forma livre, sem grandes cerimonias. e é isso que quero registrar aqui.
 
 Não existe um mapa pra seguir essa quest, nem é muito claro onde vou encontrá-los, mas irei registrá-los aqui conforme for encontrando-os.
+
+## MAC-USP 31/07/2025 - Fail msn\[ (u) ]
