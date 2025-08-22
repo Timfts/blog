@@ -31,7 +31,7 @@ E por muitos anos ele tentou incumbir esse pensamento na minha cabeça, sempre f
 
 "Essas coisas não podem ficar guardadas, muita gente queria ter a possibilidade fazer isso", ele dizia... 
 
-De certa forma, essas palavras ficaram presas no meu cérebro. desde então tenho tentado evoluir um processo que já tinha iniciado pouco antes dele falecer, desenvolvendo novos hábitos como gravar pequenos trechos das minhas sessões de improviso/ensaios, escrever mais meus pensamentos, cantar mais (talvez um dos maiores desafios).
+Essas palavras ficaram presas no meu cérebro. desde então tenho tentado evoluir um processo que já tinha iniciado pouco antes dele falecer, desenvolvendo novos hábitos como gravar pequenos trechos das minhas sessões de improviso/ensaios, escrever mais meus pensamentos, cantar mais (talvez um dos maiores desafios).
 
 E confesso que apesar de ainda ter várias dificuldades com isso, tenho gostado da atenção que as pessoas dão quando mostro alguma criação, mesmo que seja apenas um pequeno fragmento. É satisfatório ouvir quando alguém diz que gostou de um trabalho, ou quando se identifica com algum aspecto dele.
 
