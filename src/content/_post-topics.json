@@ -53,6 +53,12 @@
       "label": "AI",
       "label-ptbr": "IA",
       "color": "#e02a91"
+    },
+    {
+      "slug": "poetry",
+      "label": "poetry",
+      "label-ptbr": "poesia",
+      "color": "#f50303"
     }
   ]
 }
