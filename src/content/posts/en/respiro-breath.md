@@ -7,6 +7,7 @@ updated_date: ""
 excerpt: A simple poem from my physical notebooks...
 topics:
   - life
+  - poetry
 ---
 I've been having very heavy days, full of noise, duties, demands, and irritations (I think the last few years have been like this, but for some reason I feel this weight more intensely now).
 

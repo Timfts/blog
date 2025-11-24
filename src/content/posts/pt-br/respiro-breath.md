@@ -7,6 +7,7 @@ updated_date: ""
 excerpt: Um poema simples retirado de meus cadernos...
 topics:
   - life
+  - poetry
 ---
 Tenho tido dias muito densos, cheios de barulhos, deveres, cobranças e irritações (acho que os últimos anos têm sido assim, mas por algum motivo sinto essa densidade mais angustiante agora).
 
