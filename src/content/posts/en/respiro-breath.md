@@ -15,8 +15,6 @@ Still, I manage to find small moments of introspection and inspiration, and I en
 
 (It’s in Portuguese, my mother language, I don’t think it makes much sense to translate it into English.)
 
-
-
 Às vezes encontro respiro
 
 depois de esquecer quem sou
@@ -25,9 +23,7 @@ na verdade, não sei quem sou
 
 mas sei quem almejo ser
 
-as vezes até esqueço
-
-quem quero ser
+às vezes até esqueço quem quero ser
 
 escuridão
 
