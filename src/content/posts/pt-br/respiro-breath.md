@@ -13,11 +13,7 @@ Tenho tido dias muito densos, cheios de barulhos, deveres, cobranças e irritaç
 
 De qualquer forma, ainda tenho pequenos momentos de introspecção e inspiração e acabo anotando ideias em meus caderninhos de viagem. Em uma dessas notas nasceu este que acredito caber aqui em minhas notas públicas:
 
-
-
 Respiro
-
-
 
 Às vezes encontro respiro
 
@@ -27,9 +23,7 @@ na verdade, não sei quem sou
 
 mas sei quem almejo ser
 
-as vezes até esqueço
-
-quem quero ser
+às vezes até esqueço quem quero ser
 
 escuridão
 
