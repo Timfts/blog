@@ -11,7 +11,7 @@ topics:
 ---
 Ja faz quase um ano que lancei esse projeto, este que por tanto tempo ficou somente no papel... meu espaço, meu blog, ou como defini anteriormente, meu jardim digital.
 
-E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou pouco significantes, simplesmente pelo prazer da coisa. Mas o lance é que:
+E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou pouco significativas, simplesmente pelo prazer da coisa. Mas o lance é que:
 
 Não to com pressa... (ou pelo menos, estou tentando não ter)
 
@@ -49,7 +49,7 @@ E no meio de todo esse hype da corrida das IAs vemos efeitos como:
 
 Mas mais que tudo: A exacerbação caricaturesca da sociedade do desempenho.
 
-No livro Sociedade do Cansaço, o filósofo sul-coreano Byung-Chul Han, ele define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do inidividuo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
+No livro Sociedade do Cansaço, o filósofo sul-coreano Byung-Chul Han, ele define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do inidivíduo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
 
 Ele considera um sujeito de desempenho alguém que:
 
