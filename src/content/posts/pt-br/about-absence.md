@@ -29,7 +29,7 @@ Referenciando a lenda Linus Torvalds nessa entrevista:
 
 
 
-Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra. 
+Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra, um app. 
 
 E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei sendo um "colador de coisas", um "compositor" (no sentido mais literal da palavra) , a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático alem de termos acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
