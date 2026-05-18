@@ -33,7 +33,7 @@ Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de s
 
 E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei me vendo como um "colador de coisas", um "compositor" (no sentido mais literal da palavra) , a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático, alem de termos acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
-Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionarios para sustentar operações ainda cheias de incertezas e dificuldades técnicas que consomem mais recursos do que muitas atividades mais antigas na terra.
+Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas, que consomem mais recursos do que muitas das atividades mais antigas na terra.
 
 E no meio de todo esse hype da corrida das LLMs vemos: O medo das empresas e indivíduos de "ficarem pra trás", a ansiedade por modelos e features novas, a dependência se formando (vendor lock-in), a abstração do pensamento e da lógica (economia no uso do cérebro), o uso ostensivo da ferramenta em absolutamente tudo, o excesso/poluição de informação gerada, o excesso de conteúdo no youtube e instagram sobre o assunto
 
