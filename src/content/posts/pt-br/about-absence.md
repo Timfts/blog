@@ -15,7 +15,7 @@ E é fato que ainda não consegui praticar muito os desejos expressados em minha
 
 Não to com pressa (ou pelo menos estou tentando não ter)
 
-O Silencio é parte desse jardim, e ele diz coisas também. Não o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal pra largar ideias ou projetos que eu julgue pertinentes para serem expostos.
+O Silencio é parte desse jardim, e ele diz coisas também. Não o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal pra largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
 
 
