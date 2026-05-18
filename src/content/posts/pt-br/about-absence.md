@@ -49,7 +49,7 @@ E no meio de todo esse hype da corrida das IAs vemos efeitos como:
 
 Mas mais que tudo: A exacerbação caricaturesca da sociedade do desempenho.
 
-No livro Sociedade do Cansaço, o filósofo sul-coreano Byung-Chul Han, ele define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do inidivíduo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
+No livro Sociedade do Cansaço, o filósofo sul-coreano Byung-Chul Han define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do indivíduo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
 
 Ele considera um sujeito de desempenho alguém que:
 
@@ -62,21 +62,22 @@ Ele considera um sujeito de desempenho alguém que:
 
 
 
-E com a inserção agressiva do Gemini, Claude e GPT vemos uma extrapolação de tudo isso, o tempo ficou mais sagrado que antes então ser 10x mais produtivo é esperado em todos os aspectos, pessoas no youtube ensinam a "ler" livros em apenas um dia com ajuda do gpt (dilacerando o livro e lendo apenas os capítulos que interessam para tal objetivo), tem feito auto analise psicológica, tem publicado um monte de lixo genérico (onde ja tinha um monte de lixo genérico escrito por humanos), tem analisado os dados de sono pra otimizar, otimizar, otimizar...
+(e não me excluo de vários aspectos desses que desenvolvi nos últimos 10 anos)
+
+E com a inserção agressiva do Gemini, Claude e GPT vemos uma extrapolação de tudo isso, o tempo ficou mais sagrado que antes, então ser 10x mais produtivo é esperado em todos os aspectos. Pessoas no youtube ensinam a "ler" livros em apenas um dia com ajuda do gpt (dilacerando o livro e lendo apenas os capítulos que interessam para determinado objetivo), elas tem feito auto analise psicológica, tem publicado um monte de lixo genérico (onde ja tinha um monte de lixo genérico feito por humanos), tem analisado os dados de sono pra otimizar, otimizar x, otimizar y, otimizar...
 
 
 
 E minha resposta pessoal para tudo isso é... a mesma de quando fiz a primeira publicação aqui no blog.
 
-Parar, limitar, e fazer o que estou fazendo agora, escrever escolhendo cada palavra desse texto, até posso usar a IA para dúvidas ou apontar erros (alguns erros nem arrumo pois existe uma beleza neles, não quero nada polido), e escrevo em duas línguas, não traduzo automaticamente, aprendo a traduzir, tiro dúvidas e corrijo eu mesmo. Tem cenários que trabalho com a IA mais automática, mas isso tem hora e lugar;
+Parar, limitar, e fazer o que estou fazendo agora: Escrever escolhendo cada palavra desse texto, mudando, alterando, lapidando, errando e por ai vai. até posso usar a IA para dúvidas ou apontar erros (alguns erros nem arrumo pois existe uma beleza neles, não quero nada polido), e escrevo em duas línguas, não traduzo automaticamente, aprendo a traduzir, tiro dúvidas e corrijo eu mesmo. Tem cenários que trabalho com a IA mais automática/solta, mas isso tem hora e lugar (e projeto);
 
-
-
-Gosto de acreditar que em breve chegaremos em um momento que as IAs serão algo mais integrado nos produtos e não essa "Adição improvisada" que vemos hoje. Que falar sobre ela não será um assunto de hype, mas algo cotidiano como falamos de qualquer outro grande avanço da tecnologia dos últimos 20 anos, abstraído, o foco é o problema a ser resolvido. Um momento onde provavelmente todo trabalho genérico ou medíocre (no sentido mais literal da palavra) seja totalmente gerado por IA (que funciona dependendo do objetivo), mas que o trabalho bem curado com uso parcial de IA, mas com forte direcionamento criativo e humano tenha seu espaço de mais valor.
+Gosto de acreditar que em breve chegaremos em um momento que as IAs serão algo mais integrado nos produtos e não essa "Adição improvisada e mal colada" que vemos hoje; Que esse movimento masturbatório de investimentos das empresas de IA se estabilize;\
+Que falar sobre ela não seja um assunto de hype, mas algo cotidiano como falamos de qualquer outra ferramenta que usamos, de forma abstraída/natural, onde o foco é o problema a ser resolvido; Um momento onde provavelmente todo trabalho genérico ou medíocre (no sentido mais literal da palavra) seja totalmente gerado por IA (dependendo do contexto), mas que o trabalho bem curado com forte direcionamento criativo e humano com apoio de IA como ferramenta tenha seu espaço de mais valor.
 
 Mas até lá...
 
-Sinto pra mim que em tempos de exagero como esse, no silêncio devo cada vez mais:
+Sinto pra mim que em tempos de exagero como esse, no silêncio pessoalmente devo cada vez mais:
 
 * Entender que nem tudo precisa ser subordinado ao pensamento de desempenho, performance e eficiência;
 * Evitar gerar, disponibilizar e analisar dados de cada aspecto da vida, como sono, exercícios, interações em redes e etc;
@@ -86,7 +87,7 @@ Sinto pra mim que em tempos de exagero como esse, no silêncio devo cada vez mai
 * De entender o tempo ocioso como a “vida real”, e não como mero “tempo livre”. O trabalho deve servir à vida, não o contrário;
 * Fazer uma coisa de cada vez;
 * Aceitar a inatividade, tédio e contemplação como partes essenciais do viver, sem culpa;
-* Aprofundar cultura: filmes, series, músicas, HQs, mangas, desenhos e etc...;
+* Aprofundar cultura: filmes, series, músicas, HQs, mangás, desenhos e etc...;
 * Conseguir assistir algo sem ficar checando o celular ou computador;
 * Buscar conexões humanas significativas e não superficiais;
 * Comer devagar, para sentir o gosto;
