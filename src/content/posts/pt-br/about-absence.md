@@ -19,7 +19,7 @@ O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo
 
 E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos nos quais estou inserido foi a difusão das IAs/LLMs.
 
-Não vou me aprofundar muito sobre as tecnicidades disso aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar mais sobre alguns efeitos colaterais que elas tem trazido e que impactam na minha visão de mundo.
+Não vou me aprofundar muito sobre as tecnicidades disso aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar mais sobre alguns efeitos colaterais que impactam na minha visão de mundo.
 
 E confesso que tenho sentimentos mistos sobre tudo isso que tem acontecido no mercado e na vida pessoal das pessoas. 
 
