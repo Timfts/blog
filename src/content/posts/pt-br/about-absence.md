@@ -35,9 +35,31 @@ E a inserção da IA nesse processo não muda muita coisa nessa minha percepçã
 
 Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas, que consomem mais recursos do que muitas das atividades mais antigas na terra.
 
-E no meio de todo esse hype da corrida das LLMs vemos: O medo das empresas e indivíduos de "ficarem pra trás", a ansiedade por modelos e features novas, a dependência se formando (vendor lock-in), a abstração do pensamento e da lógica (economia no uso do cérebro), o uso ostensivo da ferramenta em absolutamente tudo, o excesso/poluição de informação gerada, o excesso de conteúdo no youtube e instagram sobre o assunto
+E no meio de todo esse hype da corrida das LLMs vemos efeitos como: 
 
-mas mais que tudo, a exacerbação caricaturesca da sociedade do desempenho 
+Medo das empresas e indivíduos de "ficarem pra trás"; 
+
+Ansiedade por modelos e features novas; 
+
+Dependência se formando (vendor lock-in);  
+
+Abstração do pensamento e da lógica (economia no uso do cérebro) para atividades básicas;
+
+Uso ostensivo da ferramenta em absolutamente todos os cenários; 
+
+Excesso/poluição de informação gerada; 
+
+Excesso de conteúdo no youtube e instagram sobre o assunto;
+
+Falhas de segurança estourando loucamente por ai;
+
+SaaS genéricos brotando de todos os lados;
+
+
+
+Mas mais que tudo: A exacerbação caricaturesca da sociedade do desempenho.
+
+Em sociedade do cansaço,  
 
   
 
