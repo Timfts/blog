@@ -59,7 +59,19 @@ SaaS genéricos brotando de todos os lados;
 
 Mas mais que tudo: A exacerbação caricaturesca da sociedade do desempenho.
 
-Em sociedade do cansaço,  
+Em sociedade do cansaço, o filósofo sul-coreano Byung-Chul Han define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do inidividuo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
+
+Ele considera um sujeito de desempenho alguem que:
+
+Está sempre tentando otimizar a própria vida;
+
+Se vê como projeto de melhoria infinito;
+
+Não consegue descançar ou parar sem culpa;
+
+Transforma tudo em produtividade;
+
+
 
   
 
