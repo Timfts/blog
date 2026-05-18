@@ -1,7 +1,7 @@
 ---
-title: Sobre ausência...
+title: Sobre silêncio e ausência...
 enabled: true
-page_url: sobre-ausencia
+page_url: sobre-silencio-e-ausencia
 created_date: 2026-05-17T20:34:00.000Z
 updated_date: ""
 excerpt: todo

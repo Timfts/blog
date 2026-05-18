@@ -1,7 +1,7 @@
 ---
-title: About absence...
+title: About silence and absence...
 enabled: true
-page_url: about-absence
+page_url: about-silence-and-absense
 created_date: 2026-05-17T20:34:00.000Z
 updated_date: ""
 excerpt: todo
