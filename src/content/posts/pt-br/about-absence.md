@@ -27,11 +27,11 @@ Referenciando a lenda Linus Torvalds nessa entrevista:
 
 > Ao mesmo tempo que acho que a IA é bem interessante, eu odeio o hype! 
 
-Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma música, uma obra, um app. 
+Ja falei com alguns amigos, que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece a mesma quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma música, uma obra, um app. 
 
 E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei me vendo como um "colador de coisas", um "compositor" (no sentido mais literal da palavra), ou um "curador" talvez. A diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático, alem de termos acesso a uma nova gama peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
-Por outro lado, isso tem causado uma histeria bem incomoda ao meu ver. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas, que consomem mais recursos do que muitos dos processos industriais mais agressivos na terra.
+Por outro lado, isso tem causado uma histeria bem incomoda ao meu ver. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas que consomem mais recursos do que muitos dos processos industriais mais agressivos na terra.
 
 E no meio de todo esse hype da corrida das IAs vemos efeitos como: 
 
@@ -62,7 +62,7 @@ Ele considera um sujeito de desempenho alguém que:
 
 
 
-(e não me excluo de vários aspectos desses que desenvolvi nos últimos 10 anos)
+(e não me excluo de vários aspectos desses que desenvolvi involuntariamente nos últimos 10 anos)
 
 E com a inserção agressiva do Gemini, Claude e GPT vemos uma extrapolação de tudo isso, o tempo ficou mais sagrado que antes, então ser 10x mais produtivo é esperado em todos os aspectos. Pessoas no youtube ensinam a "ler" livros em apenas um dia com ajuda do chat (dilacerando o livro e lendo apenas os capítulos que interessam para determinado objetivo), elas tem feito auto analise psicológica, tem publicado um monte de lixo genérico (onde ja tinha um monte de lixo genérico feito por humanos), tem analisado os dados de sono pra otimizar, otimizar x, otimizar y, otimizar...
 
@@ -70,11 +70,11 @@ E minha resposta pessoal para tudo isso é... a mesma de quando fiz a primeira p
 
 Parar, limitar, e fazer o que estou fazendo agora: Escrever escolhendo cada palavra desse texto, mudando, alterando, lapidando, errando e por ai vai. até posso usar a IA para dúvidas ou apontar erros (alguns erros nem arrumo pois existe uma beleza neles, não quero nada polido), e escrevo em duas línguas, não traduzo automaticamente, aprendo a traduzir, tiro dúvidas e corrijo eu mesmo. Tem cenários que trabalho com a IA mais automática/solta, mas isso tem hora e lugar (e projeto apropriado);
 
-Gosto de acreditar que em breve chegaremos em um momento que as IAs serão algo mais integrado nos produtos e não essa "Adição improvisada e mal colada" que vemos hoje; Que esse movimento masturbatório de investimentos das empresas donas dos modelos se estabilize; Que falar sobre ela não seja um assunto de hype, mas algo cotidiano como falamos de qualquer outra ferramenta que usamos, de forma abstraída/natural, onde o foco é o problema a ser resolvido; Um momento onde provavelmente todo trabalho genérico ou medíocre (no sentido mais literal da palavra) seja gerado por IA (dependendo do contexto), mas que o trabalho bem curado com forte direcionamento criativo e humano (com apoio de IA como ferramenta) tenha seu espaço de mais valor.
+Gosto de acreditar que em breve chegaremos em um momento que as IAs serão algo mais integrado nos produtos e não essa "Adição improvisada e mal colada" que vemos hoje; Que esse movimento masturbatório de investimentos das empresas donas dos modelos se estabilize; Que falar sobre ela não seja um assunto de hype, mas algo cotidiano como falamos de qualquer outra ferramenta que usamos de forma abstraída e natural, onde o foco é o problema a ser resolvido; Um momento onde provavelmente todo trabalho genérico ou medíocre (no sentido mais literal da palavra) seja gerado por IA (dependendo do contexto), mas que o trabalho bem curado com forte direcionamento criativo e humano (com apoio de IA como ferramenta) tenha seu espaço de mais valor.
 
 Mas até lá...
 
-Sinto pra mim que em tempos de exagero como esse, no silêncio, pessoalmente devo cada vez mais:
+Sinto pra mim que em tempos de exagero como esse, no silêncio, devo cada vez mais:
 
 * Entender que nem tudo precisa ser subordinado ao pensamento de desempenho, performance e eficiência;
 * Evitar gerar, disponibilizar e analisar dados de cada aspecto da vida, como sono, exercícios, interações em redes e etc;
