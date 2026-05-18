@@ -31,7 +31,7 @@ Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de s
 
 E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei me vendo como um "colador de coisas", um "compositor" (no sentido mais literal da palavra) ou um "curador" talvez, a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático, alem de termos acesso a uma nova gama peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
-Por outro lado, isso tem causado uma histeria bem incomoda ao meu ver. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas, que consomem mais recursos do que muitas das atividades mais antigas na terra.
+Por outro lado, isso tem causado uma histeria bem incomoda ao meu ver. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas, que consomem mais recursos do que muitos dos processos industriais mais agressivos na terra.
 
 E no meio de todo esse hype da corrida das IAs vemos efeitos como: 
 
