@@ -15,7 +15,7 @@ E é fato que ainda não consegui praticar muito os desejos expressados em minha
 
 Não to com pressa... (ou pelo menos, estou tentando não ter)
 
-O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal para publicar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
+O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar a criar algo, mas sim para ser uma opção (mais confiável que redes sociais) de canal para publicar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
 E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos nos quais estou inserido foi a difusão das IAs/LLMs.
 
