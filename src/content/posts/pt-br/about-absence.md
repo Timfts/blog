@@ -19,7 +19,7 @@ O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo
 
 E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos nos quais estou inserido foi a difusão das IAs/LLMs.
 
-Não vou falar especificamente sobre IA aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar mais sobre alguns efeitos colaterais que ela tem trazido e que impactam na minha visão de mundo.
+Não vou falar especificamente sobre IA aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar mais sobre alguns efeitos colaterais que elas tem trazido e que impactam na minha visão de mundo.
 
 E confesso que tenho sentimentos mistos sobre tudo isso que tem acontecido no mercado e na vida pessoal das pessoas. 
 
@@ -27,82 +27,69 @@ Referenciando a lenda Linus Torvalds nessa entrevista:
 
 > Ao mesmo tempo que acho que a IA é bem interessante, eu odeio o hype! 
 
-
-
 Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra, um app. 
 
-E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei me vendo como um "colador de coisas", um "compositor" (no sentido mais literal da palavra) , a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático, alem de termos acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
+E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei me vendo como um "colador de coisas", um "compositor" (no sentido mais literal da palavra), a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático, alem de termos acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
 Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionários para sustentar operações ainda cheias de incertezas e dificuldades técnicas, que consomem mais recursos do que muitas das atividades mais antigas na terra.
 
-E no meio de todo esse hype da corrida das LLMs vemos efeitos como: 
+E no meio de todo esse hype da corrida das IAs vemos efeitos como: 
 
-Medo das empresas e indivíduos de "ficarem pra trás"; 
-
-Ansiedade por modelos e features novas; 
-
-Dependência se formando (vendor lock-in);  
-
-Abstração do pensamento e da lógica (economia no uso do cérebro) para atividades básicas;
-
-Uso ostensivo da ferramenta em absolutamente todos os cenários; 
-
-Excesso/poluição de informação gerada; 
-
-Excesso de conteúdo no youtube e instagram sobre o assunto;
-
-Falhas de segurança estourando loucamente por ai;
-
-SaaS genéricos brotando de todos os lados;
+* Medo das empresas e indivíduos de "ficarem pra trás"; 
+* Ansiedade por modelos e features novas; 
+* Dependência se formando (vendor lock-in);  
+* Abstração do pensamento e da lógica (economia no uso do cérebro) para atividades básicas;
+* Uso ostensivo da ferramenta em absolutamente todos os cenários; 
+* Excesso/poluição de informação gerada; 
+* Excesso de conteúdo no youtube e instagram sobre o assunto;
+* Falhas de segurança estourando loucamente por ai;
+* SaaS genéricos brotando de todos os lados;
 
 
 
 Mas mais que tudo: A exacerbação caricaturesca da sociedade do desempenho.
 
-Em sociedade do cansaço, o filósofo sul-coreano Byung-Chul Han define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do inidividuo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
+No livro Sociedade do Cansaço, o filósofo sul-coreano Byung-Chul Han, ele define a sociedade do desempenho como a fase contemporânea do capitalismo e da vida social onde o valor do inidividuo é medido pela sua produtividade e sucesso. Uma sociedade aparentemente livre onde o individuo explora a sí mesmo em busca de desempenho constante;
 
-Ele considera um sujeito de desempenho alguem que:
+Ele considera um sujeito de desempenho alguém que:
 
-Está sempre tentando otimizar a própria vida;
-
-Se vê como projeto de melhoria infinito;
-
-Não consegue descançar ou parar sem culpa;
-
-Transforma tudo em produtividade;
-
+* Está sempre tentando otimizar a própria vida;
+* Se vê como projeto de melhoria infinito;
+* Não consegue descansar ou parar sem culpa;
+* Transforma tudo em produtividade; 
+* Mistura identidade pessoal com performance profissional;
+* Transforma lazer em conteúdo;
 
 
-  
 
-tempos para cada vez mais:
+E com a inserção agressiva do Gemini, Claude e GPT vemos uma extrapolação de tudo isso, o tempo ficou mais sagrado que antes então ser 10x mais produtivo é esperado em todos os aspectos, pessoas no youtube ensinam a "ler" livros em apenas um dia com ajuda do gpt (dilacerando o livro e lendo apenas os capítulos que interessam para tal objetivo), tem feito auto analise psicológica, tem publicado um monte de lixo genérico (onde ja tinha um monte de lixo genérico escrito por humanos), tem analisado os dados de sono pra otimizar, otimizar, otimizar...
 
-Entender que nem tudo precisa ser subordinado ao pensamento de desempenho, performance e eficiência;
 
-Evitar gerar, disponibilizar e analisar dados de cada aspecto da vida, como sono, exercícios, interações em redes e etc;
 
-Estudar mais profundamente os interesses, mesmo que qualquer IA consiga executar por conta própria;
+E minha resposta pessoal para tudo isso é... a mesma de quando fiz a primeira publicação aqui no blog.
 
-Sentir a dor do aprender e do criar, de aceitar a imperfeição e a repetição;
+Parar, limitar, e fazer o que estou fazendo agora, escrever escolhendo cada palavra desse texto, até posso usar a IA para dúvidas ou apontar erros (alguns erros nem arrumo pois existe uma beleza neles, não quero nada polido), e escrevo em duas línguas, não traduzo automaticamente, aprendo a traduzir, tiro dúvidas e corrijo eu mesmo. Tem cenários que trabalho com a IA mais automática, mas isso tem hora e lugar;
 
-Não fazer projetos/atividades esperando somente atenção ou dinheiro, fazer só por diversão;
 
-De entender o tempo ocioso como a “vida real”, e não como mero “tempo livre”. O trabalho deve servir à vida, não o contrário;
 
-Fazer uma coisa de cada vez;
+Gosto de acreditar que em breve chegaremos em um momento que as IAs serão algo mais integrado nos produtos e não essa "Adição improvisada" que vemos hoje. Que falar sobre ela não será um assunto de hype, mas algo cotidiano como falamos de qualquer outro grande avanço da tecnologia dos últimos 20 anos, abstraído, o foco é o problema a ser resolvido. Um momento onde provavelmente todo trabalho genérico ou medíocre (no sentido mais literal da palavra) seja totalmente gerado por IA (que funciona dependendo do objetivo), mas que o trabalho bem curado com uso parcial de IA, mas com forte direcionamento criativo e humano tenha seu espaço de mais valor.
 
-Aceitar a inatividade, tédio e contemplação como partes essenciais do viver, sem culpa;
+Mas até lá...
 
-Aprofundar cultura: filmes, series, musicas, HQs, mangas, desenhos e etc...;
+Sinto pra mim que em tempos de exagero como esse, no silêncio devo cada vez mais:
 
-Conseguir assistir algo sem ficar checando o celular ou computador;
-
-Buscar conexões humanas significativas e não superficiais;
-
-Comer devagar, para sentir o gosto;
-
-Parar pra refletir sobre si mesmo;
-
-Ter paciencia;
-
-Parar e respirar;
+* Entender que nem tudo precisa ser subordinado ao pensamento de desempenho, performance e eficiência;
+* Evitar gerar, disponibilizar e analisar dados de cada aspecto da vida, como sono, exercícios, interações em redes e etc;
+* Estudar mais profundamente os interesses, mesmo que qualquer IA consiga executar por conta própria;
+* Sentir a dor do aprender e do criar, de aceitar a imperfeição e a repetição;
+* Não fazer projetos/atividades esperando somente atenção ou dinheiro, fazer só por diversão;
+* De entender o tempo ocioso como a “vida real”, e não como mero “tempo livre”. O trabalho deve servir à vida, não o contrário;
+* Fazer uma coisa de cada vez;
+* Aceitar a inatividade, tédio e contemplação como partes essenciais do viver, sem culpa;
+* Aprofundar cultura: filmes, series, músicas, HQs, mangas, desenhos e etc...;
+* Conseguir assistir algo sem ficar checando o celular ou computador;
+* Buscar conexões humanas significativas e não superficiais;
+* Comer devagar, para sentir o gosto;
+* Refletir sobre si mesmo;
+* Ter paciencia;
+* Parar e respirar;
