@@ -11,4 +11,32 @@ topics:
 ---
 Ja faz quase um ano que lancei esse projeto, que por tanto tempo ficou somente no papel. Meu espaço, meu blog, ou como defini anteriormente, meu jardim digital.
 
-E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas, mesmo que fragmentárias ou insignificantes, simplesmente pelo prazer da coisa.
+E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas, mesmo que fragmentárias ou insignificantes, simplesmente pelo prazer da coisa. Mas o lance é que
+
+Não to com pressa (ou pelo menos estou tentando não ter)
+
+O Silencio é parte desse jardim, e ele diz coisas também. Não criei o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiavel que redes sociais) de canal onde eu possa expor ideias ou projetos que eu julgue pertinentes para serem expostos.
+
+
+
+tempos para cada vez mais:
+
+Ter paciencia;
+
+Estudar mais profundamente meus interesses, mesmo que qualquer IA consiga executar por conta própria;
+
+Sentir a dor do aprender e do criar, de aceitar a imperfeição e a repetição;
+
+Não fazer projetos/atividades esperando atenção ou dinheiro, fazer só por diversão;
+
+Fazer uma coisa de cada vez;
+
+Ou aceitar a inatividade, tédio e contemplação como partes essenciais do viver, sem culpa;
+
+Buscar cultura, filmes, series, musicas, HQs, mangas, desenhos e etc...;
+
+Conseguir assistir algo sem ficar checando o celular ou computador;
+
+\* Buscar conexões humanas significadtivas;
+
+\* Evitar gerar e analisar dados de cada aspecto da vida, como sono, exercicios, interações em redes e etc;
