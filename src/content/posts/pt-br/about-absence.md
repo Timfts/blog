@@ -93,4 +93,4 @@ Sinto pra mim que em tempos de exagero como esse, no silêncio pessoalmente devo
 * Comer devagar, para sentir o gosto;
 * Refletir sobre si mesmo;
 * Ter paciencia;
-* Parar e respirar;
+* Parar, observar e respirar;
