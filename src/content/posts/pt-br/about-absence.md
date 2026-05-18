@@ -15,11 +15,15 @@ E é fato que ainda não consegui praticar muito os desejos expressados em minha
 
 Não to com pressa... (ou pelo menos estou tentando não ter)
 
-O Silencio é parte desse jardim, e ele diz coisas também. Não o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal pra largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
+O Silencio é parte desse jardim, e ele diz coisas também. Não o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal que me permita largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
+E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido, foi a difusão das IA's, das LLMs.
 
+E confesso que tenho sentimentos mistos sobre tudo isso que tem acontecido no mercado e na vida pessoal das pessoas. 
 
-E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido, foi a difusão das IA's, das LLMs especificamente.
+Referenciando a lenda Linus Torvalds nessa entrevista:
+
+a IA 
 
 tempos para cada vez mais:
 
