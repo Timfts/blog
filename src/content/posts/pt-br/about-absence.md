@@ -11,11 +11,11 @@ topics:
 ---
 Ja faz quase um ano que lancei esse projeto, este que por tanto tempo ficou somente no papel... meu espaço, meu blog, ou como defini anteriormente, meu jardim digital.
 
-E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou insignificantes, simplesmente pelo prazer da coisa. Mas o lance é que
+E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou pouco significantes, simplesmente pelo prazer da coisa. Mas o lance é que
 
-Não to com pressa... (ou pelo menos estou tentando não ter)
+Não to com pressa... (ou pelo menos, estou tentando não ter)
 
-O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal que me permita largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
+O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal para publicar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
 E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido foi a difusão das IA's, das LLMs.
 
@@ -29,13 +29,13 @@ Referenciando a lenda Linus Torvalds nessa entrevista:
 
 
 
-Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software mais sobre "colar coisas" do que sobre "escrever código", uma visão que me parece até parecida sobre quando estou trabalhando em um projeto artístico, no fim colamos vários componentes ou fragmentos (de preferencia de forma solida) até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra. 
+Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que me até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra. 
 
-E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei sendo um "colador de coisas", um "compositor", a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático alem de ter acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
+E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei sendo um "colador de coisas", um "compositor" (no sentido mais literal da palavra) , a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático alem de termos acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
+Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionarios para sustentar operações ainda cheias de incertezas e dificuldades técnicas que consomem mais recursos do que muitas atividades mais antigas na terra.
 
-
-
+  
 
 tempos para cada vez mais:
 
