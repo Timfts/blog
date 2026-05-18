@@ -21,9 +21,13 @@ O Silencio é parte desse jardim, e ele diz coisas também. Não criei o criei p
 
 tempos para cada vez mais:
 
+Entender que nem tudo precisa ser subordinado ao pensamento de desempenho, performance e eficiencia;
+
+Evitar gerar, disponibilizar e analisar dados de cada aspecto da vida, como sono, exercícios, interações em redes e etc;
+
 Ter paciencia;
 
-Estudar mais profundamente meus interesses, mesmo que qualquer IA consiga executar por conta própria;
+Estudar mais profundamente os interesses, mesmo que qualquer IA consiga executar por conta própria;
 
 Sentir a dor do aprender e do criar, de aceitar a imperfeição e a repetição;
 
@@ -31,12 +35,16 @@ Não fazer projetos/atividades esperando atenção ou dinheiro, fazer só por di
 
 Fazer uma coisa de cada vez;
 
-Ou aceitar a inatividade, tédio e contemplação como partes essenciais do viver, sem culpa;
+Aceitar a inatividade, tédio e contemplação como partes essenciais do viver, sem culpa;
 
-Buscar cultura, filmes, series, musicas, HQs, mangas, desenhos e etc...;
+Buscar cultura: filmes, series, musicas, HQs, mangas, desenhos e etc...;
 
 Conseguir assistir algo sem ficar checando o celular ou computador;
 
-\* Buscar conexões humanas significadtivas;
+Buscar conexões humanas significativas;
 
-\* Evitar gerar e analisar dados de cada aspecto da vida, como sono, exercicios, interações em redes e etc;
+Comer devagar, para sentir o gosto;
+
+De Refletir sobre si mesmo;
+
+Parar e respirar;
