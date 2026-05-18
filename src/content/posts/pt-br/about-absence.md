@@ -35,6 +35,8 @@ E a inserção da IA nesse processo não muda muita coisa nessa minha percepçã
 
 Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionarios para sustentar operações ainda cheias de incertezas e dificuldades técnicas que consomem mais recursos do que muitas atividades mais antigas na terra.
 
+E no meio de todo esse hype da corrida das LLMs vemos: O medo das empresas e indivíduos de "ficarem pra trás", a ansiedade por modelos e features novas, a dependência se formando (lock-in, a abstração do pensamento e da lógica
+
   
 
 tempos para cada vez mais:
