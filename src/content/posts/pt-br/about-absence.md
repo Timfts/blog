@@ -11,15 +11,15 @@ topics:
 ---
 Ja faz quase um ano que lancei esse projeto, este que por tanto tempo ficou somente no papel... meu espaço, meu blog, ou como defini anteriormente, meu jardim digital.
 
-E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou pouco significantes, simplesmente pelo prazer da coisa. Mas o lance é que
+E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou pouco significantes, simplesmente pelo prazer da coisa. Mas o lance é que:
 
 Não to com pressa... (ou pelo menos, estou tentando não ter)
 
 O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal para publicar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
-E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido foi a difusão das IA's, das LLMs.
+E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos nos quais estou inserido foi a difusão das IAs/LLMs.
 
-Não vou falar especificamente sobre IA aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar sobre alguns efeitos colaterais que ela tem trazido e que impactam na minha visão de mundo.
+Não vou falar especificamente sobre IA aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar mais sobre alguns efeitos colaterais que ela tem trazido e que impactam na minha visão de mundo.
 
 E confesso que tenho sentimentos mistos sobre tudo isso que tem acontecido no mercado e na vida pessoal das pessoas. 
 
@@ -29,13 +29,15 @@ Referenciando a lenda Linus Torvalds nessa entrevista:
 
 
 
-Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que me até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra. 
+Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece sobre quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra. 
 
 E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei sendo um "colador de coisas", um "compositor" (no sentido mais literal da palavra) , a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático alem de termos acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
 Por outro lado, isso tem causado uma histeria bem incomoda. Histeria esta que vem sendo inflamada por adultos mimados do vale do silício, que encontram no alarme, uma forma de captar investimentos bilionarios para sustentar operações ainda cheias de incertezas e dificuldades técnicas que consomem mais recursos do que muitas atividades mais antigas na terra.
 
-E no meio de todo esse hype da corrida das LLMs vemos: O medo das empresas e indivíduos de "ficarem pra trás", a ansiedade por modelos e features novas, a dependência se formando (lock-in, a abstração do pensamento e da lógica
+E no meio de todo esse hype da corrida das LLMs vemos: O medo das empresas e indivíduos de "ficarem pra trás", a ansiedade por modelos e features novas, a dependência se formando (vendor lock-in), a abstração do pensamento e da lógica (economia no uso do cérebro), o uso ostensivo da ferramenta em absolutamente tudo, o excesso/poluição de informação gerada, o excesso de conteúdo no youtube e instagram sobre o assunto
+
+mas mais que tudo, a exacerbação caricaturesca da sociedade do desempenho 
 
   
 
