@@ -15,15 +15,27 @@ E é fato que ainda não consegui praticar muito os desejos expressados em minha
 
 Não to com pressa... (ou pelo menos estou tentando não ter)
 
-O Silencio é parte desse jardim, e ele diz coisas também. Não o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal que me permita largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
+O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal que me permita largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
-E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido, foi a difusão das IA's, das LLMs.
+E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido foi a difusão das IA's, das LLMs.
+
+Não vou falar especificamente sobre IA aqui nesse texto (talvez escreva um pouco depois sobre minhas formas de uso e descobertas), mas quero falar sobre alguns efeitos colaterais que ela tem trazido e que impactam na minha visão de mundo.
 
 E confesso que tenho sentimentos mistos sobre tudo isso que tem acontecido no mercado e na vida pessoal das pessoas. 
 
 Referenciando a lenda Linus Torvalds nessa entrevista:
 
-a IA 
+> Ao mesmo tempo que acho que a IA é bem interessante, eu odeio o hype! 
+
+
+
+Ja falei com alguns amigos que sempre enxerguei o oficio de desenvolvimento de software mais sobre "colar coisas" do que sobre "escrever código", uma visão que me parece até parecida sobre quando estou trabalhando em um projeto artístico, no fim colamos vários componentes ou fragmentos (de preferencia de forma solida) até que eles formem uma composição harmoniosa, um sistema, uma musica, uma obra. 
+
+E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei sendo um "colador de coisas", um "compositor", a diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático alem de ter acesso a novas peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
+
+
+
+
 
 tempos para cada vez mais:
 
