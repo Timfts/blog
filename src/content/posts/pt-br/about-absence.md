@@ -13,15 +13,13 @@ Ja faz quase um ano que lancei esse projeto, este que por tanto tempo ficou some
 
 E é fato que ainda não consegui praticar muito os desejos expressados em minha primeira publicação, de aceitar a imperfeição, de publicar coisas mesmo que fragmentárias ou insignificantes, simplesmente pelo prazer da coisa. Mas o lance é que
 
-Não to com pressa (ou pelo menos estou tentando não ter)
+Não to com pressa... (ou pelo menos estou tentando não ter)
 
 O Silencio é parte desse jardim, e ele diz coisas também. Não o criei para me cobrar criação de conteúdo, mas sim para ser uma opção (mais confiável que redes sociais) de canal pra largar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
 
 
-
-
-
+E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos que estou inserido, foi a difusão das IA's, das LLMs especificamente.
 
 tempos para cada vez mais:
 
