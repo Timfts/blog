@@ -15,7 +15,7 @@ E é fato que ainda não consegui praticar muito os desejos expressados em minha
 
 Não to com pressa... (ou pelo menos, estou tentando não ter)
 
-O Silencio é parte desse jardim, e ele diz coisas também. Não criei isso tudo para me cobrar a criar algo, mas sim para ser uma opção (mais confiável que redes sociais) de canal para publicar ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
+O silencio é parte desse jardim, e ele diz coisas também. Não pensei nesse projeto como algo para me obrigar a escrever, mas sim para ser uma opção (mais confiável que redes sociais) de canal de divulgação de ideias ou projetos que eu julgue pertinentes para serem expostos publicamente.
 
 E nesse silêncio muita coisa mudou. Eu mudei, conhecidos mudaram, o mundo mudou e tudo vem mudando quase que em progressão geométrica. E obviamente a mudança mais significativa nos mundos técnicos e criativos nos quais estou inserido foi a difusão das IAs/LLMs.
 
@@ -27,7 +27,7 @@ Referenciando a lenda Linus Torvalds nessa entrevista:
 
 > Ao mesmo tempo que acho que a IA é bem interessante, eu odeio o hype! 
 
-Ja falei com alguns amigos, que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece a mesma quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma música, uma obra, um app. 
+Ja falei para alguns amigos que sempre enxerguei o oficio de desenvolvimento de software ser mais sobre "colar coisas" do que sobre "escrever código", uma visão que até me parece similar de quando estou trabalhando em um projeto artístico. No fim colamos vários componentes ou fragmentos até que eles formem uma composição harmoniosa, um sistema, uma música, uma obra, um app. 
 
 E a inserção da IA nesse processo não muda muita coisa nessa minha percepção, pois continuarei me vendo como um "colador de coisas", um "compositor" (no sentido mais literal da palavra), ou um "curador" talvez. A diferença agora é que criar e combinar esses componentes tende a se tornar algo muito mais prático e automático, alem de termos acesso a uma nova gama peças que outrora eram muito difíceis de serem acessadas. então sobre isso eu fico extremamente positivo e inspirado.
 
@@ -40,12 +40,10 @@ E no meio de todo esse hype da corrida das IAs vemos efeitos como:
 * Dependência se formando (vendor lock-in);  
 * Abstração do pensamento e da lógica (economia no uso do cérebro) para atividades básicas;
 * Uso ostensivo da ferramenta em absolutamente todos os cenários; 
-* Excesso/poluição de informação gerada; 
+* Excesso de informação gerada (poluição); 
 * Excesso de conteúdo no youtube e instagram sobre o assunto;
 * Falhas de segurança estourando loucamente por ai;
 * SaaS genéricos brotando de todos os lados;
-
-
 
 Mas mais que tudo: A exacerbação caricaturesca da sociedade do desempenho.
 
@@ -59,8 +57,6 @@ Ele considera um sujeito de desempenho alguém que:
 * Transforma tudo em produtividade; 
 * Mistura identidade pessoal com performance profissional;
 * Transforma lazer em conteúdo;
-
-
 
 (e não me excluo de vários aspectos desses que desenvolvi involuntariamente nos últimos 10 anos)
 
@@ -91,7 +87,5 @@ Sinto pra mim que em tempos de exagero como esse, no silêncio, devo cada vez ma
 * Refletir sobre si mesmo;
 * Ter paciencia;
 * Parar, observar e respirar;
-
-
 
 ...Amar mais e aproveitar os pequenos momentos sublimes que passam desapercebidos aos olhos dos superestimulados...
